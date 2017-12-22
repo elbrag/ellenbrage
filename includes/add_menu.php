@@ -3,7 +3,7 @@
 function custom_navigation_menus() {
 
 	$locations = array(
-		'header_nav' => __( 'Page Menu', 'portfolio-theme' ),
+		'header_nav' => __( 'Main menu', 'ellenbrage' ),
 	);
 	register_nav_menus( $locations );
 
