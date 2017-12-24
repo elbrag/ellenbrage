@@ -1,0 +1,192 @@
+/*--semantics reset and basics--*/
+
+* {
+  font-family: 'Lato';
+}
+
+body {
+  margin: 0;
+}
+
+p, h1, h2, h3, h4 {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  color: #000;
+  text-decoration: none;
+}
+
+/*--Header--*/
+
+/*--Menu--*/
+
+header {
+  position: relative;
+}
+
+#logo {
+  width: 100px;
+  height: 30px;
+  background-image: url(../img/logo_1_blue.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  position: absolute;
+  top: 16px;
+  left: 24px;
+}
+
+#menu-symb {
+  color: #0000FF;
+  font-size: 36px;
+  line-height: 38px;
+  position: absolute;
+  right: 24px;
+  cursor: pointer;
+}
+
+#menu-symb:after{
+  content: ' \2026';
+}
+
+.main-nav {
+  background-color: #000;
+  height: 64px;
+}
+
+.main-menu {
+  display: none;
+  position: absolute;
+  margin-top: 64px;
+  background-color: #0000FF;
+  width: 100%;
+  padding: 12px 0 24px 0;
+  box-sizing: border-box;
+}
+
+.menu-item {
+  padding: 12px 0;
+  text-align: left;
+  width: 147px;
+  margin: 0 auto;
+}
+
+.menu-item.active:before {
+  content: ' \25C9';
+  padding-right: 18px;
+  color: #fff;
+  font-size: 15px;
+}
+
+.menu-item:before {
+  content: ' \25EF';
+  padding-right: 18px;
+  color: #fff;
+  font-size: 14px;
+}
+
+.menu-item a {
+  text-transform: lowercase;
+  font-variant: small-caps;
+  letter-spacing: 6px;
+  font-size: 24px;
+  color: #fff;
+}
+
+.lang-ul {
+
+}
+
+.lang-item {
+  text-align: center;
+}
+
+.lang-item a {
+  font-size: 14px;
+}
+
+.lang-item:before {
+  content: none;
+}
+
+
+
+/*--Page: Work--*/
+
+/*--Single: Work--*/
+
+/*--Page: About--*/
+
+/*--Page: Contact--*/
+
+/*--Footer--*/
+
+/*=====================================640PX========================================*/
+
+@media (min-width: 640px) {
+
+  /*--Header--*/
+
+  /*--Menu--*/
+
+  /*--Page: Work--*/
+
+  /*--Single: Work--*/
+
+  /*--Page: About--*/
+
+  /*--Page: Contact--*/
+
+  /*--Footer--*/
+
+}
+
+/*=====================================960PX========================================*/
+
+@media (min-width: 960px) {
+
+  /*--Header--*/
+
+  /*--Menu--*/
+
+  /*--Page: Work--*/
+
+  /*--Single: Work--*/
+
+  /*--Page: About--*/
+
+  /*--Page: Contact--*/
+
+  /*--Footer--*/
+
+}
+
+/*=====================================1200PX========================================*/
+
+@media (min-width: 1200px) {
+
+  /*--Header--*/
+
+  /*--Menu--*/
+
+  /*--Page: Work--*/
+
+  /*--Single: Work--*/
+
+  /*--Page: About--*/
+
+  /*--Page: Contact--*/
+
+  /*--Footer--*/
+
+}

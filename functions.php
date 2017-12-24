@@ -17,4 +17,28 @@ function addthemesupport(){
 add_action( 'after_setup_theme', 'addthemesupport' );
 
 
+//adding the second css sheet
+
+$handle = "ellenbrage";
+$src = get_template_directory_uri() . "/css/main.css";
+$deps = null;
+$ver = null;
+$media = "all";
+wp_register_style( $handle, $src, $deps, $ver, $media );
+
+function mytheme_enqueue_style() {
+    wp_enqueue_style( 'ellenbrage', get_stylesheet_uri() );
+}
+add_action( 'wp_enqueue_scripts', 'mytheme_enqueue_style' );
+
+//to make menu items change when active
+
+add_filter('nav_menu_css_class' , 'special_nav_class' , 10 , 2);
+
+function special_nav_class ($classes, $item) {
+    if (in_array('current-menu-item', $classes) ){
+        $classes[] = 'active ';
+    }
+    return $classes;
+}
 ?>
