@@ -14,10 +14,17 @@ function openMenu(x){
 
 };
 
-// 
+//
 // var checkinput = document.querySelector('.checkinput');
-// var eng_lang = document.getElementById('en');
-// var sve_lang = document.getElementById('sv');
+var eng_lang = document.getElementById('en');
+var sve_lang = document.getElementById('sv');
+var switchblock = document.getElementById('switch_block');
+
+function changeLang(x) {
+
+switchblock.style.left = '50%';
+
+}
 //
 //
 // $("input[type=checkbox]").change(function() {
