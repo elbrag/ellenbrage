@@ -27,6 +27,12 @@ a {
   text-decoration: none;
 }
 
+button {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
 /*--Header--*/
 
 /*--Menu--*/
@@ -101,6 +107,21 @@ header {
   letter-spacing: 6px;
   font-size: 24px;
   color: #fff;
+}
+
+.lang_items {
+  overflow: hidden;
+  text-align: center;
+  padding: 24px 0 12px 0;
+}
+
+.lang_item {
+  display: inline;
+  padding: 12px;
+  background-color: #4D4DFF;
+  color: #fff;
+  border-radius: 0;
+  cursor: pointer;
 }
 
 /* The switch - the box around the slider */
