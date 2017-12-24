@@ -103,20 +103,61 @@ header {
   color: #fff;
 }
 
-.lang-ul {
-
+/* The switch - the box around the slider */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
 }
 
-.lang-item {
-  text-align: center;
+/* Hide default HTML checkbox */
+.switch input {
+  display:none;
 }
 
-.lang-item a {
-  font-size: 14px;
+/* The slider */
+.checkslider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #0000c4;
+  -webkit-transition: .4s;
+  transition: .4s;
+  border-radius: 34px;
 }
 
-.lang-item:before {
-  content: none;
+.checkslider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.checkinput:checked + .checkslider {
+  background-color: #00008e;
+}
+
+.checkinput:focus + .checkslider {
+  box-shadow: 0 0 1px #00008e;
+}
+
+.checkinput:checked + .checkslider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+.checkslider:before {
+  border-radius: 50%;
 }
 
 

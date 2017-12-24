@@ -8,8 +8,23 @@
 
         <?php wp_nav_menu( array('menu' => 'Menu', 'container' => '', 'items_wrap' => '<ul class="main-ul">%3$s</ul>' )); ?>
 
-        <ul class='lang-ul'><?php pll_the_languages();?></ul>
+        <label class="switch">
+          <input class='checkinput' type="checkbox" onclick="checklang()">
+          <span class="checkslider"></span>
+        </label>
+        <ul class='lang-ul'>
 
+          <?php $languages = pll_the_languages(array('raw'=>1));
+          foreach($languages as $lang) {
+            ?>
+            <li><a href='<?php echo $lang[url]; ?>' id='<?php echo $lang[slug]; ?>'></a></li>
+            <?php
+          }
+
+          ?>
+
+        </ul>
+<!-- pll_the_languages(array('raw'=>1)); -->
       </div>
 
     </nav>

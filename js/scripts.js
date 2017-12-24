@@ -1,7 +1,5 @@
 var menuicon = document.getElementById('menu-symb');
 
-
-
 function openMenu(x){
 
   x.classList.toggle("change");
@@ -15,3 +13,14 @@ function openMenu(x){
   }
 
 };
+
+
+var checkinput = document.querySelector('.checkinput');
+var eng_lang = document.querySelector('.lang-item-en');
+var sve_lang = document.querySelector('.lang-item-sv').children;
+
+function checklang() {
+  if (checkinput.checked) {
+    sve_lang.click();
+  }
+}
