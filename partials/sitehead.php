@@ -1,8 +1,11 @@
 <header>
     <nav class='main-nav'>
 
-      <a href="<?php echo home_url();?>"><div id='logo'></div></a>
-      <div id='menu-symb' onclick="openMenu(this)" title="Menu"></div>
+      <div id='logocontainer'>
+        <a href="<?php echo home_url();?>"><div id='logo'></div></a>
+      </div>
+        <div id='menu-symb' onclick="openMenu(this)" title="Menu"></div>
+      </div>
 
       <div class='main-menu'>
 
