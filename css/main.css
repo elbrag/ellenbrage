@@ -80,8 +80,9 @@ header {
   margin-top: 64px;
   background-color: #FFF;
   width: 100%;
-  padding: 12px 0 24px 0;
+  padding: 0 0 24px 0;
   box-sizing: border-box;
+  box-shadow: 0 30px 80px rgba(0,0,180,0.05);
 }
 
 .menu-item {
@@ -124,14 +125,23 @@ header {
   background-color: transparent;
   border-radius: 0;
   cursor: pointer;
+  text-transform: lowercase;
+  font-variant: small-caps;
+  font-size: 14px;
+  letter-spacing: 2px;
+  font-weight: 300;
 }
 
 .switch_container {
   width: 100px;
   text-align: center;
-  margin: 0 85%;
+  float: right;
 }
 
+.lang_items a.active button {
+  color: #0000FF;
+  font-weight: bold;
+}
 
 
 /*--Page: Work--*/

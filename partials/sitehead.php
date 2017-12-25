@@ -11,8 +11,21 @@
                   <?php $languages = pll_the_languages(array('raw'=>1));
                   foreach($languages as $lang) {
                     ?>
+                    <?php
 
-                        <a href='<?php echo $lang[url]; ?>' id='<?php echo $lang[slug]; ?>'>
+                    if ($lang[slug] == 'en') {
+                      $setlang = 'en_GB';
+                    } elseif ($lang[slug] == 'sv') {
+                      $setlang = 'sv_SE';
+                    }
+
+                     ?>
+
+                        <a class='<?php
+                        if (get_locale() == $setlang) {
+                          echo 'active';
+                        } ?>'
+                        href='<?php echo $lang[url]; ?>' id='<?php echo $lang[slug]; ?>'>
                           <button class='lang_item'>
                               <?php echo $lang[slug]; ?>
                           </button>
