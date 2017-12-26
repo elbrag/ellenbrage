@@ -1,10 +1,5 @@
-
           </main>
-          <footer>
-            <p>
-              © copyright Ellen Brage 2017
-            </p>
-            <?php wp_footer() ?>
+          <footer id='mainfooter'>
 
             <?php
 $scripts = get_template_directory_uri() . "/js/scripts.js";
@@ -15,6 +10,7 @@ $scripts = get_template_directory_uri() . "/js/scripts.js";
 
           </footer>
 
+          <?php wp_footer() ?>
       </body>
 
 </html>

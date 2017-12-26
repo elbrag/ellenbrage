@@ -161,7 +161,7 @@
           * labels do not cover post updated, error, and related messages.  You'll need to filter the
           * 'post_updated_messages' hook to customize those.
           */
-        'taxonomies'            => array( /*'category', ' tag'*/'project_skill', 'project_type' ),
+        'taxonomies'            => array( /*'category', ' tag'*/ 'project_category' ),
          'labels' => array(
              'name'               => __( 'Projects',                   'project-textdomain' ),
              'singular_name'      => __( 'Project',                    'project-textdomain' ),

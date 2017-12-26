@@ -44,16 +44,15 @@ header {
 }
 
 #logocontainer {
-  width: 80px;
-  height: 24px;
-  position: absolute;
-  top: 21px;
-  left: 24px;
+  width: 20%;
 }
 
 #logocontainer a {
-  width: inherit;
-  height: inherit;
+  width: 80px;
+  height: 24px;
+  top: 21px;
+  left: 24px;
+  position: absolute;
 }
 
 #logo {
@@ -130,7 +129,7 @@ header {
 .lang_item {
   text-align: center;
   display: inline;
-  padding: 12px;
+  padding: 12px 6px;
   background-color: transparent;
   border-radius: 0;
   cursor: pointer;
@@ -152,6 +151,15 @@ header {
   font-weight: bold;
 }
 
+/*--Page standards--*/
+
+main {
+}
+
+#contentmargins_1 {
+  margin: 72px auto;
+  width: 90%;
+}
 
 /*--Page: Work--*/
 
@@ -163,6 +171,14 @@ header {
 
 /*--Footer--*/
 
+#mainfooter {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 12px;
+  background-color: #0000FF;
+}
+
 /*=====================================640PX========================================*/
 
 @media (min-width: 640px) {
@@ -170,6 +186,12 @@ header {
   /*--Header--*/
 
   #logocontainer {
+    width: 23%;
+    float: left;
+    overflow: hidden;
+  }
+
+  #logocontainer a {
     width: 100px;
     height: 30px;
     margin-top: 28px;
@@ -197,7 +219,7 @@ header {
     margin-top: 21px;
     padding: 0;
     background-color: transparent;
-    width: 75%;
+    width: 77%;
   }
 
   .main-ul {
@@ -217,6 +239,11 @@ header {
     padding-right: 11px;
   }
 
+  .menu-item.active:before {
+    padding-right: 11px;
+    font-size: 14px;
+  }
+
   .menu-item a {
     font-size: 19px;
   }
@@ -225,29 +252,18 @@ header {
     float: right;
   }
 
-  .lang_item {
-    display: inline;
-    padding: 12px;
-    background-color: transparent;
-    border-radius: 0;
-    cursor: pointer;
-    text-transform: lowercase;
-    font-variant: small-caps;
-    font-size: 14px;
-    letter-spacing: 2px;
-    font-weight: 300;
-  }
-
-  .switch_container {
-    width: 100px;
-    text-align: center;
-    float: right;
-  }
-
   .lang_items a.active button {
     color: #0000FF;
     font-weight: bold;
   }
+
+  /*--Page standards--*/
+
+  #contentmargins_1 {
+    margin: 72px auto;
+    width: 80%;
+  }
+
 
   /*--Page: Work--*/
 
@@ -268,6 +284,10 @@ header {
   /*--Header--*/
 
   #logocontainer {
+    width: 17%;
+  }
+
+  #logocontainer a {
     width: 120px;
     height: 36px;
     margin-top: 24px;
@@ -276,13 +296,30 @@ header {
   /*--Menu--*/
 
   .main-menu {
-    width: 80%;
-    float: left;
-    margin-left: 48px;
+    width: 83%;
+  }
+
+  .menu-item {
+    margin-right: 32px;
   }
 
   .menu-item:before {
     padding-right: 18px;
+  }
+
+  .menu-item.active:before {
+    padding-right: 18px;
+  }
+
+  .menu-item a {
+    font-size: 19px;
+  }
+
+  /*--Page standards--*/
+
+  #contentmargins_1 {
+    margin: 72px auto;
+    width: 80%;
   }
 
   /*--Page: Work--*/

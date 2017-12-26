@@ -1,3 +1,30 @@
+ $(document).ready(function(){
+
+   var menu = document.querySelector('.main-menu');
+
+      function windowSize() {
+        windowWidth = window.innerWidth ? window.innerWidth : $(window).width();
+        return windowWidth;
+      }
+
+      $(window).resize(function() {
+
+            windowSize();
+
+            if (windowSize() >= 640) {
+              menu.style.display = 'block';
+            } else {
+              menu.style.display = 'none';
+            }
+
+      });
+
+});
+
+
+
+//hamburger menu
+
 var menuicon = document.getElementById('menu-symb');
 
 function openMenu(x){
@@ -13,50 +40,3 @@ function openMenu(x){
   }
 
 };
-
-//
-// var checkinput = document.querySelector('.checkinput');
-// var eng_lang = document.getElementById('en');
-// var sve_lang = document.getElementById('sv');
-// var switchblock = document.getElementById('switch_block');
-//
-// function changeLang(x) {
-//
-// switchblock.style.left = '50%';
-//
-// }
-//
-//
-// $("input[type=checkbox]").change(function() {
-//
-//     if (checkinput.checked) {
-//       sve_lang.click();
-//     } else {
-//       eng_lang.click();
-//     }
-//
-// });
-
-
-// function checklang(x) {
-//
-//
-
-
-  // var sve = false;
-  // var eng = true;
-  //
-  // if (checkinput.checked) {
-  //
-  //     if (eng = true) {
-  //       sve_lang.click();
-  //       sve = true;
-  //     }
-  //
-  //     if (sve = true) {
-  //       eng_lang.click();
-  //       eng = true;
-  //     }
-  //   }
-
-  // }

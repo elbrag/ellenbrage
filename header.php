@@ -15,5 +15,14 @@
     <?php wp_head(); ?>
   </head>
 
-  <body>
+  <?php
+
+  /*code to figure out user's theme choice*/
+
+  $theme = 'swiss';
+
+   ?>
+
+  <body id='<?php echo $theme ?>'>
+
     <?php require("partials/sitehead.php"); ?>
