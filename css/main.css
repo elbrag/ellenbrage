@@ -8,6 +8,21 @@ body {
   margin: 0;
 }
 
+/*this is to lock scrolling past bottom/top of page: uncomment when finished*/
+
+/* @media (min-width: 640px) {
+    html {
+        overflow: hidden;
+        height: 100%;
+    }
+
+    body {
+        height: 100%;
+        overflow: auto;
+    }
+} */
+/*--*/
+
 p {
   margin: 0;
   padding: 0;
@@ -188,7 +203,6 @@ section {
 }
 
 #about p {
-  margin-bottom: 36px;
   width: 100%;
 }
 
@@ -310,34 +324,32 @@ section {
   }
 
   #about p {
-    width: 50%;
+    width: 55%;
     box-sizing: border-box;
     margin-bottom: 0;
   }
 
-  #about section:nth-child(even) p{
+  #about section:nth-child(odd) p{
     float: left;
     padding-left: 42px;
   }
 
-  #about section:nth-child(odd) p{
+  #about section:nth-child(even) p{
     float: right;
     padding-right: 42px;
   }
 
   #about .image{
-    width: 50%;
-    margin-bottom: 0;
-  }
-
-  #about section:nth-child(even) .image{
-    width: 50%;
-    float: left;
+    width: 45%;
     margin-bottom: 0;
   }
 
   #about section:nth-child(odd) .image{
-    width: 50%;
+    float: left;
+    margin-bottom: 0;
+  }
+
+  #about section:nth-child(even) .image{
     float: right;
     margin-bottom: 0;
   }
