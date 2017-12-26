@@ -11,8 +11,14 @@
 if( have_posts() ) {
    while ( have_posts() ) {
      the_post();
+     ?>
+        <div id='contact'>
+     <?php
+            the_content();
 
-     the_content();
+    ?>
+        </div><!--end of page specific tag-->
+    <?php
 
    }
 }

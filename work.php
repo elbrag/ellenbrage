@@ -17,7 +17,7 @@ if( have_posts() ) {
             the_content();
 
     ?>
-        </div>
+        </div><!--end of page specific tag-->
     <?php
 
    }

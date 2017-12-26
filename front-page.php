@@ -6,12 +6,12 @@ if( have_posts() ) {
    while ( have_posts() ) {
      the_post();
      ?>
-        <div id='contentmargins_1'>
+        <div id='home'>
      <?php
             the_content();
 
     ?>
-        </div>
+        </div><!--end of page specific tag-->
     <?php
 
    }
