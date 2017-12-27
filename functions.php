@@ -17,7 +17,6 @@ function addthemesupport(){
 add_action( 'after_setup_theme', 'addthemesupport' );
 
 
-//adding the second css sheet
 
 $handle = "ellenbrage";
 $src = get_template_directory_uri() . "/css/main.css";
