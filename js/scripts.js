@@ -41,8 +41,20 @@ function openMenu(x){
 
 };
 
-function check(category){
-  var checkBox = document.getElementById(category);
-
-  alert(category.innerHTML);
-}
+$(document).ready(function(){
+        $("input:checkbox").change(function() {
+            if($(this).is(":checked")) {
+                $.ajax({
+                    url: 'on_off.aspx',
+                    type: 'POST',
+                    data: { strID:$(this).attr("id"), strState:"1" }
+                });
+            } else {
+                $.ajax({
+                    url: 'on_off.aspx',
+                    type: 'POST',
+                    data: { strID:$(this).attr("id"), strState:"0" }
+                });
+            }
+        });
+    });

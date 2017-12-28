@@ -1,19 +1,17 @@
-<?php
-/*
- * Template Name: Work
- */
-?>
-
 <?php get_header(); ?>
 
 <div id='work'>
 
+
+<?php
+if( have_posts() ) {
+?>
   <section id='category_area'>
 
 
-<?php echo do_shortcode( '[searchandfilter taxonomies="project-category" types="checkbox" hide_empty="1"]' );
+  <?php echo do_shortcode( '[searchandfilter taxonomies="project-category" types="checkbox" hide_empty="1"]' );
 
-$terms = get_terms(array('taxonomy' => 'project-category', 'hide_empty' => true));
+  $terms = get_terms(array('taxonomy' => 'project-category', 'hide_empty' => true));
 
           foreach ($terms as $value) { ?>
            <span class="categories">
@@ -25,22 +23,11 @@ $terms = get_terms(array('taxonomy' => 'project-category', 'hide_empty' => true)
 
   </section>
 
-  <?php
-
-        $args = array(
-          'post_type' => 'project',
-          'posts_per_page' => -1
-        );
-
-        $query = new WP_Query( $args );
-  ?>
-
   <section id='work_grid'>
-
 <?php
-if( $query->have_posts() ) {
-   while ( $query->have_posts() ) {
-     $query->the_post();
+
+   while ( have_posts() ) {
+     the_post();
      ?>
               <div class='grid_project'>
 
