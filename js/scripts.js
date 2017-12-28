@@ -40,3 +40,9 @@ function openMenu(x){
   }
 
 };
+
+function check(category){
+  var checkBox = document.getElementById(category);
+
+  alert(category.innerHTML);
+}

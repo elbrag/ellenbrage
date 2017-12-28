@@ -194,15 +194,31 @@ section {
 
 /*--Single: Work--*/
 
-#single {
+#category_area {
 
 }
 
-.project_grid {
+.categories {
+  text-transform: lowercase;
+  font-variant: small-caps;
+  letter-spacing: 4px;
+  margin-right: 18px;
+}
+
+#work_grid {
+  margin-top: 54px;
+}
+
+.grid_project {
   width: 100%;
+  margin-bottom: 54px;
 }
 
-.project_grid p {
+.grid_project {
+
+}
+
+.grid_project p {
   font-size: 14px;
   text-transform: lowercase;
   font-variant: small-caps;
