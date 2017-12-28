@@ -13,16 +13,7 @@ if( have_posts() ) {
 
 
   <?php echo do_shortcode( '[searchandfilter taxonomies="project-category" types="checkbox" hide_empty="1"]' );
-
-  $terms = get_terms(array('taxonomy' => 'project-category', 'hide_empty' => true));
-
-          foreach ($terms as $value) { ?>
-           <span class="categories">
-             <a href="/project-category/<?php echo $value->slug ?>">
-           <?php echo $value->name ?>
-              </a>
-          </span>
-        <?php }?>
+?>
 
   </section>
 
