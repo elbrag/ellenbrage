@@ -13,6 +13,7 @@
 
 <?php echo do_shortcode( '[searchandfilter taxonomies="project-category" types="checkbox" hide_empty="1"]' );
 
+
 ?>
   </section>
 
