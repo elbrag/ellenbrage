@@ -179,9 +179,15 @@ header {
 
 /*--Page standards--*/
 
-#about, #work, #home, #contact, #single {
+#about, #home, #contact, #single {
   margin: 54px auto 72px auto;
   width: 90%;
+  overflow: hidden;
+}
+
+#work {
+  margin: 54px auto 72px auto;
+  width: 95%;
   overflow: hidden;
 }
 
@@ -213,6 +219,11 @@ input[type=submit] {
   margin-right: 18px;
 }
 
+#category_area {
+  width: 95%;
+  margin: 0 auto;
+}
+
 #category_area input {
   cursor: pointer;
 }
@@ -224,10 +235,6 @@ input[type=submit] {
 .grid_project {
   width: 100%;
   margin-bottom: 54px;
-}
-
-.grid_project {
-
 }
 
 .grid_project p {
@@ -398,12 +405,23 @@ div.wpcf7-mail-sent-ok {
 
   /*--Page standards--*/
 
-  #about, #work, #home, #contact, #single {
+  #about, #home, #contact, #single {
     width: 80%;
   }
 
-
   /*--Page: Work--*/
+
+  #category_area {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .grid_project {
+    width: 50%;
+    float: left;
+  }
+
+
 
   /*--Single: Work--*/
 
@@ -501,9 +519,11 @@ div.wpcf7-mail-sent-ok {
 
   /*--Page standards--*/
 
-  #about, #work, #home, #contact, #single {
+  #about, #home, #contact, #single {
     width: 80%;
   }
+
+
   /*--Page: Work--*/
 
   /*--Single: Work--*/
