@@ -11,11 +11,42 @@
   <section id='category_area'>
 
 
-<?php echo do_shortcode( '[searchandfilter taxonomies="project-category" types="checkbox" hide_empty="1"]' );
+<!-- echo do_shortcode( '[searchandfilter taxonomies=",project-category" types=",checkbox" hide_empty=",1"]' ); -->
 
 
-?>
-  </section>
+<form method='POST' action=''>
+
+  <?php
+    $terms = get_terms(array('taxonomy' => 'project-category', 'hide_empty' => true));
+
+            foreach ($terms as $value) { ?>
+             <input class="categories" type="checkbox" name="checkbox[]" <?php if (in_array($value->name, $_POST['checkbox'])) echo "checked='checked'"; ?> value='<?php echo $value->name ?>'>
+
+               <a href="/project-category/<?php echo $value->slug ?>">
+             <?php echo $value->name ?>
+                </a>
+            </input>
+          <?php }?>
+
+          <input type='submit'></input>
+
+    </section>
+
+  <?php
+
+
+
+  if (isset($_POST['checkbox']) && !empty($_POST['checkbox'])) {
+
+    foreach ($_POST['checkbox'] as $check) {
+      echo $check;
+    }
+
+
+  }
+
+
+  ?>
 
   <?php
 
