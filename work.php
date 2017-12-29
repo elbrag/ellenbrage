@@ -34,22 +34,6 @@
 
   <?php
 
-
-
-  if (isset($_POST['checkbox']) && !empty($_POST['checkbox'])) {
-
-    foreach ($_POST['checkbox'] as $check) {
-      echo $check;
-    }
-
-
-  }
-
-
-  ?>
-
-  <?php
-
         $args = array(
           'post_type' => 'project',
           'posts_per_page' => -1
@@ -65,7 +49,27 @@ if( $query->have_posts() ) {
    while ( $query->have_posts() ) {
      $query->the_post();
      ?>
+
+       <?php
+
+       if (isset($_POST['checkbox']) && !empty($_POST['checkbox'])) {
+
+         foreach ($_POST['checkbox'] as $check) {
+           echo $check;
+         }
+
+       }
+
+       ?>
               <div class='grid_project'>
+
+                <?php
+
+                foreach (get_the_terms(get_the_ID(), 'project-category') as $cat) {
+                   echo $cat->name;
+                }
+
+                ?>
 
                 <a href='<?php the_permalink(); ?>'>
                   <?php
