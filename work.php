@@ -19,7 +19,8 @@
     $terms = get_terms(array('taxonomy' => 'project-category', 'hide_empty' => true));
 
             foreach ($terms as $value) { ?>
-             <input class="categories" type="checkbox" name="checkbox[]"
+            <label class="categories">
+             <input type="checkbox" name="checkbox[]"
 
                <?php
                if ((in_array($value->name, $_POST['checkbox'])) || (!isset($_POST['checkbox']))) echo "checked='checked'";
@@ -27,8 +28,8 @@
                value='<?php echo $value->name ?>'>
 
                 <?php echo $value->name ?>
-
             </input>
+            </label>
           <?php }?>
 
           <input type='submit'></input>
