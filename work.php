@@ -52,27 +52,20 @@ if( $query->have_posts() ) {
 
        <?php
 
-       if (isset($_POST['checkbox']) && !empty($_POST['checkbox'])) {
-
-         foreach ($_POST['checkbox'] as $check) {
-           echo $check;
-         }
-
-       }
 
        foreach (get_the_terms(get_the_ID(), 'project-category') as $cat) {
 
-          // if ($cat->name == $check) {
-            ?>
-            <div class='grid_project <?php echo $cat->name; ?>'>
-            <?php
-          // }
-
+         $category = $cat->name;
 
        }
 
 
-       ?>
+       if (isset($_POST['checkbox']) && !empty($_POST['checkbox'])) {
+
+         foreach ($_POST['checkbox'] as $check) {
+            if ($check == $category) {
+              ?>
+              <div class='grid_project'>
 
                 <a href='<?php the_permalink(); ?>'>
                   <?php
@@ -89,7 +82,12 @@ if( $query->have_posts() ) {
                 </a>
 
               </div>
-    <?php
+
+              <?php
+            }
+         }
+       }
+
 
    }
 }
