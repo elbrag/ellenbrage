@@ -1,4 +1,18 @@
 <?php
+function setting_cookie() {
+ // setcookie('theme', $settheme, time()+60*60*24*30, COOKIEPATH, COOKIE_DOMAIN);
+ if (isset($_POST['settheme'])){
+
+   $settheme = $_POST['settheme'];
+
+     setcookie('theme', $settheme, time()+3600, '/');
+
+ }
+
+
+ // setcookie( 'theme', $settheme, time() + (30 * DAY_IN_SECONDS), COOKIEPATH, COOKIE_DOMAIN, is_ssl() );
+}
+add_action( 'init', 'setting_cookie' );
 
 require('includes/post_types.php');
 require('includes/taxonomies.php');
@@ -16,8 +30,16 @@ function addthemesupport(){
 
 add_action( 'after_setup_theme', 'addthemesupport' );
 
+//read existing cookie to set theme or create new one
+// if (isset($_COOKIE['settheme'])) {
+//   $settheme = $_COOKIE['settheme'];
+// } else {
+//   $settheme = "";
+// }
 
 
+
+//basic style sheet:
 $handle = "ellenbrage";
 $src = get_template_directory_uri() . "/css/main.css";
 $deps = null;
@@ -25,10 +47,29 @@ $ver = null;
 $media = "all";
 wp_register_style( $handle, $src, $deps, $ver, $media );
 
+
+//extra style sheet:
+$handle2 = "theme";
+
+if(isset($_COOKIE['theme'])) {
+  $theme = ($_COOKIE['theme']);
+  $src2 = get_template_directory_uri() . "/css/".$theme.".css";
+
+}
+$deps2 = null;
+$ver2 = null;
+$media2 = "all";
+wp_register_style( $handle2, $src2, $deps2, $ver2, $media2 );
+
+//load both of the style sheets
 function mytheme_enqueue_style() {
     wp_enqueue_style( 'ellenbrage', get_stylesheet_uri() );
+    wp_enqueue_style( 'theme', get_stylesheet_uri() );
 }
 add_action( 'wp_enqueue_scripts', 'mytheme_enqueue_style' );
+
+
+
 
 //to make menu items change when active
 

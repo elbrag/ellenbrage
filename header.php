@@ -1,5 +1,16 @@
 <!DOCTYPE html>
+<?php
+// if (isset($_POST['settheme'])) {
+//   $settheme = $_POST['settheme'];
+//   setting_cookie($settheme);
+//   header('Location: ' . $_SERVER['HTTP_REFERER']);
+// }
+// if(isset($_COOKIE['theme'])) {
+//   echo $_COOKIE['theme'];
+// }
+?>
 <html>
+
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -12,6 +23,7 @@
     <script type="text/javascript">
         var templateUrl = '<?= get_bloginfo("template_url"); ?>';
     </script>
+
     <?php wp_head(); ?>
   </head>
 

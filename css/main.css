@@ -237,6 +237,10 @@ input[type=submit] {
   margin-bottom: 54px;
 }
 
+.grid_project img {
+  
+}
+
 .grid_project p {
   font-size: 14px;
   text-transform: lowercase;
