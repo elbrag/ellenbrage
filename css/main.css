@@ -190,19 +190,31 @@ section {
   margin-bottom: 54px;
 }
 
+input[type=submit] {
+  text-transform: lowercase;
+  font-variant: small-caps;
+  letter-spacing: 6px;
+  font-size: 20px;
+  background-color: #0000FF;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
 /*--Page: Work--*/
 
 /*--Single: Work--*/
 
-#category_area {
-
-}
 
 .categories {
   text-transform: lowercase;
   font-variant: small-caps;
   letter-spacing: 4px;
   margin-right: 18px;
+}
+
+#category_area input {
+  cursor: pointer;
 }
 
 #work_grid {
@@ -284,21 +296,14 @@ section {
   margin: 6px 0 12px 0;
 }
 
-.wpcf7 input[type=submit] {
-  text-transform: lowercase;
-  font-variant: small-caps;
-  letter-spacing: 6px;
-  font-size: 20px;
-  background-color: #0000FF;
-  color: #fff;
-  border: none;
-  float: right;
-}
-
 div.wpcf7-mail-sent-ok {
   border: none;
   background-color: #eee;
   padding: 12px;
+}
+
+.wpcf7 input[type=submit] {
+  float: right;
 }
 
 /**/

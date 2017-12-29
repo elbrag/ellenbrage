@@ -32,7 +32,7 @@
             </label>
           <?php }?>
 
-          <input type='submit'></input>
+          <input type='submit' value='filter'></input>
 
     </section>
 

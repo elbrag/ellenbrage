@@ -1,5 +1,10 @@
 <?php get_header(); ?>
 
+<script>
+
+document.getElementById('menu-item-36').className += ' active';
+
+</script>
 
 <?php
 if( have_posts() ) {
