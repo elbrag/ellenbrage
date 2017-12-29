@@ -11,8 +11,7 @@
   <section id='category_area'>
 
 
-<!-- echo do_shortcode( '[searchandfilter taxonomies=",project-category" types=",checkbox" hide_empty=",1"]' ); -->
-
+<!--keeping checkbox checked: https://stackoverflow.com/questions/12541419/php-keep-checkbox-checked-after-submitting-form -->
 
 <form method='POST' action=''>
 
@@ -20,11 +19,15 @@
     $terms = get_terms(array('taxonomy' => 'project-category', 'hide_empty' => true));
 
             foreach ($terms as $value) { ?>
-             <input class="categories" type="checkbox" name="checkbox[]" <?php if (in_array($value->name, $_POST['checkbox'])) echo "checked='checked'"; ?> value='<?php echo $value->name ?>'>
+             <input class="categories" type="checkbox" name="checkbox[]"
 
-               <a href="/project-category/<?php echo $value->slug ?>">
-             <?php echo $value->name ?>
-                </a>
+               <?php
+               if ((in_array($value->name, $_POST['checkbox'])) || (!isset($_POST['checkbox']))) echo "checked='checked'";
+               ?>
+               value='<?php echo $value->name ?>'>
+
+                <?php echo $value->name ?>
+
             </input>
           <?php }?>
 
@@ -86,6 +89,26 @@ if( $query->have_posts() ) {
               <?php
             }
          }
+       } elseif (!isset($_POST['checkbox'])) {
+         ?>
+         <div class='grid_project'>
+
+           <a href='<?php the_permalink(); ?>'>
+             <?php
+
+              the_post_thumbnail('single_large');
+
+              echo "<br/>";
+
+              echo "<p>";
+              the_field('project_title');
+              echo "</p>";
+
+              ?>
+           </a>
+
+         </div>
+         <?php
        }
 
 
