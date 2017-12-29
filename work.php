@@ -60,16 +60,19 @@ if( $query->have_posts() ) {
 
        }
 
+       foreach (get_the_terms(get_the_ID(), 'project-category') as $cat) {
+
+          // if ($cat->name == $check) {
+            ?>
+            <div class='grid_project <?php echo $cat->name; ?>'>
+            <?php
+          // }
+
+
+       }
+
+
        ?>
-              <div class='grid_project'>
-
-                <?php
-
-                foreach (get_the_terms(get_the_ID(), 'project-category') as $cat) {
-                   echo $cat->name;
-                }
-
-                ?>
 
                 <a href='<?php the_permalink(); ?>'>
                   <?php
