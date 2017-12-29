@@ -55,6 +55,7 @@ if( $query->have_posts() ) {
 
        <?php
 
+// get the category that each post belongs to so we can compare it to what is checked above
 
        foreach (get_the_terms(get_the_ID(), 'project-category') as $cat) {
 
@@ -89,6 +90,9 @@ if( $query->have_posts() ) {
               <?php
             }
          }
+
+//default: all posts showing. Also all checkboxes are checked (see the <input> above)
+
        } elseif (!isset($_POST['checkbox'])) {
          ?>
          <div class='grid_project'>
