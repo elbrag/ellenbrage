@@ -211,10 +211,21 @@ input[type=submit] {
 
 #slider_area {
   margin: 0 auto;
-  width: 90%;
+  text-align: center;
+  overflow: hidden;
 }
 
 #slider_area form {
+  display: inline;
+  overflow: hidden;
+}
+
+#leftarrow {
+  float: left;
+}
+
+#rightarrow {
+  float: right;
 }
 
 .prev_btn {
@@ -226,11 +237,12 @@ input[type=submit] {
   opacity: 0;
 }
 
-.prevbtn_style {
+.prevbtn_style, .nextbtn_style {
   position: absolute;
-  width: 45px;
-  height: 45px;
+  width: inherit;
+  height: inherit;
   color: #fff;
+  font-size: 32px;
 }
 
 .prevbtn_style:before {
@@ -246,13 +258,6 @@ input[type=submit] {
   opacity: 0;
 }
 
-.nextbtn_style {
-  position: absolute;
-  color: #fff;
-  width: 45px;
-  height: 45px;
-}
-
 .nextbtn_style:before {
   content: ' \276F';
 }
@@ -260,6 +265,7 @@ input[type=submit] {
 .cur_theme {
   text-align: center;
   padding: 0 54px;
+  display: inline;
 }
 
 

@@ -27,7 +27,7 @@ for ($x = 0; $x <= count($themeList); $x++) {
 
  <div id='slider_area'>
 
-    <form method='POST' action=''>
+    <form id='leftarrow' method='POST' action=''>
 
         <input type='hidden' name='settheme' value='<?php echo $prev ?>'></input>
 
@@ -40,7 +40,7 @@ for ($x = 0; $x <= count($themeList); $x++) {
 
     <h2 class='cur_theme'><?php echo $settheme;?></h2>
 
-    <form method='POST' action=''>
+    <form id='rightarrow' method='POST' action=''>
 
         <input type='hidden' name='settheme' value='<?php echo $next ?>'></input>
         <label class='next_btn'>
