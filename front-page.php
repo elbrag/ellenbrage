@@ -4,24 +4,61 @@ get_header(); ?>
 
 <div id='home'>
 
-<form method='POST' name='settheme' action=''>
-
-    <input type='submit' name ='settheme' value='theme_1'></input>
-    <input type='submit' name ='settheme' value='theme_2'></input>
-    <input type='submit' name ='settheme' value='theme_3'></input>
-    <input type='submit' name ='settheme' value='theme_4'></input>
-    <input type='submit' name ='settheme' value='theme_5'></input>
-
-  <!-- <input type='submit'></input> -->
-</form>
-
 <?php
 
 if (isset($_COOKIE['theme'])) {
-  echo "current theme: ". ($_COOKIE['theme']);
+  $settheme = ($_COOKIE['theme']);
+}
+
+
+$themeList = array("theme_1", "theme_2", "theme_3", "theme_4", "theme_5");
+
+for ($x = 0; $x <= count($themeList); $x++) {
+
+  if ($themeList[$x] == $settheme) {
+
+    $prev = $themeList[$x-1];
+    $next = $themeList[$x+1];
+  }
+
 }
 
  ?>
+
+ <div id='slider_area'>
+
+    <form method='POST' action=''>
+
+        <input type='hidden' name='settheme' value='<?php echo $prev ?>'></input>
+
+        <label class='prev_btn'>
+            <input type='submit' name='prev' value=''></input>
+            <span class='prevbtn_style'></span>
+        </label>
+
+    </form>
+
+    <form method='POST' action=''>
+
+        <h2 class='cur_theme'><?php echo $settheme;?></h2>
+
+        <input type='hidden' name='settheme' value='<?php echo $next ?>'></input>
+        <label class='next_btn'>
+            <input type='submit' name='next' value=''></input>
+            <span class='nextbtn_style'></span>
+        </label>
+
+    </form>
+
+</div>
+
+<br/>
+<br/>
+<br/>
+<br/><br/>
+<br/>
+
+
 
 <br/>
 <br/><br/><br/>

@@ -1,19 +1,19 @@
 <?php
 function setting_cookie() {
- // setcookie('theme', $settheme, time()+60*60*24*30, COOKIEPATH, COOKIE_DOMAIN);
- if (isset($_POST['settheme'])){
+
+  if (!isset($_COOKIE['theme'])) {
+    setcookie('theme', 'theme_1', time()+3600, '/');
+    header('Location: ' . $_SERVER['HTTP_REFERER']);
+  }
+  if (isset($_POST['settheme'])){
 
    $settheme = $_POST['settheme'];
-
      setcookie('theme', $settheme, time()+3600, '/');
-
      header('Location: ' . $_SERVER['HTTP_REFERER']);
+     }
 
- }
-
-
- // setcookie( 'theme', $settheme, time() + (30 * DAY_IN_SECONDS), COOKIEPATH, COOKIE_DOMAIN, is_ssl() );
 }
+
 add_action( 'init', 'setting_cookie' );
 
 require('includes/post_types.php');
