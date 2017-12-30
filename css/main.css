@@ -212,16 +212,12 @@ input[type=submit] {
 #slider_area {
   margin: 0 auto;
   width: 90%;
-  overflow: hidden;
 }
 
-.slide_btn {
-
+#slider_area form {
 }
 
 .prev_btn {
-  float: left;
-  position: relative;
   cursor: pointer;
 }
 
@@ -242,8 +238,6 @@ input[type=submit] {
 }
 
 .next_btn {
-  float: left;
-  position: relative;
   cursor: pointer;
 }
 
@@ -266,7 +260,6 @@ input[type=submit] {
 .cur_theme {
   text-align: center;
   padding: 0 54px;
-  float: left;
 }
 
 
@@ -388,8 +381,8 @@ div.wpcf7-mail-sent-ok {
   position: fixed;
   bottom: 0;
   width: 100%;
-  height: 12px;
   background-color: #0000FF;
+  padding: 3px 0 6px 0;
 }
 
 /*=====================================640PX========================================*/

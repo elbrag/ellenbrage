@@ -38,9 +38,9 @@ for ($x = 0; $x <= count($themeList); $x++) {
 
     </form>
 
-    <form method='POST' action=''>
+    <h2 class='cur_theme'><?php echo $settheme;?></h2>
 
-        <h2 class='cur_theme'><?php echo $settheme;?></h2>
+    <form method='POST' action=''>
 
         <input type='hidden' name='settheme' value='<?php echo $next ?>'></input>
         <label class='next_btn'>
@@ -52,21 +52,6 @@ for ($x = 0; $x <= count($themeList); $x++) {
 
 </div>
 
-<br/>
-<br/>
-<br/>
-<br/><br/>
-<br/>
-
-
-
-<br/>
-<br/><br/><br/>
-
-<?php
-
-
-?>
 
 
 </div><!--end of page specific tag-->
