@@ -58,3 +58,6 @@ function openMenu(x){
 //             }
 //         });
 //     });
+
+
+/*slider*/

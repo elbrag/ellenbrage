@@ -2,37 +2,38 @@
 
 get_header(); ?>
 
+<div id='home'>
+
 <form method='POST' name='settheme' action=''>
-  <select name='settheme'>
-    <option value="theme_1">Theme 1</option>
-    <option value="theme_2">Theme 2</option>
-    <option value="theme_3">Theme 3</option>
-    <option value="theme_4">Theme 4</option>
-    <option value="theme_5">Theme 5</option>
-  </select>
-  <input type='submit'></input>
+
+    <input type='submit' name ='settheme' value='theme_1'></input>
+    <input type='submit' name ='settheme' value='theme_2'></input>
+    <input type='submit' name ='settheme' value='theme_3'></input>
+    <input type='submit' name ='settheme' value='theme_4'></input>
+    <input type='submit' name ='settheme' value='theme_5'></input>
+
+  <!-- <input type='submit'></input> -->
 </form>
 
 <?php
 
-
-
-if( have_posts() ) {
-   while ( have_posts() ) {
-     the_post();
-     ?>
-        <div id='home'>
-
-
-
-
-
-        </div><!--end of page specific tag-->
-    <?php
-
-   }
+if (isset($_COOKIE['theme'])) {
+  echo "current theme: ". ($_COOKIE['theme']);
 }
+
+ ?>
+
+<br/>
+<br/><br/><br/>
+
+<?php
+
+
 ?>
+
+
+</div><!--end of page specific tag-->
+
 
 
 <?php get_footer(); ?>
