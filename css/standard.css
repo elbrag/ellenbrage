@@ -33,6 +33,10 @@ a {
 
 /*--Header--*/
 
+#logo {
+  background-image: url(../img/logo_1_blue.png);
+}
+
 /*--Menu--*/
 
 #menu-symb {
@@ -60,19 +64,93 @@ a {
   letter-spacing: 2px;
 }
 
+.lang_items a.active button {
+  color: #0000FF;
+}
+
 /*--Page standards--*/
+
+input[type=submit] {
+  background-color: #0000FF;
+}
+
 /*slider---*/
+
+.prevbtn_style, .nextbtn_style {
+  color: #fff;
+  font-size: 32px;
+}
+
+.prevbtn_style:before {
+  content: ' \276E';
+}
+
+.nextbtn_style:before {
+  content: ' \276F';
+}
+
 /*--Page: Work--*/
 
+.categories {
+  text-transform: lowercase;
+  font-variant: small-caps;
+  letter-spacing: 4px;
+}
+
+.grid_project p {
+  font-size: 14px;
+  text-transform: lowercase;
+  font-variant: small-caps;
+  letter-spacing: 4px;
+}
+
 /*--Single: Work--*/
+
+
+
 /*--Page: About--*/
+
+
+
 /*--Page: Contact--*/
 
 /*form*/
 
+.wpcf7 label {
+  font-size: 14px;
+  text-transform: lowercase;
+  font-variant: small-caps;
+  letter-spacing: 4px;
+}
+
+.wpcf7 input[type=text],
+.wpcf7 input[type=email] {
+  border: none;
+  border-bottom: 1px solid #000;
+  width: 99%;
+  margin: 6px 0 12px 0;
+}
+
+.wpcf7 textarea {
+  border: 1px solid #000;
+  resize: none;
+  width: 98%;
+  margin: 6px 0 12px 0;
+}
+
+div.wpcf7-mail-sent-ok {
+  border: none;
+  background-color: #eee;
+  padding: 12px;
+}
+
 /**/
 
 /*--Footer--*/
+
+#mainfooter {
+  background-color: #0000FF;
+}
 
 /*=====================================640PX========================================*/
 
@@ -81,6 +159,10 @@ a {
 /*--Header--*/
 
 /*--Menu--*/
+
+.lang_items a.active button {
+  color: #0000FF;
+}
 
 /*--Page standards--*/
 /*slider---*/

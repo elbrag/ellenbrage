@@ -72,7 +72,7 @@ header {
 #logo {
   width: inherit;
   height: inherit;
-  background-image: url(../img/logo_1_blue.png);
+  background-image: url(../img/logo_1_black.png);
   background-repeat: no-repeat;
   background-size: 100%;
 }
@@ -148,8 +148,6 @@ header {
   font-weight: 300;
 }
 
-/*härärdu*/
-
 .switch_container {
   width: 100px;
   text-align: center;
@@ -157,7 +155,6 @@ header {
 }
 
 .lang_items a.active button {
-  color: #0000FF;
   font-weight: bold;
 }
 
@@ -189,7 +186,6 @@ input[type=submit] {
 
 #slider_area {
   margin: 0 auto;
-  /* text-align: center; */
   overflow: hidden;
   display: flex;
   justify-content: space-between;
@@ -198,7 +194,6 @@ input[type=submit] {
 
 .prev, .next {
   position: relative;
-  /* cursor: pointer; */
   width: 16px;
   margin-top: -5px;
 }
@@ -230,7 +225,7 @@ input[type=submit] {
 
 .prevbtn_style, .nextbtn_style {
   position: absolute;
-  color: #fff;
+  color: #000;
   font-size: 32px;
 }
 
@@ -242,19 +237,9 @@ input[type=submit] {
   content: ' \276F';
 }
 
-.cur_theme {
-}
-
-
 /*--Page: Work--*/
 
-/*--Single: Work--*/
-
-
 .categories {
-  text-transform: lowercase;
-  font-variant: small-caps;
-  letter-spacing: 4px;
   margin-right: 18px;
 }
 
@@ -276,22 +261,14 @@ input[type=submit] {
   margin-bottom: 54px;
 }
 
-.grid_project img {
-
-}
-
 .grid_project p {
   font-size: 14px;
-  text-transform: lowercase;
-  font-variant: small-caps;
-  letter-spacing: 4px;
 }
+
+/*--Single: Work--*/
+
 
 /*--Page: About--*/
-
-#about {
-
-}
 
 #about h1, #about h2, #about h3 {
   text-align: center;
@@ -311,7 +288,6 @@ input[type=submit] {
   margin-bottom: 36px;
 }
 
-
 /*--Page: Contact--*/
 
 /*form*/
@@ -322,27 +298,19 @@ input[type=submit] {
 
 .wpcf7 label {
   font-size: 14px;
-  text-transform: lowercase;
-  font-variant: small-caps;
-  letter-spacing: 4px;
   margin-left: 2px;
 }
 
 .wpcf7 input[type=text],
 .wpcf7 input[type=email] {
-  border: none;
-  border-bottom: 1px solid #000;
   font-size: 18px;
   font-weight: 200;
-  width: 99%;
   margin: 6px 0 12px 0;
 }
 
 .wpcf7 textarea {
   font-size: 18px;
-  border: 1px solid #000;
   resize: none;
-  width: 98%;
   margin: 6px 0 12px 0;
 }
 
@@ -364,7 +332,7 @@ div.wpcf7-mail-sent-ok {
   position: fixed;
   bottom: 0;
   width: 100%;
-  background-color: #0000FF;
+  background-color: #FFF;
   padding: 3px 0;
 }
 
@@ -442,7 +410,7 @@ div.wpcf7-mail-sent-ok {
   }
 
   .lang_items a.active button {
-    color: #0000FF;
+    color: #000;
     font-weight: bold;
   }
 
