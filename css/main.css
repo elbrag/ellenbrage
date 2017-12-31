@@ -11,7 +11,7 @@ main {
 
 /*this is to lock scrolling past bottom/top of page: uncomment when finished*/
 
-/* @media (min-width: 640px) {
+@media (min-width: 640px) {
     html {
         overflow: hidden;
         height: 100%;
@@ -21,7 +21,7 @@ main {
         height: 100%;
         overflow: auto;
     }
-} */
+}
 /*--*/
 
 p {
