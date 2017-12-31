@@ -1,9 +1,13 @@
 /*--semantics reset and basics--*/
 
-
 body {
   margin: 0;
 }
+
+main {
+  margin-top: 136px;
+}
+
 
 /*this is to lock scrolling past bottom/top of page: uncomment when finished*/
 
@@ -95,6 +99,9 @@ header {
 .main-nav {
   background-color: #FFF;
   height: 64px;
+  position: fixed;
+  width: 100%;
+  top: 0;
 }
 
 .main-menu {
