@@ -36,28 +36,29 @@ if (isset($_COOKIE['theme'])) {
 
  <div id='slider_area'>
 
-    <form id='leftarrow' method='POST' action=''>
+   <span class='prev'>
+      <form method='POST' action=''>
 
-        <input type='hidden' name='settheme' value='<?php echo $prev ?>'></input>
+          <input type='hidden' name='settheme' value='<?php echo $prev ?>'></input>
 
-        <label class='prev_btn'>
-            <input type='submit' name='prev' value=''></input>
-            <span class='prevbtn_style'></span>
-        </label>
+              <input type='submit' name='prev' value=''></input>
+              <span class='prevbtn_style'></span>
 
-    </form>
+      </form>
+    </span>
 
-    <h2 class='cur_theme'><?php echo $settheme;?></h2>
+    <span class='theme_title'>
+      <h2 class='cur_theme'><?php echo $settheme;?></h2>
+    </span>
+    <span class='next'>
+      <form method='POST' action=''>
 
-    <form id='rightarrow' method='POST' action=''>
+          <input type='hidden' name='settheme' value='<?php echo $next ?>'></input>
+              <input type='submit' name='next' value=''></input>
+              <span class='nextbtn_style'></span>
 
-        <input type='hidden' name='settheme' value='<?php echo $next ?>'></input>
-        <label class='next_btn'>
-            <input type='submit' name='next' value=''></input>
-            <span class='nextbtn_style'></span>
-        </label>
-
-    </form>
+      </form>
+    </span>
 
 </div>
 

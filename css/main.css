@@ -1,31 +1,8 @@
 /*--semantics reset and basics--*/
 
-* {
-  font-family: 'Lato';
-}
 
 body {
   margin: 0;
-}
-
-#theme_1 {
-  background-color: #ffee00;
-}
-
-#theme_2 {
-  background-color: #ff4400;
-}
-
-#theme_3 {
-  background-color: #f644a1;
-}
-
-#theme_4 {
-  background-color: #9933bb;
-}
-
-#theme_5 {
-  background-color: #22ee00;
 }
 
 /*this is to lock scrolling past bottom/top of page: uncomment when finished*/
@@ -47,16 +24,12 @@ p {
   margin: 0;
   padding: 0;
   font-weight: 200;
-  letter-spacing: 0.4px;
   line-height: 28px;
 }
 
 h1, h2, h3, h4{
   margin: 0;
   padding: 0;
-  text-transform: lowercase;
-  font-variant: small-caps;
-  letter-spacing: 5px;
 }
 
 ul {
@@ -66,11 +39,6 @@ ul {
 
 li {
   list-style: none;
-}
-
-a {
-  color: #000;
-  text-decoration: none;
 }
 
 button {
@@ -112,7 +80,7 @@ header {
 /*--Menu--*/
 
 #menu-symb {
-  color: #0000FF;
+  color: #000;
   font-size: 36px;
   line-height: 42px;
   position: absolute;
@@ -149,23 +117,20 @@ header {
 .menu-item.active:before {
   content: ' \25C9';
   padding-right: 18px;
-  color: #0000FF;
+  color: #000;
   font-size: 15px;
 }
 
 .menu-item:before {
   content: ' \25EF';
   padding-right: 18px;
-  color: #0000FF;
+  color: #000;
   font-size: 14px;
 }
 
 .menu-item a {
-  text-transform: lowercase;
-  font-variant: small-caps;
-  letter-spacing: 6px;
   font-size: 20px;
-  color: #0000FF;
+  color: #000;
 }
 
 .lang_items {
@@ -179,12 +144,11 @@ header {
   background-color: transparent;
   border-radius: 0;
   cursor: pointer;
-  text-transform: lowercase;
-  font-variant: small-caps;
   font-size: 14px;
-  letter-spacing: 2px;
   font-weight: 300;
 }
+
+/*härärdu*/
 
 .switch_container {
   width: 100px;
@@ -217,13 +181,7 @@ section {
 }
 
 input[type=submit] {
-  text-transform: lowercase;
-  font-variant: small-caps;
-  letter-spacing: 6px;
-  font-size: 20px;
-  background-color: #0000FF;
-  color: #fff;
-  border: none;
+  background-color: transparent;
   cursor: pointer;
 }
 
@@ -231,36 +189,47 @@ input[type=submit] {
 
 #slider_area {
   margin: 0 auto;
-  text-align: center;
+  /* text-align: center; */
   overflow: hidden;
+  display: flex;
+  justify-content: space-between;
+  height: 36px;
 }
 
-#slider_area form {
-  display: inline;
-  overflow: hidden;
+.prev, .next {
+  position: relative;
+  /* cursor: pointer; */
+  width: 16px;
+  margin-top: -5px;
 }
 
-#leftarrow {
-  float: left;
-}
-
-#rightarrow {
-  float: right;
-}
-
-.prev_btn {
-  cursor: pointer;
-}
-
-.prev_btn input[type='submit'] {
+.prev input[type='submit'], .next input[type='submit'] {
   position: absolute;
   opacity: 0;
+  width: 50px;
+  height: 40px;
+  padding: 0;
+  z-index: 10;
+  top: 0px;
+}
+
+.prev input[type='submit'] {
+  left: -10px;
+}
+
+.next input[type='submit'] {
+  left: -20px;
+}
+
+.prevbtn_style {
+  text-align: left;
+}
+.nextbtn_style {
+  text-align: right;
 }
 
 .prevbtn_style, .nextbtn_style {
   position: absolute;
-  width: inherit;
-  height: inherit;
   color: #fff;
   font-size: 32px;
 }
@@ -269,23 +238,11 @@ input[type=submit] {
   content: ' \276E';
 }
 
-.next_btn {
-  cursor: pointer;
-}
-
-.next_btn input[type='submit'] {
-  position: absolute;
-  opacity: 0;
-}
-
 .nextbtn_style:before {
   content: ' \276F';
 }
 
 .cur_theme {
-  text-align: center;
-  padding: 0 54px;
-  display: inline;
 }
 
 
@@ -408,7 +365,7 @@ div.wpcf7-mail-sent-ok {
   bottom: 0;
   width: 100%;
   background-color: #0000FF;
-  padding: 3px 0 6px 0;
+  padding: 3px 0;
 }
 
 /*=====================================640PX========================================*/

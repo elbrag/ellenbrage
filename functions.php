@@ -50,9 +50,10 @@ $handle2 = "theme";
 
 if(isset($_COOKIE['theme'])) {
   $theme = ($_COOKIE['theme']);
-  $src2 = get_template_directory_uri() . "/css/".$theme.".css";
-
+} else {
+  $theme ='standard';
 }
+$src2 = get_template_directory_uri() . "/css/".$theme.".css";
 $deps2 = null;
 $ver2 = null;
 $media2 = "all";

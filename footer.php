@@ -4,61 +4,64 @@
             <?php
   //theme slider area---------------------//
 
-            $themeList = array("theme_1", "theme_2", "theme_3", "theme_4", "theme_5");
+
+  $themeList = array("theme_1", "theme_2", "theme_3", "theme_4", "theme_5");
 
 
-            if (isset($_COOKIE['theme'])) {
-              $settheme = ($_COOKIE['theme']);
+  if (isset($_COOKIE['theme'])) {
+    $settheme = ($_COOKIE['theme']);
 
-              for ($x = 0; $x <= count($themeList); $x++) {
+    for ($x = 0; $x <= count($themeList); $x++) {
 
-                if ($themeList[$x] == $settheme) {
+      if ($themeList[$x] == $settheme) {
 
-                  $prev = $themeList[$x-1];
-                  $next = $themeList[$x+1];
-                }
+        $prev = $themeList[$x-1];
+        $next = $themeList[$x+1];
+      }
 
-              }
+    }
 
-            } else {
-              $settheme = 'Standard';
-              $prev = $themeList[4];
-              $next = $themeList[0];
-            }
-
-
+  } else {
+    $settheme = 'Standard';
+    $prev = $themeList[4];
+    $next = $themeList[0];
+  }
 
 
 
-             ?>
 
-             <div id='slider_area'>
 
-                <form id='leftarrow' method='POST' action=''>
+   ?>
 
-                    <input type='hidden' name='settheme' value='<?php echo $prev ?>'></input>
+   <div id='slider_area'>
 
-                    <label class='prev_btn'>
-                        <input type='submit' name='prev' value=''></input>
-                        <span class='prevbtn_style'></span>
-                    </label>
+     <span class='prev'>
+        <form method='POST' action=''>
 
-                </form>
+            <input type='hidden' name='settheme' value='<?php echo $prev ?>'></input>
 
-                <h2 class='cur_theme'><?php echo $settheme;?></h2>
+                <input type='submit' name='prev' value=''></input>
+                <span class='prevbtn_style'></span>
 
-                <form id='rightarrow' method='POST' action=''>
+        </form>
+      </span>
 
-                    <input type='hidden' name='settheme' value='<?php echo $next ?>'></input>
-                    <label class='next_btn'>
-                        <input type='submit' name='next' value=''></input>
-                        <span class='nextbtn_style'></span>
-                    </label>
+      <span class='theme_title'>
+        <h2 class='cur_theme'><?php echo $settheme;?></h2>
+      </span>
+      <span class='next'>
+        <form method='POST' action=''>
 
-                </form>
+            <input type='hidden' name='settheme' value='<?php echo $next ?>'></input>
+                <input type='submit' name='next' value=''></input>
+                <span class='nextbtn_style'></span>
 
-            </div>
-  <!--theme slider end-------------------->     
+        </form>
+      </span>
+
+  </div>
+
+  <!--theme slider end-------------------->
 <?php
 
 $scripts = get_template_directory_uri() . "/js/scripts.js";
