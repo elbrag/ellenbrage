@@ -8,6 +8,26 @@ body {
   margin: 0;
 }
 
+#theme_1 {
+  background-color: #ffee00;
+}
+
+#theme_2 {
+  background-color: #ff4400;
+}
+
+#theme_3 {
+  background-color: #f644a1;
+}
+
+#theme_4 {
+  background-color: #9933bb;
+}
+
+#theme_5 {
+  background-color: #22ee00;
+}
+
 /*this is to lock scrolling past bottom/top of page: uncomment when finished*/
 
 /* @media (min-width: 640px) {

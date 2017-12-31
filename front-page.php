@@ -6,22 +6,31 @@ get_header(); ?>
 
 <?php
 
-if (isset($_COOKIE['theme'])) {
-  $settheme = ($_COOKIE['theme']);
-}
-
-
 $themeList = array("theme_1", "theme_2", "theme_3", "theme_4", "theme_5");
 
-for ($x = 0; $x <= count($themeList); $x++) {
 
-  if ($themeList[$x] == $settheme) {
+if (isset($_COOKIE['theme'])) {
+  $settheme = ($_COOKIE['theme']);
 
-    $prev = $themeList[$x-1];
-    $next = $themeList[$x+1];
+  for ($x = 0; $x <= count($themeList); $x++) {
+
+    if ($themeList[$x] == $settheme) {
+
+      $prev = $themeList[$x-1];
+      $next = $themeList[$x+1];
+    }
+
   }
 
+} else {
+  $settheme = 'Standard';
+  $prev = $themeList[4];
+  $next = $themeList[0];
 }
+
+
+
+
 
  ?>
 

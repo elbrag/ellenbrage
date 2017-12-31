@@ -1,14 +1,4 @@
 <!DOCTYPE html>
-<?php
-// if (isset($_POST['settheme'])) {
-//   $settheme = $_POST['settheme'];
-//   setting_cookie($settheme);
-//   header('Location: ' . $_SERVER['HTTP_REFERER']);
-// }
-// if(isset($_COOKIE['theme'])) {
-//   echo $_COOKIE['theme'];
-// }
-?>
 <html>
 
   <head>
@@ -28,13 +18,17 @@
   </head>
 
   <?php
+  /*code to figure out user's theme choice, uncomment to use this solution*/
 
-  /*code to figure out user's theme choice*/
+  // if (isset($_COOKIE['theme'])) {
+  //   $theme = $_COOKIE['theme'];
+  // } else {
+  //   $theme = "standard";
+  // }
 
-  $theme = 'swiss';
+  ?>
 
-   ?>
-
-  <body id='<?php echo $theme ?>'>
+  <!-- <body id='<?php //echo $theme ?>'> -->
+  <body>
 
     <?php require("partials/sitehead.php"); ?>

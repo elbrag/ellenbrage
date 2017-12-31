@@ -1,10 +1,6 @@
 <?php
 function setting_cookie() {
 
-  if (!isset($_COOKIE['theme'])) {
-    setcookie('theme', 'theme_1', time()+3600, '/');
-    header('Location: ' . $_SERVER['HTTP_REFERER']);
-  }
   if (isset($_POST['settheme'])){
 
    $settheme = $_POST['settheme'];
@@ -13,7 +9,6 @@ function setting_cookie() {
      }
 
 }
-
 add_action( 'init', 'setting_cookie' );
 
 require('includes/post_types.php');
@@ -33,11 +28,11 @@ function addthemesupport(){
 add_action( 'after_setup_theme', 'addthemesupport' );
 
 //read existing cookie to set theme or create new one
-// if (isset($_COOKIE['settheme'])) {
-//   $settheme = $_COOKIE['settheme'];
-// } else {
-//   $settheme = "";
-// }
+if (isset($_COOKIE['settheme'])) {
+  $settheme = $_COOKIE['settheme'];
+} else {
+  $settheme = "";
+}
 
 
 
