@@ -13,10 +13,19 @@ if( have_posts() ) {
      the_post();
      ?>
         <div id='contact'>
+
+    <section class='contact_text'>
+
+     <h1><?php the_field('top_heading')?></h1>
+     <p><?php the_field('main_text')?></p>
+
+   </section>
      <?php
      if (get_locale() == 'en_GB') {
           echo do_shortcode( '[contact-form-7 id="60" title="Contact form"]' );
-      }
+      } elseif (get_locale() == 'sv_SE') {
+           echo do_shortcode( '[contact-form-7 id="72" title="Contact form SE"]' );
+       }
 
     ?>
         </div><!--end of page specific tag-->

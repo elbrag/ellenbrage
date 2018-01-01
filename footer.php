@@ -2,6 +2,7 @@
           <footer id='mainfooter'>
 
             <?php
+
   //theme slider area---------------------//
 
 
@@ -62,6 +63,8 @@
   </div>
 
   <!--theme slider end-------------------->
+
+
 <?php
 
 $scripts = get_template_directory_uri() . "/js/scripts.js";

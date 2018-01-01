@@ -33,7 +33,7 @@
           <?php }?>
 
           <input type='submit' value='filter'></input>
-
+</form>
     </section>
 
   <?php
