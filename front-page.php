@@ -7,6 +7,7 @@ get_header(); ?>
 <?php
 
 $themeList = array("theme_1", "theme_2", "theme_3", "theme_4", "theme_5");
+$themeNames = array("Swiss", "Crystal", "Pint", "Coral", "Steel");
 
 
 if (isset($_COOKIE['theme'])) {
@@ -18,19 +19,20 @@ if (isset($_COOKIE['theme'])) {
 
       $prev = $themeList[$x-1];
       $next = $themeList[$x+1];
+
+      for ($y = 0; $y <= count($themeNames); $y++) {
+
+        if ($y == $x) {
+          $themename = $themeNames[$y];
+        }
+      }
     }
-
   }
-
 } else {
-  $settheme = 'Standard';
+  $themename = 'Standard';
   $prev = $themeList[4];
   $next = $themeList[0];
 }
-
-
-
-
 
  ?>
 
@@ -48,7 +50,7 @@ if (isset($_COOKIE['theme'])) {
     </span>
 
     <span class='theme_title'>
-      <h2 class='cur_theme'><?php echo $settheme;?></h2>
+      <h2 class='cur_theme'><?php echo $themename;?></h2>
     </span>
     <span class='next'>
       <form method='POST' action=''>
@@ -61,7 +63,6 @@ if (isset($_COOKIE['theme'])) {
     </span>
 
 </div>
-
 
 
 </div><!--end of page specific tag-->
