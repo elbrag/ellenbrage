@@ -23,6 +23,14 @@
 
           if ($y == $x) {
             $themename = $themeNames[$y];
+            $prevname = $themeNames[$y-1];
+            $nextname = $themeNames[$y+1];
+
+            if ($prevname == "") {
+              $prevname = 'Standard';
+            } elseif($nextname == "") {
+              $nextname = 'Standard';
+            }
           }
         }
       }
@@ -31,6 +39,8 @@
     $themename = 'Standard';
     $prev = $themeList[4];
     $next = $themeList[0];
+    $prevname = $themeNames[4];
+    $nextname = $themeNames[0];
   }
 
    ?>
@@ -42,27 +52,31 @@
 
             <input type='hidden' name='settheme' value='<?php echo $prev ?>'></input>
 
-                <input type='submit' name='prev' value=''></input>
+                <input type='submit' onclick=slideprev(); name='prev' value=''></input>
                 <span class='prevbtn_style'></span>
 
         </form>
       </span>
 
       <span class='theme_title'>
-        <h2 class='cur_theme'><?php echo $themename;?></h2>
+        <h2 id='prev_theme'><?php echo $prevname;?></h2>
+        <h2 id='cur_theme'><?php echo $themename;?></h2>
+        <h2 id='next_theme'><?php echo $nextname;?></h2>
+
       </span>
+
       <span class='next'>
         <form method='POST' action=''>
 
             <input type='hidden' name='settheme' value='<?php echo $next ?>'></input>
-                <input type='submit' name='next' value=''></input>
+                <input type='submit' onclick=slidenext(); name='next' value=''></input>
                 <span class='nextbtn_style'></span>
 
         </form>
       </span>
 
   </div>
-
+  
   <!--theme slider end-------------------->
 
 

@@ -256,22 +256,24 @@ input[type=submit] {
 
 #cur_theme {
   position: relative;
+  width: 250px;
+  text-align: center;
 }
 
 #next_theme {
-  /* right: -400px; */
   position: absolute;
   opacity: 0;
   top: 0;
+  width: 250px;
   text-align: center;
   right: -500px;
 }
 
 #prev_theme {
-  /* left: -400px; */
   position: absolute;
   opacity: 0;
   top: 0;
+  width: 250px;
   text-align: center;
   left: -500px;
 }
