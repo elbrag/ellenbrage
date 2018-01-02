@@ -250,56 +250,30 @@ input[type=submit] {
 
 /*pressing "next"*/
 
-@keyframes slide1 {
-  0%   {left: 0;}
-  100% {left: -1000px;}
-}
-.cur_theme1 {
-  animation-name: slide1;
-  animation-duration: 0.5s;
+.theme_title {
   position: relative;
-  animation-iteration-count: 1;
 }
 
-@keyframes slide3 {
-  0%   {right: -400px;}
-  100% {right: 200px;}
+#cur_theme {
+  position: relative;
 }
+
 #next_theme {
-  right: -400px;
-  position: relative;
-}
-.next_theme {
-  animation-name: slide3;
-  animation-duration: 0.5s;
-  animation-iteration-count: 1;
-}
-
-/*pressing "prev"*/
-
-@keyframes slide2 {
-  0%   {right: 0;}
-  100% {right: -1000px;}
-}
-.cur_theme2 {
-  animation-name: slide2;
-  animation-duration: 0.5s;
-  position: relative;
-  animation-iteration-count: 1;
+  /* right: -400px; */
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  text-align: center;
+  right: -500px;
 }
 
-@keyframes slide4 {
-  0%   {left: -400px;}
-  100% {left: 200px;}
-}
 #prev_theme {
-  left: -400px;
-  position:relative;
-}
-.prev_theme {
-  animation-name: slide4;
-  animation-duration: 0.5s;
-  animation-iteration-count: 1;
+  /* left: -400px; */
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  text-align: center;
+  left: -500px;
 }
 
 

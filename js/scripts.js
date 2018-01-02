@@ -69,10 +69,38 @@ var next_theme = document.getElementById('next_theme');
 
 
 function slidenext(){
-  cur_theme.className = 'cur_theme1';
-  next_theme.className = 'next_theme';
+  var pos = 0;
+  var pos2 = -500;
+  var id = setInterval(frame, 0);
+  function frame() {
+    if (pos == 1000) {
+      clearInterval(id);
+    } else {
+      pos+=5;
+      pos2+=5;
+      cur_theme.style.right = pos + 'px';
+      next_theme.style.opacity = '1';
+      if (pos2 < 0) {
+        next_theme.style.right = pos2 + 'px';
+      }
+    }
+  }
 }
 function slideprev(){
-  cur_theme.className = 'cur_theme2';
-  prev_theme.className = 'prev_theme';
+  var pos = 0;
+  var pos2 = -500;
+  var id = setInterval(frame, 0);
+  function frame() {
+    if (pos == 1000) {
+      clearInterval(id);
+    } else {
+      pos+=5;
+      pos2+=5;
+      cur_theme.style.left = pos + 'px';
+      prev_theme.style.opacity = '1';
+      if (pos2 < 0) {
+        prev_theme.style.left = pos2 + 'px';
+      }
+    }
+  }
 }

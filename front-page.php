@@ -59,11 +59,12 @@ if (isset($_COOKIE['theme'])) {
       </form>
     </span>
 
-      <h2 id='prev_theme'><?php echo $prevname;?></h2>
     <span class='theme_title'>
+      <h2 id='prev_theme'><?php echo $prevname;?></h2>
       <h2 id='cur_theme'><?php echo $themename;?></h2>
-    </span>
       <h2 id='next_theme'><?php echo $nextname;?></h2>
+
+    </span>
 
     <span class='next'>
       <form method='POST' action=''>
