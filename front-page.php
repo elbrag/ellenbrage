@@ -24,6 +24,14 @@ if (isset($_COOKIE['theme'])) {
 
         if ($y == $x) {
           $themename = $themeNames[$y];
+          $prevname = $themeNames[$y-1];
+          $nextname = $themeNames[$y+1];
+
+          if ($prevname == "") {
+            $prevname = 'Standard';
+          } elseif($nextname == "") {
+            $nextname = 'Standard';
+          }
         }
       }
     }
@@ -43,20 +51,23 @@ if (isset($_COOKIE['theme'])) {
 
           <input type='hidden' name='settheme' value='<?php echo $prev ?>'></input>
 
-              <input type='submit' name='prev' value=''></input>
+              <input type='submit' onclick=slideprev(); name='prev' value=''></input>
               <span class='prevbtn_style'></span>
 
       </form>
     </span>
 
+      <h2 id='prev_theme'><?php echo $prevname;?></h2>
     <span class='theme_title'>
-      <h2 class='cur_theme'><?php echo $themename;?></h2>
+      <h2 id='cur_theme'><?php echo $themename;?></h2>
     </span>
+      <h2 id='next_theme'><?php echo $nextname;?></h2>
+
     <span class='next'>
       <form method='POST' action=''>
 
           <input type='hidden' name='settheme' value='<?php echo $next ?>'></input>
-              <input type='submit' name='next' value=''></input>
+              <input type='submit' onclick=slidenext(); name='next' value=''></input>
               <span class='nextbtn_style'></span>
 
       </form>

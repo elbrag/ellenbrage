@@ -61,3 +61,13 @@ function openMenu(x){
 
 
 /*slider*/
+
+
+var cur_theme = document.getElementById('cur_theme');
+
+function slidenext(){
+  cur_theme.className = 'cur_theme1';
+}
+function slideprev(){
+  cur_theme.className = 'cur_theme2';
+}

@@ -8,7 +8,6 @@ main {
   margin-top: 136px;
 }
 
-
 /*this is to lock scrolling past bottom/top of page: uncomment when finished*/
 
 @media (min-width: 640px) {
@@ -245,6 +244,41 @@ input[type=submit] {
 
 .nextbtn_style:before {
   content: ' \276F';
+}
+
+@keyframes slide1 {
+  0%   {left: 0;}
+  100% {left: -1000px;}
+}
+.cur_theme1 {
+  animation-name: slide1;
+  animation-duration: 1s;
+  position: relative;
+  animation-iteration-count: 1;
+}
+@keyframes slide2 {
+  0%   {right: 0;}
+  100% {right: -1000px;}
+}
+.cur_theme2 {
+  animation-name: slide2;
+  animation-duration: 1s;
+  position: relative;
+  animation-iteration-count: 1;
+}
+
+
+
+.prev_theme {
+  /* animation-name: slide2;
+  animation-duration: 0.5s;
+  animation-iteration-count: 1; */
+  position:relative;
+  left: -400px;
+}
+.next_theme {
+  position:relative;
+  right: -400px;
 }
 
 /*--Page: Work--*/
