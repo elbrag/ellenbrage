@@ -81,7 +81,7 @@ function slidenext(){
       cur_theme.style.right = pos + 'px';
       next_theme.style.opacity = '1';
       if (pos2 < 0) {
-        next_theme.style.right = pos2 + 'px';
+        next_theme.style.right = (pos2+5) + 'px';
       }
     }
   }
@@ -99,7 +99,7 @@ function slideprev(){
       cur_theme.style.left = pos + 'px';
       prev_theme.style.opacity = '1';
       if (pos2 < 0) {
-        prev_theme.style.left = pos2 + 'px';
+        prev_theme.style.left = (pos2+5) + 'px';
       }
     }
   }
