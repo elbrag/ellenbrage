@@ -177,7 +177,7 @@ header {
 
 #work {
   margin: 54px auto 72px auto;
-  width: 95%;
+  width: 96%;
   overflow: hidden;
 }
 
@@ -277,13 +277,13 @@ input[type=submit] {
 
 /*--Page: Home--*/
 
-#home_image {
-  margin-top: -54px;
-}
-
-#home_image img {
-  width: 100%;
-  height: 100%;
+.home_image {
+  margin-top: -72px;
+  width: 100vw;
+  height: 100vh;
+  background-size: 285%;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 
@@ -475,8 +475,19 @@ div.wpcf7-mail-sent-ok {
     width: 80%;
   }
 
+  #work {
+    width: 99%
+  }
+
   h1, h2, h3, h4{
     margin-bottom: 54px;
+  }
+
+  /*--Page: Home--*/
+
+  .home_image {
+    margin-top: -54px;
+    background-size: 145%;
   }
 
   /*--Page: Work--*/
@@ -491,11 +502,11 @@ div.wpcf7-mail-sent-ok {
     float: left;
   }
 
-  #work_grid:nth-child(odd) .grid_project{
+  #work_grid:nth-child(1n+0) .grid_project{
     padding-right: 3px;
     box-sizing: border-box;
   }
-  #work_grid:nth-child(even) .grid_project {
+  #work_grid:nth-child(2n+0) .grid_project {
     padding-left: 3px;
     box-sizing: border-box;
   }
@@ -609,8 +620,29 @@ div.wpcf7-mail-sent-ok {
     width: 80%;
   }
 
+  /*--Page: Home--*/
+
+  .home_image {
+    background-size: 100%;
+  }
 
   /*--Page: Work--*/
+
+  .grid_project {
+    width: 33.33%;
+  }
+
+  .work_grid_image {
+    height: 480px;
+    background-size: 220%;
+  }
+
+  #work_grid:nth-child(1n+0) .grid_project{
+    padding-right: 6px;
+  }
+  #work_grid:nth-child(2n+0) .grid_project {
+    padding-left: 6px;
+  }
 
   /*--Single: Work--*/
 

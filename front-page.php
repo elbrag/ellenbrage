@@ -10,10 +10,9 @@ if( have_posts() ) {
    while ( have_posts() ) {
      the_post();
 
-  echo "<div id='home_image'>";
-  the_post_thumbnail();
-  echo "</div>";
-
+     ?>
+  <div class='home_image' style='background-image: url("<?php echo the_post_thumbnail_url('full');?>");'></div>
+  <?php
     }
   }
 ?>
