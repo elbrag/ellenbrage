@@ -12,17 +12,45 @@ if( have_posts() ) {
      the_post();
      ?>
         <div id='single'>
-     <?php
 
-     the_post_thumbnail('single_large');
+              <h1>
+               <?php
+                the_field('project_title');
+                ?>
+              </h1>
 
-     echo "<br/>";
+              <p>
+               <?php
+                the_field('project_description');
+                ?>
+              </p>
 
-     echo "<p>";
-     the_field('project_title');
-     echo "</p>";
+                <div id='single_big'>
+               <?php
+                  the_post_thumbnail('single_large');
+              ?>
+                </div>
 
-    ?>
+               <section class='single_thumbs'>
+
+               <?php
+
+               $medium = 'medium';
+               $singlelarge = 'single_large';
+
+               $image1 = get_field('extra_image');
+
+               $sizedimage1 = $image1['sizes'][ $medium ];
+               $width = $image1['sizes'][ $medium . '-width' ];
+               $height = $image1['sizes'][ $medium . '-height' ];
+
+               if ($image1) {
+                 ?>
+                <div class='single_image' style='background-image: url("<?php echo $sizedimage1;?>");'></div>
+                <?php }
+                ?>
+
+            </section>
         </div><!--end of page specific tag-->
     <?php
 

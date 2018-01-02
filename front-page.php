@@ -4,6 +4,9 @@
  */
 
 get_header(); ?>
+<script>
+document.querySelector('body').className = 'body_home';
+</script>
 
 <?php
 if( have_posts() ) {

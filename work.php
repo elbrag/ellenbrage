@@ -104,8 +104,6 @@ if( $query->have_posts() ) {
 
               <?php
 
-              echo "<br/>";
-
               echo "<p>";
               the_field('project_title');
               echo "</p>";
