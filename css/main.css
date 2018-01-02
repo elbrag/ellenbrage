@@ -199,6 +199,7 @@ input[type=submit] {
   display: flex;
   justify-content: space-between;
   height: 36px;
+  max-width: 600px;
 }
 
 .prev, .next {
@@ -246,10 +247,6 @@ input[type=submit] {
   content: ' \276F';
 }
 
-/*Animations for slider*/
-
-/*pressing "next"*/
-
 .theme_title {
   position: relative;
 }
@@ -276,6 +273,17 @@ input[type=submit] {
   width: 250px;
   text-align: center;
   left: -500px;
+}
+
+/*--Page: Home--*/
+
+#home_image {
+  margin-top: -54px;
+}
+
+#home_image img {
+  width: 100%;
+  height: 100%;
 }
 
 
@@ -305,6 +313,14 @@ input[type=submit] {
 
 .grid_project p {
   font-size: 14px;
+}
+
+.work_grid_image {
+  width: 100%;
+  height: 360px;
+  background-size: 175%;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 /*--Single: Work--*/
@@ -475,7 +491,19 @@ div.wpcf7-mail-sent-ok {
     float: left;
   }
 
+  #work_grid:nth-child(odd) .grid_project{
+    padding-right: 3px;
+    box-sizing: border-box;
+  }
+  #work_grid:nth-child(even) .grid_project {
+    padding-left: 3px;
+    box-sizing: border-box;
+  }
 
+  .work_grid_image {
+    height: 420px;
+    background-size: 185%;
+  }
 
   /*--Single: Work--*/
 
