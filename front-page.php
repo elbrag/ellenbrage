@@ -40,6 +40,8 @@ if (isset($_COOKIE['theme'])) {
   $themename = 'Standard';
   $prev = $themeList[4];
   $next = $themeList[0];
+  $prevname = $themeNames[4];
+  $nextname = $themeNames[0];
 }
 
  ?>

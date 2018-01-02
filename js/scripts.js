@@ -64,10 +64,15 @@ function openMenu(x){
 
 
 var cur_theme = document.getElementById('cur_theme');
+var prev_theme = document.getElementById('prev_theme');
+var next_theme = document.getElementById('next_theme');
+
 
 function slidenext(){
   cur_theme.className = 'cur_theme1';
+  next_theme.className = 'next_theme';
 }
 function slideprev(){
   cur_theme.className = 'cur_theme2';
+  prev_theme.className = 'prev_theme';
 }

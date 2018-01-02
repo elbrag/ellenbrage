@@ -246,40 +246,62 @@ input[type=submit] {
   content: ' \276F';
 }
 
+/*Animations for slider*/
+
+/*pressing "next"*/
+
 @keyframes slide1 {
   0%   {left: 0;}
   100% {left: -1000px;}
 }
 .cur_theme1 {
   animation-name: slide1;
-  animation-duration: 1s;
+  animation-duration: 0.5s;
   position: relative;
   animation-iteration-count: 1;
 }
+
+@keyframes slide3 {
+  0%   {right: -400px;}
+  100% {right: 200px;}
+}
+#next_theme {
+  right: -400px;
+  position: relative;
+}
+.next_theme {
+  animation-name: slide3;
+  animation-duration: 0.5s;
+  animation-iteration-count: 1;
+}
+
+/*pressing "prev"*/
+
 @keyframes slide2 {
   0%   {right: 0;}
   100% {right: -1000px;}
 }
 .cur_theme2 {
   animation-name: slide2;
-  animation-duration: 1s;
+  animation-duration: 0.5s;
   position: relative;
   animation-iteration-count: 1;
 }
 
-
-
-.prev_theme {
-  /* animation-name: slide2;
-  animation-duration: 0.5s;
-  animation-iteration-count: 1; */
-  position:relative;
+@keyframes slide4 {
+  0%   {left: -400px;}
+  100% {left: 200px;}
+}
+#prev_theme {
   left: -400px;
-}
-.next_theme {
   position:relative;
-  right: -400px;
 }
+.prev_theme {
+  animation-name: slide4;
+  animation-duration: 0.5s;
+  animation-iteration-count: 1;
+}
+
 
 /*--Page: Work--*/
 
