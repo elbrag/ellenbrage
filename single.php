@@ -40,12 +40,13 @@ if( have_posts() ) {
 
                     <div id='single_big'>
 
-                        <img class='bigone' id='<?php echo $bigid; ?>' onclick=enlarge(<?php echo $bigid; ?>); src="<?php echo $big_full_image_url; ?>" alt="<?php echo $bigtitle; ?>" title="<?php echo $bigtitle; ?>">
+                        <img class='bigone' id='<?php echo $bigid; ?>' src="<?php echo $big_full_image_url; ?>" alt="<?php echo $bigtitle; ?>" title="<?php echo $bigtitle; ?>">
 
                     </div>
                     <section class='single_thumbs'>
 
                     <?php
+
                       //Cool, we got some data so now let's loop over it
                       foreach($images as $image):
 
@@ -57,17 +58,13 @@ if( have_posts() ) {
                           $full_image_url= $image['full_image_url']; //Full size image url
                           $full_image_url = acf_photo_gallery_resize_image($full_image_url, 600, 350); //Resized size to 262px width by 160px height image url
                           $thumbnail_image_url= $image['thumbnail_image_url']; //Get the thumbnail size image url 150px by 150px
-                          $url= $image['url']; //Goto any link when clicked
-                          $target= $image['target']; //Open normal or new tab
                           $alt = get_field('photo_gallery_alt', $id); //Get the alt which is a extra field (See below how to add extra fields)
-                          $class = get_field('photo_gallery_class', $id); //Get the class which is a extra field (See below how to add extra fields)
-
 
               ?>
 
                   <div class="single_image">
 
-                          <img id='<?php echo $id ?>' onclick=enlarge(<?php echo $id ?>); src="<?php echo $full_image_url; ?>" alt="<?php echo $title; ?>" title="<?php echo $title; ?>">
+                          <img id='<?php echo $id ?>' onclick="enlarge(this.id)" src="<?php echo $full_image_url; ?>" alt="<?php echo $title; ?>" title="<?php echo $title; ?>">
 
                   </div>
               <?php
