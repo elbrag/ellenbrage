@@ -104,3 +104,15 @@ function slideprev(){
     }
   }
 }
+
+function enlarge(x){
+
+  var smallimage = document.getElementById(x);
+  var smallsource = smallimage.src;
+  var bigimage = document.querySelector('.bigone');
+  var bigsource = bigimage.src;
+
+  smallimage.src = bigsource;
+  bigimage.src = smallsource;
+
+}

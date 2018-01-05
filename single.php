@@ -35,7 +35,7 @@ if( have_posts() ) {
                     $bigid = $bigimage['id'];
                     $bigtitle = $bigimage['title'];
                     $big_full_image_url = $bigimage['full_image_url'];
-                    $big_full_image_url = acf_photo_gallery_resize_image($big_full_image_url, 500, 300);
+                    $big_full_image_url = acf_photo_gallery_resize_image($big_full_image_url, 600, 350);
                     ?>
 
                     <div id='single_big'>
@@ -55,7 +55,7 @@ if( have_posts() ) {
                           $title = $image['title']; //The title
                           $caption= $image['caption']; //The caption
                           $full_image_url= $image['full_image_url']; //Full size image url
-                          $full_image_url = acf_photo_gallery_resize_image($full_image_url, 262, 160); //Resized size to 262px width by 160px height image url
+                          $full_image_url = acf_photo_gallery_resize_image($full_image_url, 600, 350); //Resized size to 262px width by 160px height image url
                           $thumbnail_image_url= $image['thumbnail_image_url']; //Get the thumbnail size image url 150px by 150px
                           $url= $image['url']; //Goto any link when clicked
                           $target= $image['target']; //Open normal or new tab
@@ -67,29 +67,13 @@ if( have_posts() ) {
 
                   <div class="single_image">
 
-                          <img class='thumb' id='<?php echo $id ?>' onclick=enlarge(<?php echo $id ?>); src="<?php echo $full_image_url; ?>" alt="<?php echo $title; ?>" title="<?php echo $title; ?>">
+                          <img id='<?php echo $id ?>' onclick=enlarge(<?php echo $id ?>); src="<?php echo $full_image_url; ?>" alt="<?php echo $title; ?>" title="<?php echo $title; ?>">
 
                   </div>
               <?php
               }
             endforeach; endif; ?>
               </section>
-
-            <script>
-
-              function enlarge(x){
-
-                var smallimage = document.getElementById(x);
-                var smallsource = smallimage.src;
-                var bigimage = document.querySelector('.bigone');
-                var bigsource = bigimage.src;
-
-                smallimage.src = bigsource;
-                bigimage.src = smallsource;
-
-              }
-
-            </script>
 
         </div><!--end of page specific tag-->
     <?php
