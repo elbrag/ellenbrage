@@ -308,7 +308,7 @@ input[type=submit] {
 
 .grid_project {
   width: 100%;
-  margin-bottom: 54px;
+  margin-bottom: 24px;
 }
 
 .grid_project p {
@@ -336,16 +336,18 @@ input[type=submit] {
 }
 
 .single_thumbs {
-  height: 120px;
   width: 100%;
 }
 
 .single_image {
   width: 25%;
-  height: 100%;
-  background-size: 100%;
-  background-position: center;
-  background-repeat: no-repeat;
+  float: left;
+  padding: 3px;
+  box-sizing: border-box;
+}
+
+.single_image img {
+  width: 100%;
 }
 
 

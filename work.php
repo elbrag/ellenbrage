@@ -73,10 +73,11 @@ if( $query->have_posts() ) {
               <div class='grid_project'>
 
                 <a href='<?php the_permalink(); ?>'>
-                  <?php
 
-                   the_post_thumbnail('single_large');
+                   <div class='work_grid_image' style='background-image: url("<?php echo the_post_thumbnail_url('single_large');?>");'></div>
 
+                   <?php
+                   
                    echo "<br/>";
 
                    echo "<p>";
