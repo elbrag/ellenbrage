@@ -20,15 +20,15 @@
 
             foreach ($terms as $value) { ?>
             <label class="categories">
-             <input type="checkbox" name="checkbox[]"
 
+             <input type="checkbox" name="checkbox[]"
                <?php
                if ((in_array($value->name, $_POST['checkbox'])) || (!isset($_POST['checkbox']))) echo "checked='checked'";
                ?>
                value='<?php echo $value->name ?>'>
-
-                <?php echo $value->name ?>
             </input>
+            <span class='checkmark'></span>
+            <?php echo $value->name ?>
             </label>
           <?php }?>
 

@@ -4,7 +4,7 @@ function setting_cookie() {
   if (isset($_POST['settheme'])){
 
    $settheme = $_POST['settheme'];
-     setcookie('theme', $settheme, time()+3600, '/');
+     setcookie('theme', $settheme, time()+(86400 * 30), '/');
      header('Location: ' . $_SERVER['HTTP_REFERER']);
      }
 
