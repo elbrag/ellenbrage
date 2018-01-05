@@ -5,7 +5,7 @@ body {
 }
 
 main {
-  margin-top: 136px;
+  margin-top: 118px;
 }
 
 /*this is to lock scrolling past bottom/top of page: uncomment when finished*/
@@ -169,17 +169,24 @@ header {
 
 /*--Page standards--*/
 
-#about, #home, #contact, #single {
-  margin: 54px auto 72px auto;
+#home, #contact {
+  margin: 36px auto 72px auto;
   width: 90%;
   overflow: hidden;
 }
 
-#work {
-  margin: 54px auto 72px auto;
-  width: 96%;
+#single, #work {
+  margin: 36px auto 72px auto;
+  width: 100%;
   overflow: hidden;
 }
+
+#about {
+  margin: 36px auto 72px auto;
+  width: 100%;
+  overflow: hidden;
+}
+
 
 section {
   overflow: hidden;
@@ -278,7 +285,7 @@ input[type=submit] {
 /*--Page: Home--*/
 
 .home_image {
-  margin-top: -72px;
+  margin-top: -54px;
   width: 100vw;
   height: 100vh;
   background-size: 285%;
@@ -313,7 +320,7 @@ input[type=submit] {
 
 .grid_project p {
   font-size: 14px;
-  margin-left: 2px;
+  margin-left: 18px;
 }
 
 .work_grid_image {
@@ -327,13 +334,20 @@ input[type=submit] {
 /*--Single: Work--*/
 
 #single p {
-  margin-bottom: 54px;
+  width: 90%;
+  margin: 0 auto 54px auto;
+}
+
+#single h1 {
+  width: 90%;
+  margin-right: auto;
+  margin-left:auto;
 }
 
 .single_big {
   width: 100%;
   display: block;
-  padding-bottom: 2px;
+  margin-bottom: -4px;
 }
 
 .single_big img {
@@ -348,6 +362,7 @@ input[type=submit] {
   width: 25%;
   float: left;
   margin-bottom: -4px;
+  cursor: pointer;
 }
 
 .single_image img {
@@ -358,7 +373,8 @@ input[type=submit] {
 
 
 #about p {
-  width: 100%;
+  margin: 0 auto;
+  width: 90%
 }
 
 #about .image {
@@ -379,6 +395,10 @@ input[type=submit] {
   width: 100%;
 }
 
+.wpcf7-form {
+  width: 99%;
+}
+
 .wpcf7 label {
   font-size: 14px;
   margin-left: 2px;
@@ -389,12 +409,14 @@ input[type=submit] {
   font-size: 18px;
   font-weight: 200;
   margin: 6px 0 12px 0;
+  width: 98%;
 }
 
 .wpcf7 textarea {
   font-size: 18px;
   resize: none;
   margin: 6px 0 12px 0;
+  width: 98%;
 }
 
 div.wpcf7-mail-sent-ok {
@@ -499,13 +521,22 @@ div.wpcf7-mail-sent-ok {
 
   /*--Page standards--*/
 
-  #about, #home, #contact, #single {
+  main {
+    margin-top: 136px;
+  }
+
+#contact, #single {
     width: 80%;
   }
 
-  #work {
-    width: 99%
+  #about {
+    width: 100%;
+    margin-top: 54px;
   }
+
+  /* #work {
+    width: 99%
+  } */
 
   h1, h2, h3, h4{
     margin-bottom: 54px;
@@ -518,7 +549,7 @@ div.wpcf7-mail-sent-ok {
   }
 
   .home_image {
-    margin-top: -54px;
+    margin-top: -36px;
     background-size: 145%;
   }
 
@@ -534,14 +565,14 @@ div.wpcf7-mail-sent-ok {
     float: left;
   }
 
-  #work_grid:nth-child(1n+0) .grid_project{
+  /* #work_grid:nth-child(1n+0) .grid_project{
     padding-right: 3px;
     box-sizing: border-box;
   }
   #work_grid:nth-child(2n+0) .grid_project {
     padding-left: 3px;
     box-sizing: border-box;
-  }
+  } */
 
   .work_grid_image {
     height: 420px;
@@ -550,40 +581,20 @@ div.wpcf7-mail-sent-ok {
 
   /*--Single: Work--*/
 
+  #single p {
+    width: 100%;
+  }
+
+  #single h1 {
+    width: 100%
+  }
 
   /*--Page: About--*/
 
-  #about p {
-    width: 55%;
-    box-sizing: border-box;
-    margin-bottom: 0;
-
-  }
-
-  #about section:nth-child(odd) p{
-    float: left;
-    padding-left: 42px;
-  }
-
-  #about section:nth-child(even) p{
-    float: right;
-    padding-right: 42px;
-  }
-
-  #about .image{
-    width: 45%;
-    margin-bottom: 0;
-  }
-
-  #about section:nth-child(odd) .image{
-    float: left;
-    margin-bottom: 0;
-  }
-
-  #about section:nth-child(even) .image{
-    float: right;
-    margin-bottom: 0;
-  }
+#about p {
+  width: 80%;
+  margin: 0 auto;
+}
 
   /*--Page: Contact--*/
 
@@ -649,7 +660,7 @@ div.wpcf7-mail-sent-ok {
 
   /*--Page standards--*/
 
-  #about, #home, #contact, #single {
+#contact, #single, #about {
     width: 80%;
   }
 
@@ -670,16 +681,47 @@ div.wpcf7-mail-sent-ok {
     background-size: 220%;
   }
 
-  #work_grid:nth-child(1n+0) .grid_project{
+  /* #work_grid:nth-child(1n+0) .grid_project{
     padding-right: 6px;
   }
   #work_grid:nth-child(2n+0) .grid_project {
     padding-left: 6px;
-  }
+  } */
 
   /*--Single: Work--*/
 
   /*--Page: About--*/
+
+  #about p {
+    width: 55%;
+    box-sizing: border-box;
+    margin-bottom: 0;
+  }
+
+  #about section:nth-child(odd) p{
+    float: left;
+    padding-left: 42px;
+  }
+
+  #about section:nth-child(even) p{
+    float: right;
+    padding-right: 42px;
+  }
+
+  #about .image{
+    width: 45%;
+    margin-bottom: 0;
+  }
+
+  #about section:nth-child(odd) .image{
+    float: left;
+    margin-bottom: 0;
+  }
+
+  #about section:nth-child(even) .image{
+    float: right;
+    margin-bottom: 0;
+  }
 
   /*--Page: Contact--*/
 
