@@ -105,28 +105,24 @@ function slideprev(){
   }
 }
 
+var bigimage = document.querySelector('.single_image');
+bigimage.classList.remove('single_image');
+bigimage.className = 'single_big';
+
+var $bigimage = $('.single_big');
+$bigimage.parent().before($bigimage);
+
+
 function enlarge(x){
+  var ensmall = document.querySelector('.single_big');
+  ensmall.classList.remove('single_big');
+  ensmall.className = 'single_image';
+
+  $(ensmall).prependTo(".single_thumbs");
 
   var smallimage = document.getElementById(x);
-  var bigimage = document.querySelector('.bigone');
 
-  var smallsource = smallimage.src;
-  var bigsource = bigimage.src;
-
-  var smallid = smallimage.id;
-  var bigid = bigimage.id;
-
-  smallimage.src = bigsource;
-  bigimage.src = smallsource;
-
-  smallimage.id = bigid;
-  bigimage.id = smallid;
-
-  smallimage.alt = bigimage.alt;
-  bigimage.alt = smallimage.alt;
-
-  smallimage.title = bigimage.title;
-  bigimage.title = smallimage.title;
-
-
+  smallimage.className = 'single_big';
+  var $bigimage = $('.single_big');
+  $bigimage.parent().before($bigimage);
 }

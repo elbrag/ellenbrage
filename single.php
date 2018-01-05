@@ -31,18 +31,8 @@ if( have_posts() ) {
                   //Check if return array has anything in it
                   if( count($images) ):
 
-                    $bigimage = $images[0];
-                    $bigid = $bigimage['id'];
-                    $bigtitle = $bigimage['title'];
-                    $big_full_image_url = $bigimage['full_image_url'];
-                    $big_full_image_url = acf_photo_gallery_resize_image($big_full_image_url, 600, 350);
                     ?>
 
-                    <div id='single_big'>
-
-                        <img class='bigone' id='<?php echo $bigid; ?>' src="<?php echo $big_full_image_url; ?>" alt="<?php echo $bigtitle; ?>" title="<?php echo $bigtitle; ?>">
-
-                    </div>
                     <section class='single_thumbs'>
 
                     <?php
@@ -54,17 +44,16 @@ if( have_posts() ) {
 
                           $id = $image['id']; // The attachment id of the media
                           $title = $image['title']; //The title
-                          $caption= $image['caption']; //The caption
                           $full_image_url= $image['full_image_url']; //Full size image url
-                          $full_image_url = acf_photo_gallery_resize_image($full_image_url, 600, 350); //Resized size to 262px width by 160px height image url
+                          $full_image_url = acf_photo_gallery_resize_image($full_image_url, 1000, 700); //Resized size to 262px width by 160px height image url
                           $thumbnail_image_url= $image['thumbnail_image_url']; //Get the thumbnail size image url 150px by 150px
                           $alt = get_field('photo_gallery_alt', $id); //Get the alt which is a extra field (See below how to add extra fields)
 
               ?>
 
-                  <div class="single_image">
+                  <div class="single_image" id='<?php echo $id ?>' onclick="enlarge(this.id)">
 
-                          <img id='<?php echo $id ?>' onclick="enlarge(this.id)" src="<?php echo $full_image_url; ?>" alt="<?php echo $title; ?>" title="<?php echo $title; ?>">
+                          <img src="<?php echo $full_image_url; ?>" alt="<?php echo $title; ?>" title="<?php echo $title; ?>">
 
                   </div>
               <?php
