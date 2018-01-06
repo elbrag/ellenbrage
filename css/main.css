@@ -302,6 +302,7 @@ input[type=submit] {
   display: inline-block;
   position: relative;
   padding-left: 26px;
+  width: 100%;
   cursor: pointer;
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -318,6 +319,10 @@ input[type=submit] {
   cursor: pointer;
   position: absolute;
   opacity: 0;
+}
+
+#category_area input[type='submit'] {
+  display: block;
 }
 
 .checkmark {
@@ -586,10 +591,6 @@ div.wpcf7-mail-sent-ok {
     margin-top: 36px;
   }
 
-  /* #work {
-    width: 99%
-  } */
-
   h1, h2, h3, h4{
     margin-bottom: 54px;
   }
@@ -612,24 +613,25 @@ div.wpcf7-mail-sent-ok {
     margin: 0 auto;
   }
 
+  .categories {
+    width: auto;
+  }
+
+  #category_area input[type='submit'] {
+    display: inline-block;
+  }
+
   .grid_project {
     width: 50%;
     float: left;
   }
 
-  /* #work_grid:nth-child(1n+0) .grid_project{
-    padding-right: 3px;
-    box-sizing: border-box;
-  }
-  #work_grid:nth-child(2n+0) .grid_project {
-    padding-left: 3px;
-    box-sizing: border-box;
-  } */
-
   .work_grid_image {
     height: 420px;
-    background-size: 185%;
+    background-size: 205%;
   }
+
+
 
   /*--Single: Work--*/
 
