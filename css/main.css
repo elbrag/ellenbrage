@@ -715,7 +715,7 @@ div.wpcf7-mail-sent-ok {
   /*--Header--*/
 
   #logocontainer {
-    width: 17%;
+    width: 18%;
   }
 
   #logocontainer a {
@@ -727,7 +727,7 @@ div.wpcf7-mail-sent-ok {
   /*--Menu--*/
 
   .main-menu {
-    width: 83%;
+    width: 82%;
   }
 
   .menu-item {
@@ -771,7 +771,7 @@ div.wpcf7-mail-sent-ok {
 
   .work_grid_image {
     height: 480px;
-    background-size: 220%;
+    background-size: 235%;
   }
 
   /* #work_grid:nth-child(1n+0) .grid_project{
@@ -836,6 +836,11 @@ div.wpcf7-mail-sent-ok {
   /*--Menu--*/
 
   /*--Page: Work--*/
+
+  .work_grid_image {
+    height: 520px;
+    background-size: 205%;
+  }
 
   /*--Single: Work--*/
 
