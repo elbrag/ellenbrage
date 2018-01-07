@@ -56,6 +56,12 @@ button:focus, input:focus {
   outline: none;
 }
 
+/*--Cookies--*/
+
+#cookie-notice {
+  bottom: 39px;
+}
+
 /*--Header--*/
 
 header {
@@ -169,7 +175,7 @@ header {
 
 /*--Page standards--*/
 
-#home, #contact {
+#home, #contact, #cookies, #errorpage {
   margin: 36px auto 72px auto;
   width: 90%;
   overflow: hidden;
@@ -571,7 +577,7 @@ div.wpcf7-mail-sent-ok {
   /*--Page standards--*/
 
 
-#contact, #single {
+#contact, #single, #cookies, #errorpage {
     width: 80%;
   }
 
@@ -706,7 +712,7 @@ div.wpcf7-mail-sent-ok {
     margin-top: 136px;
   }
 
-#contact, #single, #about {
+#contact, #single, #about, #cookies, #errorpage {
     width: 80%;
     margin-top: 54px;
   }
