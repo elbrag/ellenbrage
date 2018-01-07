@@ -43,12 +43,22 @@ a {
   color: #0000FF;
 }
 
-.menu-item.active:before {
+.radiobutton {
+  top: 20px;
   color: #0000FF;
+  border: 1px solid #0000FF;
 }
 
-.menu-item:before {
-  color: #0000FF;
+.radiobutton:after {
+  background-color: #0000FF;
+}
+
+.menu-item.active {
+  background-color: #FFF;
+}
+
+.menu-item.active .radiobutton {
+  background-color: #FFF;
 }
 
 .menu-item a {
@@ -162,6 +172,10 @@ div.wpcf7-mail-sent-ok {
 
 .lang_items a.active button {
   color: #0000FF;
+}
+
+.radiobutton {
+  top: 7px;
 }
 
 /*--Page standards--*/
