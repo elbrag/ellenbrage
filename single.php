@@ -66,50 +66,53 @@ if( have_posts() ) {
    }
 }
 
-//get categories for this project
-foreach (get_the_terms(get_the_ID(), 'project-category') as $cat) {
-  $category = $cat->name;
-}
-
 //get ID for this project
 $projectid = get_the_ID();
 
-?>
+//get the projects from the same category as this one
+$categories = get_the_terms(get_the_ID(), 'project-category');
 
-<?php
+foreach($categories as $category) {
+  wp_reset_query();
   $args = array(
-    'post_type' => 'project',
-    'posts_per_page' => -1
+    'project' => 'custom_post_type',
+    'tax_query' => array(
+      array(
+          'taxonomy' => 'project-category',
+          'field' => 'slug',
+          'terms' => $category->slug,
+          'posts_per_page' => -1
+      ),
+    ),
   );
+}
 
   $query = new WP_Query( $args );
 
-  $heading = "Similar projects";
 ?>
 
 <section class='similar_projects'>
-  <h2><?php echo $heading ?></h2>
-
-  <div class='similar_thumbs_area'>
 
 <?php
 
 $count = 0;
 
   if( $query->have_posts() ) {
+    ?>
+
+    <h2>Similar projects</h2>
+
+    <div class='similar_thumbs_area'>
+
+    <?php
      while ( $query->have_posts() ) {
        $query->the_post();
-
-       //get categories for the similar projects
-       foreach (get_the_terms(get_the_ID(), 'project-category') as $cat) {
-         $sim_category = $cat->name;
-       }
 
        //get the ids for the similar projects
        $sim_id = get_the_ID();
 
-       //check for projects in the same category. Exclude the current project
-       if ( ($sim_category == $category) && ($projectid != $sim_id) && ($count < 3) ) {
+       //fetch 3 projects of this category that aren't this one
+       if ( ($projectid != $sim_id) && ($count < 3) ) {
 
          $count++;
        ?>
@@ -129,8 +132,13 @@ $count = 0;
       <?php
 
       }
-
     }
+  }
+  if ($count == 0) {
+    ?>
+    <h2>More projects</h2>
+    <?php
+
   }
   ?>
     </div>
