@@ -61,12 +61,84 @@ if( have_posts() ) {
             endforeach; endif; ?>
               </section>
 
-        </div><!--end of page specific tag-->
     <?php
 
    }
 }
+
+//get categories for this project
+foreach (get_the_terms(get_the_ID(), 'project-category') as $cat) {
+  $category = $cat->name;
+}
+
+//get ID for this project
+$projectid = get_the_ID();
+
 ?>
 
+<?php
+  $args = array(
+    'post_type' => 'project',
+    'posts_per_page' => -1
+  );
+
+  $query = new WP_Query( $args );
+
+  $heading = "Similar projects";
+?>
+
+<section class='similar_projects'>
+  <h2><?php echo $heading ?></h2>
+
+  <div class='similar_thumbs_area'>
+
+<?php
+
+$count = 0;
+
+  if( $query->have_posts() ) {
+     while ( $query->have_posts() ) {
+       $query->the_post();
+
+       //get categories for the similar projects
+       foreach (get_the_terms(get_the_ID(), 'project-category') as $cat) {
+         $sim_category = $cat->name;
+       }
+
+       //get the ids for the similar projects
+       $sim_id = get_the_ID();
+
+       //check for projects in the same category. Exclude the current project
+       if ( ($sim_category == $category) && ($projectid != $sim_id) && ($count < 3) ) {
+
+         $count++;
+       ?>
+
+       <a href='<?php the_permalink(); ?>'>
+           <div class='similar_thumb'>
+          <?php
+              the_post_thumbnail('similar_thumbnail');
+
+              echo "<p>";
+              the_field('project_title');
+              echo "</p>";
+
+          ?>
+           </div>
+      </a>
+      <?php
+
+      }
+
+    }
+  }
+  ?>
+    </div>
+
+<a class='browse_all' href='/work'>Browse all projects</a>
+
+</section>
+
+</div><!--end of page specific tag-->
 
 <?php get_footer(); ?>

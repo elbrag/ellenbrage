@@ -44,7 +44,7 @@ a {
 }
 
 .radiobutton {
-  top: 20px;
+  top: 42%;
   color: #0000FF;
   border: 1px solid #0000FF;
 }
@@ -64,7 +64,7 @@ a {
 .menu-item a {
   text-transform: lowercase;
   font-variant: small-caps;
-  letter-spacing: 6px;
+  letter-spacing: 5px;
   color: #0000FF;
 }
 
@@ -116,7 +116,19 @@ input[type=submit] {
 
 /*--Single: Work--*/
 
+.similar_projects p {
+  font-size: 12px;
+  text-transform: lowercase;
+  font-variant: small-caps;
+  letter-spacing: 4px;
+}
 
+.browse_all {
+  text-transform: lowercase;
+  font-variant: small-caps;
+  letter-spacing: 4px;
+  background-color: #0000FF;
+}
 
 /*--Page: About--*/
 
@@ -183,6 +195,7 @@ div.wpcf7-mail-sent-ok {
 /*--Page: Work--*/
 
 /*--Single: Work--*/
+
 /*--Page: About--*/
 /*--Page: Contact--*/
 

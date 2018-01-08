@@ -131,7 +131,7 @@ header {
 }
 
 .menu-item a {
-  margin-left: 30px;
+  padding-left: 28px;
 }
 
 .radiobutton {
@@ -343,7 +343,7 @@ input[type=submit] {
   height: 18px;
   display: inline-block;
   position: relative;
-  padding-left: 26px;
+  padding-left: 32px;
   width: 100%;
   cursor: pointer;
   -webkit-user-select: none;
@@ -373,7 +373,7 @@ input[type=submit] {
   left: 0;
   height: 16px;
   width: 16px;
-  background-color: #eee;
+  border: 1px solid #000;
 }
 
 .categories input:checked ~ .checkmark {
@@ -392,10 +392,9 @@ input[type=submit] {
 }
 
 .categories .checkmark:after {
-  /* left: 1.7px;
-  top: 1px; */
   color: #fff;
   font-size: 17px;
+  font-weight: 100;
   left: 3px;
   line-height: 16px;
 }
@@ -409,7 +408,7 @@ input[type=submit] {
   margin-bottom: 24px;
 }
 
-.grid_project p {
+.grid_project p, .similar_projects p {
   font-size: 14px;
   margin-left: 18px;
 }
@@ -447,6 +446,7 @@ input[type=submit] {
 
 .single_thumbs {
   width: 100%;
+  margin-bottom: 114px;
 }
 
 .single_image {
@@ -458,6 +458,31 @@ input[type=submit] {
 
 .single_image img {
   width: 100%;
+}
+
+.similar_thumbs_area {
+  overflow: hidden;
+}
+
+.similar_thumb {
+  margin: 0 auto;
+  width: 50%;
+}
+
+.similar_thumb img {
+  width: 100%;
+  height: 100%;
+}
+
+.browse_all {
+  text-align: center;
+  display: block;
+  color: #fff;
+  background-color: #000;
+  font-weight: bold;
+  padding: 6px 0 11px 0;
+  margin: 0 auto;
+  width: 90%;
 }
 
 /*--Page: About--*/
@@ -675,6 +700,16 @@ div.wpcf7-mail-sent-ok {
 
   #single h1 {
     width: 100%
+  }
+
+  .similar_thumb {
+    float: left;
+    width: 33.33%;
+  }
+
+  .browse_all {
+    margin: 0;
+    width: 100%;
   }
 
   /*--Page: About--*/
