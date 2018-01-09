@@ -69,26 +69,41 @@ if( have_posts() ) {
 //get ID for this project
 $projectid = get_the_ID();
 
-//get the projects from the same category as this one
-$categories = get_the_terms(get_the_ID(), 'project-category');
+//check how many posts we can find of each category
+  $terms = get_the_terms( $post->ID , 'project-category' );
+  foreach ( $terms as $term ) {
+    $numberofposts = $term->count;
+  }
 
-foreach($categories as $category) {
-  wp_reset_query();
-  $args = array(
-    'project' => 'custom_post_type',
-    'tax_query' => array(
-      array(
-          'taxonomy' => 'project-category',
-          'field' => 'slug',
-          'terms' => $category->slug,
-          'posts_per_page' => -1
+/*if there's only one project in the category we can't suggest similar projects, so we'll simply suggest "more" projects, meaning we'll display all projects instead of projects from the same category. */
+
+if ($numberofposts > 1) {
+  //get the projects from the same category as this one
+  $categories = get_the_terms(get_the_ID(), 'project-category');
+
+  foreach($categories as $category) {
+    wp_reset_query();
+    $args = array(
+      'project' => 'custom_post_type',
+      'tax_query' => array(
+        array(
+            'taxonomy' => 'project-category',
+            'field' => 'slug',
+            'terms' => $category->slug,
+            'posts_per_page' => -1
+        ),
       ),
-    ),
+    );
+  }
+
+} else {
+  $args = array(
+    'post_type' => 'project',
+    'posts_per_page' => -1
   );
 }
 
-  $query = new WP_Query( $args );
-
+$query = new WP_Query( $args );
 ?>
 
 <section class='similar_projects'>
@@ -98,10 +113,17 @@ foreach($categories as $category) {
 $count = 0;
 
   if( $query->have_posts() ) {
+
+    if ($numberofposts > 1) {
+      ?>
+      <h2>Similar projects</h2>
+      <?php
+    } else {
+      ?>
+      <h2>More projects</h2>
+      <?php
+    }
     ?>
-
-    <h2>Similar projects</h2>
-
     <div class='similar_thumbs_area'>
 
     <?php
@@ -111,34 +133,28 @@ $count = 0;
        //get the ids for the similar projects
        $sim_id = get_the_ID();
 
-       //fetch 3 projects of this category that aren't this one
-       if ( ($projectid != $sim_id) && ($count < 3) ) {
+         //fetch 3 projects of this category that aren't this one
+         if ( ($projectid != $sim_id) && ($count < 3) ) {
 
-         $count++;
-       ?>
+           $count++;
+         ?>
 
-       <a href='<?php the_permalink(); ?>'>
-           <div class='similar_thumb'>
-          <?php
-              the_post_thumbnail('similar_thumbnail');
+         <a href='<?php the_permalink(); ?>'>
+             <div class='similar_thumb'>
+            <?php
+                the_post_thumbnail('similar_thumbnail');
 
-              echo "<p>";
-              the_field('project_title');
-              echo "</p>";
+                echo "<p>";
+                the_field('project_title');
+                echo "</p>";
 
-          ?>
-           </div>
-      </a>
-      <?php
+            ?>
+             </div>
+          </a>
 
-      }
+        <?php
+          }
     }
-  }
-  if ($count == 0) {
-    ?>
-    <h2>More projects</h2>
-    <?php
-
   }
   ?>
     </div>
