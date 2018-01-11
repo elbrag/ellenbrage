@@ -1,3 +1,4 @@
+//if window width is changed, adjust the menu
  $(document).ready(function(){
 
    var menu = document.querySelector('.main-menu');
@@ -60,7 +61,7 @@ function openMenu(x){
 //     });
 
 
-/*slider*/
+/*theme slider*/
 
 
 var cur_theme = document.getElementById('cur_theme');
@@ -105,6 +106,26 @@ function slideprev(){
   }
 }
 
+/*sorting the images into place (see function below for function call)
+https://stackoverflow.com/questions/9778899/how-to-order-divs-by-id-in-javascript*/
+function sortdivs(){
+  var mylist = document.querySelector('.single_thumbs');
+  var divs = mylist.getElementsByTagName('div');
+  var listitems = [];
+  for (i = 0; i < divs.length; i++) {
+    listitems.push(divs.item(i));
+  }
+  listitems.sort(function(a,b) {
+    var compA = a.getAttribute('id').toUpperCase();
+    var compB = b.getAttribute('id').toUpperCase();
+    return (compA < compB) ? -1 : (compA > compB) ? 1 : 0;
+  })
+  for (i = 0; i < listitems.length; i++) {
+    mylist.appendChild(listitems[i]);
+  }
+}
+
+//work:single: gallery function
 var bigimage = document.querySelector('.single_image');
 bigimage.classList.remove('single_image');
 bigimage.className = 'single_big';
@@ -125,4 +146,6 @@ function enlarge(x){
   smallimage.className = 'single_big';
   var $bigimage = $('.single_big');
   $bigimage.parent().before($bigimage);
+
+  sortdivs();
 }
