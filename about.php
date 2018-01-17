@@ -23,13 +23,13 @@ if( have_posts() ) {
 
             <?php
             $full = 'full';
-            $singlelarge = 'single_large';
+            $large = 'large';
 
             $image1 = get_field('image_1');
 
-            $sizedimage1 = $image1['sizes'][ $singlelarge ];
-            $width = $image1['sizes'][ $singlelarge . '-width' ];
-            $height = $image1['sizes'][ $singlelarge . '-height' ];
+            $sizedimage1 = $image1['sizes'][ $large ];
+            $width = $image1['sizes'][ $large . '-width' ];
+            $height = $image1['sizes'][ $large . '-height' ];
 
             if ($image1) {
               ?>

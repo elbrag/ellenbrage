@@ -499,11 +499,12 @@ input[type=submit] {
 
 #about .image {
   width: 100%;
-  height: 300px;
+  height: 200px;
   background-size: 100%;
-  background-position: center;
+  background-position: center -10px;
   background-repeat: no-repeat;
   margin-bottom: 36px;
+  border: 1px solid #000;
 }
 
 /*--Page: Contact--*/
@@ -723,6 +724,11 @@ div.wpcf7-mail-sent-ok {
   margin: 0 auto;
 }
 
+#about .image {
+  height: 300px;
+  background-position: center -85px;
+}
+
   /*--Page: Contact--*/
 
   .contact_text {
@@ -830,7 +836,7 @@ div.wpcf7-mail-sent-ok {
     margin-bottom: 0;
   }
 
-  #about section:nth-child(odd) p{
+  /*#about section:nth-child(odd) p{
     float: left;
     padding-left: 42px;
   }
@@ -838,14 +844,17 @@ div.wpcf7-mail-sent-ok {
   #about section:nth-child(even) p{
     float: right;
     padding-right: 42px;
-  }
+  }*/
 
   #about .image{
-    width: 45%;
-    margin-bottom: 0;
+    /*width: 45%;*/
+    width: 99%;
+    margin: 0 auto 54px auto;
+    height: 400px;
+    background-position: center -85px;
   }
 
-  #about section:nth-child(odd) .image{
+  /*#about section:nth-child(odd) .image{
     float: left;
     margin-bottom: 0;
   }
@@ -853,7 +862,7 @@ div.wpcf7-mail-sent-ok {
   #about section:nth-child(even) .image{
     float: right;
     margin-bottom: 0;
-  }
+  }*/
 
   /*--Page: Contact--*/
 
