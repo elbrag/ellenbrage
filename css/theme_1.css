@@ -26,7 +26,7 @@ h1, h2, h3, h4{
 }
 
 a, a button {
-  color: #fff;
+  color: #000;
   text-decoration: none;
 }
 
@@ -36,19 +36,20 @@ a, a button {
 /*--Menu--*/
 
 #logo {
-  background-image: url(../img/logo_1_white.png);
+  /* background-image: url(../img/logo_1_white.png); */
+}
+
+#menu-symb {
+  color: #000;
+}
+
+.main-menu {
+  background-color: #ed2712;
 }
 
 .main-nav {
-  background-color: #000;
+  background-color: #ed2712;
   color: #fff;
-}
-
-.main-ul {
-  width: 300px;
-  display: flex;
-  padding: 3px;
-  justify-content: space-between;
 }
 
 .radiobutton {
@@ -61,16 +62,20 @@ a, a button {
 .menu-item {
   padding: 6px;
   margin: 0;
+  text-align: center;
+  width: 65px;
+  margin: 0 auto;
 }
 
 .menu-item.active {
-  border: 3px solid #fff;
-  margin: -3px;
+  border: 3px solid #000;
+  margin: 0 auto;
 }
 
 .menu-item a {
   /* padding-left: 24px; */
   padding-left: 0;
+  font-size: 16px;
 }
 
 .lang_item {
@@ -90,11 +95,11 @@ a, a button {
   font-weight: bold;
   text-decoration: none;
   letter-spacing: 0.5px;
-  color: #fff;
+  color: #000;
 }
 
 .lang_items a.active button {
-  color: #fff;
+  color: #000;
 }
 
 /*--Page standards--*/
@@ -115,6 +120,11 @@ a, a button {
 
 /*--Footer--*/
 
+#mainfooter {
+  background-color: #ed2712;
+  /* color: #fff; */
+}
+
 /*=====================================640PX========================================*/
 
 @media (min-width: 640px) {
@@ -122,6 +132,25 @@ a, a button {
 /*--Header--*/
 
 /*--Menu--*/
+
+.main-menu {
+  margin-top: 24px;
+}
+
+.main-ul {
+  width: 300px;
+  display: flex;
+  padding: 3px;
+  justify-content: space-between;
+}
+
+.menu-item {
+  margin: 0;
+}
+
+.menu-item.active {
+  margin: -3px;
+}
 
 /*--Page standards--*/
 /*slider---*/

@@ -27,7 +27,7 @@ p {
   margin: 0;
   padding: 0;
   font-weight: 200;
-  line-height: 28px;
+  line-height: 32px;
 }
 
 h1, h2, h3, h4{
@@ -106,7 +106,6 @@ header {
 .main-nav {
   background-color: #FFF;
   height: 64px;
-  position: fixed;
   width: 100%;
   top: 0;
   z-index: 100;
@@ -232,7 +231,7 @@ header {
 
 section {
   overflow: hidden;
-  margin-bottom: 54px;
+  margin-bottom: 84px;
 }
 
 input[type=submit] {
@@ -750,6 +749,14 @@ div.wpcf7-mail-sent-ok {
   /**/
 
   /*--Footer--*/
+
+  #mainfooter {
+    padding: 6px 0;
+  }
+
+  #slider_area {
+    height: 26px;
+  }
 
 }
 
