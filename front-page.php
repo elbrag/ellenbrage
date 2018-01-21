@@ -14,7 +14,14 @@ if( have_posts() ) {
      the_post();
 
      ?>
-  <div class='home_image' style='background-image: url("<?php echo the_post_thumbnail_url('full');?>");'></div>
+  <div id='frontpage_text'>
+
+    <h1>Ellen Brage</h1>
+    <h2>Graphic designer</h2>
+    <h3>Web developer</h3>
+    <h4>Illustrator</h4>
+
+  </div>
   <?php
     }
   }

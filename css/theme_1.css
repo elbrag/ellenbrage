@@ -10,7 +10,7 @@ input[type=submit] {
   text-transform: lowercase;
   font-variant: small-caps;
   letter-spacing: 6px;
-  font-size: 20px;
+  font-size: 1em;
   background-color: #44ffee;
   color: #fff;
   border: none;
@@ -22,7 +22,7 @@ p {
 }
 
 h1, h2, h3, h4{
-
+  text-align: left;
 }
 
 a, a button {
@@ -75,7 +75,7 @@ a, a button {
 .menu-item a {
   /* padding-left: 24px; */
   padding-left: 0;
-  font-size: 16px;
+  font-size: 0.8em;
 }
 
 .lang_item {

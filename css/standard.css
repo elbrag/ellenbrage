@@ -8,7 +8,7 @@ input[type=submit] {
   text-transform: lowercase;
   font-variant: small-caps;
   letter-spacing: 6px;
-  font-size: 20px;
+  font-size: 1em;
   background-color: #0000FF;
   color: #fff;
   border: none;
@@ -108,7 +108,7 @@ input[type=submit] {
 }
 
 .grid_project p {
-  font-size: 14px;
+  font-size: 0.6em;
   text-transform: lowercase;
   font-variant: small-caps;
   letter-spacing: 4px;
@@ -117,7 +117,7 @@ input[type=submit] {
 /*--Single: Work--*/
 
 .similar_projects p {
-  font-size: 12px;
+  font-size: 0.6em;
   text-transform: lowercase;
   font-variant: small-caps;
   letter-spacing: 4px;
@@ -139,7 +139,7 @@ input[type=submit] {
 /*form*/
 
 .wpcf7 label {
-  font-size: 14px;
+  font-size: 0.6em;
   text-transform: lowercase;
   font-variant: small-caps;
   letter-spacing: 4px;

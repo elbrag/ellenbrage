@@ -59,9 +59,9 @@
       </span>
 
       <span class='theme_title'>
-        <h2 id='prev_theme'><?php echo $prevname;?></h2>
-        <h2 id='cur_theme'><?php echo $themename;?></h2>
-        <h2 id='next_theme'><?php echo $nextname;?></h2>
+        <p id='prev_theme'><?php echo $prevname;?></p>
+        <p id='cur_theme'><?php echo $themename;?></p>
+        <p id='next_theme'><?php echo $nextname;?></p>
 
       </span>
 

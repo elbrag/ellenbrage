@@ -4,11 +4,14 @@ body {
   margin: 0;
 }
 
+
 main {
-  margin-top: 118px;
+  overflow: hidden;
 }
 
+
 /*this is to lock scrolling past bottom/top of page: uncomment when finished*/
+
 
 @media (min-width: 640px) {
     html {
@@ -35,6 +38,22 @@ h1, h2, h3, h4{
   padding: 0;
   text-align: center;
   margin-bottom: 36px;
+}
+
+h1 {
+  font-size: 3em;
+}
+
+h2 {
+  font-size: 2.5em;
+}
+
+h3 {
+  font-size: 2em;
+}
+
+h4 {
+  font-size: 1.5em;
 }
 
 ul {
@@ -119,6 +138,7 @@ header {
   width: 100%;
   padding: 0 0 48px 0;
   box-sizing: border-box;
+  z-index: 100;
 }
 
 .menu-item {
@@ -179,7 +199,7 @@ header {
 } */
 
 .menu-item a {
-  font-size: 20px;
+  font-size: 1em;
   color: #000;
 }
 
@@ -194,7 +214,7 @@ header {
   background-color: transparent;
   border-radius: 0;
   cursor: pointer;
-  font-size: 14px;
+  font-size: 0.8em;
   font-weight: 300;
 }
 
@@ -211,19 +231,19 @@ header {
 /*--Page standards--*/
 
 #home, #contact, #cookies, #errorpage {
-  margin: 36px auto 72px auto;
+  margin: 54px auto 72px auto;
   width: 90%;
   overflow: hidden;
 }
 
 #single, #work {
-  margin: 36px auto 72px auto;
+  margin: 54px auto 72px auto;
   width: 100%;
   overflow: hidden;
 }
 
 #about {
-  margin: 36px auto 72px auto;
+  margin: 54px auto 72px auto;
   width: 100%;
   overflow: hidden;
 }
@@ -334,6 +354,37 @@ input[type=submit] {
   background-repeat: no-repeat;
 }
 
+#frontpage_text {
+  width: 375px;
+  transform: rotate(45deg);
+  float:right;
+  margin-top: 150px;
+  margin-bottom: 150px;
+}
+
+#frontpage_text h1,
+#frontpage_text h2,
+#frontpage_text h3,
+#frontpage_text h4 {
+  margin: 0;
+}
+
+#frontpage_text h1 {
+  letter-spacing: 0.21em;
+
+}
+
+#frontpage_text h2 {
+  letter-spacing: 0.05em;
+}
+
+#frontpage_text h3 {
+  letter-spacing: 0.34em;
+}
+
+#frontpage_text h4 {
+  letter-spacing: 1.03em;
+}
 
 /*--Page: Work--*/
 
@@ -408,7 +459,7 @@ input[type=submit] {
 }
 
 .grid_project p, .similar_projects p {
-  font-size: 14px;
+  font-size: 0.6em;
   margin-left: 18px;
 }
 
@@ -520,20 +571,20 @@ input[type=submit] {
 }
 
 .wpcf7 label {
-  font-size: 14px;
+  font-size: 0.6em;
   margin-left: 2px;
 }
 
 .wpcf7 input[type=text],
 .wpcf7 input[type=email] {
-  font-size: 18px;
+  font-size: 0.8em;
   font-weight: 200;
   margin: 6px 0 12px 0;
   width: 98%;
 }
 
 .wpcf7 textarea {
-  font-size: 18px;
+  font-size: 0.8em;
   resize: none;
   margin: 6px 0 12px 0;
   width: 98%;
@@ -623,11 +674,11 @@ div.wpcf7-mail-sent-ok {
 
   .menu-item.active:before {
     padding-right: 11px;
-    font-size: 14px;
+    font-size: 0.6em;
   }
 
   .menu-item a {
-    font-size: 19px;
+    font-size: 0.8em;
   }
 
   .radiobutton {
@@ -661,13 +712,15 @@ div.wpcf7-mail-sent-ok {
 
   /*--Page: Home--*/
 
-  .body_home {
-    overflow-y: hidden;
-  }
-
   .home_image {
     background-size: 145%;
   }
+
+  #frontpage_text {
+    margin-right: 100px;
+  }
+
+
 
   /*--Page: Work--*/
 
@@ -795,14 +848,11 @@ div.wpcf7-mail-sent-ok {
   }
 
   .menu-item a {
-    font-size: 19px;
+    font-size: 0.8em;
   }
 
   /*--Page standards--*/
 
-  main {
-    margin-top: 136px;
-  }
 
 #contact, #single, #about, #cookies, #errorpage {
     width: 80%;
@@ -813,6 +863,10 @@ div.wpcf7-mail-sent-ok {
 
   .home_image {
     background-size: 100%;
+  }
+
+  #frontpage_text {
+    margin-right: 120px;
   }
 
   /*--Page: Work--*/
