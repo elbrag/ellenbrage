@@ -3,7 +3,7 @@
 /*--semantics reset and basics--*/
 
 * {
-  font-family: 'Helvetica';
+  font-family: 'Helvetica neue', 'Helvetica', 'Arial';
 }
 
 input[type=submit] {
@@ -18,11 +18,14 @@ input[type=submit] {
 
 
 p {
-  font-weight: bold;
+  /* font-weight: bold; */
+  letter-spacing: 0.02em;
 }
 
 h1, h2, h3, h4{
   text-align: left;
+  width: 90%;
+  margin: 0 auto 36px auto;
 }
 
 a, a button {
@@ -153,6 +156,10 @@ a, a button {
 }
 
 /*--Page standards--*/
+
+h1, h2, h3, h4 {
+  width: 80%;
+}
 /*slider---*/
 /*--Page: Work--*/
 
@@ -179,6 +186,11 @@ a, a button {
 /*--Menu--*/
 
 /*--Page standards--*/
+
+h1, h2, h3, h4 {
+  width: 75%;
+}
+
 /*slider---*/
 /*--Page: Work--*/
 
