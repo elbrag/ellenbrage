@@ -94,8 +94,8 @@ header {
 
 #logocontainer a {
   width: 80px;
-  height: 24px;
-  top: 21px;
+  height: 29px;
+  top: 18px;
   left: 24px;
   position: absolute;
 }
@@ -103,9 +103,11 @@ header {
 #logo {
   width: inherit;
   height: inherit;
-  background-image: url(../img/logotest_2.png);
+  background-image: url(../img/logotest_1.svg);
   background-repeat: no-repeat;
   background-size: 100%;
+  display: block;
+  text-indent: -9999px;
 }
 
 /*--Menu--*/
@@ -394,6 +396,7 @@ input[type=submit] {
   padding-left: 32px;
   width: 100%;
   cursor: pointer;
+  margin-bottom: 12px;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -618,8 +621,8 @@ div.wpcf7-mail-sent-ok {
 
   #logocontainer a {
     width: 100px;
-    height: 30px;
-    margin-top: 28px;
+    height: 38px;
+    margin-top: 24px;
     margin-left: 24px;
     float: left;
     position: static;
@@ -722,12 +725,18 @@ div.wpcf7-mail-sent-ok {
     margin: 0 auto;
   }
 
+  #category_area form {
+    width: 50%;
+    margin: 0 auto;
+  }
+
   .categories {
     width: auto;
   }
 
   #category_area input[type='submit'] {
-    display: inline-block;
+    display: block;
+    margin: 24px auto 0 auto;
   }
 
   .grid_project {
@@ -838,14 +847,19 @@ div.wpcf7-mail-sent-ok {
 
   #logocontainer a {
     width: 120px;
-    height: 36px;
-    margin-top: 24px;
+    height: 43px;
+    margin-top: 22px;
   }
 
   /*--Menu--*/
 
   .main-menu {
     width: calc(100% - 194px);
+  }
+
+  .main-nav {
+    margin: 0 auto;
+    width: calc(90% + 48px);
   }
 
   .menu-item {
@@ -949,6 +963,10 @@ div.wpcf7-mail-sent-ok {
   /*--Header--*/
 
   /*--Menu--*/
+
+  .main-nav {
+    width: calc(70% + 48px);
+  }
 
   /*--Page: Work--*/
 
