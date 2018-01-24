@@ -34,13 +34,13 @@ a {
 /*--Header--*/
 
 #logo {
-  background-image: url(../img/logo_1_blue.png);
+  background-image: url(../img/eb_logo_blue.svg);
 }
 
 /*--Menu--*/
 
 #menu-symb {
-  color: #0000FF;
+  background-image: url(../img/hamb_blue.svg);
 }
 
 .radiobutton {

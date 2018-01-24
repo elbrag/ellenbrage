@@ -103,7 +103,7 @@ header {
 #logo {
   width: inherit;
   height: inherit;
-  background-image: url(../img/logotest_1.svg);
+  background-image: url(../img/eb_logo_black.svg);
   background-repeat: no-repeat;
   background-size: 100%;
   display: block;
@@ -114,16 +114,22 @@ header {
 
 #menu-symb {
   color: #000;
-  font-size: 36px;
-  line-height: 42px;
+  /* font-size: 36px; */
+  /* line-height: 42px; */
   position: absolute;
   right: 24px;
   cursor: pointer;
+  width: 33px;
+  height: 28px;
+  top: 18px;
+  background-image: url(../img/hamb_black.svg);
+  background-size: 100%;
+  background-repeat: no-repeat;
 }
 
-#menu-symb:after{
+/* #menu-symb:after{
   content: ' \2026';
-}
+} */
 
 .main-nav {
   background-color: #FFF;
@@ -155,6 +161,7 @@ header {
   width: 147px;
   margin: 0 auto;
   position: relative;
+  margin-bottom: 6px;
 }
 
 .radiobutton {
@@ -187,20 +194,6 @@ header {
 .menu-item.active .radiobutton:after {
   display: block;
 }
-
-/* .menu-item.active:before {
-  content: ' \25C9';
-  padding-right: 18px;
-  color: #000;
-  font-size: 15px;
-}
-
-.menu-item:before {
-  content: ' \25EF';
-  padding-right: 18px;
-  color: #000;
-  font-size: 14px;
-} */
 
 .menu-item a {
   padding-left: 28px;
@@ -779,12 +772,12 @@ div.wpcf7-mail-sent-ok {
 
 #imageblock {
   float: left;
-  width: 50%;
+  width: 45%;
 }
 
 #textblock {
   float: left;
-  width: 50%;
+  width: 55%;
   padding-left: 42px;
   box-sizing: border-box;
 }
@@ -796,6 +789,10 @@ div.wpcf7-mail-sent-ok {
 
 #about p {
   margin-bottom: 0;
+}
+
+#about p:nth-child(1) {
+  margin-top: -10px;
 }
 
 #about .image{
@@ -875,7 +872,7 @@ div.wpcf7-mail-sent-ok {
   }
 
   .menu-item a {
-    font-size: 0.8em;
+    font-size: 0.9em;
   }
 
   /*--Page standards--*/
@@ -970,6 +967,14 @@ div.wpcf7-mail-sent-ok {
 
   /*--Page: Work--*/
 
+#category_area{
+  margin: 32px auto 72px auto;
+}
+
+.grid_project p,
+.similar_projects p {
+  font-size: 0.8em;
+}
 
   /*--Single: Work--*/
 
