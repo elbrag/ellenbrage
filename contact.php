@@ -16,7 +16,6 @@ if( have_posts() ) {
 
     <section class='contact_text'>
 
-     <h1><?php the_field('top_heading')?></h1>
      <p><?php the_field('main_text')?></p>
 
    </section>

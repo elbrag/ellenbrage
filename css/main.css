@@ -137,9 +137,14 @@ header {
   margin-top: 64px;
   background-color: #FFF;
   width: 100%;
+  height: 100vh;
   padding: 0 0 48px 0;
   box-sizing: border-box;
   z-index: 100;
+}
+
+.main-ul {
+  margin-top: 48px;
 }
 
 .menu-item {
@@ -148,10 +153,6 @@ header {
   width: 147px;
   margin: 0 auto;
   position: relative;
-}
-
-.menu-item a {
-  padding-left: 28px;
 }
 
 .radiobutton {
@@ -200,7 +201,8 @@ header {
 } */
 
 .menu-item a {
-  font-size: 1em;
+  padding-left: 28px;
+  font-size: 1.5em;
   color: #000;
 }
 
@@ -231,19 +233,13 @@ header {
 
 /*--Page standards--*/
 
-#home, #contact, #cookies, #errorpage {
+#home, #contact, #cookies, #errorpage, #about {
   margin: 54px auto 72px auto;
   width: 90%;
   overflow: hidden;
 }
 
 #single, #work {
-  margin: 54px auto 72px auto;
-  width: 100%;
-  overflow: hidden;
-}
-
-#about {
   margin: 54px auto 72px auto;
   width: 100%;
   overflow: hidden;
@@ -367,6 +363,7 @@ input[type=submit] {
 #frontpage_text h2,
 #frontpage_text h3,
 #frontpage_text h4 {
+  width: 100%;
   margin: 0;
 }
 
@@ -545,17 +542,11 @@ input[type=submit] {
 
 #about p {
   margin: 0 auto;
-  width: 90%
 }
 
 #about .image {
   width: 100%;
-  height: 200px;
-  background-size: 100%;
-  background-position: center -10px;
-  background-repeat: no-repeat;
   margin-bottom: 36px;
-  border: 1px solid #000;
 }
 
 /*--Page: Contact--*/
@@ -654,9 +645,11 @@ div.wpcf7-mail-sent-ok {
     padding: 0;
     background-color: transparent;
     width: calc(100% - 168px);
+    height: auto;
   }
 
   .main-ul {
+    margin-top: 0;
     overflow: hidden;
     float: left;
     padding: 8px 0;
@@ -698,12 +691,11 @@ div.wpcf7-mail-sent-ok {
   /*--Page standards--*/
 
 
-#contact, #single, #cookies, #errorpage {
-    width: 80%;
+#contact, #single, #cookies, #errorpage, #about {
+    width: 90%;
   }
 
-  #about {
-    width: 100%;
+   #about {
     margin-top: 36px;
   }
 
@@ -772,14 +764,33 @@ div.wpcf7-mail-sent-ok {
 
   /*--Page: About--*/
 
-#about p {
-  width: 80%;
-  margin: 0 auto;
-}
 
 #about .image {
-  height: 300px;
-  background-position: center -85px;
+}
+
+#imageblock {
+  float: left;
+  width: 50%;
+}
+
+#textblock {
+  float: left;
+  width: 50%;
+  padding-left: 42px;
+  box-sizing: border-box;
+}
+
+#about h2 {
+  text-align: left;
+  margin: 48px 0 24px 0;
+}
+
+#about p {
+  margin-bottom: 0;
+}
+
+#about .image{
+  margin: 0 auto 54px auto;
 }
 
   /*--Page: Contact--*/
@@ -789,6 +800,7 @@ div.wpcf7-mail-sent-ok {
     width: 50%;
     padding-right: 42px;
     box-sizing: border-box;
+    margin-top: 42px;
   }
 
 
@@ -856,7 +868,7 @@ div.wpcf7-mail-sent-ok {
 
 
 #contact, #single, #about, #cookies, #errorpage {
-    width: 80%;
+    width: 90%;
     margin-top: 54px;
   }
 
@@ -881,50 +893,11 @@ div.wpcf7-mail-sent-ok {
     background-size: 235%;
   }
 
-  /* #work_grid:nth-child(1n+0) .grid_project{
-    padding-right: 6px;
-  }
-  #work_grid:nth-child(2n+0) .grid_project {
-    padding-left: 6px;
-  } */
-
   /*--Single: Work--*/
 
   /*--Page: About--*/
 
-  #about p {
-    width: 75%;
-    box-sizing: border-box;
-    margin-bottom: 0;
-  }
 
-  /*#about section:nth-child(odd) p{
-    float: left;
-    padding-left: 42px;
-  }
-
-  #about section:nth-child(even) p{
-    float: right;
-    padding-right: 42px;
-  }*/
-
-  #about .image{
-    /*width: 45%;*/
-    width: 99%;
-    margin: 0 auto 54px auto;
-    height: 400px;
-    background-position: center -85px;
-  }
-
-  /*#about section:nth-child(odd) .image{
-    float: left;
-    margin-bottom: 0;
-  }
-
-  #about section:nth-child(even) .image{
-    float: right;
-    margin-bottom: 0;
-  }*/
 
   /*--Page: Contact--*/
 
@@ -951,6 +924,34 @@ div.wpcf7-mail-sent-ok {
     height: 520px;
     background-size: 205%;
   }
+
+  /*--Single: Work--*/
+
+  /*--Page: About--*/
+
+  /*--Page: Contact--*/
+
+  /*--Footer--*/
+
+}
+
+/*=====================================1500PX========================================*/
+
+@media (min-width: 1500px) {
+
+
+/*--page standards--*/
+
+#contact, #single, #about, #cookies, #errorpage {
+    width: 70%;
+  }
+
+  /*--Header--*/
+
+  /*--Menu--*/
+
+  /*--Page: Work--*/
+
 
   /*--Single: Work--*/
 

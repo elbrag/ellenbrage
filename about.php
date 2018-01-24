@@ -19,7 +19,7 @@ if( have_posts() ) {
 <!--Section 1-->
         <section>
 
-            <h1><?php the_field('heading_1'); ?></h1>
+          <div id='imageblock'>
 
             <?php
             $full = 'full';
@@ -33,57 +33,36 @@ if( have_posts() ) {
 
             if ($image1) {
               ?>
-             <div class='image' style='background-image: url("<?php echo $sizedimage1;?>");'></div>
+              <img class='image' src='<?php echo $sizedimage1;?>'>
              <?php }
             ?>
-
-             <p><?php the_field('text_1');?></p>
-
-        </section>
-<!--Section 2-->
-        <section>
-
-            <h2><?php the_field('heading_2'); ?></h2>
 
             <?php
             $image2 = get_field('image_2');
 
-            $sizedimage2 = $image2['sizes'][ $singlelarge ];
-            $width = $image2['sizes'][ $singlelarge . '-width' ];
-            $height = $image2['sizes'][ $singlelarge . '-height' ];
+            $sizedimage2 = $image2['sizes'][ $large ];
+            $width = $image2['sizes'][ $large . '-width' ];
+            $height = $image2['sizes'][ $large . '-height' ];
 
             if ($image2) {
               ?>
-             <div class='image' style='background-image: url("<?php echo $sizedimage2;?>");'></div>
+             <img class='image' src='<?php echo $sizedimage2;?>'>
              <?php }
             ?>
+          </div>
+            <div id='textblock'>
 
-            <p><?php the_field('text_2');?></p>
+             <p><?php the_field('text_1');?></p>
+
+             <br />
+
+             <h2><?php the_field('heading_2'); ?></h2>
+
+             <p><?php the_field('text_2');?></p>
+
+           </div>
 
         </section>
-
-<!--Section 3-->
-
-<section>
-
-    <h2><?php the_field('heading_3'); ?></h2>
-
-    <?php
-    $image3 = get_field('image_3');
-
-    $sizedimage3 = $image3['sizes'][ $singlelarge ];
-    $width = $image3['sizes'][ $singlelarge . '-width' ];
-    $height = $image3['sizes'][ $singlelarge . '-height' ];
-
-    if ($image3) {
-      ?>
-     <div class='image' style='background-image: url("<?php echo $sizedimage3;?>");'></div>
-     <?php }
-    ?>
-
-    <p><?php the_field('text_3');?></p>
-
-</section>
 
    </div><!--end of page specific tag-->
     <?php

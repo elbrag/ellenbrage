@@ -6,12 +6,16 @@
   font-family: 'Helvetica neue', 'Helvetica', 'Arial';
 }
 
+body {
+  background-color: #fff;
+}
+
 input[type=submit] {
   text-transform: lowercase;
   font-variant: small-caps;
   letter-spacing: 6px;
   font-size: 1em;
-  background-color: #44ffee;
+  background-color: #000;
   color: #fff;
   border: none;
 }
@@ -47,11 +51,11 @@ a, a button {
 }
 
 .main-menu {
-  background-color: #ed2712;
+  background-color: #fff;
 }
 
 .main-nav {
-  background-color: #ed2712;
+  background-color: #fff;
   color: #fff;
 }
 
@@ -70,15 +74,14 @@ a, a button {
   margin: 0 auto;
 }
 
-.menu-item.active {
-  border: 3px solid #000;
-  margin: 0 auto;
-}
-
 .menu-item a {
   /* padding-left: 24px; */
   padding-left: 0;
   font-size: 0.8em;
+}
+
+.menu-item.active a {
+  color: red;
 }
 
 .lang_item {
@@ -124,7 +127,7 @@ a, a button {
 /*--Footer--*/
 
 #mainfooter {
-  background-color: #ed2712;
+  background-color: #fff;
   /* color: #fff; */
 }
 
@@ -149,10 +152,6 @@ a, a button {
 
 .menu-item {
   margin: 0;
-}
-
-.menu-item.active {
-  margin: -3px;
 }
 
 /*--Page standards--*/

@@ -14,6 +14,7 @@
 
             if (windowSize() >= 640) {
               menu.style.display = 'block';
+              document.querySelector('body').style.overflow = 'auto';
             } else {
               menu.style.display = 'none';
             }
@@ -36,8 +37,10 @@ function openMenu(x){
 
   if (menu.style.display == "block") {
     menu.style.display = "none";
+    document.querySelector('body').style.overflow = 'auto';
   } else  {
     menu.style.display = "block";
+    document.querySelector('body').style.overflow = 'hidden';
   }
 
 };
