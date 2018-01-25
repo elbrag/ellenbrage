@@ -74,7 +74,7 @@ if( $query->have_posts() ) {
 
                 <a href='<?php the_permalink(); ?>'>
 
-                   <div class='work_grid_image' style='background-image: url("<?php echo the_post_thumbnail_url('medium_large');?>");'></div>
+                   <div class='work_grid_image' style='background-image: url("<?php echo the_post_thumbnail_url('large_thumbnail');?>");'></div>
 
                    <?php
                    echo "<p>";
@@ -98,7 +98,7 @@ if( $query->have_posts() ) {
 
            <a href='<?php the_permalink(); ?>'>
 
-              <div class='work_grid_image' style='background-image: url("<?php echo the_post_thumbnail_url('medium_large');?>");'></div>
+              <div class='work_grid_image' style='background-image: url("<?php echo the_post_thumbnail_url('large_thumbnail');?>");'></div>
 
               <?php
 

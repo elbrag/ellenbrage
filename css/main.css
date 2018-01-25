@@ -134,7 +134,8 @@ header {
 .main-nav {
   background-color: #FFF;
   height: 64px;
-  width: 100%;
+  /* max-width: calc(1000px + 48px); */
+  /* width: 90%; */
   top: 0;
   z-index: 100;
 }
@@ -234,9 +235,15 @@ header {
   overflow: hidden;
 }
 
-#single, #work {
+#work {
   margin: 54px auto 72px auto;
   width: 100%;
+  overflow: hidden;
+}
+
+#single {
+  max-width: 1000px;
+  margin: 54px auto 72px auto;
   overflow: hidden;
 }
 
@@ -397,8 +404,8 @@ input[type=submit] {
 }
 
 #category_area {
-  width: 95%;
-  margin: 0 auto;
+  max-width: 1000px;
+  margin: 0 24px;
 }
 
 #category_area input[type='checkbox'] {
@@ -464,7 +471,7 @@ input[type=submit] {
 .work_grid_image {
   width: 100%;
   height: 360px;
-  background-size: 175%;
+  background-size: 125%;
   background-position: center;
   background-repeat: no-repeat;
 }
@@ -687,7 +694,8 @@ div.wpcf7-mail-sent-ok {
   /*--Page standards--*/
 
 
-#contact, #single, #cookies, #errorpage, #about {
+#contact, #cookies, #errorpage, #about {
+    margin: 54px auto 72px auto;
     width: 90%;
   }
 
@@ -714,13 +722,8 @@ div.wpcf7-mail-sent-ok {
   /*--Page: Work--*/
 
   #category_area {
-    width: 90%;
-    margin: 0 auto;
-  }
-
-  #category_area form {
-    width: 50%;
-    margin: 0 auto;
+    /* width: 90%; */
+    /* margin: 0 auto; */
   }
 
   .categories {
@@ -728,8 +731,7 @@ div.wpcf7-mail-sent-ok {
   }
 
   #category_area input[type='submit'] {
-    display: block;
-    margin: 24px auto 0 auto;
+    display: inline-block;
   }
 
   .grid_project {
@@ -739,7 +741,7 @@ div.wpcf7-mail-sent-ok {
 
   .work_grid_image {
     height: 420px;
-    background-size: 205%;
+    background-size: 135%;
   }
 
 
@@ -856,7 +858,7 @@ div.wpcf7-mail-sent-ok {
 
   .main-nav {
     margin: 0 auto;
-    width: calc(90% + 48px);
+    /* width: calc(90% + 48px); */
   }
 
   .menu-item {
@@ -878,9 +880,9 @@ div.wpcf7-mail-sent-ok {
   /*--Page standards--*/
 
 
-#contact, #single, #about, #cookies, #errorpage {
-    width: 90%;
+#contact, #about, #cookies, #errorpage {
     margin-top: 54px;
+    max-width: 1000px;
   }
 
   /*--Page: Home--*/
@@ -895,13 +897,17 @@ div.wpcf7-mail-sent-ok {
 
   /*--Page: Work--*/
 
+  #category_area {
+
+  }
+
   .grid_project {
     width: 33.33%;
   }
 
   .work_grid_image {
     height: 480px;
-    background-size: 235%;
+    background-size: 152%;
   }
 
   /*--Single: Work--*/
@@ -933,7 +939,7 @@ div.wpcf7-mail-sent-ok {
 
   .work_grid_image {
     height: 520px;
-    background-size: 205%;
+    background-size: 130%;
   }
 
   /*--Single: Work--*/
@@ -953,22 +959,32 @@ div.wpcf7-mail-sent-ok {
 
 /*--page standards--*/
 
-#contact, #single, #about, #cookies, #errorpage {
+/* #contact, #about, #cookies, #errorpage {
     width: 70%;
-  }
+  } */
 
   /*--Header--*/
 
   /*--Menu--*/
 
   .main-nav {
-    width: calc(70% + 48px);
+    max-width: calc(1000px + 48px); */
   }
 
   /*--Page: Work--*/
 
+#category_area form {
+    /* width: 50%; */
+    margin: 0 auto;
+}
+
 #category_area{
   margin: 32px auto 72px auto;
+}
+
+#category_area input[type='submit'] {
+  /* display: block;
+  margin: 24px auto 0 auto; */
 }
 
 .grid_project p,

@@ -51,7 +51,7 @@ if( have_posts() ) {
                           $id2 = $value++;
                           $title = $image['title']; //The title
                           $full_image_url= $image['full_image_url']; //Full size image url
-                          $full_image_url = acf_photo_gallery_resize_image($full_image_url, 1000, 650); //Resized size to 262px width by 160px height image url
+                          // $full_image_url = acf_photo_gallery_resize_image($full_image_url, 1000, 750, false); //Resized size to 262px width by 160px height image url
                           $thumbnail_image_url= $image['thumbnail_image_url']; //Get the thumbnail size image url 150px by 150px
                           $alt = get_field('photo_gallery_alt', $id); //Get the alt which is a extra field (See below how to add extra fields)
 
