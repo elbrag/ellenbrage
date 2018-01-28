@@ -28,8 +28,7 @@ p {
 
 h1, h2, h3, h4{
   text-align: left;
-  width: 90%;
-  margin: 0 auto 36px auto;
+  margin: 0 auto;
 }
 
 a, a button {
@@ -148,7 +147,6 @@ a, a button {
 /*--Page standards--*/
 
 h1, h2, h3, h4 {
-  width: 80%;
 }
 /*slider---*/
 /*--Page: Work--*/
@@ -178,7 +176,6 @@ h1, h2, h3, h4 {
 /*--Page standards--*/
 
 h1, h2, h3, h4 {
-  width: 75%;
 }
 
 /*slider---*/

@@ -11,10 +11,28 @@ document.getElementById('menu-item-36').className += ' active';
 $value = 1;
 
 if( have_posts() ) {
+
    while ( have_posts() ) {
      the_post();
      ?>
         <div id='single'>
+          <?php
+
+          $cats = wp_get_object_terms( $post->ID, 'project-category' );
+          foreach ($cats as $cat) {
+
+            ?>
+            <p class='single_category'>
+            <?php
+            echo "/".$cat->name."/";
+            ?>
+            </p>
+            <?php
+
+          }
+          ?>
+
+
 
               <h1>
                <?php
@@ -22,11 +40,13 @@ if( have_posts() ) {
                 ?>
               </h1>
 
-              <p>
+              <p class='single_description'>
                <?php
                 the_field('project_description');
                 ?>
               </p>
+              <span class='previmage_style' onclick="previmage()"></span>
+              <span class='nextimage_style' onclick="nextimage()"></span>
 
               <?php
                   //Get the images ids from the post_metadata
@@ -56,7 +76,6 @@ if( have_posts() ) {
                           $alt = get_field('photo_gallery_alt', $id); //Get the alt which is a extra field (See below how to add extra fields)
 
               ?>
-
                   <div class="single_image" id='<?php echo $id2 ?>' onclick="enlarge(this.id)">
 
                           <img src="<?php echo $full_image_url; ?>" alt="<?php echo $title; ?>" title="<?php echo $title; ?>">

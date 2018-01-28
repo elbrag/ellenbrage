@@ -45,25 +45,6 @@ function openMenu(x){
 
 };
 
-// $(document).ready(function(){
-//         $("input:checkbox").change(function() {
-//             if($(this).is(":checked")) {
-//                 $.ajax({
-//                     url: 'on_off.aspx',
-//                     type: 'POST',
-//                     data: { strID:$(this).attr("id"), strState:"1" }
-//                 });
-//             } else {
-//                 $.ajax({
-//                     url: 'on_off.aspx',
-//                     type: 'POST',
-//                     data: { strID:$(this).attr("id"), strState:"0" }
-//                 });
-//             }
-//         });
-//     });
-
-
 /*theme slider*/
 
 
@@ -151,4 +132,29 @@ function enlarge(x){
   $bigimage.parent().before($bigimage);
 
   sortdivs();
+}
+
+function nextimage() {
+  var children = document.querySelector(".single_thumbs").children.length + 1;
+  var current = parseInt(document.querySelector('.single_big').id);
+  var nextid = (current+1);
+
+  if (nextid > children) {
+    nextid = 1;
+  }
+
+  enlarge(nextid);
+}
+
+function previmage() {
+
+  var children = document.querySelector(".single_thumbs").children.length + 1;
+  var current = parseInt(document.querySelector('.single_big').id);
+  var previd = (current-1);
+
+  if (previd == 0) {
+    previd = children;
+  }
+
+  enlarge(previd);
 }

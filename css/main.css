@@ -37,7 +37,6 @@ p {
 h1, h2, h3, h4{
   margin: 0;
   padding: 0;
-  text-align: center;
   margin-bottom: 36px;
 }
 
@@ -459,9 +458,12 @@ input[type=submit] {
   margin-bottom: 24px;
 }
 
+.grid_project p {
+  margin-left: 18px;
+}
+
 .grid_project p, .similar_projects p {
   font-size: 0.6em;
-  margin-left: 18px;
 }
 
 .similar_projects p {
@@ -479,14 +481,38 @@ input[type=submit] {
 /*--Single: Work--*/
 
 #single p {
-  width: 90%;
-  margin: 0 auto 54px auto;
+
 }
 
-#single h1 {
+.single_description {
+  margin: 0 auto 54px auto;
   width: 90%;
-  margin-right: auto;
-  margin-left:auto;
+}
+
+#single h1,
+#single h2 {
+  width: 90%;
+  margin: 0 auto 24px auto;
+}
+
+.single_category {
+  margin: 0 auto;
+  font-size: 0.8em;
+  width: 90%;
+}
+
+.previmage_style,
+.nextimage_style {
+  cursor: pointer;
+  font-size: 2em;
+}
+
+.previmage_style:before {
+  content: ' \276E';
+}
+
+.nextimage_style:before {
+  content: ' \276F';
 }
 
 .single_big {
@@ -520,7 +546,7 @@ input[type=submit] {
 }
 
 .similar_thumb {
-  margin: 0 auto;
+  margin: 0 auto 36px auto;
   width: 75%;
 }
 
@@ -536,8 +562,7 @@ input[type=submit] {
   background-color: #000;
   font-weight: bold;
   padding: 6px 0 11px 0;
-  margin: 0 auto;
-  width: 90%;
+  margin: 24px auto 0 auto;
 }
 
 /*--Page: About--*/
@@ -748,22 +773,9 @@ div.wpcf7-mail-sent-ok {
 
   /*--Single: Work--*/
 
-  #single p {
-    width: 100%;
-  }
-
-  #single h1 {
-    width: 100%
-  }
-
   .similar_thumb {
     float: left;
     width: 33.33%;
-  }
-
-  .browse_all {
-    margin: 0;
-    width: 100%;
   }
 
   /*--Page: About--*/
@@ -911,6 +923,7 @@ div.wpcf7-mail-sent-ok {
   }
 
   /*--Single: Work--*/
+
 
   /*--Page: About--*/
 
