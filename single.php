@@ -45,8 +45,10 @@ if( have_posts() ) {
                 the_field('project_description');
                 ?>
               </p>
-              <span class='previmage_style' onclick="previmage()"></span>
-              <span class='nextimage_style' onclick="nextimage()"></span>
+              <div class='image_controls'>
+                <span class='previmage_style' onclick="previmage()"></span>
+                <span class='nextimage_style' onclick="nextimage()"></span>
+              </div>
 
               <?php
                   //Get the images ids from the post_metadata
