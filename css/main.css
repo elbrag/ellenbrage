@@ -924,6 +924,30 @@ div.wpcf7-mail-sent-ok {
 
   /*--Single: Work--*/
 
+#single h1,
+#single h2 {
+  width: 100%;
+  max-width: 1000px;
+  margin-left: 24px;
+}
+
+.single_category {
+  width: 100%;
+  max-width: 1000px;
+  margin-left: 24px;
+}
+
+.single_description {
+  width: 100%;
+  max-width: 1000px;
+  margin-left: 24px;
+}
+
+.similar_thumb p {
+  margin-left: 18px;
+}
+
+
 
   /*--Page: About--*/
 
@@ -956,6 +980,23 @@ div.wpcf7-mail-sent-ok {
   }
 
   /*--Single: Work--*/
+
+  #single h1,
+  #single h2 {
+    margin-left: 0;
+ }
+
+  .single_category {
+    margin-left: 0;
+  }
+
+  .single_description {
+    margin-left: 0;
+  }
+
+  .similar_thumb p {
+    margin-left: 0;
+  }
 
   /*--Page: About--*/
 
