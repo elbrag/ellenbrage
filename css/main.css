@@ -260,7 +260,7 @@ input[type=submit] {
 /*slider---*/
 
 #slider_area {
-  margin: 0 auto;
+  margin: 0 24px;
   overflow: hidden;
   display: flex;
   justify-content: space-between;
@@ -272,14 +272,7 @@ input[type=submit] {
   position: relative;
   width: 32px;
   margin-top: -5px;
-}
-
-.prev {
-  margin-left: 24px;
-}
-
-.next {
-  margin-right: 24px;
+  background-color: #fff;
 }
 
 .prev input[type='submit'], .next input[type='submit'] {
@@ -365,11 +358,11 @@ input[type=submit] {
 }
 
 #frontpage_text {
-  width: 375px;
+  /* width: 375px;
   transform: rotate(45deg);
   float:right;
   margin-top: 150px;
-  margin-bottom: 150px;
+  margin-bottom: 150px; */
 }
 
 #frontpage_text h1,
@@ -378,23 +371,23 @@ input[type=submit] {
 #frontpage_text h4 {
   width: 100%;
   margin: 0;
+  text-transform: uppercase;
+  -webkit-text-stroke: 1px;
+  -webkit-text-fill-color: transparent;
+  letter-spacing: 0.05em;
 }
 
 #frontpage_text h1 {
-  letter-spacing: 0.21em;
 
 }
 
 #frontpage_text h2 {
-  letter-spacing: 0.05em;
 }
 
 #frontpage_text h3 {
-  letter-spacing: 0.34em;
 }
 
 #frontpage_text h4 {
-  letter-spacing: 1.03em;
 }
 
 /*--Page: Work--*/
@@ -874,6 +867,7 @@ div.wpcf7-mail-sent-ok {
 
   #slider_area {
     height: 26px;
+    margin: 0 auto;
   }
 
 }
