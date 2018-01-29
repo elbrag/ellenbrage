@@ -70,7 +70,7 @@ a, a button {
 }
 
 .menu-item.active a {
-  color: red;
+  color: #60ef4a;
 }
 
 .lang_item {
@@ -99,6 +99,35 @@ a, a button {
 
 /*--Page standards--*/
 /*slider---*/
+
+/*--front page--*/
+
+#front_background {
+  background-color: #60ef4a;
+}
+
+#frontpage_text {
+  width: 40%;
+}
+
+.graphic_elem {
+  width: 210%;
+  height: 210%;
+  border-radius: 50%;
+  margin: 0 auto;
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  transform: skewX(55deg);
+  background: repeating-radial-gradient(
+    circle,
+    #fff,
+    #fff 3px,
+    transparent 3px,
+    transparent 50px
+  );
+}
+
 /*--Page: Work--*/
 
 .categories {

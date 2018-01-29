@@ -17,6 +17,9 @@ if( have_posts() ) {
 
   <div id='front_background'>
 
+    <div class='graphic_elem'>
+    </div>
+
   <div id='frontpage_text'>
 
     <div class='header1_box'>
@@ -30,29 +33,11 @@ if( have_posts() ) {
     <h3 class='stroke'>Web developer</h3>
     <h4 class='stroke'>Illustrator</h4> -->
 
-    <p class='title'>
-      <span>G</span>
-      <span>r</span>
-      <span>a</span>
-      <span>p</span>
-      <span>h</span>
-      <span>i</span>
-      <span>c</span>
-
-      <span>d</span>
-      <span>e</span>
-      <span>s</span>
-      <span>i</span>
-      <span>g</span>
-      <span>n</span>
-      <span>e</span>
-      <span>r</span>
-    </p>
+    <p class='title'>Graphic designer</p>
     <p class='title'>Web developer</p>
     <p class='title'>Illustrator</p>
 
   </div>
-
 
 </div>
   <?php

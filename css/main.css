@@ -228,8 +228,14 @@ header {
 
 /*--Page standards--*/
 
-#home, #contact, #cookies, #errorpage, #about, #frontpage_text {
+#home, #contact, #cookies, #errorpage, #about {
   margin: 54px auto 72px auto;
+  width: 90%;
+  overflow: hidden;
+}
+
+#frontpage_text {
+  margin: 54px auto 0 auto;
   width: 90%;
   overflow: hidden;
 }
@@ -349,13 +355,11 @@ input[type=submit] {
 /*--Page: Home--*/
 
 #front_background {
-  margin: 0 24px;
+  margin: 0 auto;
+  width: 90%;
   height: 67vh;
-  background:
-		linear-gradient(90deg, #fff calc(36px - 3px), transparent 1%) center,
-		linear-gradient(#fff calc(36px - 3px), transparent 1%) center,
-		#ff0000;
-	background-size: 36px 36px;
+  position: relative;
+  background-color: #eee;
 }
 
 #frontpage_text {
@@ -384,8 +388,6 @@ input[type=submit] {
 #frontpage_text h1 {
   font-size: 3em;
   margin-left: -8px;
-  /* text-transform: uppercase;
-  transform: skewX(-10deg); */
 }
 
 hr {
@@ -430,16 +432,6 @@ h1.fill:after {
   z-index: 20;
   animation: fillin 2s alternate infinite;
 }
-
-/* @keyframes fillin {
-  0% {clip-path: inset(10px 0px 20px 0px);}
-  20% {clip-path: inset(20px 0px 30px 0px);}
-  40% {clip-path: inset(30px 3px 40px -3px);
-  left: 2px;}
-  60% {clip-path: inset(40px 6px 50px -6px);}
-  80% {clip-path: inset(50px 3px 60px -3px);}
-  100% {clip-path: inset(60px 0px 70px 0px);}
-} */
 
 #frontpage_text h2 {
 }
@@ -796,8 +788,13 @@ div.wpcf7-mail-sent-ok {
   /*--Page standards--*/
 
 
-#contact, #cookies, #errorpage, #about, #frontpage_text {
+#contact, #cookies, #errorpage, #about {
     margin: 54px auto 72px auto;
+    width: 90%;
+  }
+
+  #frontpage_text {
+    margin: 54px auto 0 auto;
     width: 90%;
   }
 
