@@ -234,9 +234,7 @@ header {
   overflow: hidden;
 }
 
-#frontpage_text {
-  margin: 54px auto 0 auto;
-  width: 90%;
+#front_background {
   overflow: hidden;
 }
 
@@ -355,15 +353,12 @@ input[type=submit] {
 /*--Page: Home--*/
 
 #front_background {
-  margin: 0 auto;
+  margin: 12px auto 0 auto;
   width: 90%;
+  max-width: 1000px;
   height: 67vh;
   position: relative;
   background-color: #eee;
-}
-
-#frontpage_text {
-  max-width: 1000px;
 }
 
 #frontpage_text h2,
@@ -382,12 +377,11 @@ input[type=submit] {
 
 .header1_box {
   position: relative;
-  height: 84px;
 }
 
 #frontpage_text h1 {
-  font-size: 3em;
-  margin-left: -8px;
+  font-size: 1.8em;
+  text-transform: lowercase;
 }
 
 hr {
@@ -398,49 +392,17 @@ hr {
 h1.stroke {
   z-index: 10;
   position: absolute;
-}
-
-h1.fill {
-  position: absolute;
-  top: 6px;
-  left: 6px;
+  display: none;
 }
 
 h1.fill_2 {
-  position: absolute;
-  top: 6px;
-  left: 1px;
   display: none;
-  clip-path: inset(10px 0px 27px 3px);
 }
 
 h1.fill_3 {
-  position: absolute;
-  top: 14px;
-  left: 4px;
   display: none;
-  clip-path: inset(57px 8px -5px 0px);
 }
 
-h1.fill:after {
-  content: "Ellen Brage";
-  position: absolute;
-  width: 100%;
-  top: 1px;
-  left: 1px;
-  clip-path: inset(120px 8px 50px 0px);
-  z-index: 20;
-  animation: fillin 2s alternate infinite;
-}
-
-#frontpage_text h2 {
-}
-
-#frontpage_text h3 {
-}
-
-#frontpage_text h4 {
-}
 
 /*--Page: Work--*/
 
@@ -793,8 +755,8 @@ div.wpcf7-mail-sent-ok {
     width: 90%;
   }
 
-  #frontpage_text {
-    margin: 54px auto 0 auto;
+  #front_background {
+    margin: 36px auto 0 auto;
     width: 90%;
   }
 
@@ -812,12 +774,8 @@ div.wpcf7-mail-sent-ok {
     background-size: 145%;
   }
 
-  #frontpage_text {
-    /* margin-right: 100px; */
-  }
-
   #frontpage_text h1 {
-    font-size: 4em;
+    font-size: 3em;
   }
 
 
@@ -990,8 +948,8 @@ div.wpcf7-mail-sent-ok {
     background-size: 100%;
   }
 
-  #frontpage_text {
-    /* margin-right: 120px; */
+  #frontpage_text h1 {
+    font-size: 4em;
   }
 
   /*--Page: Work--*/
@@ -1117,6 +1075,12 @@ div.wpcf7-mail-sent-ok {
   .main-nav {
     max-width: calc(1000px + 48px); */
   }
+
+/*frontpage--*/
+
+#front_background {
+  margin: 54px auto 0 auto;
+}
 
   /*--Page: Work--*/
 

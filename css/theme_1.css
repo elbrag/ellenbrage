@@ -70,7 +70,7 @@ a, a button {
 }
 
 .menu-item.active a {
-  color: #60ef4a;
+  color: #60EF66;
 }
 
 .lang_item {
@@ -103,22 +103,34 @@ a, a button {
 /*--front page--*/
 
 #front_background {
-  background-color: #60ef4a;
+  background-color: #60EF66;
 }
 
 #frontpage_text {
-  width: 40%;
+  width: 100%;
+  position: absolute;
+  top: 30%;
+  text-align: center;
+  margin: 0 auto;
+}
+
+#frontpage_text h1 {
+  text-align: center;
+}
+
+.title {
+  font-weight: bold;
 }
 
 .graphic_elem {
-  width: 210%;
-  height: 210%;
+  width: 250%;
+  height: 250%;
   border-radius: 50%;
   margin: 0 auto;
   position: absolute;
-  top: -50%;
-  left: -50%;
-  transform: skewX(55deg);
+  top: -78%;
+  left: -62%;
+  transform: skewX(35deg);
   background: repeating-radial-gradient(
     circle,
     #fff,
@@ -126,6 +138,16 @@ a, a button {
     transparent 3px,
     transparent 50px
   );
+  animation: spin 8s infinite alternate-reverse;
+}
+
+@keyframes spin {
+  0% {transform: skewX(35deg);}
+  100% {transform: skewX(25deg);}
+}
+
+.header1_box {
+  height: 54px;
 }
 
 /*--Page: Work--*/
@@ -178,6 +200,19 @@ a, a button {
 h1, h2, h3, h4 {
 }
 /*slider---*/
+
+/*--frontpage--*/
+
+
+.graphic_elem {
+  left: -52%;
+  top: -72%;
+}
+
+.header1_box {
+  height: 84px;
+}
+
 /*--Page: Work--*/
 
 /*--Single: Work--*/
@@ -208,6 +243,10 @@ h1, h2, h3, h4 {
 }
 
 /*slider---*/
+
+/*--frontpage--*/
+
+
 /*--Page: Work--*/
 
 /*--Single: Work--*/
