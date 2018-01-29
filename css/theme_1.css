@@ -123,13 +123,13 @@ a, a button {
 }
 
 .graphic_elem {
-  width: 250%;
-  height: 250%;
+  width: 180%;
+  height: 180%;
   border-radius: 50%;
   margin: 0 auto;
   position: absolute;
-  top: -78%;
-  left: -62%;
+  top: -36%;
+  left: -33%;
   transform: skewX(35deg);
   background: repeating-radial-gradient(
     circle,
@@ -138,12 +138,12 @@ a, a button {
     transparent 3px,
     transparent 50px
   );
-  animation: spin 8s infinite alternate-reverse;
+  animation: spin 8s linear infinite;
 }
 
 @keyframes spin {
-  0% {transform: skewX(35deg);}
-  100% {transform: skewX(25deg);}
+  0% {transform: skewX(35deg) rotateZ(0deg);}
+  100% {transform: skewX(35deg) rotateZ(360deg);}
 }
 
 .header1_box {
@@ -205,6 +205,8 @@ h1, h2, h3, h4 {
 
 
 .graphic_elem {
+  width: 250%;
+  height: 250%;
   left: -52%;
   top: -72%;
 }
