@@ -1005,11 +1005,10 @@ div.wpcf7-mail-sent-ok {
 .single_description {
   width: calc(100% - 48px);
   max-width: 1000px;
-  margin-left: 24px;
 }
 
 .similar_projects {
-  width: 100%;
+  width: calc(100% - 48px);
   max-width: 1000px;
 }
 
@@ -1064,8 +1063,7 @@ div.wpcf7-mail-sent-ok {
 
   /*--Single: Work--*/
 
-  #single h1,
-  #single h2 {
+  #single h1 {
     margin-left: 0;
  }
 
@@ -1073,8 +1071,8 @@ div.wpcf7-mail-sent-ok {
     margin-left: 0;
   }
 
-  .single_description {
-    margin-left: 0;
+  .single_description, .similar_projects {
+    width: 100%;
   }
 
   .image_controls {
