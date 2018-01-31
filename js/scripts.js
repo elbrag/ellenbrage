@@ -115,7 +115,10 @@ bigimage.classList.remove('single_image');
 bigimage.className = 'single_big';
 
 var $bigimage = $('.single_big');
+
 $bigimage.parent().before($bigimage);
+//this is only to move bigimage into a class, so that the prev/next controls can be absolutely positioned to it
+$($bigimage).prependTo(".image_area");
 
 
 function enlarge(x){
@@ -129,7 +132,10 @@ function enlarge(x){
 
   smallimage.className = 'single_big';
   var $bigimage = $('.single_big');
+
   $bigimage.parent().before($bigimage);
+  //this is only to move bigimage into a class, so that the prev/next controls can be absolutely positioned to it
+  $($bigimage).prependTo(".image_area");
 
   sortdivs();
 }

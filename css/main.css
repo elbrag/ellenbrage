@@ -45,15 +45,15 @@ h1 {
 }
 
 h2 {
-  font-size: 2.5em;
-}
-
-h3 {
   font-size: 2em;
 }
 
-h4 {
+h3 {
   font-size: 1.5em;
+}
+
+h4 {
+  font-size: 1em;
 }
 
 ul {
@@ -113,8 +113,6 @@ header {
 
 #menu-symb {
   color: #000;
-  /* font-size: 36px; */
-  /* line-height: 42px; */
   position: absolute;
   right: 24px;
   cursor: pointer;
@@ -125,10 +123,6 @@ header {
   background-size: 100%;
   background-repeat: no-repeat;
 }
-
-/* #menu-symb:after{
-  content: ' \2026';
-} */
 
 .main-nav {
   background-color: #FFF;
@@ -231,10 +225,6 @@ header {
 #home, #contact, #cookies, #errorpage, #about {
   margin: 54px auto 72px auto;
   width: 90%;
-  overflow: hidden;
-}
-
-#front_background {
   overflow: hidden;
 }
 
@@ -352,23 +342,18 @@ input[type=submit] {
 
 /*--Page: Home--*/
 
-#front_background {
+#frontpage {
   margin: 12px auto 0 auto;
   width: 90%;
   max-width: 1000px;
+}
+
+#front_background {
   height: 67vh;
   position: relative;
   background-color: #eee;
 }
 
-#frontpage_text h2,
-#frontpage_text h3,
-#frontpage_text h4 {
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
-  margin-bottom: 0;
-  transform: rotateZ(90deg);
-}
 
 .stroke {
   -webkit-text-stroke: 1px;
@@ -376,11 +361,10 @@ input[type=submit] {
 }
 
 .header1_box {
-  position: relative;
 }
 
-#frontpage_text h1 {
-  font-size: 1.8em;
+.header1_box h1 {
+  font-size: 24px;
   text-transform: lowercase;
 }
 
@@ -388,21 +372,6 @@ hr {
   border: 3px solid #000;
   box-shadow: none;
 }
-
-h1.stroke {
-  z-index: 10;
-  position: absolute;
-  display: none;
-}
-
-h1.fill_2 {
-  display: none;
-}
-
-h1.fill_3 {
-  display: none;
-}
-
 
 /*--Page: Work--*/
 
@@ -520,10 +489,16 @@ h1.fill_3 {
   width: 90%;
 }
 
+.image_area {
+  position: relative;
+}
+
 .image_controls {
-  width: 72px;
   margin: 0 auto;
-  width: 90%;
+  position: absolute;
+  top: -45px;
+  right: 0;
+  margin-right: 12px;
 }
 
 .previmage_style {
@@ -601,6 +576,19 @@ h1.fill_3 {
 
 #about p {
   margin: 0 auto;
+}
+
+#about h2 {
+  text-align: left;
+  margin: 48px 0 36px 0;
+}
+
+#about h4{
+  margin-bottom: 6px;
+}
+
+#contact_arrow:before {
+  content: '\21E9';
 }
 
 #about .image {
@@ -755,9 +743,9 @@ div.wpcf7-mail-sent-ok {
     width: 90%;
   }
 
-  #front_background {
-    margin: 36px auto 0 auto;
+  #frontpage {
     width: 90%;
+    max-width: 1000px;
   }
 
    #about {
@@ -774,8 +762,8 @@ div.wpcf7-mail-sent-ok {
     background-size: 145%;
   }
 
-  #frontpage_text h1 {
-    font-size: 3em;
+.header1_box h1 {
+    font-size: 36px;
   }
 
 
@@ -840,11 +828,6 @@ div.wpcf7-mail-sent-ok {
   box-sizing: border-box;
 }
 
-#about h2 {
-  text-align: left;
-  margin: 48px 0 24px 0;
-}
-
 #about p {
   margin-bottom: 0;
 }
@@ -865,6 +848,10 @@ div.wpcf7-mail-sent-ok {
     padding-right: 42px;
     box-sizing: border-box;
     margin-top: 36px;
+  }
+
+  #contact_arrow:before {
+    content: '\21E8';
   }
 
 
@@ -948,8 +935,8 @@ div.wpcf7-mail-sent-ok {
     background-size: 100%;
   }
 
-  #frontpage_text h1 {
-    font-size: 4em;
+.header1_box h1 {
+    font-size: 48px;
   }
 
   /*--Page: Work--*/
@@ -993,9 +980,7 @@ div.wpcf7-mail-sent-ok {
 }
 
 .image_controls {
-  width: calc(100% - 48px);
-  max-width: 1000px;
-  margin-left: 24px;
+  margin-right: -14px;
 }
 
 
@@ -1005,6 +990,10 @@ div.wpcf7-mail-sent-ok {
 
 
   /*--Page: Contact--*/
+
+    .contact_text {
+      padding-right: 0;
+    }
 
   .wpcf7 {
     width: 40%;
@@ -1046,7 +1035,6 @@ div.wpcf7-mail-sent-ok {
   }
 
   .image_controls {
-    margin-left: 0;
   }
 
   /*--Page: About--*/
@@ -1078,7 +1066,7 @@ div.wpcf7-mail-sent-ok {
 
 /*frontpage--*/
 
-#front_background {
+#frontpage {
   margin: 54px auto 0 auto;
 }
 

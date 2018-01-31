@@ -45,11 +45,13 @@ if( have_posts() ) {
                 the_field('project_description');
                 ?>
               </p>
+
+          <div class='image_area'>
               <div class='image_controls'>
                 <span class='previmage_style' onclick="previmage()"></span>
                 <span class='nextimage_style' onclick="nextimage()"></span>
               </div>
-
+          </div>
               <?php
                   //Get the images ids from the post_metadata
                   $images = acf_photo_gallery('image_gallery', $post->ID);

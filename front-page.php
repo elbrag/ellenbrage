@@ -15,31 +15,26 @@ if( have_posts() ) {
 
      ?>
 
-  <div id='front_background'>
+  <section id='frontpage'>
 
-    <div class='graphic_elem'>
+    <div id='textbox'>
+        <div class='header1_box'>
+            <h1 class='fill'>Ellen Brage</h1>
+        </div>
+        <div class='titles_box'>
+            <p class='title'>Graphic designer</p>
+            <p class='title'>Web developer</p>
+            <p class='title'>Illustrator</p>
+        </div>
     </div>
 
-  <div id='frontpage_text'>
+        <div id='front_background'>
 
-    <div class='header1_box'>
-        <!-- <h1 class='stroke'>Ellen Brage</h1> -->
-        <h1 class='fill'>Ellen Brage</h1>
-        <h1 class='fill_2'>Ellen Brage</h1>
-        <h1 class='fill_3'>Ellen Brage</h1>
-    </div>
+          <div class='graphic_elem'>
+          </div>
 
-    <!-- <h2 class='stroke'>Graphic designer</h2>
-    <h3 class='stroke'>Web developer</h3>
-    <h4 class='stroke'>Illustrator</h4> -->
-
-    <p class='title'>Graphic designer</p>
-    <p class='title'>Web developer</p>
-    <p class='title'>Illustrator</p>
-
-  </div>
-
-</div>
+        </div>
+  </section>
   <?php
     }
   }
