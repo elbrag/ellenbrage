@@ -79,7 +79,16 @@ a, a button {
 }
 
 /*--Page standards--*/
+
+a {
+  color: #56e25c;
+}
+
 /*slider---*/
+
+#cur_theme{
+  font-weight: bold;
+}
 
 /*--front page--*/
 
@@ -255,6 +264,8 @@ div.wpcf7-mail-sent-ok {
 h1, h2, h3, h4 {
 }
 /*slider---*/
+
+
 
 /*--frontpage--*/
 
