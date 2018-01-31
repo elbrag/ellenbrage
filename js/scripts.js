@@ -55,36 +55,36 @@ var next_theme = document.getElementById('next_theme');
 
 function slidenext(){
   var pos = 0;
-  var pos2 = -500;
+  var pos2 = -700;
   var id = setInterval(frame, 0);
   function frame() {
     if (pos == 1000) {
       clearInterval(id);
     } else {
-      pos+=5;
-      pos2+=5;
+      pos+=10;
+      pos2+=10;
       cur_theme.style.right = pos + 'px';
       next_theme.style.opacity = '1';
       if (pos2 < 0) {
-        next_theme.style.right = (pos2+5) + 'px';
+        next_theme.style.right = (pos2+10) + 'px';
       }
     }
   }
 }
 function slideprev(){
   var pos = 0;
-  var pos2 = -500;
+  var pos2 = -700;
   var id = setInterval(frame, 0);
   function frame() {
     if (pos == 1000) {
       clearInterval(id);
     } else {
-      pos+=5;
-      pos2+=5;
+      pos+=10;
+      pos2+=10;
       cur_theme.style.left = pos + 'px';
       prev_theme.style.opacity = '1';
       if (pos2 < 0) {
-        prev_theme.style.left = (pos2+5) + 'px';
+        prev_theme.style.left = (pos2+10) + 'px';
       }
     }
   }

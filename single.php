@@ -48,8 +48,8 @@ if( have_posts() ) {
 
           <div class='image_area'>
               <div class='image_controls'>
-                <span class='previmage_style' onclick="previmage()"></span>
-                <span class='nextimage_style' onclick="nextimage()"></span>
+                <div class='previmage_style' onclick="previmage()"></div>
+                <div class='nextimage_style' onclick="nextimage()"></div>
               </div>
           </div>
               <?php

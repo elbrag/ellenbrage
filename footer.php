@@ -53,7 +53,6 @@
             <input type='hidden' name='settheme' value='<?php echo $prev ?>'></input>
 
                 <input type='submit' onclick=slideprev(); name='prev' value=''></input>
-                <span class='prevbtn_style'></span>
 
         </form>
       </span>
@@ -70,7 +69,6 @@
 
             <input type='hidden' name='settheme' value='<?php echo $next ?>'></input>
                 <input type='submit' onclick=slidenext(); name='next' value=''></input>
-                <span class='nextbtn_style'></span>
 
         </form>
       </span>

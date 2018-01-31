@@ -10,16 +10,6 @@ body {
   background-color: #fff;
 }
 
-input[type=submit] {
-  text-transform: lowercase;
-  font-variant: small-caps;
-  letter-spacing: 6px;
-  font-size: 1em;
-  background-color: #000;
-  color: #fff;
-  border: none;
-}
-
 
 p {
   /* font-weight: bold; */
@@ -164,7 +154,6 @@ a, a button {
 /*--Page: Work--*/
 
 .categories {
-  font-weight: bold;
 }
 
 /*--Single: Work--*/
