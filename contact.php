@@ -19,7 +19,10 @@ if( have_posts() ) {
      <p><?php the_field('main_text')?></p>
 
    </section>
+   <section class='contact_form'>
      <?php
+
+
      if (get_locale() == 'en_GB') {
           echo do_shortcode( '[contact-form-7 id="60" title="Contact form"]' );
       } elseif (get_locale() == 'sv_SE') {
@@ -27,6 +30,7 @@ if( have_posts() ) {
        }
 
     ?>
+    </section>
         </div><!--end of page specific tag-->
     <?php
 
