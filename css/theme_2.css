@@ -3,7 +3,7 @@
 /*--semantics reset and basics--*/
 
 * {
-  font-family: 'Lato';
+  font-family: 'Alegreya';
 }
 
 input[type=submit] {
@@ -11,7 +11,7 @@ input[type=submit] {
   font-variant: small-caps;
   letter-spacing: 6px;
   font-size: 1em;
-  background-color: #44ffee;
+  background-color: #7ba4ad;
   color: #fff;
   border: none;
 }
@@ -25,7 +25,12 @@ h1, h2, h3, h4{
 }
 
 a {
-  color: #44ffee;
+  color: #7ba4ad;
+  text-decoration: none;
+}
+
+main {
+  background-color: #e8fbff;
 }
 
 
@@ -33,8 +38,82 @@ a {
 
 /*--Menu--*/
 
+.main-nav {
+  background-color: #e8fbff;
+  box-shadow: 0px 10px 20px rgba(48, 64, 68, 0.04);
+  background: linear-gradient(rgb(232, 251, 255), #fff 210%);
+}
+
+.main-menu {
+  background-color: #e8fbff;
+}
+
+.radiobutton {
+  display: none;
+}
+
+#menu-symb {
+  background-image: url(../img/hamb_frost.svg);
+  width: 39px;
+  height: 36px;
+}
+
+#logocontainer a {
+  height: 40px;
+}
+
+#logo{
+  background-image: url(../img/eb_logo_frost.svg);
+}
+
+.menu-item {
+  padding: 6px;
+  text-align: center;
+  width: 100px;
+}
+
+.menu-item a {
+  /* padding-left: 24px; */
+  padding-left: 0;
+}
+
+.menu-item.active a {
+  color: #7ba4ad;
+}
+
+.lang_item {
+  padding-top: 14px;
+}
+
 /*--Page standards--*/
 /*slider---*/
+
+#slider_area {
+  margin: 1px auto -1px auto;
+}
+
+.prev, .next {
+  background-color: transparent;
+  width: 50px;
+  margin-top: -28px;
+}
+
+.prev input[type='submit'] {
+  background-image: url(../img/arrow_frost_left.svg);
+}
+
+.next input[type='submit'] {
+  background-image: url(../img/arrow_frost_right.svg);
+}
+
+.next input[type='submit'],
+.prev input[type='submit'] {
+  width: 50px;
+  top: 21px;
+  height: 50px;
+  background-position: center;
+}
+
 /*--Page: Work--*/
 
 /*--Single: Work--*/
@@ -47,6 +126,11 @@ a {
 
 /*--Footer--*/
 
+#mainfooter {
+    background: linear-gradient(rgba(255, 255, 255, 0.7), rgba(232, 251, 255, 0.8) 50%);
+    box-shadow: 0px -10px 20px rgba(48, 64, 68, 0.06);
+}
+
 /*=====================================640PX========================================*/
 
 @media (min-width: 640px) {
@@ -54,6 +138,17 @@ a {
 /*--Header--*/
 
 /*--Menu--*/
+
+.main-menu {
+  background-color: transparent;
+  margin-top: 16px;
+}
+
+.menu-item {
+  padding: 6px 24px;
+  margin: 0;
+  width: auto;
+}
 
 /*--Page standards--*/
 /*slider---*/
@@ -80,6 +175,11 @@ a {
 /*--Header--*/
 
 /*--Menu--*/
+
+#logocontainer a {
+  height: 48px;
+  margin-top: 18px;
+}
 
 /*--Page standards--*/
 /*slider---*/

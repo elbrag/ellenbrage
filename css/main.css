@@ -262,7 +262,7 @@ input[type=submit] {
 /*slider---*/
 
 #slider_area {
-  margin: 0 16px;
+  margin: 0 auto;
   overflow: hidden;
   display: flex;
   justify-content: space-between;
@@ -921,7 +921,7 @@ div.wpcf7-mail-sent-ok {
   #logocontainer a {
     width: 120px;
     height: 43px;
-    margin-top: 22px;
+    margin-top: 20px;
   }
 
   /*--Menu--*/
