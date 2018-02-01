@@ -236,7 +236,7 @@ header {
 
 #single {
   max-width: 1000px;
-  margin: 24px auto 72px auto;
+  margin: 31px auto 72px auto;
   overflow: hidden;
 }
 
@@ -467,6 +467,7 @@ hr {
 #single h1{
   width: 90%;
   margin: 0 auto 24px auto;
+  line-height: 1.1em;
 }
 #single h2{
   margin-bottom: 24px;
@@ -567,7 +568,7 @@ hr {
   background-color: #000;
   font-weight: bold;
   padding: 6px 0;
-  margin: 24px auto 0 auto;
+  margin: 24px auto 84px auto;
   width: 100%;
 }
 
@@ -752,10 +753,6 @@ div.wpcf7-mail-sent-ok {
     max-width: 1000px;
   }
 
-   #about {
-    margin-top: 36px;
-  }
-
   h1, h2, h3, h4{
     margin-bottom: 54px;
   }
@@ -773,11 +770,6 @@ div.wpcf7-mail-sent-ok {
 
 
   /*--Page: Work--*/
-
-  #category_area {
-    /* width: 90%; */
-    /* margin: 0 auto; */
-  }
 
   .categories {
     width: auto;
@@ -971,9 +963,6 @@ div.wpcf7-mail-sent-ok {
 
   /*--Page: Work--*/
 
-  #category_area {
-
-  }
 
   .grid_project {
     width: 33.33%;
@@ -1056,11 +1045,6 @@ div.wpcf7-mail-sent-ok {
     background-size: 130%;
   }
 
-  #category_area {
-
-    /* margin: 0 auto; */
-  }
-
   /*--Single: Work--*/
 
   #single h1 {
@@ -1093,10 +1077,6 @@ div.wpcf7-mail-sent-ok {
 
 /*--page standards--*/
 
-/* #contact, #about, #cookies, #errorpage {
-    width: 70%;
-  } */
-
   /*--Header--*/
 
   /*--Menu--*/
@@ -1120,18 +1100,12 @@ div.wpcf7-mail-sent-ok {
   /*--Page: Work--*/
 
 #category_area form {
-    /* width: 50%; */
     margin: 0 auto;
 }
 
 #category_area{
   max-width: 1000px;
-  margin: 32px auto 72px auto;
-}
-
-#category_area input[type='submit'] {
-  /* display: block;
-  margin: 24px auto 0 auto; */
+  margin: 0 auto 72px auto;
 }
 
 .grid_project p,
