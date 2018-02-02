@@ -4,12 +4,10 @@
 
 * {
   font-family: 'Alegreya';
+  color: #4a656b;
 }
 
 input[type=submit] {
-  text-transform: lowercase;
-  font-variant: small-caps;
-  letter-spacing: 6px;
   font-size: 1em;
   background-color: #7ba4ad;
   color: #fff;
@@ -30,7 +28,15 @@ a {
 }
 
 main {
+
+}
+
+body {
   background-color: #e8fbff;
+}
+
+.body_home {
+  overflow-y: hidden;
 }
 
 
@@ -39,9 +45,7 @@ main {
 /*--Menu--*/
 
 header {
-  background-color: #e8fbff;
-  /* box-shadow: 0px 10px 20px rgba(48, 64, 68, 0.04);
-  background: linear-gradient(rgb(232, 251, 255), #fff 210%); */
+  background-color: transparent;
 }
 
 .main-nav {
@@ -58,12 +62,17 @@ header {
 
 #menu-symb {
   background-image: url(../img/hamb_frost.svg);
-  width: 39px;
+  width: 45px;
   height: 36px;
+  right: 20px;
+  top: 14px;
 }
 
 #logocontainer a {
-  height: 40px;
+  width: 93px;
+  height: 45px;
+  left: 20px;
+  top: 14px;
 }
 
 #logo{
@@ -82,7 +91,7 @@ header {
 }
 
 .menu-item.active a {
-  color: #e8fbff;
+  color: #fff;
   text-shadow: 1px 1px 1px #4a656b;
 }
 
@@ -92,7 +101,20 @@ header {
   color:#4a656b;
 }
 
+.lang_items a.active button {
+  color: #4a656b;
+}
+
 /*--Page standards--*/
+
+#submit {
+    border: none;
+    background-color: rgba(255, 255, 255, 0.3);
+    box-shadow: 1px 1px 5px rgba(74,101,107,0.6);
+    margin: 2px 0 4px 1px;
+    color: #4a656b;
+}
+
 /*slider---*/
 
 #slider_area {
@@ -121,21 +143,99 @@ header {
   background-position: center;
 }
 
+/*--front page---*/
+
+#front_background{
+  background-image: url(../img/hoarfrost.gif);
+  background-size: 160%;
+}
+
+.graphic_elem{
+  width: 100%;
+  height: 100%;
+  background-color: #e8fbff;
+  opacity: 0.2;
+}
+
+#textbox{
+  position: absolute;
+  width: 90%;
+  max-width: 1000px;
+  top: 36%;
+  z-index: 50;
+  margin: 0 auto;
+  text-align: center;
+  color: #fff;
+  text-shadow: 1px 1px 1px #4a656b;
+}
+
+.header1_box h1 {
+  margin: 0;
+}
+
 /*--Page: Work--*/
+
+#category_area{
+  padding-left: 1px;
+}
+
+.categories {
+  font-size: 1em;
+  padding-left: 32px;
+}
+
+.checkmark {
+  bottom: 0;
+  border: none;
+  box-shadow: 1px 1px 5px rgba(74,101,107,0.6);
+  height: 16px;
+  width: 16px;
+}
+
+.categories .checkmark:after {
+  color:#4a656b;
+  left: 4px;
+}
 
 /*--Single: Work--*/
 /*--Page: About--*/
 /*--Page: Contact--*/
 
+#contact_arrow:before {
+  background-color: #fff;
+}
+
 /*form*/
+
+.wpcf7 label {
+  font-size: 0.8em;
+  font-weight: bold;
+}
+
+.wpcf7 input[type=text],
+.wpcf7 input[type=email],
+.wpcf7 textarea{
+  border: none;
+  box-shadow: 1px 1px 5px rgba(74,101,107,0.4);
+  padding: 6px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+div.wpcf7-mail-sent-ok {
+  background-color: #fff;
+  font-weight: bold;
+}
 
 /**/
 
 /*--Footer--*/
 
+/* rgba(232, 251, 255, 0.8) */
+
 #mainfooter {
-    background: linear-gradient(rgba(255, 255, 255, 0.7), rgba(232, 251, 255, 0.8) 50%);
-    box-shadow: 0px -10px 20px rgba(48, 64, 68, 0.06);
+    background: linear-gradient(rgba(255, 255, 255, 0.7), rgba(199, 230, 237, 0.8) 65%);
+    /* box-shadow: 0px -10px 20px rgba(48, 64, 68, 0.06); */
 }
 
 /*=====================================640PX========================================*/
@@ -145,6 +245,13 @@ header {
 /*--Header--*/
 
 /*--Menu--*/
+
+#logocontainer a{
+  margin-top: 18px;
+  height: 48px;
+  width: 115px;
+  margin-left: 20px;
+}
 
 .main-menu {
   background-color: transparent;
@@ -163,6 +270,9 @@ header {
 
 /*--Page standards--*/
 /*slider---*/
+
+
+
 /*--Page: Work--*/
 
 /*--Single: Work--*/
@@ -188,12 +298,20 @@ header {
 /*--Menu--*/
 
 #logocontainer a {
-  height: 48px;
-  margin-top: 18px;
+  height: 55px;
+  width: 135px;
+  margin-top: 15px;
 }
 
 /*--Page standards--*/
 /*slider---*/
+
+/*--frontpage--*/
+
+#front_background{
+  background-size: 100%;
+}
+
 /*--Page: Work--*/
 
 /*--Single: Work--*/
