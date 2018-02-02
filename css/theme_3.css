@@ -33,6 +33,17 @@ a {
 
 /*--Page standards--*/
 /*slider---*/
+
+/*frontpage--*/
+
+.graphic_elem {
+  width: 75%;
+  height: 75%;
+  background-image: url(../img/click_6-8.png);
+  background-size: 80%;
+  background-repeat: no-repeat;
+}
+
 /*--Page: Work--*/
 
 /*--Single: Work--*/
