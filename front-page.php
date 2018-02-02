@@ -33,6 +33,8 @@ if( have_posts() ) {
 
           <div class='graphic_elem'>
           </div>
+          <div class='graphic_elem2'>
+          </div>
 
         </div>
   </section>

@@ -112,6 +112,8 @@ a {
 
 .header1_box h1.fill {
   display: inline;
+    font-size: 24px;
+    text-transform: lowercase;
 }
 /**/
 .titles_box {
@@ -269,6 +271,9 @@ h1, h2, h3, h4 {
 
 /*--frontpage--*/
 
+.header1_box h1 {
+    font-size: 36px;
+  }
 
 .graphic_elem {
   width: 250%;
@@ -336,6 +341,11 @@ h1, h2, h3, h4 {
 .header1_box {
   height: 84px;
 }
+
+
+.header1_box h1 {
+    font-size: 48px;
+  }
 
 /*--Page: Work--*/
 

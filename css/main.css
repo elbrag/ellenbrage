@@ -351,11 +351,6 @@ input[type=submit] {
 .header1_box {
 }
 
-.header1_box h1 {
-  font-size: 24px;
-  text-transform: lowercase;
-}
-
 hr {
   border: 3px solid #000;
   box-shadow: none;
@@ -763,9 +758,6 @@ div.wpcf7-mail-sent-ok {
     background-size: 145%;
   }
 
-.header1_box h1 {
-    font-size: 36px;
-  }
 
 
 
@@ -955,10 +947,6 @@ div.wpcf7-mail-sent-ok {
 
   .home_image {
     background-size: 100%;
-  }
-
-.header1_box h1 {
-    font-size: 48px;
   }
 
   /*--Page: Work--*/

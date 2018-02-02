@@ -1,3 +1,5 @@
+
+
 /*--semantics reset and basics--*/
 
 * {
@@ -9,52 +11,170 @@ input[type=submit] {
   font-variant: small-caps;
   letter-spacing: 6px;
   font-size: 1em;
-  background-color: #3311ee;
+  background-color: #0000FF;
   color: #fff;
   border: none;
 }
 
 
 p {
+  letter-spacing: 0.4px;
 }
 
 h1, h2, h3, h4{
-
+  text-transform: lowercase;
+  font-variant: small-caps;
+  letter-spacing: 5px;
 }
 
 a {
-  color: #3311ee;
+  color: #000;
+  text-decoration: none;
 }
 
 
 /*--Header--*/
 
+#logo {
+  background-image: url(../img/eb_logo_blue.svg);
+}
+
 /*--Menu--*/
 
+#menu-symb {
+  background-image: url(../img/hamb_blue.svg);
+}
+
+.radiobutton {
+  top: 42%;
+  color: #0000FF;
+  border: 1px solid #0000FF;
+}
+
+.radiobutton:after {
+  background-color: #0000FF;
+}
+
+.menu-item.active {
+  background-color: #FFF;
+}
+
+.menu-item.active .radiobutton {
+  background-color: #FFF;
+}
+
+.menu-item a {
+  text-transform: lowercase;
+  font-variant: small-caps;
+  letter-spacing: 5px;
+  color: #0000FF;
+}
+
+.lang_item {
+  text-transform: lowercase;
+  font-variant: small-caps;
+  letter-spacing: 2px;
+}
+
+.lang_items a.active button {
+  color: #0000FF;
+}
+
 /*--Page standards--*/
+
+input[type=submit] {
+  background-color: #0000FF;
+}
+
 /*slider---*/
 
-/*frontpage--*/
+.prevbtn_style, .nextbtn_style {
+  color: #fff;
+  font-size: 32px;
+}
 
-.graphic_elem {
-  width: 75%;
-  height: 75%;
-  background-image: url(../img/click_6-8.png);
-  background-size: 80%;
-  background-repeat: no-repeat;
+.prevbtn_style:before {
+  content: ' \276E';
+}
+
+.nextbtn_style:before {
+  content: ' \276F';
 }
 
 /*--Page: Work--*/
 
+.categories {
+  text-transform: lowercase;
+  font-variant: small-caps;
+  letter-spacing: 4px;
+}
+
+.grid_project p {
+  font-size: 0.6em;
+  text-transform: lowercase;
+  font-variant: small-caps;
+  letter-spacing: 4px;
+}
+
 /*--Single: Work--*/
+
+.similar_projects p {
+  font-size: 0.6em;
+  text-transform: lowercase;
+  font-variant: small-caps;
+  letter-spacing: 4px;
+}
+
+.browse_all {
+  text-transform: lowercase;
+  font-variant: small-caps;
+  letter-spacing: 4px;
+  background-color: #0000FF;
+}
+
 /*--Page: About--*/
+
+
+
 /*--Page: Contact--*/
 
 /*form*/
 
+.wpcf7 label {
+  font-size: 0.6em;
+  text-transform: lowercase;
+  font-variant: small-caps;
+  letter-spacing: 4px;
+}
+
+.wpcf7 input[type=text],
+.wpcf7 input[type=email] {
+  border: none;
+  border-bottom: 1px solid #000;
+  width: 99%;
+  margin: 6px 0 12px 0;
+}
+
+.wpcf7 textarea {
+  border: 1px solid #000;
+  resize: none;
+  width: 98%;
+  margin: 6px 0 12px 0;
+}
+
+div.wpcf7-mail-sent-ok {
+  border: none;
+  background-color: #eee;
+  padding: 12px;
+}
+
 /**/
 
 /*--Footer--*/
+
+#mainfooter {
+  background-color: #0000FF;
+}
 
 /*=====================================640PX========================================*/
 
@@ -64,11 +184,20 @@ a {
 
 /*--Menu--*/
 
+.lang_items a.active button {
+  color: #0000FF;
+}
+
+.radiobutton {
+  top: 7px;
+}
+
 /*--Page standards--*/
 /*slider---*/
 /*--Page: Work--*/
 
 /*--Single: Work--*/
+
 /*--Page: About--*/
 /*--Page: Contact--*/
 
