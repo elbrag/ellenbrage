@@ -168,14 +168,30 @@ a {
 
 /*--Page: Work--*/
 
+#category_area form {
+  padding-bottom: 3px;
+}
+
 .categories {
   font-size: 1em;
+  padding-left: 32px;
 }
 
 .checkmark {
   height: 16px;
   width: 16px;
   border: 2px solid #000;
+}
+
+.categories input:checked ~ .checkmark {
+  background-color: transparent;
+}
+
+.categories .checkmark:after {
+  font-size: 30px;
+  font-weight: 200;
+  left: 1px;
+  top: -1px;
 }
 
 /*--Single: Work--*/
