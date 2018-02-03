@@ -174,6 +174,7 @@ a {
 
 #category_area form {
   padding-bottom: 3px;
+  padding-top: 1px;
 }
 
 .categories {
@@ -185,6 +186,7 @@ a {
   height: 16px;
   width: 16px;
   border: 2px solid #000;
+  top: -1px;
 }
 
 .categories input:checked ~ .checkmark {
@@ -192,10 +194,10 @@ a {
 }
 
 .categories .checkmark:after {
-  font-size: 30px;
-  font-weight: 200;
-  left: 1px;
-  top: -1px;
+  font-size: 34px;
+  font-weight: 300;
+  left: 0px;
+  top: -2px;
 }
 
 .grid_project p, .similar_projects p {
