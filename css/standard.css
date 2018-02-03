@@ -194,7 +194,30 @@ a {
   top: -1px;
 }
 
+.grid_project p, .similar_projects p {
+  font-size: 1em;
+}
+
+.grid_project p {
+  margin-left: 12px;
+}
+
 /*--Single: Work--*/
+
+.browse_all {
+  font-size: 1.2em;
+  background-color: #fff;
+  color: #000;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 3px #000;
+  font-weight: 300;
+}
+
+.browse_all:active {
+  box-shadow: 0 1px #000;
+  transform: translateY(2px);
+}
 /*--Page: About--*/
 
 .graphic_elem2 {
@@ -300,6 +323,10 @@ div.wpcf7-mail-sent-ok {
 /*--Page: Work--*/
 
 /*--Single: Work--*/
+
+.similar_projects p {
+  margin-left: 12px;
+}
 /*--Page: About--*/
 
 #about p:nth-child(1) {
