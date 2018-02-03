@@ -49,10 +49,16 @@ if( have_posts() ) {
              <img class='image' src='<?php echo $sizedimage2;?>'>
              <?php }
             ?>
+            
+            <div class='graphic_elem2'>
+            </div>
+
+
           </div>
             <div id='textblock'>
 
              <p><?php the_field('text_1');?></p>
+
 
              <br />
 
