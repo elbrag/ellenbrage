@@ -26,7 +26,7 @@ p {
 }
 
 h1, h2, h3, h4{
-  font-family: 'Lourdes';
+
 }
 
 a {
@@ -111,7 +111,6 @@ input[type=submit] {
 }
 
 #cur_theme {
-  font-family: 'Lourdes';
   font-size: 1.3em;
   text-align: center;
   line-height: 1.7em;
@@ -122,32 +121,44 @@ input[type=submit] {
 #frontpage {
   margin: 0;
   width: 100%;
+  position: relative;
+  height: 85vh;
 }
 
 #front_background {
   background-color: transparent;
+  height: 100%;
 }
 
 .graphic_elem {
   background-image: url(../img/druk_2.png);
-  background-size: 154%;
+  background-size: 155%;
   background-repeat: no-repeat;
   height: 100%;
+  width: 100%;
   margin-top: -12px;
+  position: absolute;
+  right: 0;
 }
+
 
 #textbox{
   position: absolute;
-  bottom: 0;
+  top: 60%;
   width: 90%;
-  margin: 24px;
+  left: 24px;
   max-width: 1000px;
+}
+
+.title{
+  float:left;
 }
 
 .fill{
   font-family: 'Colt';
   font-size: 6vw;
   margin: 0;
+  line-height: 1em;
 }
 
 /*--Page: Work--*/
@@ -224,16 +235,7 @@ div.wpcf7-mail-sent-ok {
 #mainfooter {
   background-color: #ff796b;
 }
-/*=====================================500PX========================================*/
 
-@media (min-width: 500px) {
-
-#front_background {
-  height: 86vh;
-}
-
-
-}
 
 /*=====================================640PX========================================*/
 
@@ -272,12 +274,18 @@ div.wpcf7-mail-sent-ok {
 }
 
 .graphic_elem {
-  background-size: 95%;
+  background-size: 92%;
+  margin: -12px auto 0 auto;
+  position: static;
 }
 
 #front_background {
   margin-top: 24px;
-  height: 85vh;
+}
+
+#textbox {
+  left: 0;
+  width: 100%;
 }
 
 /*--Page: Work--*/
@@ -320,6 +328,10 @@ div.wpcf7-mail-sent-ok {
   margin-top: -18px;
 }
 
+#textbox {
+  top: 70%;
+}
+
 /*--Page: Work--*/
 
 /*--Single: Work--*/
@@ -343,6 +355,12 @@ div.wpcf7-mail-sent-ok {
 
 /*--Menu--*/
 
+/*front page*/
+
+.fill{
+  font-size: 68px;
+}
+
 /*--Page: Work--*/
 
 /*--Single: Work--*/
@@ -365,10 +383,14 @@ div.wpcf7-mail-sent-ok {
 
 /*front page*/
 
+
 #front_background {
   background-size: 95%;
-  height: 70vh;
   margin-top: 48px;
+}
+
+#frontpage {
+  margin: 48px auto 0 auto;
 }
 
 /*--Page: Work--*/
