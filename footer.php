@@ -5,8 +5,8 @@
 
   //theme slider area---------------------//
 
-  $themeList = array("theme_1", "theme_2", "theme_3", "theme_4", "theme_5");
-  $themeNames = array("Swiss", "Hoarfrost", "Funked", "Demure", "Chrysler");
+  $themeList = array("theme_1", "theme_2", "theme_3", "theme_4");
+  $themeNames = array("Swiss", "Hoarfrost", "Chrysler", "Sleek");
 
 
   if (isset($_COOKIE['theme'])) {
@@ -27,19 +27,19 @@
             $nextname = $themeNames[$y+1];
 
             if ($prevname == "") {
-              $prevname = 'Standard';
+              $prevname = 'Mural';
             } elseif($nextname == "") {
-              $nextname = 'Standard';
+              $nextname = 'Mural';
             }
           }
         }
       }
     }
   } else {
-    $themename = 'Standard';
-    $prev = $themeList[4];
+    $themename = 'Mural';
+    $prev = $themeList[3];
     $next = $themeList[0];
-    $prevname = $themeNames[4];
+    $prevname = $themeNames[3];
     $nextname = $themeNames[0];
   }
 
