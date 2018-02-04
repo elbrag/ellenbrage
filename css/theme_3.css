@@ -1,9 +1,13 @@
-
+/*Name: Druk*/
 
 /*--semantics reset and basics--*/
 
 * {
-  font-family: 'Lato';
+  font-family: 'Source Serif Pro';
+}
+
+body {
+  background-color: #ff796b;
 }
 
 input[type=submit] {
@@ -11,7 +15,7 @@ input[type=submit] {
   font-variant: small-caps;
   letter-spacing: 6px;
   font-size: 1em;
-  background-color: #0000FF;
+  background-color: #fff;
   color: #fff;
   border: none;
 }
@@ -22,9 +26,7 @@ p {
 }
 
 h1, h2, h3, h4{
-  text-transform: lowercase;
-  font-variant: small-caps;
-  letter-spacing: 5px;
+  font-family: 'Lourdes';
 }
 
 a {
@@ -36,27 +38,34 @@ a {
 /*--Header--*/
 
 #logo {
-  background-image: url(../img/eb_logo_blue.svg);
+  background-image: url(../img/eb_logo_black.svg);
 }
 
 /*--Menu--*/
 
+.main-nav {
+  background-color: #ff796b;
+}
+
+.main-menu {
+  background-color: #ff796b;
+}
+
 #menu-symb {
-  background-image: url(../img/hamb_blue.svg);
+  background-image: url(../img/hamb_black.svg);
 }
 
 .radiobutton {
   top: 42%;
-  color: #0000FF;
-  border: 1px solid #0000FF;
+  color: #00ffFF;
+  border: 1px solid #fff;
 }
 
 .radiobutton:after {
-  background-color: #0000FF;
+  background-color: #fff;
 }
 
 .menu-item.active {
-  background-color: #FFF;
 }
 
 .menu-item.active .radiobutton {
@@ -67,7 +76,7 @@ a {
   text-transform: lowercase;
   font-variant: small-caps;
   letter-spacing: 5px;
-  color: #0000FF;
+  color: #fff;
 }
 
 .lang_item {
@@ -77,28 +86,68 @@ a {
 }
 
 .lang_items a.active button {
-  color: #0000FF;
+  color: #fff;
 }
 
 /*--Page standards--*/
 
 input[type=submit] {
-  background-color: #0000FF;
+  background-color: #fff;
 }
 
 /*slider---*/
 
-.prevbtn_style, .nextbtn_style {
-  color: #fff;
-  font-size: 32px;
+.prev, .next {
+  background-color: transparent;
 }
 
-.prevbtn_style:before {
-  content: ' \276E';
+
+.prev input[type='submit'] {
+  background-image: url(../img/arrow_bl_left.svg);
 }
 
-.nextbtn_style:before {
-  content: ' \276F';
+.next input[type='submit'] {
+  background-image: url(../img/arrow_bl_right.svg);
+}
+
+#cur_theme {
+  font-family: 'Lourdes';
+  font-size: 1.3em;
+  text-align: center;
+  line-height: 1.7em;
+}
+
+/* front page */
+
+#frontpage {
+  margin: 0;
+  width: 100%;
+}
+
+#front_background {
+  background-color: transparent;
+}
+
+.graphic_elem {
+  background-image: url(../img/druk_2.png);
+  background-size: 154%;
+  background-repeat: no-repeat;
+  height: 100%;
+  margin-top: -12px;
+}
+
+#textbox{
+  position: absolute;
+  bottom: 0;
+  width: 90%;
+  margin: 24px;
+  max-width: 1000px;
+}
+
+.fill{
+  font-family: 'Colt';
+  font-size: 6vw;
+  margin: 0;
 }
 
 /*--Page: Work--*/
@@ -129,7 +178,7 @@ input[type=submit] {
   text-transform: lowercase;
   font-variant: small-caps;
   letter-spacing: 4px;
-  background-color: #0000FF;
+  background-color: #fff;
 }
 
 /*--Page: About--*/
@@ -173,7 +222,17 @@ div.wpcf7-mail-sent-ok {
 /*--Footer--*/
 
 #mainfooter {
-  background-color: #0000FF;
+  background-color: #ff796b;
+}
+/*=====================================500PX========================================*/
+
+@media (min-width: 500px) {
+
+#front_background {
+  height: 86vh;
+}
+
+
 }
 
 /*=====================================640PX========================================*/
@@ -184,8 +243,17 @@ div.wpcf7-mail-sent-ok {
 
 /*--Menu--*/
 
+
+.main-nav {
+  background-color: transparent;
+}
+
+.main-menu {
+  background-color: transparent;
+}
+
 .lang_items a.active button {
-  color: #0000FF;
+  color: #fff;
 }
 
 .radiobutton {
@@ -194,6 +262,24 @@ div.wpcf7-mail-sent-ok {
 
 /*--Page standards--*/
 /*slider---*/
+
+/*front page*/
+
+#frontpage {
+  width: 90%;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.graphic_elem {
+  background-size: 95%;
+}
+
+#front_background {
+  margin-top: 24px;
+  height: 85vh;
+}
+
 /*--Page: Work--*/
 
 /*--Single: Work--*/
@@ -221,6 +307,19 @@ div.wpcf7-mail-sent-ok {
 
 /*--Page standards--*/
 /*slider---*/
+
+/*front page*/
+
+#frontpage {
+  margin: 12px auto 0 auto;
+  width: 90%;
+  max-width: 1000px;
+}
+
+#front_background {
+  margin-top: -18px;
+}
+
 /*--Page: Work--*/
 
 /*--Single: Work--*/
@@ -243,6 +342,34 @@ div.wpcf7-mail-sent-ok {
 /*--Header--*/
 
 /*--Menu--*/
+
+/*--Page: Work--*/
+
+/*--Single: Work--*/
+
+/*--Page: About--*/
+
+/*--Page: Contact--*/
+
+/*--Footer--*/
+
+}
+
+/*=====================================1500PX========================================*/
+
+@media (min-width: 1500px) {
+
+/*--Header--*/
+
+/*--Menu--*/
+
+/*front page*/
+
+#front_background {
+  background-size: 95%;
+  height: 70vh;
+  margin-top: 48px;
+}
 
 /*--Page: Work--*/
 
