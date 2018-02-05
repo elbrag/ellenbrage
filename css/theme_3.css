@@ -10,16 +10,6 @@ body {
   background-color: #ff796b;
 }
 
-input[type=submit] {
-  text-transform: lowercase;
-  font-variant: small-caps;
-  letter-spacing: 6px;
-  font-size: 1em;
-  background-color: #fff;
-  color: #fff;
-  border: none;
-}
-
 
 p {
   letter-spacing: 0.4px;
@@ -56,16 +46,19 @@ a {
 }
 
 .radiobutton {
-  top: 42%;
-  color: #00ffFF;
-  border: 1px solid #fff;
+  display: none;
 }
 
 .radiobutton:after {
   background-color: #fff;
 }
 
-.menu-item.active {
+.menu-item {
+  text-align: center;
+}
+
+.menu-item.active a {
+  text-shadow: 2px 2px #000;
 }
 
 .menu-item.active .radiobutton {
@@ -75,7 +68,9 @@ a {
 .menu-item a {
   text-transform: lowercase;
   font-variant: small-caps;
-  letter-spacing: 5px;
+  letter-spacing: 0.2em;
+  font-size: 1.5em;
+  padding: 0;
   color: #fff;
 }
 
@@ -83,6 +78,12 @@ a {
   text-transform: lowercase;
   font-variant: small-caps;
   letter-spacing: 2px;
+  padding-top: 11px;
+}
+
+.lang_items a {
+  font-size: 1.1em;
+  letter-spacing: 0.2em;
 }
 
 .lang_items a.active button {
@@ -91,8 +92,11 @@ a {
 
 /*--Page standards--*/
 
-input[type=submit] {
+#submit {
+  box-shadow: 2px 2px #000, 1px 1px #000;
   background-color: #fff;
+  border-radius: 0;
+  font-size: 1em;
 }
 
 /*slider---*/
@@ -152,6 +156,7 @@ input[type=submit] {
 
 .title{
   float:left;
+  margin-right: 12px;
 }
 
 .fill{
@@ -164,9 +169,22 @@ input[type=submit] {
 /*--Page: Work--*/
 
 .categories {
-  text-transform: lowercase;
-  font-variant: small-caps;
-  letter-spacing: 4px;
+  font-size: 1em;
+}
+
+.checkmark {
+  top: 1px;
+  width: 14px;
+  height: 14px;
+  box-shadow: 2px 2px #000, 1px 1px #000;
+  background-color: #fff;
+}
+
+.categories .checkmark:after {
+  font-size: 20px;
+  font-weight: 900;
+  left: 2px;
+  top: 1px;
 }
 
 .grid_project p {
@@ -200,11 +218,18 @@ input[type=submit] {
 
 /*form*/
 
+div.wpcf7 {
+  padding-bottom: 3px;
+}
+
 .wpcf7 label {
-  font-size: 0.6em;
-  text-transform: lowercase;
-  font-variant: small-caps;
-  letter-spacing: 4px;
+  font-size: 1em;
+}
+
+.wpcf7 input[type=text],
+.wpcf7 input[type=email],
+.wpcf7 textarea {
+  background-color: transparent;
 }
 
 .wpcf7 input[type=text],
@@ -246,12 +271,26 @@ div.wpcf7-mail-sent-ok {
 /*--Menu--*/
 
 
+#logocontainer {
+  width: 194px;
+}
+
 .main-nav {
   background-color: transparent;
 }
 
 .main-menu {
   background-color: transparent;
+  margin-top: 18px;
+  width: calc(100% - 194px);
+}
+.menu-item {
+  margin-right: 48px;
+  text-align: left;
+}
+
+.menu-item a {
+  font-size: 1.2em;
 }
 
 .lang_items a.active button {
@@ -260,6 +299,10 @@ div.wpcf7-mail-sent-ok {
 
 .radiobutton {
   top: 7px;
+}
+
+.menu-item.active a {
+  text-shadow: 1px 1px #000;
 }
 
 /*--Page standards--*/
@@ -293,6 +336,10 @@ div.wpcf7-mail-sent-ok {
 /*--Single: Work--*/
 
 /*--Page: About--*/
+
+#about p:nth-child(1) {
+  margin-top: -6px;
+}
 /*--Page: Contact--*/
 
 /*form*/
@@ -312,6 +359,19 @@ div.wpcf7-mail-sent-ok {
 /*--Header--*/
 
 /*--Menu--*/
+
+#logocontainer {
+  width: 208px;
+}
+
+.main-menu {
+  width: calc(100% - 208px);
+}
+
+.menu-item {
+  margin-right: 54px;
+}
+
 
 /*--Page standards--*/
 /*slider---*/

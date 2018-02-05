@@ -71,7 +71,7 @@ button {
   border: none;
 }
 
-button:focus, input:focus {
+button:focus, input:focus, textarea:focus {
   outline: none;
 }
 
@@ -340,15 +340,6 @@ input[type=submit] {
   height: 67vh;
   position: relative;
   background-color: #eee;
-}
-
-
-.stroke {
-  -webkit-text-stroke: 1px;
-  -webkit-text-fill-color: transparent;
-}
-
-.header1_box {
 }
 
 hr {

@@ -7,9 +7,6 @@
 }
 
 input[type=submit] {
-  text-transform: lowercase;
-  font-variant: small-caps;
-  letter-spacing: 6px;
   font-size: 1em;
   background-color: #ee431f;
   color: #fff;
@@ -33,8 +30,80 @@ a {
 
 /*--Menu--*/
 
+.lang_items a {
+  text-decoration: none;
+}
+
+.menu-item a {
+  text-decoration: none;
+  font-size: 1.5em;
+  padding-left: 36px;
+}
+
+.radiobutton {
+  border: 2px solid #000;
+  width: 14px;
+  height: 14px;
+  top: 17px;
+}
+
+.menu-item.active .radiobutton {
+  background-color: transparent;
+}
+
+.radiobutton:after {
+  top: 4px;
+  left: 4px;
+  background-color: #000;
+}
+
 /*--Page standards--*/
 /*slider---*/
+
+.prev, .next {
+  background-color: transparent;
+}
+
+#cur_theme {
+  color: #ee431f;
+  font-weight: bold;
+  font-size: 1.2em;
+  line-height: 1.9em;
+}
+
+/*--front page--*/
+
+#frontpage {
+  position: relative;
+}
+
+#front_background {
+  background-color: #fff;
+  height: 95vh;
+}
+
+.graphic_elem {
+  background-image: url(../img/IMG_8575bw-web.jpg);
+  width: 100%;
+  height: 100%;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  margin-top: -60px;
+  margin-left: -180px;
+}
+
+#textbox {
+  width: 40%;
+  position: absolute;
+  z-index: 50;
+  right: 0;
+  top: 30%;
+}
+
+.fill {
+  margin-bottom: 12px;
+}
+
 /*--Page: Work--*/
 
 /*--Single: Work--*/
@@ -43,9 +112,36 @@ a {
 
 /*form*/
 
+.wpcf7 label {
+  font-size: 1em;
+  font-weight: bold;
+  text-transform: none;
+  font-variant: normal;
+  letter-spacing: normal;
+}
+
+.wpcf7 input[type=text],
+.wpcf7 input[type=email],
+.wpcf7 textarea{
+  border: none;
+  background-color: transparent;
+  border-bottom: 2px solid #000;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+div.wpcf7-mail-sent-ok {
+  background-color: #CCC636;;
+  font-weight: bold;
+}
+
 /**/
 
 /*--Footer--*/
+
+#mainfooter {
+  background-color: transparent;
+}
 
 /*=====================================640PX========================================*/
 
@@ -55,8 +151,31 @@ a {
 
 /*--Menu--*/
 
+.menu-item {
+  margin-right: 36px;
+}
+
+.menu-item a {
+  font-size: 1.1em;
+  padding-left: 28px;
+}
+
+.radiobutton {
+  top: 3px;
+  width: 12px;
+  height: 12px;
+  border-width: 1px;
+}
+
+.radiobutton:after {
+  top: 3px;
+  left: 3px;
+}
+
 /*--Page standards--*/
 /*slider---*/
+
+/*--front page--*/
 /*--Page: Work--*/
 
 /*--Single: Work--*/
@@ -83,6 +202,7 @@ a {
 
 /*--Page standards--*/
 /*slider---*/
+/*--front page--*/
 /*--Page: Work--*/
 
 /*--Single: Work--*/
@@ -105,6 +225,8 @@ a {
 /*--Header--*/
 
 /*--Menu--*/
+
+/*--front page--*/
 
 /*--Page: Work--*/
 
