@@ -49,7 +49,7 @@ if( have_posts() ) {
              <img class='image' src='<?php echo $sizedimage2;?>'>
              <?php }
             ?>
-            
+
             <div class='graphic_elem2'>
             </div>
 
@@ -65,6 +65,10 @@ if( have_posts() ) {
              <h2><?php the_field('heading_2'); ?></h2>
 
              <p><?php the_field('text_2');?></p>
+
+             <h2><?php the_field('heading_3'); ?></h2>
+
+             <p><?php the_field('text_3');?></p>
 
            </div>
 
