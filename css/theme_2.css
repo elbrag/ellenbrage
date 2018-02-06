@@ -96,8 +96,8 @@ header {
 }
 
 .lang_item {
-  padding-top: 12px;
-  font-size: 1.1em;
+  padding-top: 13px;
+  font-size: 1em;
   color:#4a656b;
 }
 
@@ -145,9 +145,19 @@ header {
 
 /*--front page---*/
 
+#frontpage {
+  margin: 0;
+  width: 100%;
+  max-width: none;
+}
+
 #front_background{
-  background-image: url(../img/hoarfrost.gif);
-  background-size: 160%;
+  background-image: url(../img/mammoth_3_smallscreens.gif);
+  background-size: 225%;
+  height: 100vh;
+  margin-right: -24px;
+  background-position: center 0;
+  background-repeat: no-repeat;
 }
 
 .graphic_elem{
@@ -247,7 +257,7 @@ div.wpcf7-mail-sent-ok {
 /*--Menu--*/
 
 #logocontainer a{
-  margin-top: 18px;
+  margin-top: 13px;
   height: 48px;
   width: 115px;
   margin-left: 20px;
@@ -255,7 +265,7 @@ div.wpcf7-mail-sent-ok {
 
 .main-menu {
   background-color: transparent;
-  margin-top: 16px;
+  margin-top: 15px;
 }
 
 .menu-item {
@@ -271,6 +281,11 @@ div.wpcf7-mail-sent-ok {
 /*--Page standards--*/
 /*slider---*/
 
+/*frontpage*/
+
+#front_background {
+  background-image: url(../img/mammoth_3.gif);
+}
 
 
 /*--Page: Work--*/
@@ -300,7 +315,6 @@ div.wpcf7-mail-sent-ok {
 #logocontainer a {
   height: 55px;
   width: 135px;
-  margin-top: 15px;
 }
 
 /*--Page standards--*/
@@ -310,6 +324,11 @@ div.wpcf7-mail-sent-ok {
 
 #front_background{
   background-size: 100%;
+}
+
+#front_background{
+  margin-top: -72px;
+  margin-bottom: -10px;
 }
 
 /*--Page: Work--*/
