@@ -60,9 +60,6 @@ a {
 /*--Page standards--*/
 /*slider---*/
 
-.prev, .next {
-  background-color: transparent;
-}
 
 #cur_theme {
   color: #ee431f;

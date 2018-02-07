@@ -6,7 +6,7 @@
   //theme slider area---------------------//
 
   $themeList = array("theme_1", "theme_2", "theme_3", "theme_4");
-  $themeNames = array("Swiss", "Hoarfrost", "Druk", "Sleek");
+  $themeNames = array("Swiss", "Up north", "Druk", "Sleek");
 
 
   if (isset($_COOKIE['theme'])) {

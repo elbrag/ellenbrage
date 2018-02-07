@@ -266,35 +266,37 @@ input[type=submit] {
   overflow: hidden;
   display: flex;
   justify-content: space-between;
-  height: 36px;
   width: 90%;
   max-width: 1000px;
 }
 
 .prev, .next {
   position: relative;
-  width: 35px;
-  margin-top: -18px;
-  background-color: #fff;
+  width: 36px;
+  margin-top: -30px;
 }
 
 .prev input[type='submit'], .next input[type='submit'] {
   position: absolute;
   background-color: transparent;
-  width: 35px;
-  height: 35px;
+  width: 24px;
+  height: 30px;
   padding: 0;
-  top: 24px;
+  top: 30px;
   background-size: 100%;
   background-repeat: no-repeat;
+  background-position: center;
+  background-size: 90%;
 }
 
 .prev input[type='submit'] {
-  background-image: url(../img/arrow_tr_left.svg);
+  background-image: url(../img/arrow_prev_black.svg);
+  left: 0;
 }
 
 .next input[type='submit'] {
-  background-image: url(../img/arrow_tr_right.svg);
+  background-image: url(../img/arrow_next_black.svg);
+  right: 0;
 }
 
 .theme_title {
@@ -305,7 +307,7 @@ input[type=submit] {
   position: relative;
   width: 160px;
   text-align: center;
-  line-height: 2.3em;
+  line-height: 2em;
 }
 
 #next_theme {
@@ -315,7 +317,7 @@ input[type=submit] {
   width: 160px;
   text-align: center;
   right: -700px;
-  line-height: 2.3em;
+  line-height: 2em;
 }
 
 #prev_theme {
@@ -325,7 +327,7 @@ input[type=submit] {
   width: 160px;
   text-align: center;
   left: -700px;
-  line-height: 2.3em;
+  line-height: 2em;
 }
 
 /*--Page: Home--*/
@@ -474,18 +476,18 @@ hr {
   position: absolute;
   top: -35px;
   right: 0;
-  width: 70px;
+  width: 75px;
   height: 25px;
   margin-right: 24px;
 }
 
 .previmage_style {
-  background-image: url(../img/arrow_2_bl_left.svg);
+  background-image: url(../img/arrow_prev_black.svg);
   margin-right: 18px;
 }
 
 .nextimage_style{
-  background-image: url(../img/arrow_2_bl_right.svg);
+  background-image: url(../img/arrow_next_black.svg);
 }
 
 .previmage_style,
@@ -798,12 +800,12 @@ div.wpcf7-mail-sent-ok {
   .previmage_style {
     float: left;
     margin-right: 0;
-    background-image: url(../img/arrow_2_g_left.svg);
+    background-image: url(../img/arrow_prev_grey.svg);
   }
 
   .nextimage_style{
     float: right;
-    background-image: url(../img/arrow_2_g_right.svg);
+    background-image: url(../img/arrow_next_grey.svg);
   }
 
   .previmage_style,
@@ -873,7 +875,7 @@ div.wpcf7-mail-sent-ok {
   /*--Footer--*/
 
   #mainfooter {
-    padding: 4px 0 8px 0;
+    padding: 8px 0;
   }
 
   #slider_area {

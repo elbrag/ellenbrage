@@ -98,16 +98,8 @@ a {
 
 /*slider---*/
 
-.prev, .next {
-  background-color: transparent;
-}
-
-.prev input[type='submit'] {
-  background-image: url(../img/arrow_bl_left.svg);
-}
-
-.next input[type='submit'] {
-  background-image: url(../img/arrow_bl_right.svg);
+#cur_theme {
+  line-height: 2.2em;
 }
 
 /*frontpage--*/
