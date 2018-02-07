@@ -149,13 +149,19 @@ header {
   margin: 0;
   width: 100%;
   max-width: none;
+  height: 100vh;
+  position: relative;
 }
 
 #front_background{
+  /* position: absolute; */
+  /* bottom: 0; */
   background-image: url(../img/mammoth_3_smallscreens.gif);
-  background-size: 225%;
-  height: 100vh;
-  margin-right: -24px;
+  background-size: cover;
+  height: 102%;
+  width: 120%;
+  margin-right: -50px;
+  margin-top: -70px;
   background-position: center 0;
   background-repeat: no-repeat;
 }
@@ -169,18 +175,26 @@ header {
 
 #textbox{
   position: absolute;
-  width: 90%;
-  max-width: 1000px;
-  top: 36%;
+  width: 100%;
+  top: 50%;
   z-index: 50;
-  margin: 0 auto;
-  text-align: center;
-  color: #fff;
-  text-shadow: 1px 1px 1px #4a656b;
+  margin-left: 24px;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
 }
 
-.header1_box h1 {
-  margin: 0;
+.fill {
+  margin: 0 0 3px 0;
+  font-size: 18px;
+  text-transform: uppercase;
+  font-weight: normal;
+  color: #fff;
+}
+
+.title {
+  color: #fff;
+  font-size: 14px;
+  line-height: 1.4em;
+  letter-spacing: 0.5px;
 }
 
 /*--Page: Work--*/
@@ -283,8 +297,22 @@ div.wpcf7-mail-sent-ok {
 
 /*frontpage*/
 
+#frontpage{
+  position: unset;
+}
+
 #front_background {
   background-image: url(../img/mammoth_3.gif);
+  margin: -24px 0 0 0;
+  height: 100%;
+  width: 100%;
+  position: unset;
+}
+
+#textbox{
+  width: 100%;
+  top: calc(50% - 24px);
+  margin-left: 10%;
 }
 
 
@@ -322,14 +350,7 @@ div.wpcf7-mail-sent-ok {
 
 /*--frontpage--*/
 
-#front_background{
-  background-size: 100%;
-}
 
-#front_background{
-  margin-top: -72px;
-  margin-bottom: -10px;
-}
 
 /*--Page: Work--*/
 
@@ -353,6 +374,43 @@ div.wpcf7-mail-sent-ok {
 /*--Header--*/
 
 /*--Menu--*/
+
+/*frontpage*/
+
+#frontpage{
+  height: calc(100vh + 18px);
+}
+
+#front_background{
+  background-position-y: -72px;
+}
+
+/*--Page: Work--*/
+
+/*--Single: Work--*/
+
+/*--Page: About--*/
+
+/*--Page: Contact--*/
+
+/*--Footer--*/
+
+}
+
+/*=====================================1500PX========================================*/
+
+@media (min-width: 1500px) {
+
+/*--Header--*/
+
+/*--Menu--*/
+
+/*frontpage*/
+
+#frontpage{
+  height: calc(100vh - 18px);
+}
+
 
 /*--Page: Work--*/
 
