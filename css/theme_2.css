@@ -143,6 +143,11 @@ header {
   background-position: center;
 }
 
+#cur_theme {
+  line-height: 2.3em;
+}
+
+
 /*--front page---*/
 
 #frontpage {
