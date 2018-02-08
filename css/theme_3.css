@@ -41,10 +41,6 @@ a {
   background-color: #ff796b;
 }
 
-#menu-symb {
-  background-image: url(../img/hamb_black.svg);
-}
-
 .radiobutton {
   display: none;
 }
