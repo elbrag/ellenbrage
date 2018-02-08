@@ -3,7 +3,7 @@
 /*--semantics reset and basics--*/
 
 * {
-  font-family: 'Roboto Mono';
+  font-family: 'Roboto Mono', 'Courier New', monospace;
 }
 
 input[type=submit] {
