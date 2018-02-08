@@ -179,12 +179,13 @@ header {
 }
 
 #textbox{
-  position: absolute;
+  /* position: absolute;
   width: 100%;
   top: 50%;
   z-index: 50;
   margin-left: 24px;
-  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3); */
+  display: none;
 }
 
 .fill {
@@ -213,17 +214,22 @@ header {
   padding-left: 32px;
 }
 
-.checkmark {
-  bottom: 0;
-  border: none;
-  box-shadow: 1px 1px 5px rgba(74,101,107,0.6);
-  height: 16px;
-  width: 16px;
+
+.checkbox {
+    width: 16px;
+    height: 16px;
+    border: none;
+    box-shadow: 1px 1px 5px rgba(74,101,107,0.6);
+    bottom: 0;
+    background-color: rgba(255,255,255,0.6);
 }
 
-.categories .checkmark:after {
-  color:#4a656b;
-  left: 4px;
+.checkbox:after,
+.checkbox:before {
+    height: 10px;
+    border-left: 2px solid #4a656b;
+    left: 7px;
+    top: 3px;
 }
 
 /*--Single: Work--*/
@@ -386,11 +392,11 @@ div.wpcf7-mail-sent-ok {
 /*frontpage*/
 
 #frontpage{
-  height: calc(100vh + 18px);
+  height: calc(100vh + 32px);
 }
 
 #front_background{
-  background-position-y: -72px;
+  background-position-y: -58px;
 }
 
 /*--Page: Work--*/
@@ -416,7 +422,7 @@ div.wpcf7-mail-sent-ok {
 /*frontpage*/
 
 #frontpage{
-  height: calc(100vh - 18px);
+  height: calc(100vh - 72px);
 }
 
 

@@ -381,35 +381,36 @@ hr {
   display: block;
 }
 
-.checkmark {
-  position: absolute;
-  left: 0;
-  height: 12px;
-  width: 12px;
-  border: 1px solid #000;
+.checkbox {
+    width: 15px;
+    height: 14px;
+    position: absolute;
+    border: 1px solid #000;
+    left: 0;
+}
+.checkbox:after {
+    content: '';
+    height: 14px;
+    border-left: 1px solid #000;
+    position: absolute;
+    transform: rotate(45deg);
+    left: 7px;
+    display: none;
 }
 
-.categories input:checked ~ .checkmark {
-  background-color: #fff;
+.checkbox:before {
+    content: '';
+    height: 14px;
+    border-left: 1px solid #000;
+    position: absolute;
+    transform: rotate(-45deg);
+    left: 7px;
+    display: none;
 }
 
-.checkmark:after {
-  content: "";
-  position: absolute;
-  display: none;
-}
-
-.categories input:checked ~ .checkmark:after {
-  display: inline-block;
-  content: "×";
-}
-
-.categories .checkmark:after {
-  color: #000;
-  font-size: 17px;
-  font-weight: 100;
-  left: 3px;
-  line-height: 16px;
+.categories input:checked ~ .checkbox:before,
+.categories input:checked ~ .checkbox:after {
+  display: block;
 }
 
 #work_grid {
@@ -426,7 +427,7 @@ hr {
 }
 
 .grid_project p, .similar_projects p {
-  font-size: 0.6em;
+  font-size: 0.8em;
 }
 
 .similar_projects p {

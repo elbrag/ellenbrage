@@ -141,15 +141,28 @@ $query = new WP_Query( $args );
 
 $count = 0;
 
+//changing text of buttons/headings depending on set language
+          if (get_locale() == 'sv_SE') {
+            $headingvalue1 = 'Liknande projekt';
+            $headingvalue2 = 'Fler projekt';
+            $buttonvalue = 'Se alla projekt';
+          }//end of swe language check
+          if (get_locale() == 'en_GB') {
+            $headingvalue1 = 'Similar projects';
+            $headingvalue2 = 'More projects';
+            $buttonvalue = 'Browse all projects';
+           }//end of eng language check
+/////////////////////////////////////////////////
+
   if( $query->have_posts() ) {
 
     if ($numberofposts > 1) {
       ?>
-      <h2>Similar projects</h2>
+      <h2><?php echo $headingvalue1 ?></h2>
       <?php
     } else {
       ?>
-      <h2>More projects</h2>
+      <h2><?php echo $headingvalue2 ?></h2>
       <?php
     }
     ?>
@@ -188,7 +201,7 @@ $count = 0;
   ?>
     </div>
 
-<a class='browse_all' href='/work'>Browse all projects</a>
+<a class='browse_all' href='/work'><?php echo $buttonvalue ?></a>
 
 </section>
 

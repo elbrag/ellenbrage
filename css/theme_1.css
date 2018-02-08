@@ -110,7 +110,7 @@ a {
   bottom: 0;
 }
 
-.header1_box h1.fill {
+.fill {
   display: inline;
     font-size: 24px;
     text-transform: lowercase;
@@ -165,29 +165,27 @@ a {
   height: 20px;
 }
 
-.categories input:checked ~ .checkmark:after {
-  /* content: ""; */
+.checkbox {
+    width: 14px;
+    height: 14px;
+    border: 2px solid #000;
+    top: -2px;
+    left: 0;
 }
 
-.checkmark{
-  border-width: 2px;
-}
-
-.categories .checkmark:after {
-  /* color: #56e25c; */
-  left: -3px;
-  top: -5px;
-  font-size: 30px;
-  /* width: inherit;
-  height: inherit;
-  left: 0; */
+.checkbox:after,
+.checkbox:before {
+    height: 20px;
+    border-left: 1px solid #000;
+    left: 7px;
+    top: -3px;
 }
 
 #submit {
   border-radius: 0;
   border-width: 2px;
   font-weight: bold;
-  padding: 0 18px 1px 18px;
+  padding: 1px 18px;
 }
 
 /*--Single: Work--*/
@@ -271,7 +269,7 @@ h1, h2, h3, h4 {
 
 /*--frontpage--*/
 
-.header1_box h1 {
+.fill {
     font-size: 36px;
   }
 
@@ -293,7 +291,7 @@ h1, h2, h3, h4 {
 
 .titles_box {
   position: absolute;
-  bottom: 9px;
+  bottom: 8px;
   right: 0;
 }
 
@@ -343,7 +341,7 @@ h1, h2, h3, h4 {
 }
 
 
-.header1_box h1 {
+.fill {
     font-size: 48px;
   }
 

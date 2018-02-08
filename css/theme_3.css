@@ -166,23 +166,23 @@ a {
   font-size: 1em;
 }
 
-.checkmark {
-  top: 1px;
-  width: 14px;
-  height: 14px;
-  box-shadow: 2px 2px #000, 1px 1px #000;
-  background-color: #fff;
+.checkbox {
+    width: 16px;
+    height: 16px;
+    bottom: 0;
+    box-shadow: 2px 2px #000, 1px 1px #000;
+    background-color: #fff;
 }
 
-.categories .checkmark:after {
-  font-size: 20px;
-  font-weight: 900;
-  left: 2px;
-  top: 1px;
+.checkbox:after,
+.checkbox:before {
+    height: 14px;
+    border-left: 2px solid #000;
+    left: 7px;
+    top: 1px;
 }
 
 .grid_project p, .similar_projects p {
-  font-size: 1em;
   color: #000;
 }
 

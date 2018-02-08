@@ -98,9 +98,6 @@ a {
 
 /*slider---*/
 
-#cur_theme {
-  line-height: 2.2em;
-}
 
 /*frontpage--*/
 
@@ -174,22 +171,20 @@ a {
   padding-left: 32px;
 }
 
-.checkmark {
-  height: 16px;
-  width: 16px;
-  border: 2px solid #000;
-  top: -1px;
+.checkbox {
+    width: 16px;
+    height: 16px;
+    border: 2px solid #000;
+    top: -1px;
+    left: 0;
 }
 
-.categories input:checked ~ .checkmark {
-  background-color: transparent;
-}
-
-.categories .checkmark:after {
-  font-size: 34px;
-  font-weight: 300;
-  left: 0px;
-  top: -2px;
+.checkbox:after,
+.checkbox:before {
+    height: 14px;
+    border-left: 2px solid #000;
+    left: 7px;
+    top: 1px;
 }
 
 .grid_project p, .similar_projects p {

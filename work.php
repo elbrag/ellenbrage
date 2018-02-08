@@ -27,12 +27,24 @@
                ?>
                value='<?php echo $value->name ?>'>
             </input>
-            <span class='checkmark'></span>
+            <span class='checkbox'></span>
             <?php echo $value->name ?>
             </label>
-          <?php }?>
+          <?php }
 
-          <input type='submit' id='submit' value='filter'></input>
+//changing text of button depending on set language
+          if (get_locale() == 'sv_SE') {
+            $filtervalue = 'Filtrera';
+          }//end of swe language check
+          if (get_locale() == 'en_GB') {
+            $filtervalue = 'Filter';
+           }//end of eng language check
+/////////////////////////////////////////////////
+          ?>
+
+
+
+          <input type='submit' id='submit' value=<?php echo $filtervalue ?>></input>
 </form>
     </section>
 
