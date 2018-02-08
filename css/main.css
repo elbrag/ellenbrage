@@ -470,6 +470,7 @@ hr {
 
 .image_area {
   position: relative;
+  margin-bottom: -6px;
 }
 
 .image_controls {

@@ -1,4 +1,4 @@
-/*--Name: Hoarfrost--*/
+/*--Name: Up North--*/
 
 /*--semantics reset and basics--*/
 
@@ -179,12 +179,6 @@ header {
 }
 
 #textbox{
-  /* position: absolute;
-  width: 100%;
-  top: 50%;
-  z-index: 50;
-  margin-left: 24px;
-  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3); */
   display: none;
 }
 
@@ -233,6 +227,16 @@ header {
 }
 
 /*--Single: Work--*/
+
+.browse_all {
+  border: none;
+  background-color: rgba(255, 255, 255, 0.5);
+  box-shadow: 1px 1px 5px rgba(74,101,107,0.6);
+  color: #4a656b;
+  width: 99%;
+  border-radius: 5px;
+}
+
 /*--Page: About--*/
 /*--Page: Contact--*/
 
@@ -319,12 +323,6 @@ div.wpcf7-mail-sent-ok {
   height: 100%;
   width: 100%;
   position: unset;
-}
-
-#textbox{
-  width: 100%;
-  top: calc(50% - 24px);
-  margin-left: 10%;
 }
 
 
