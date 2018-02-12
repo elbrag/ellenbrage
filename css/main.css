@@ -468,19 +468,31 @@ hr {
   width: 90%;
 }
 
-.image_area {
-  position: relative;
-  margin-bottom: -6px;
+.ms-thumbs-cont {
+  left: 0!important;
 }
 
-.image_controls {
-  margin: 0 auto;
-  position: absolute;
-  top: -35px;
-  right: 0;
-  width: 75px;
-  height: 25px;
-  margin-right: 24px;
+.ms-skin-default .ms-nav-next,
+.ms-skin-default .ms-nav-prev {
+  background-repeat: no-repeat!important;
+  margin-top: -6px!important;
+  opacity: 0.4;
+}
+
+.ms-skin-default .ms-nav-next {
+  right: 12px!important;
+  background: url(../img/arrow_next_grey.svg)!important;
+  background-size: 100%!important;
+  width: 15px!important;
+  height: 15px!important;
+}
+
+.ms-skin-default .ms-nav-prev {
+  left: 12px!important;
+  background: url(../img/arrow_prev_grey.svg)!important;
+  background-size: 100%!important;
+  width: 15px!important;
+  height: 15px!important;
 }
 
 .previmage_style {
@@ -492,50 +504,16 @@ hr {
   background-image: url(../img/arrow_next_black.svg);
 }
 
-.previmage_style,
-.nextimage_style {
-  cursor: pointer;
-  width: 23px;
-  height: 25px;
-  padding: 0;
-  top: 24px;
-  background-size: 100%;
-  background-repeat: no-repeat;
-  display: inline-block;
-}
-
 .single_big {
   width: 100%;
   display: block;
   margin-bottom: -4px;
 }
 
-.single_big img {
-  width: 100%;
-}
-
-.single_thumbs {
-  width: 100%;
-  margin-bottom: 114px;
-}
-
-.single_image {
-  width: 25%;
-  float: left;
-  margin-bottom: -4px;
-  cursor: pointer;
-}
-
-.single_image img {
-  width: 100%;
-}
-
 .similar_projects {
   width: 90%;
   margin: 0 auto;
 }
-
-
 
 .similar_thumbs_area {
   overflow: hidden;
@@ -791,32 +769,6 @@ div.wpcf7-mail-sent-ok {
 
   .similar_projects p {
     margin-left: 18px;
-  }
-
-  .image_controls {
-    width: 100%;
-    top: calc(50% - 25px);
-    margin-right: 0;
-  }
-
-  .previmage_style {
-    float: left;
-    margin-right: 0;
-    background-image: url(../img/arrow_prev_grey.svg);
-  }
-
-  .nextimage_style{
-    float: right;
-    background-image: url(../img/arrow_next_grey.svg);
-  }
-
-  .previmage_style,
-  .nextimage_style {
-    opacity: 0.3;
-    width: 50px;
-    height: 50px;
-    background-position: center;
-    background-size: 35%;
   }
 
   /*--Page: About--*/

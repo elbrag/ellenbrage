@@ -46,54 +46,20 @@ if( have_posts() ) {
                 ?>
               </p>
 
-          <div class='image_area'>
-              <div class='image_controls'>
-                <div class='previmage_style' onclick="previmage()"></div>
-                <div class='nextimage_style' onclick="nextimage()"></div>
-              </div>
-          </div>
+          <section class='image_area'>
+
               <?php
-                  //Get the images ids from the post_metadata
-                  $images = acf_photo_gallery('image_gallery', $post->ID);
-                  //Check if return array has anything in it
-                  if( count($images) ):
 
-                    ?>
+            $sliderid = get_field('master_slider_id');
+            echo do_shortcode( '[masterslider id="'.$sliderid.'"]' );
 
-                    <section class='single_thumbs'>
+            ?>
+           </section>
 
-                    <?php
-
-                      //Cool, we got some data so now let's loop over it
-                      foreach($images as $image):
-
-                        if ($image != $bigimage) {
-
-
-
-                          $id = $image['id']; // The attachment id of the media
-                          $id2 = $value++;
-                          $title = $image['title']; //The title
-                          $full_image_url= $image['full_image_url']; //Full size image url
-                          // $full_image_url = acf_photo_gallery_resize_image($full_image_url, 1000, 750, false); //Resized size to 262px width by 160px height image url
-                          $thumbnail_image_url= $image['thumbnail_image_url']; //Get the thumbnail size image url 150px by 150px
-                          $alt = get_field('photo_gallery_alt', $id); //Get the alt which is a extra field (See below how to add extra fields)
-
-              ?>
-                  <div class="single_image" id='<?php echo $id2 ?>' onclick="enlarge(this.id)">
-
-                          <img src="<?php echo $full_image_url; ?>" alt="<?php echo $title; ?>" title="<?php echo $title; ?>">
-
-                  </div>
-              <?php
-              }
-            endforeach; endif; ?>
-              </section>
 
     <?php
-
+    } 
    }
-}
 
 //get ID for this project
 $projectid = get_the_ID();
