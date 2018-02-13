@@ -169,6 +169,7 @@ a {
 .categories {
   font-size: 1em;
   padding-left: 32px;
+  max-width: 129px;
 }
 
 .checkbox {
@@ -318,6 +319,10 @@ div.wpcf7-mail-sent-ok {
 }
 
 /*--Page: Work--*/
+
+.categories {
+  max-width: none;
+}
 
 /*--Single: Work--*/
 

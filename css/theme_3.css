@@ -159,7 +159,7 @@ a {
 
 
 .categories {
-  font-size: 1em;
+  font-size: 0.8em;
 }
 
 .checkbox {
@@ -319,6 +319,10 @@ div.wpcf7-mail-sent-ok {
 }
 
 /*--Page: Work--*/
+
+.categories {
+  font-size: 1em;
+}
 
 /*--Single: Work--*/
 

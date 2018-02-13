@@ -353,7 +353,7 @@ hr {
 
 .categories {
   font-size: 0.8em;
-  margin-right: 36px;
+  max-width: 120px;
   height: 18px;
   display: inline-block;
   position: relative;
@@ -371,6 +371,10 @@ hr {
   margin: 0 24px;
 }
 
+.categories:nth-child(2n+1) {
+    max-width: 95px;
+}
+
 #category_area input[type='checkbox'] {
   cursor: pointer;
   position: absolute;
@@ -379,6 +383,7 @@ hr {
 
 #category_area input[type='submit'] {
   display: block;
+  margin: 12px auto 0 auto;
 }
 
 .checkbox {
@@ -723,10 +728,13 @@ div.wpcf7-mail-sent-ok {
 
   .categories {
     width: auto;
+    max-width: none;
+    margin-right: 32px;
   }
 
   #category_area input[type='submit'] {
     display: inline-block;
+    margin: 0;
   }
 
   .grid_project {
