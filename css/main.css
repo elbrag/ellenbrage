@@ -427,12 +427,9 @@ hr {
   margin-bottom: 24px;
 }
 
-.grid_project p {
-  margin-left: 18px;
-}
-
 .grid_project p, .similar_projects p {
   font-size: 0.8em;
+  margin-left: 12px;
 }
 
 .similar_projects p {
@@ -737,9 +734,20 @@ div.wpcf7-mail-sent-ok {
     margin: 0;
   }
 
+  #work_grid {
+    margin-top: 54px;
+    padding: 0 12px;
+  }
+
   .grid_project {
     width: 50%;
     float: left;
+    padding: 0 12px;
+    box-sizing: border-box;
+  }
+
+  .grid_project p {
+    margin-left: 0;
   }
 
   .work_grid_image {
@@ -966,8 +974,8 @@ div.wpcf7-mail-sent-ok {
   /*--Page: Work--*/
 
   .work_grid_image {
-    height: 520px;
-    background-size: 130%;
+    height: 470px;
+    background-size: 135%;
   }
 
   /*--Single: Work--*/
@@ -1030,9 +1038,22 @@ div.wpcf7-mail-sent-ok {
   margin: 0 auto 72px auto;
 }
 
+#work_grid {
+  padding: 0 24px;
+}
+
 .grid_project p,
 .similar_projects p {
   font-size: 0.8em;
+}
+
+.work_grid_image {
+  height: 520px;
+  background-size: 116%;
+}
+
+.grid_project {
+  padding: 0 24px;
 }
 
   /*--Single: Work--*/

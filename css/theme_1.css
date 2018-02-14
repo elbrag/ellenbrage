@@ -188,6 +188,10 @@ a {
   padding: 1px 18px;
 }
 
+.grid_project p, .similar_projects p {
+  font-weight: bold;
+}
+
 /*--Single: Work--*/
 
 .browse_all{
