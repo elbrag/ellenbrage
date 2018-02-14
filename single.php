@@ -32,13 +32,94 @@ if( have_posts() ) {
           }
           ?>
 
-
-
               <h1>
                <?php
                 the_field('project_title');
                 ?>
               </h1>
+
+              <div class='single_category'>
+              <p>
+               <?php
+
+               //changing text of buttons/headings depending on set language
+                         if (get_locale() == 'sv_SE') {
+                           echo "<strong>Gjordes </strong> ";
+                         }//end of swe language check
+                         if (get_locale() == 'en_GB') {
+                           echo "<strong>Made in </strong> ";
+                          }//end of eng language check
+               /////////////////////////////////////////////////
+                the_field('year');
+                ?>
+              </p>
+              <p>
+               <?php
+
+               //changing text of buttons/headings depending on set language
+                         if (get_locale() == 'sv_SE') {
+                           echo "<strong>med </strong> ";
+                         }//end of swe language check
+                         if (get_locale() == 'en_GB') {
+                           echo "<strong>with </strong> ";
+                          }//end of eng language check
+               /////////////////////////////////////////////////
+
+                the_field('main_tools');
+                ?>
+              </p>
+              <p>
+                <?php
+
+                if(get_field('cooperation')) {
+
+                  //changing text of buttons/headings depending on set language
+                            if (get_locale() == 'sv_SE') {
+                              echo "<strong>i samarbete med </strong>";
+                            }//end of swe language check
+                            if (get_locale() == 'en_GB') {
+                              echo "<strong>in cooperation with </strong>";
+                             }//end of eng language check
+                  /////////////////////////////////////////////////
+
+
+                  echo "<a target='_blank' href=";
+                  the_field('cooperation_link');
+                  echo ">";
+
+                  the_field('cooperation');
+
+                  echo "</a>";
+                }
+
+                ?>
+
+                <?php
+
+                if(get_field('cooperation_2')) {
+
+                  //changing text of buttons/headings depending on set language
+                            if (get_locale() == 'sv_SE') {
+                              echo "och ";
+                            }//end of swe language check
+                            if (get_locale() == 'en_GB') {
+                              echo "and ";
+                             }//end of eng language check
+                  /////////////////////////////////////////////////
+
+                  echo "<a target='_blank' href=";
+                  the_field('cooperation_link_2');
+                  echo ">";
+
+                  the_field('cooperation_2');
+
+                  echo "</a>";
+                }
+
+                ?>
+
+              </p>
+              </div>
 
               <p class='single_description'>
                <?php
@@ -58,7 +139,7 @@ if( have_posts() ) {
 
 
     <?php
-    } 
+    }
    }
 
 //get ID for this project
