@@ -227,6 +227,10 @@ header {
     top: 3px;
 }
 
+.work_grid_image {
+  box-shadow: 2px 2px 0.5vw rgba(74,101,107,0.4);
+}
+
 /*--Single: Work--*/
 
 .browse_all {

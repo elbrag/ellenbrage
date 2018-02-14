@@ -39,7 +39,7 @@ if( have_posts() ) {
               </h1>
 
               <div class='single_category'>
-              <p>
+              <p class='project_brief'>
                <?php
 
                //changing text of buttons/headings depending on set language
@@ -53,7 +53,7 @@ if( have_posts() ) {
                 the_field('year');
                 ?>
               </p>
-              <p>
+              <p class='project_brief'>
                <?php
 
                //changing text of buttons/headings depending on set language
@@ -68,7 +68,7 @@ if( have_posts() ) {
                 the_field('main_tools');
                 ?>
               </p>
-              <p>
+              <p class='project_brief'>
                 <?php
 
                 if(get_field('cooperation')) {

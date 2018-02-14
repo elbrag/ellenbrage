@@ -192,6 +192,10 @@ a {
   font-size: 1em;
 }
 
+.work_grid_image {
+  box-shadow: 2px 2px 0.5vw rgba(0,0,0,0.4);
+}
+
 /*--Single: Work--*/
 
 .browse_all {
