@@ -277,6 +277,7 @@ div.wpcf7-mail-sent-ok {
 .categories {
   max-width: none;
   font-size: 0.8em;
+  margin-right: 24px;
 }
 
 /*--Single: Work--*/
