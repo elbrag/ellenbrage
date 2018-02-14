@@ -160,6 +160,7 @@ a {
 
 .categories {
   font-size: 0.8em;
+  height: 16px;
 }
 
 .checkbox {
@@ -320,8 +321,9 @@ div.wpcf7-mail-sent-ok {
 
 /*--Page: Work--*/
 
-.categories {
+.categories{
   font-size: 1em;
+  height: 18px;
 }
 
 /*--Single: Work--*/
