@@ -82,14 +82,18 @@ if( have_posts() ) {
                              }//end of eng language check
                   /////////////////////////////////////////////////
 
-
-                  echo "<a target='_blank' href=";
-                  the_field('cooperation_link');
-                  echo ">";
+                  if(get_field('cooperation_link')){
+                    echo "<a target='_blank' href=";
+                    the_field('cooperation_link');
+                    echo ">";
+                  }
 
                   the_field('cooperation');
 
-                  echo "</a>";
+                  if(get_field('cooperation_link')){
+                    echo "</a>";
+                  }
+
                 }
 
                 ?>
@@ -107,13 +111,21 @@ if( have_posts() ) {
                              }//end of eng language check
                   /////////////////////////////////////////////////
 
-                  echo "<a target='_blank' href=";
-                  the_field('cooperation_link_2');
-                  echo ">";
+
+                  if(get_field('cooperation_link_2')){
+                    echo "<a target='_blank' href=";
+                    the_field('cooperation_link_2');
+                    echo ">";
+                  }
+
+
 
                   the_field('cooperation_2');
 
-                  echo "</a>";
+                  if(get_field('cooperation_link')){
+                    echo "</a>";
+                  }
+                  
                 }
 
                 ?>
