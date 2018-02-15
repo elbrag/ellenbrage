@@ -198,6 +198,11 @@ a {
 
 /*--Single: Work--*/
 
+.similar_thumb img {
+  width: 98%;
+  box-shadow: 2px 2px 0.5vw rgba(0,0,0,0.3);
+}
+
 .browse_all {
   font-size: 1.2em;
   background-color: #fff;

@@ -242,6 +242,11 @@ header {
   border-radius: 5px;
 }
 
+.similar_thumb img {
+  width: 98%;
+  box-shadow: 2px 2px 0.5vw rgba(74,101,107,0.3);
+}
+
 /*--Page: About--*/
 /*--Page: Contact--*/
 

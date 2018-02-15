@@ -780,9 +780,16 @@ div.wpcf7-mail-sent-ok {
 
   /*--Single: Work--*/
 
+  .similar_thumbs_area {
+    margin: 0 -6px;
+    width: unset;
+  }
+
   .similar_thumb {
     float: left;
     width: 33.33%;
+    padding: 0 6px;
+    box-sizing: border-box;
   }
 
   .browse_all {
