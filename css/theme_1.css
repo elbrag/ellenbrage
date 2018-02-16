@@ -145,7 +145,7 @@ a {
   background: repeating-radial-gradient(
     circle,
     #fff,
-    #fff 3px,
+    #fff 6px,
     transparent 3px,
     transparent 50px
   );
@@ -282,10 +282,10 @@ h1, h2, h3, h4 {
   }
 
 .graphic_elem {
-  width: 250%;
-  height: 250%;
-  left: -64%;
-  top: -72%;
+  width: 180%;
+  height: 180%;
+  left: -37%;
+  top: -48%;
 }
 
 #textbox{
@@ -351,6 +351,7 @@ h1, h2, h3, h4 {
 
 .fill {
     font-size: 48px;
+    line-height: 1.3em;
   }
 
 /*--Page: Work--*/
@@ -369,9 +370,13 @@ h1, h2, h3, h4 {
 
 }
 
-/*=====================================1200PX========================================*/
+/*=====================================1500PX========================================*/
 
-@media (min-width: 1200px) {
+@media (min-width: 1500px) {
+
+  #frontpage {
+    margin-top: 48px;
+  }
 
 /*--Header--*/
 
