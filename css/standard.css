@@ -35,7 +35,7 @@ body {
 
 a {
   font-weight: 700;
-  text-decoration: none;
+  text-decoration: underline;
   color: #000;
 }
 
@@ -188,8 +188,9 @@ a {
     top: 1px;
 }
 
-.grid_project p, .similar_projects p {
+.grid_project p, .grid_project a, .similar_projects p {
   font-size: 1em;
+  text-decoration: none;
 }
 
 .work_grid_image {
@@ -205,6 +206,7 @@ a {
 
 .browse_all {
   font-size: 1.2em;
+  text-decoration: none;
   background-color: #fff;
   color: #000;
   border: none;
