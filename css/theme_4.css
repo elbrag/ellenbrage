@@ -381,8 +381,12 @@ div.wpcf7-mail-sent-ok {
 /*--front page--*/
 
 .graphic_elem{
-  margin-left: 34%;
-  max-width: 780px;
+  margin-left: 42%;
+  width: auto;
+  max-width: none;
+  height: 100%;
+  background-size: cover;
+  background-position-x: center;
 }
 
 #textbox {
