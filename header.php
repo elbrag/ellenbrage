@@ -2,10 +2,11 @@
 <html>
 
   <head>
+    <title>Ellen Brage – Graphic designer, web developer, illustrator</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="keywords" content="Ellen, Brage">
-    <meta name="description" content="Ellen Brage, graphic designer and web developer based in Sweden.">
+    <meta name="description" content="Ellen Brage – graphic designer, web developer, illustrator.">
     <link rel="stylesheet" href="<?php bloginfo('stylesheet_url')?>">
     <link href="https://fonts.googleapis.com/css?family=Nunito:300,300i,400,400i,600,600i,800,800i" rel="stylesheet">
     <link rel="stylesheet" href="https://use.typekit.net/xfy8eum.css">
