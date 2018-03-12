@@ -125,19 +125,13 @@ if( have_posts() ) {
                   if(get_field('cooperation_link')){
                     echo "</a>";
                   }
-                  
+
                 }
 
                 ?>
 
               </p>
               </div>
-
-              <p class='single_description'>
-               <?php
-                the_field('project_description');
-                ?>
-              </p>
 
           <section class='image_area'>
 
@@ -149,6 +143,11 @@ if( have_posts() ) {
             ?>
            </section>
 
+           <p class='single_description'>
+            <?php
+             the_field('project_description');
+             ?>
+           </p>
 
     <?php
     }

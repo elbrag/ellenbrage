@@ -460,12 +460,12 @@ hr {
 
 /*--Single: Work--*/
 
-#single p {
-
+.image_area {
+  margin: 42px auto 54px auto;
 }
 
 .single_description {
-  margin: 42px auto 54px auto;
+  margin: 0 auto 84px auto;
   width: 90%;
 }
 
@@ -490,6 +490,8 @@ hr {
   width: 90%;
   overflow: hidden;
 }
+
+
 
 .ms-thumbs-cont {
   left: 0!important;
