@@ -185,7 +185,8 @@ a {
     top: -3px;
 }
 
-#submit {
+#submit,
+#cn-accept-cookie, #cn-more-info {
   border-radius: 0;
   border-width: 2px;
   font-weight: bold;

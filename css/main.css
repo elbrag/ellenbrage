@@ -81,18 +81,16 @@ button:focus, input:focus, textarea:focus {
   bottom: 48px;
 }
 
-#cookie-notice .button.bootstrap {
+#cn-accept-cookie, #cn-more-info {
   background-image: none;
   background-color: #fff;
   color: #000;
-}
-
-#cookie-notice .button.bootstrap, #cookie-notice .button.wp-default {
+  font-weight: normal;
   font-family: inherit;
-}
-
-#cookie-notice .button.bootstrap:focus, #cookie-notice .button.bootstrap:hover {
-  background-color: #666;
+  padding: 3px 18px;
+  font-size: 0.8em;
+  border-radius: 3px;
+  border: 1px solid #000;
 }
 
 /*--Header--*/

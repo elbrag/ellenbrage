@@ -83,15 +83,18 @@ a {
 
 /*--Page standards--*/
 
-#submit {
+#submit,
+#cn-accept-cookie, #cn-more-info {
   font-size: 1.2em;
   background-color: #fff;
   color: #000;
   border: none;
   box-shadow: 0 3px #000;
+  text-decoration: none;
 }
 
-#submit:active {
+#submit:active,
+#cn-accept-cookie:active, #cn-more-info:active {
   box-shadow: 0 1px #000;
   transform: translateY(2px);
 }

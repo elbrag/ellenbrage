@@ -115,6 +115,17 @@ header {
     color: #4a656b;
 }
 
+#cn-notice-text {
+  color: #fff;
+}
+
+#cn-accept-cookie, #cn-more-info {
+  border: none;
+  background-color: rgba(255, 255, 255, 0.9);
+  margin: 2px 0 4px 1px;
+  color: #4a656b;
+}
+
 /*slider---*/
 
 #slider_area {

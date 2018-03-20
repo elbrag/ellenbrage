@@ -88,7 +88,8 @@ a {
 
 /*--Page standards--*/
 
-#submit {
+#submit,
+#cn-accept-cookie, #cn-more-info {
   box-shadow: 2px 2px #000, 1px 1px #000;
   background-color: #fff;
   border-radius: 0;
