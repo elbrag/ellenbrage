@@ -293,10 +293,14 @@ div.wpcf7-mail-sent-ok {
 
 /* rgba(232, 251, 255, 0.8) */
 
-#mainfooter {
+.mainfooter {
     background: linear-gradient(rgba(255, 255, 255, 0.7), rgba(199, 230, 237, 0.8) 65%);
     /* box-shadow: 0px -10px 20px rgba(48, 64, 68, 0.06); */
     padding-bottom: 8px;
+}
+
+#solid {
+  background: linear-gradient(rgba(255, 255, 255, 1), rgba(199, 230, 237, 1) 65%);
 }
 
 /*=====================================640PX========================================*/
@@ -359,7 +363,7 @@ div.wpcf7-mail-sent-ok {
 
 /*--Footer--*/
 
-#mainfooter {
+.mainfooter {
   padding-top: 6px;
 }
 

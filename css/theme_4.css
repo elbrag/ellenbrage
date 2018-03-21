@@ -203,7 +203,7 @@ div.wpcf7-mail-sent-ok {
 
 /*--Footer--*/
 
-#mainfooter {
+.mainfooter {
   background-color: transparent;
   padding: 3px 0 6px 0;
 }
@@ -303,7 +303,7 @@ div.wpcf7-mail-sent-ok {
 
 /*--Footer--*/
 
-#mainfooter {
+.mainfooter {
   padding: 8px 0;
 }
 

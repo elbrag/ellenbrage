@@ -239,7 +239,7 @@ div.wpcf7-mail-sent-ok {
 
 /*--Footer--*/
 
-#mainfooter {
+.mainfooter {
   background-color: #fff;
   /* color: #fff; */
 }

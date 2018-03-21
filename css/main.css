@@ -624,7 +624,7 @@ div.wpcf7-mail-sent-ok {
 
 /*--Footer--*/
 
-#mainfooter {
+.mainfooter {
   position: fixed;
   bottom: 0;
   width: 100%;
@@ -857,7 +857,7 @@ div.wpcf7-mail-sent-ok {
 
   /*--Footer--*/
 
-  #mainfooter {
+  .mainfooter {
     padding: 8px 0;
   }
 
