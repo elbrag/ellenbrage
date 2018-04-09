@@ -439,6 +439,10 @@ hr {
   margin-bottom: 24px;
 }
 
+.grid_project p {
+  margin-top: 4px;
+}
+
 .grid_project p, .similar_projects p {
   font-size: 0.8em;
   margin-left: 12px;
