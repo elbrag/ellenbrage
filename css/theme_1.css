@@ -30,6 +30,10 @@ a, a button {
   text-decoration: none;
 }
 
+#submit:active, button:active {
+  background-color: #56e25c;
+}
+
 
 /*--Header--*/
 
@@ -231,7 +235,6 @@ a {
 }
 
 div.wpcf7-mail-sent-ok {
-  background-color: #56e25c;
   font-weight: bold;
 }
 

@@ -96,6 +96,13 @@ a {
   font-size: 1em;
 }
 
+#submit:active,
+#cn-accept-cookie:active, #cn-more-info:active,
+.browse_all:active {
+  box-shadow: 0 0 #000;
+  transform: translateY(2px);
+}
+
 /*slider---*/
 
 
@@ -184,6 +191,12 @@ a {
   color: #000;
 }
 
+.work_grid_image {
+  /* box-shadow: 2px 2px 0.5vw rgba(0,0,0,0.3); */
+  box-shadow: 1px 1px #a5564d;
+}
+
+
 /*--Single: Work--*/
 
 
@@ -201,6 +214,24 @@ a {
 
 #about h4 {
   margin-bottom: 16px;
+}
+
+#imageblock {
+  position: relative;
+}
+
+.graphic_elem2 {
+  background-image: url(../img/dragonflower.png);
+  background-size: 50%;
+  background-repeat: no-repeat;
+  top: 80%;
+  position: absolute;
+  height: 350px;
+  width: 400px;
+}
+
+#textblock {
+  margin-top: 124px;
 }
 
 /*--Page: Contact--*/
@@ -238,8 +269,11 @@ div.wpcf7 {
 
 div.wpcf7-mail-sent-ok {
   border: none;
-  background-color: #eee;
   padding: 12px;
+}
+
+input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0 30px #ff796b inset;
 }
 
 /**/
@@ -274,7 +308,7 @@ div.wpcf7-mail-sent-ok {
   width: calc(100% - 194px);
 }
 .menu-item {
-  margin-right: 48px;
+  margin-right: 42px;
   text-align: left;
 }
 
@@ -335,6 +369,18 @@ div.wpcf7-mail-sent-ok {
 #about p:nth-child(1) {
   margin-top: -6px;
 }
+
+.graphic_elem2 {
+  background-size: 75%;
+  background-repeat: no-repeat;
+  margin: 0;
+  margin-top: 48px;
+  height: 400px;
+}
+
+#textblock {
+  margin-top: 0;
+}
 /*--Page: Contact--*/
 
 /*form*/
@@ -344,6 +390,10 @@ div.wpcf7-mail-sent-ok {
 /*--Footer--*/
 
 
+
+}
+
+@media (min-width: 660px) {
 
 }
 
@@ -391,6 +441,15 @@ div.wpcf7-mail-sent-ok {
 
 /*--Single: Work--*/
 /*--Page: About--*/
+
+.graphic_elem2 {
+  background-size: 77%;
+  background-repeat: no-repeat;
+  margin: 0;
+  margin-top: 180px;
+  margin-left: 42px;
+}
+
 /*--Page: Contact--*/
 
 /*form*/

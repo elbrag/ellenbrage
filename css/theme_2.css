@@ -115,6 +115,12 @@ header {
     color: #4a656b;
 }
 
+#submit:active,
+#cn-accept-cookie:active, #cn-more-info:active,
+.browse_all:active {
+  background-color: #fff;
+}
+
 #cn-notice-text {
   color: #fff;
 }
@@ -278,13 +284,17 @@ header {
   border: none;
   box-shadow: 1px 1px 5px rgba(74,101,107,0.4);
   padding: 6px;
-  width: 100%;
+  width: 99%;
+  margin-left: 2px;
   box-sizing: border-box;
 }
 
 div.wpcf7-mail-sent-ok {
-  background-color: #fff;
   font-weight: bold;
+}
+
+input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0 30px #fff inset;
 }
 
 /**/
@@ -352,6 +362,10 @@ div.wpcf7-mail-sent-ok {
 
 
 /*--Page: Work--*/
+#category_area input[type='submit'] {
+  margin-top: 2px;
+}
+
 
 /*--Single: Work--*/
 /*--Page: About--*/
