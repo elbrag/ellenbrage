@@ -295,10 +295,9 @@ input[type=submit] {
   height: 30px;
   padding: 0;
   top: 30px;
-  background-size: 100%;
+  background-size: 75%;
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 90%;
 }
 
 .prev input[type='submit'] {
