@@ -18,12 +18,10 @@ if( have_posts() ) {
                if (get_locale() == 'sv_SE') {
                  $title1 = 'Grafisk designer';
                  $title2 = 'Webbutvecklare';
-                 $title3 = 'Illustratör';
                }//end of swe language check
                if (get_locale() == 'en_GB') {
                  $title1 = 'Graphic designer';
                  $title2 = 'Web developer';
-                 $title3 = 'Illustrator';
                 }//end of eng language check
      /////////////////////////////////////////////////
 
@@ -36,9 +34,7 @@ if( have_posts() ) {
             <h1 class='fill'>Ellen Brage</h1>
         </div>
         <div class='titles_box'>
-            <p class='title'><?php echo $title1 ?></p>
-            <p class='title'><?php echo $title2 ?></p>
-            <p class='title'><?php echo $title3 ?></p>
+            <p class='title'><?php echo $title1 ." ". "&amp;" . " " . $title2?></p>
         </div>
     </div>
 

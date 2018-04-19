@@ -148,8 +148,8 @@ a {
 }
 
 .title{
-  float:left;
-  margin-right: 12px;
+  text-align: center;
+  font-size: 0.8em;
 }
 
 .fill{
@@ -157,6 +157,7 @@ a {
   font-size: 6vw;
   margin: 0;
   line-height: 1em;
+  text-align: center;
 }
 
 /*--Page: Work--*/
@@ -352,6 +353,10 @@ input:-webkit-autofill {
 #textbox {
   left: 0;
   width: 100%;
+}
+
+.title{
+  font-size: 1em;
 }
 
 /*--Page: Work--*/
