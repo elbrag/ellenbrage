@@ -285,7 +285,7 @@ input[type=submit] {
 .prev, .next {
   position: relative;
   width: 36px;
-  margin-top: -30px;
+  margin-top: -28px;
 }
 
 .prev input[type='submit'], .next input[type='submit'] {
