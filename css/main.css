@@ -139,8 +139,6 @@ header {
 .main-nav {
   background-color: #FFF;
   height: 64px;
-  /* max-width: calc(1000px + 48px); */
-  /* width: 90%; */
   top: 0;
   z-index: 100;
 }
@@ -1067,7 +1065,7 @@ background-color: transparent!important;
   /*--Menu--*/
 
   .main-nav {
-    max-width: calc(1000px + 48px); */
+    max-width: calc(1000px + 48px);
   }
 
   /*slider*/
@@ -1122,5 +1120,59 @@ background-color: transparent!important;
   /*--Page: Contact--*/
 
   /*--Footer--*/
+
+}
+
+/*=====================================2000PX========================================*/
+
+@media (min-width: 2000px) {
+
+.main-nav {
+  max-width: calc(1500px + 48px);
+}
+
+#single {
+  max-width: 1500px;
+}
+
+#slider_area {
+  max-width: 1500px;
+}
+
+#frontpage {
+  max-width: 1500px;
+}
+
+#contact, #about, #cookies, #errorpage {
+    max-width: 1500px;
+  }
+
+  #single h1 {
+    max-width: 1500px;
+  }
+  #single h2{
+    max-width: 1500px;
+  }
+
+  .single_category {
+    max-width: 1500px;
+  }
+
+  .single_description {
+    max-width: 1500px;
+  }
+
+  .similar_projects {
+    max-width: 1500px;
+  }
+
+  #category_area{
+    max-width: 1500px;
+  }
+
+  #work_grid {
+    max-width: 1750px;
+  }
+
 
 }

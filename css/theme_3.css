@@ -119,21 +119,21 @@ a {
   margin: 0;
   width: 100%;
   position: relative;
-  height: 85vh;
+  height: 77vh;
 }
 
 #front_background {
   background-color: transparent;
-  height: 100%;
+  height: 90%;
 }
 
 .graphic_elem {
   background-image: url(../img/druk_2.png);
-  background-size: 155%;
+  background-size: 180%;
   background-repeat: no-repeat;
-  height: 100%;
+  height: 100vh;
   width: 100%;
-  margin-top: -12px;
+  margin-top: -18px;
   position: absolute;
   right: 0;
 }
@@ -141,7 +141,7 @@ a {
 
 #textbox{
   position: absolute;
-  top: 60%;
+  top:80%;
   width: 90%;
   left: 24px;
   max-width: 1000px;
@@ -284,6 +284,18 @@ input:-webkit-autofill {
 .mainfooter {
   background-color: #ff796b;
 }
+
+/*=====================================500PX========================================*/
+
+@media (min-width: 500px) {
+
+.graphic_elem{
+  background-size: 145%;
+}
+
+}
+
+
 
 
 /*=====================================640PX========================================*/
@@ -429,7 +441,7 @@ input:-webkit-autofill {
 /*front page*/
 
 #frontpage {
-  margin: 12px auto 0 auto;
+  margin: 18px auto 0 auto;
   width: 90%;
   max-width: 1000px;
 }
@@ -480,6 +492,11 @@ input:-webkit-autofill {
   font-size: 68px;
 }
 
+#textbox {
+  top: 80%;
+}
+
+
 /*--Page: Work--*/
 
 /*--Single: Work--*/
@@ -521,5 +538,14 @@ input:-webkit-autofill {
 /*--Page: Contact--*/
 
 /*--Footer--*/
+
+}
+
+/*=====================================2000PX========================================*/
+
+@media (min-width: 2000px) {
+
+
+
 
 }

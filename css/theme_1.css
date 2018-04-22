@@ -128,13 +128,13 @@ a {
   width: auto;
   position: absolute;
   right: 0;
-  bottom: 6px;
+  bottom: 4px;
 }
 /**/
 .title {
   font-weight: bold;
-  padding-right: 6px;
-  font-size: 12px;
+  padding-right: 5px;
+  font-size: 11px;
   line-height: 14px;
 }
 
