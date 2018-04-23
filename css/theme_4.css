@@ -205,6 +205,10 @@ a {
 
 /*--Page: Contact--*/
 
+input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0 30px #f7fbfc inset;
+}
+
 /*form*/
 
 .wpcf7 label {
