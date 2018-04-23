@@ -413,11 +413,11 @@ div.wpcf7-mail-sent-ok {
     height: 300px;
     width: 900px;
     left: calc(50% - 450px);
-    top: calc(50% - 150px);
+    top: calc(60% - 150px);
 }
 
 #textbox {
-  bottom: 14%;
+  bottom: 10%;
 }
 
 .fill {
@@ -438,5 +438,15 @@ div.wpcf7-mail-sent-ok {
 /*--Page: Contact--*/
 
 /*--Footer--*/
+
+}
+
+/*=====================================2000PX========================================*/
+
+@media (min-width: 2000px) {
+
+#textbox{
+  bottom: 16%;
+}
 
 }

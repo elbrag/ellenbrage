@@ -441,13 +441,13 @@ input:-webkit-autofill {
 /*front page*/
 
 #frontpage {
-  margin: 18px auto 0 auto;
+  margin: 12px auto 0 auto;
   width: 90%;
   max-width: 1000px;
 }
 
 #front_background {
-  margin-top: -18px;
+  margin-top: -20px;
 }
 
 #textbox {
@@ -529,6 +529,9 @@ input:-webkit-autofill {
   margin: 1% auto 0 auto;
 }
 
+.graphic_elem {
+  margin-top: 6px;
+}
 /*--Page: Work--*/
 
 /*--Single: Work--*/
