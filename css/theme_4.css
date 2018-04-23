@@ -1,21 +1,21 @@
-/*Name: Author*/
+/*Name: Wavemaker*/
 
 /*--semantics reset and basics--*/
 
 * {
-  font-family: 'Roboto Mono', 'Courier New', monospace;
+  font-family: 'Nimbus Sans', 'Helvetica', sans-serif;
 }
 
 input[type=submit] {
   font-size: 1em;
-  background-color: #ee431f;
+  background-color: #ed1212;
   color: #fff;
   border: none;
 }
 
 
 p {
-  font-size: 0.9em;
+  font-size: 1.1em;
 }
 
 h1, h2, h3, h4{
@@ -23,7 +23,7 @@ h1, h2, h3, h4{
 }
 
 a {
-  color: #1cdbdb;
+  color: #ed1212;
   text-decoration: none;
   font-weight: bold;
 }
@@ -37,36 +37,54 @@ a {
   text-decoration: none;
 }
 
-.menu-item a {
-  text-decoration: none;
-  font-size: 1.4em;
-  padding-left: 36px;
-}
-
 .radiobutton {
-  border: 2px solid #000;
-  width: 14px;
-  height: 14px;
-  top: 18px;
+  display: none;
 }
 
-.menu-item.active .radiobutton {
-  background-color: transparent;
+.menu-item {
+  padding: 6px;
+  text-align: center;
+  width: 100px;
+  margin-bottom: 16px;
 }
 
-.radiobutton:after {
-  top: 4px;
-  left: 4px;
-  background-color: #000;
+.menu-item a {
+  padding-left: 0;
+}
+
+.menu-item.active a {
+  color: #ed1212;
+}
+
+.lang_item {
+  text-transform: uppercase;
+}
+
+.main-ul li a {
+  text-decoration: none;
+  letter-spacing: 0.5px;
+  color: #000;
+  text-transform: uppercase;
+  font-weight: normal;
+}
+
+.lang_items a.active button {
+  color: #000;
 }
 
 /*--Page standards--*/
 
 #submit {
+  padding: 4px 18px 2px 18px;
   background-color: #000;
   border-radius: 0;
-  font-weight: bold;
+  border: none;
   letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+#submit:active, #submit:hover, .browse_all:hover, .browse_all:active {
+  background-color: #ed1212;
 }
 
 #cn-accept-cookie, #cn-more-info {
@@ -80,12 +98,10 @@ a {
 
 
 #cur_theme {
-  color: #fff;
-  background-color: #000;
-  font-weight: bold;
   font-size: 1em;
   letter-spacing: 0.1em;
   line-height: 1.9em;
+  text-transform: uppercase;
 }
 
 /*--front page--*/
@@ -97,35 +113,36 @@ a {
 
 #front_background {
   background-color: #fff;
-  height: 88vh;
 }
 
 .graphic_elem {
-  background-image: url(../img/IMG_8730small.jpg);
-  width: 100%;
-  height: 88vh;
-  background-size: 120%;
-  background-repeat: no-repeat;
-  background-position-y: bottom;
-  background-position-x: center;
-  transform: scaleX(-1);
-  margin-left: 24px;
+    background-image: url(../img/main2_3.gif);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    height: 50vh;
+    width: 75%;
+    margin: auto;
+    margin-top: 12%;
 }
 
 #textbox {
   position: absolute;
-  z-index: 50;
-  left: 0;
-  top: 0;
+  bottom: 10%;
+  z-index: 10;
+  width: 100%;
+  text-align: center;
 }
 
 .fill {
   margin-bottom: 2px;
-  font-size: 22px;
+  font-size: 28px;
   line-height: 32px;
-  font-family: "madrone-std";
   font-weight: 800;
-  letter-spacing: 1.5px;
+  text-transform: uppercase;
+}
+
+.titles_box p {
+  font-size: 1.3em;
 }
 
 
@@ -148,8 +165,8 @@ a {
 .checkbox:after,
 .checkbox:before {
     height: 14px;
-    border-left: 3px solid #000;
-    left: 7px;
+    border-left: 1px solid #000;
+    left: 8px;
     top: 1px;
 }
 
@@ -163,7 +180,7 @@ a {
 
 .browse_all {
   text-decoration: none;
-  padding: 9px 0 10px 0;
+  padding: 9px 0 8px 0;
 }
 /*--Page: About--*/
 
@@ -177,7 +194,7 @@ a {
 /*form*/
 
 .wpcf7 label {
-  font-size: 1em;
+  font-size: 0.9em;
   font-weight: bold;
   text-transform: none;
   font-variant: normal;
@@ -212,15 +229,11 @@ div.wpcf7-mail-sent-ok {
 @media (min-width: 485px) {
 
 .graphic_elem {
-  background-size: 100%;
-  margin-left: 42px;
-  max-width: 524px;
+
 }
 
 #textbox {
-  width: 50%;
-  max-width: 370px;
-  top: 10%;
+
 }
 
 .fill {
@@ -239,23 +252,13 @@ div.wpcf7-mail-sent-ok {
 
 .menu-item {
   margin-right: 36px;
+  width: auto;
+  margin-bottom: 0;
 }
 
 .menu-item a {
   font-size: 1em;
   padding-left: 24px;
-}
-
-.radiobutton {
-  top: 4px;
-  width: 12px;
-  height: 12px;
-  border-width: 1px;
-}
-
-.radiobutton:after {
-  top: 3px;
-  left: 3px;
 }
 
 /*--Page standards--*/
@@ -264,20 +267,15 @@ div.wpcf7-mail-sent-ok {
 /*--front page--*/
 
 #front_background {
-  height: 100vh;
+  height: 60vh;
 }
 
 .graphic_elem {
-  height: 100vh;
-  max-width: 565px;
-  background-position-x: unset;
-  margin-top: -36px;
-  margin-left: 16%;
+
 }
 
 #textbox {
-  width: 50%;
-  top: 30%;
+
 }
 
 /*--Page: Work--*/
@@ -321,24 +319,17 @@ div.wpcf7-mail-sent-ok {
 /*--front page--*/
 
 .graphic_elem {
-  max-width: 565px;
-  margin-top: -36px;
-  margin-left: 40%;
+
 }
 
 #textbox {
-  width: 60%;
-  top: 30%;
-  left: 8%;
-    max-width:none;
+
 }
-
-
 
 .fill {
   font-size: 30px;
   line-height: 1em;
-  margin-bottom: 12px;
+  margin-bottom: 6px;
 }
 
 /*--Page: Work--*/
@@ -388,16 +379,10 @@ div.wpcf7-mail-sent-ok {
 /*--front page--*/
 
 .graphic_elem{
-  margin-left: 42%;
-  width: auto;
-  max-width: none;
-  height: 100%;
-  background-size: cover;
-  background-position-x: center;
+
 }
 
 #textbox {
-  left: 3%;
 }
 
 .fill {

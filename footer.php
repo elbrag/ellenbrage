@@ -5,8 +5,8 @@
 
   //theme slider area---------------------//
 
-  $themeList = array("theme_1", "theme_2", "theme_3");
-  $themeNames = array("Swiss", "Up north", "King Of Reptiles");
+  $themeList = array("theme_1", "theme_2", "theme_3", "theme_4");
+  $themeNames = array("Swiss", "Up north", "King Of Reptiles", "Wavemaker");
 
 
   if (isset($_COOKIE['theme'])) {
@@ -37,9 +37,9 @@
     }
   } else {
     $themename = 'Mural';
-    $prev = $themeList[2];
+    $prev = $themeList[3];
     $next = $themeList[0];
-    $prevname = $themeNames[2];
+    $prevname = $themeNames[3];
     $nextname = $themeNames[0];
   }
 
