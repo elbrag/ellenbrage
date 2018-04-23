@@ -186,6 +186,7 @@ header {
   margin-top: -70px;
   background-position: center 0;
   background-repeat: no-repeat;
+  z-index: 0;
 }
 
 .graphic_elem{

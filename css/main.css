@@ -351,6 +351,7 @@ input[type=submit] {
   height: 67vh;
   position: relative;
   background-color: #eee;
+  z-index: 10;
 }
 
 hr {

@@ -29,21 +29,19 @@ if( have_posts() ) {
 
   <section id='frontpage'>
 
-    <div id='textbox'>
-        <div class='header1_box'>
-            <h1 class='fill'>Ellen Brage</h1>
-        </div>
-        <div class='titles_box'>
-            <p class='title'><?php echo $title1 ." ". "&amp;" . " " . $title2?></p>
-        </div>
-    </div>
-
         <div id='front_background'>
 
           <div class='graphic_elem'>
           </div>
 
-
+        </div>
+        <div id='textbox'>
+            <div class='header1_box'>
+                <h1 class='fill'>Ellen Brage</h1>
+            </div>
+            <div class='titles_box'>
+                <p class='title'><?php echo $title1 ." ". "&amp;" . " " . $title2?></p>
+            </div>
         </div>
   </section>
   <?php

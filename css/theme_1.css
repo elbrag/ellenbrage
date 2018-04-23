@@ -102,20 +102,21 @@ a {
 
 #front_background {
   background-color: #60EF66;
+  margin-top: 24px;
 }
 
 #textbox {
-  overflow: hidden;
-  position: relative;
+  position: absolute;
   z-index: 10;
-  height: 45px;
+  top: 0px;
+  width: 100%;
 }
 /**/
 .header1_box {
   height: 29px;
   display: inline;
   position: absolute;
-  bottom: 0;
+  top: -3px;
 }
 
 .fill {
@@ -128,7 +129,7 @@ a {
   width: auto;
   position: absolute;
   right: 0;
-  bottom: 4px;
+  top: 8px;
 }
 /**/
 .title {
@@ -136,6 +137,11 @@ a {
   padding-right: 5px;
   font-size: 11px;
   line-height: 14px;
+}
+
+#frontpage {
+  margin-top: 0;
+  position: relative;
 }
 
 .graphic_elem {
@@ -282,6 +288,15 @@ h1, h2, h3, h4 {
 
 /*--frontpage--*/
 
+#front_background {
+  margin-top: 48px;
+}
+
+#frontpage {
+  margin-top: 20px;
+  position: relative;
+}
+
 .fill {
     font-size: 36px;
   }
@@ -298,13 +313,13 @@ h1, h2, h3, h4 {
 }
 
 .header1_box {
-  height: 60px;
-  position: static;
+  height: 72px;
+  top: 4px;
 }
 
 .titles_box {
   position: absolute;
-  bottom: 8px;
+  top: 24px;
   right: 0;
 }
 
@@ -351,12 +366,13 @@ h1, h2, h3, h4 {
 
 .header1_box {
   height: 84px;
+  top: -10px;
 }
 
 
 .fill {
     font-size: 48px;
-    line-height: 1.3em;
+    line-height: 1.2em;
   }
 
 /*--Page: Work--*/
@@ -380,7 +396,7 @@ h1, h2, h3, h4 {
 @media (min-width: 1500px) {
 
   #frontpage {
-    margin-top: 28px;
+    margin-top: 48px;
   }
 
 /*--Header--*/
