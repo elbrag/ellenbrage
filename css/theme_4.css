@@ -116,27 +116,27 @@ a {
 /*--front page--*/
 
 #frontpage {
-  position: relative;
   margin: 0 auto;
-  height: 58vh;
+  height: 67vh;
 }
 
 #front_background {
   background-color: #f7fbfc;
+  height: auto;
+  position: static;
+  height: 150px;
 }
 
 .graphic_elem {
     background-image: url(../img/wavin_lightsmall.gif);
     background-size: 100%;
     background-repeat: no-repeat;
-    height: 30vh;
+    height: 150px;
     width:90vw;
-    margin: 25% auto;
+    margin: 25% auto 0 auto;
 }
 
 #textbox {
-  position: absolute;
-  bottom: 10%;
   z-index: 10;
   width: 100%;
   text-align: center;
@@ -238,16 +238,20 @@ div.wpcf7-mail-sent-ok {
   padding: 3px 0 6px 0;
 }
 
-/*=====================================485PX========================================*/
+/*=====================================440PX========================================*/
 
-@media (min-width: 485px) {
+@media (min-width: 440px) {
 
   #frontpage {
-    height: 70vh;
+    height: 60vh;
+  }
+
+  #front_background {
+    height: 205px;
   }
 
 .graphic_elem {
-
+  height: 205px;
 }
 
 #textbox {
@@ -285,25 +289,24 @@ div.wpcf7-mail-sent-ok {
 /*--front page--*/
 
 #frontpage {
-  height: 78vh;
+  height: 50vh;
+  margin: 10% auto;
 }
 
 #front_background {
-  height: 60vh;
+  height: 32vh;
+
 }
 
 .graphic_elem {
     height: 200px;
     width: 600px;
-    position: absolute;
-    margin: 0;
+    margin: 0 auto;
+    margin-bottom: 12px;
     left: calc(50% - 300px);
     top: calc(50% - 100px);
 }
 
-#textbox {
-  bottom: 20%;
-}
 
 /*--Page: Work--*/
 
@@ -344,18 +347,24 @@ div.wpcf7-mail-sent-ok {
 /*slider---*/
 /*--front page--*/
 
+#frontpage {
+  margin: 7% auto;
+  height: 50vh;
+}
+
+#front_background{
+  margin-bottom: 24px;
+  height: 240px;
+}
+
 .graphic_elem {
     height: 250px;
     width: 700px;
-    position: absolute;
     left: calc(50% - 350px);
     top: calc(50% - 125px);
-    margin: 0;
+    margin: 0 auto;
 }
 
-#textbox {
-
-}
 
 .fill {
   font-size: 30px;
@@ -409,16 +418,22 @@ div.wpcf7-mail-sent-ok {
 
 /*--front page--*/
 
+#frontpage {
+  margin: 7% auto;
+  height: 58vh;
+}
+
+#front_background {
+  height: 34vh;
+  margin-bottom: 48px;
+}
+
 .graphic_elem {
     height: 300px;
     width: 900px;
-    left: calc(50% - 450px);
-    top: calc(60% - 150px);
+
 }
 
-#textbox {
-  bottom: 10%;
-}
 
 .fill {
   font-size: 36px;
@@ -445,8 +460,8 @@ div.wpcf7-mail-sent-ok {
 
 @media (min-width: 2000px) {
 
-#textbox{
-  bottom: 16%;
+#frontpage {
+  margin: 9% auto;
 }
 
 }
