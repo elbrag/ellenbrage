@@ -100,8 +100,9 @@ a {
 #cur_theme {
   font-size: 1em;
   letter-spacing: 0.1em;
-  line-height: 1.9em;
+  line-height: 2.3em;
   text-transform: uppercase;
+  background-color: #fff;
 }
 
 /*--front page--*/
@@ -150,7 +151,7 @@ a {
 /*--Page: Work--*/
 
 .grid_project p, .similar_projects p {
-  font-size: 0.8em;
+  font-size: 0.9em;
   text-decoration: none;
   font-weight: bold;
 }
@@ -160,23 +161,28 @@ a {
     height: 16px;
     bottom: 0;
     background-color: #fff;
+    border-width: 2px;
 }
 
 .checkbox:after,
 .checkbox:before {
     height: 14px;
-    border-left: 1px solid #000;
-    left: 8px;
+    border-left: 3px solid #ed1212;
+    left: 7px;
     top: 1px;
 }
 
 .categories {
   max-width: 124px;
-  font-size: 0.7em;
-  height: 17px;
+  font-size: 0.9em;
+  height: 18px;
 }
 
 /*--Single: Work--*/
+
+.single_category{
+  font-size: 0.9em;
+}
 
 .browse_all {
   text-decoration: none;
@@ -282,7 +288,6 @@ div.wpcf7-mail-sent-ok {
 
 .categories {
   max-width: none;
-  font-size: 0.8em;
   margin-right: 22px;
 }
 
