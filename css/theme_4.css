@@ -9,8 +9,12 @@
 input[type=submit] {
   font-size: 1em;
   background-color: #ed1212;
-  color: #fff;
+  color: #f7fbfc;
   border: none;
+}
+
+body {
+  background-color: #f7fbfc;
 }
 
 
@@ -32,6 +36,10 @@ a {
 /*--Header--*/
 
 /*--Menu--*/
+
+.main-nav, .main-menu {
+  background-color: #f7fbfc;
+}
 
 .lang_items a {
   text-decoration: none;
@@ -88,7 +96,7 @@ a {
 }
 
 #cn-accept-cookie, #cn-more-info {
-  background-color: #fff;
+  background-color: #f7fbfc;
   color: #000;
   border-radius: 0;
   font-weight: bold;
@@ -99,10 +107,10 @@ a {
 
 #cur_theme {
   font-size: 1em;
-  letter-spacing: 0.1em;
+  letter-spacing: 0.6px;
   line-height: 2.3em;
   text-transform: uppercase;
-  background-color: #fff;
+  background-color: #f7fbfc;
 }
 
 /*--front page--*/
@@ -110,20 +118,20 @@ a {
 #frontpage {
   position: relative;
   margin: 0 auto;
+  height: 65vh;
 }
 
 #front_background {
-  background-color: #fff;
+  background-color: #f7fbfc;
 }
 
 .graphic_elem {
-    background-image: url(../img/main2_3.gif);
+    background-image: url(../img/wavin_lightsmall.gif);
     background-size: 100%;
     background-repeat: no-repeat;
-    height: 50vh;
-    width: 75%;
-    margin: auto;
-    margin-top: 12%;
+    height: 40vh;
+    width:85vw;
+    margin: 25% auto;
 }
 
 #textbox {
@@ -160,7 +168,7 @@ a {
     width: 17px;
     height: 16px;
     bottom: 0;
-    background-color: #fff;
+    background-color: #f7fbfc;
     border-width: 2px;
 }
 
@@ -234,6 +242,10 @@ div.wpcf7-mail-sent-ok {
 
 @media (min-width: 485px) {
 
+  #frontpage {
+    height: 70vh;
+  }
+
 .graphic_elem {
 
 }
@@ -257,7 +269,7 @@ div.wpcf7-mail-sent-ok {
 /*--Menu--*/
 
 .menu-item {
-  margin-right: 36px;
+  margin-right: 24px;
   width: auto;
   margin-bottom: 0;
 }
@@ -272,16 +284,25 @@ div.wpcf7-mail-sent-ok {
 
 /*--front page--*/
 
+#frontpage {
+  height: 78vh;
+}
+
 #front_background {
   height: 60vh;
 }
 
 .graphic_elem {
-
+    height: 200px;
+    width: 600px;
+    position: absolute;
+    margin: 0;
+    left: calc(50% - 300px);
+    top: calc(50% - 100px);
 }
 
 #textbox {
-
+  bottom: 20%;
 }
 
 /*--Page: Work--*/
@@ -324,7 +345,12 @@ div.wpcf7-mail-sent-ok {
 /*--front page--*/
 
 .graphic_elem {
-
+    height: 250px;
+    width: 700px;
+    position: absolute;
+    left: calc(50% - 350px);
+    top: calc(50% - 125px);
+    margin: 0;
 }
 
 #textbox {
@@ -383,16 +409,19 @@ div.wpcf7-mail-sent-ok {
 
 /*--front page--*/
 
-.graphic_elem{
-
+.graphic_elem {
+    height: 300px;
+    width: 900px;
+    left: calc(50% - 450px);
+    top: calc(50% - 150px);
 }
 
 #textbox {
+  bottom: 14%;
 }
 
 .fill {
   font-size: 36px;
-  margin-bottom: 18px;
 }
 
 .title {
