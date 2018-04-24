@@ -468,4 +468,40 @@ div.wpcf7-mail-sent-ok {
   margin: 9% auto;
 }
 
+.graphic_elem {
+  height: 400px;
+  width: 1200px;
+}
+
+/*=====================================2000PX========================================*/
+
+@media (min-width: 2000px) {
+
+#frontpage {
+  max-width: 1500px;
+}
+
+#front_background {
+  margin-top: 2%;
+}
+
+#textbox {
+  max-width: none;
+}
+
+.main-menu {
+  width: calc(100% - 220px);
+}
+
+.menu-item {
+  margin-right: 60px;
+}
+
+#logocontainer {
+  width: 220px;
+}
+
+}
+
+
 }

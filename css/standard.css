@@ -494,4 +494,36 @@ input:-webkit-autofill {
 
 /*--Footer--*/
 
+
+}
+
+/*=====================================2000PX========================================*/
+
+@media (min-width: 2000px) {
+
+.fill {
+  font-size: 540px;
+}
+
+.graphic_elem {
+  max-width: 1000px;
+}
+
+.graphic_elem2{
+  background-size: 50%;
+  margin: -100px -64px;
+}
+
+.main-menu {
+  width: calc(100% - 220px);
+}
+
+.menu-item {
+  margin-right: 80px;
+}
+
+#logocontainer {
+  width: 220px;
+}
+
 }

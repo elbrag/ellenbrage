@@ -415,3 +415,42 @@ h1, h2, h3, h4 {
 /*--Footer--*/
 
 }
+
+/*=====================================2000PX========================================*/
+
+@media (min-width: 2000px) {
+
+.fill {
+  font-size: 60px;
+}
+
+.titles_box {
+  top: 34px;
+}
+
+#front_background {
+  margin-top: 70px;
+}
+
+.title {
+  font-size: 20px;
+}
+
+.main-ul {
+  width: 380px;
+}
+
+.main-menu {
+  width: calc(100% - 220px);
+}
+
+.menu-item {
+  margin-right: 70px;
+}
+
+#logocontainer {
+  width: 220px;
+}
+
+
+}

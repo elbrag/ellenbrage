@@ -548,7 +548,37 @@ input:-webkit-autofill {
 
 @media (min-width: 2000px) {
 
+#frontpage {
+  max-width: 1500px;
+}
 
+#front_background {
+  margin-top: 3%;
+}
 
+#textbox {
+  max-width: none;
+}
+
+.fill {
+  font-size: 90px;
+}
+
+.graphic_elem2 {
+  margin-left: 140px;
+  background-size: 90%;
+}
+
+.main-menu {
+  width: calc(100% - 220px);
+}
+
+.menu-item {
+  margin-right: 80px;
+}
+
+#logocontainer {
+  width: 220px;
+}
 
 }
