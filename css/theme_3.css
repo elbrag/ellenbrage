@@ -518,17 +518,17 @@ input:-webkit-autofill {
 
 
 #front_background {
-  background-size: 95%;
-  margin-top: 32px;
+  background-size: 96%;
+  margin-top: 12px;
   height: 78%;
 }
 
 #frontpage {
-  margin: 1% auto 0 auto;
+  margin:1% auto 0 auto;
 }
 
 .graphic_elem {
-  margin-top: 6px;
+  margin-top: 0;
 
 }
 /*--Page: Work--*/
