@@ -108,7 +108,7 @@ a {
 #cur_theme {
   font-size: 1em;
   letter-spacing: 0.6px;
-  line-height: 2.3em;
+  line-height: 2.2em;
   text-transform: uppercase;
   background-color: #fbfbfb;
 }
@@ -239,7 +239,7 @@ div.wpcf7-mail-sent-ok {
 
 .mainfooter {
   background-color: transparent;
-  padding: 3px 0 6px 0;
+  padding: 3px 0 5px 0;
 }
 
 /*=====================================440PX========================================*/

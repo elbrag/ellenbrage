@@ -131,7 +131,7 @@ a {
   background-image: url(../img/druk_2.png);
   background-size: 180%;
   background-repeat: no-repeat;
-  height: 80vh;
+  height: 73vh;
   width: 100%;
   margin-top: -18px;
   position: absolute;
@@ -281,6 +281,7 @@ input:-webkit-autofill {
 
 .mainfooter {
   background-color: #ff796b;
+  padding: 7px 0;
 }
 
 /*=====================================500PX========================================*/

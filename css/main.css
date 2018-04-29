@@ -289,11 +289,11 @@ input[type=submit] {
 .prev input[type='submit'], .next input[type='submit'] {
   position: absolute;
   background-color: transparent;
-  width: 24px;
+  width: 36px;
   height: 30px;
   padding: 0;
   top: 30px;
-  background-size: 75%;
+  background-size: 50%;
   background-repeat: no-repeat;
   background-position: center;
 }
