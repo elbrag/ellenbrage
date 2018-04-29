@@ -9,12 +9,12 @@
 input[type=submit] {
   font-size: 1em;
   background-color: #ed1212;
-  color: #f7fbfc;
+  color: #fbfbfb;
   border: none;
 }
 
 body {
-  background-color: #f7fbfc;
+  background-color: #fbfbfb;
 }
 
 
@@ -38,7 +38,7 @@ a {
 /*--Menu--*/
 
 .main-nav, .main-menu {
-  background-color: #f7fbfc;
+  background-color: #fbfbfb;
 }
 
 .lang_items a {
@@ -96,7 +96,7 @@ a {
 }
 
 #cn-accept-cookie, #cn-more-info {
-  background-color: #f7fbfc;
+  background-color: #fbfbfb;
   color: #000;
   border-radius: 0;
   font-weight: bold;
@@ -110,7 +110,7 @@ a {
   letter-spacing: 0.6px;
   line-height: 2.3em;
   text-transform: uppercase;
-  background-color: #f7fbfc;
+  background-color: #fbfbfb;
 }
 
 /*--front page--*/
@@ -121,14 +121,14 @@ a {
 }
 
 #front_background {
-  background-color: #f7fbfc;
+  background-color: #fbfbfb;
   height: auto;
   position: static;
   height: 150px;
 }
 
 .graphic_elem {
-    background-image: url(../img/wavin_lightsmall.gif);
+    background-image: url(../img/wavin_new.gif);
     background-size: 100%;
     background-repeat: no-repeat;
     height: 150px;
@@ -168,7 +168,7 @@ a {
     width: 17px;
     height: 16px;
     bottom: 0;
-    background-color: #f7fbfc;
+    background-color: #fbfbfb;
     border-width: 2px;
 }
 
@@ -206,7 +206,7 @@ a {
 /*--Page: Contact--*/
 
 input:-webkit-autofill {
-    -webkit-box-shadow: 0 0 0 30px #f7fbfc inset;
+    -webkit-box-shadow: 0 0 0 30px #fbfbfb inset;
 }
 
 /*form*/
