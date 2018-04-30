@@ -31,6 +31,9 @@ var menuicon = document.getElementById('menu-symb');
 
 function openMenu(x){
 
+  // x.style.top + '1px';
+  // x.style.top -= '1px';
+
   x.classList.toggle("change");
 
   var menu = document.querySelector('.main-menu');

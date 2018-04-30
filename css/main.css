@@ -298,6 +298,16 @@ input[type=submit] {
   background-position: center;
 }
 
+.prev input[type='submit']:active,
+.next input[type='submit']:active {
+  transform: translateY(2px);
+}
+
+#menu-symb:active,
+#menu-symb.change:active {
+  transform: translateY(1px);
+}
+
 .prev input[type='submit'] {
   background-image: url(../img/arrow_prev_black.svg);
   left: 0;
