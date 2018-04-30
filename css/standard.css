@@ -112,7 +112,7 @@ a {
 #front_background {
   background-color: transparent;
   height: 56vh;
-  margin-top: 32px;
+  margin-top: 20px;
 }
 
 .fill {
@@ -469,6 +469,10 @@ input:-webkit-autofill {
 
 /*frontpage*/
 
+#frontpage{
+  margin-top: 48px;
+}
+
 #front_background{
   height: 72vh;
 }
@@ -504,6 +508,10 @@ input:-webkit-autofill {
 
 .fill {
   font-size: 540px;
+}
+
+#frontpage{
+  margin-top: 54px;
 }
 
 .graphic_elem {

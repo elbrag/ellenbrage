@@ -144,14 +144,15 @@ a {
 
 .fill {
   margin-bottom: 2px;
-  font-size: 28px;
-  line-height: 32px;
+  font-size: 24px;
+  line-height: 24px;
   font-weight: 800;
   text-transform: uppercase;
 }
 
+
 .titles_box p {
-  font-size: 1.3em;
+  font-size: 0.8em;
 }
 
 
@@ -258,13 +259,6 @@ div.wpcf7-mail-sent-ok {
   height: 205px;
 }
 
-#textbox {
-
-}
-
-.fill {
-  font-size: 28px;
-}
 
 }
 
@@ -309,6 +303,16 @@ div.wpcf7-mail-sent-ok {
     margin-bottom: 12px;
     left: calc(50% - 300px);
     top: calc(50% - 100px);
+}
+
+.fill {
+  margin-bottom: 2px;
+  font-size: 28px;
+  line-height: 32px;
+}
+
+.titles_box p {
+  font-size: 1.3em;
 }
 
 
