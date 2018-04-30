@@ -247,7 +247,7 @@ header {
 }
 
 .work_grid_image {
-  box-shadow: 2px 2px 0.5vw rgba(74,101,107,0.4);
+  box-shadow: 1.5px 1.5px 0.4vw rgba(74,101,107,0.3);
 }
 
 /*--Single: Work--*/
@@ -263,7 +263,7 @@ header {
 
 .similar_thumb img {
   width: 98%;
-  box-shadow: 2px 2px 0.5vw rgba(74,101,107,0.3);
+  box-shadow: 1.5px 1.5px 0.4vw rgba(74,101,107,0.3);
 }
 
 /*--Page: About--*/
