@@ -91,8 +91,12 @@ a {
   text-transform: uppercase;
 }
 
-#submit:active, #submit:hover, .browse_all:hover, .browse_all:active {
+#submit:hover, .browse_all:hover {
   background-color: #ed1212;
+}
+
+#submit:active, .browse_all:active {
+  background-color: #c43f38;
 }
 
 #cn-accept-cookie, #cn-more-info {

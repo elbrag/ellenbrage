@@ -30,7 +30,7 @@ a, a button {
   text-decoration: none;
 }
 
-#submit:active, button:active {
+#submit:active, button:active, .browse_all:active {
   background-color: #56e25c;
 }
 
