@@ -365,15 +365,15 @@ div.wpcf7-mail-sent-ok {
 }
 
 #front_background{
-  margin-bottom: 24px;
+  margin-bottom: 90px;
   height: 240px;
 }
 
 .graphic_elem {
-    height: 250px;
-    width: 700px;
-    left: calc(50% - 350px);
-    top: calc(50% - 125px);
+    height: 300px;
+    width: 900px;
+    left: calc(50% - 450px);
+    top: calc(50% - 150px);
     margin: 0 auto;
 }
 
