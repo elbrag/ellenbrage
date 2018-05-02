@@ -119,12 +119,13 @@ a {
   margin: 0;
   width: 100%;
   position: relative;
-  height: 77vh;
+  height: 67vh;
 }
 
 #front_background {
   background-color: transparent;
-  height: 78%;
+  height: 87%;
+  position: relative;
 }
 
 .graphic_elem {
@@ -142,7 +143,7 @@ a {
 #textbox{
   width: 90%;
   margin: 0 auto;
-  max-width: 1000px;
+  max-width: 1200px;
 }
 
 .title{
@@ -348,8 +349,9 @@ input:-webkit-autofill {
 
 #frontpage {
   width: 90%;
-  max-width: 1000px;
+  max-width: 1200px;
   margin: 0 auto;
+  height: 79vh;
 }
 
 .graphic_elem {
@@ -359,15 +361,15 @@ input:-webkit-autofill {
 .graphic_elem {
   background-size: 92%;
   margin: -12px auto 0 auto;
-  position: static;
 }
 
 #front_background {
-  margin-top: 24px;
 }
 
 #textbox {
   width: 100%;
+  position: absolute;
+  bottom: 0;
 }
 
 .title{
@@ -449,8 +451,11 @@ input:-webkit-autofill {
 }
 
 #front_background {
-  margin-top: -20px;
   height: 83%;
+}
+
+.graphic_elem {
+
 }
 
 
@@ -525,17 +530,18 @@ input:-webkit-autofill {
 
 #front_background {
   background-size: 96%;
-  margin-top: 12px;
-  height: 78%;
 }
 
 #frontpage {
-  margin:1% auto 0 auto;
+  max-width: 1200px;
 }
 
 .graphic_elem {
   margin-top: 0;
+}
 
+.fill {
+  font-size: 76px;
 }
 /*--Page: Work--*/
 
@@ -554,11 +560,10 @@ input:-webkit-autofill {
 @media (min-width: 2000px) {
 
 #frontpage {
-  max-width: 1500px;
+  max-width: 1200px;
 }
 
 #front_background {
-  margin-top: 3%;
 }
 
 #textbox {
