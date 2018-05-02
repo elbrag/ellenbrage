@@ -102,9 +102,16 @@ a {
 
 /*--front page--*/
 
+#frontpage {
+  position: relative;
+  margin: 0;
+  width: 100%;
+  max-width: none;
+}
+
 #front_background {
   background-color: #60EF66;
-  margin-top: 24px;
+  height: 70vh;
 }
 
 #textbox {
@@ -115,11 +122,13 @@ a {
 }
 /**/
 .header1_box {
-  height: 29px;
-  display: inline;
+  height: auto;
   position: absolute;
-  top: -3px;
+  transform: rotate(270deg);
+  width: 240px;
+  left: -96px;
 }
+
 
 .fill {
   display: inline;
@@ -127,12 +136,24 @@ a {
     text-transform: lowercase;
 }
 /**/
-.titles_box {
-  width: auto;
+.text_box {
   position: absolute;
-  right: 0;
-  top: 8px;
+  bottom: -40px;
+  width: 92%;
 }
+
+.text_box p {
+  font-size: 0.8em;
+  font-weight: normal;
+  float: left;
+  display: inline-block;
+  margin-right: 12px;
+}
+
+.text_box a {
+  color: #000;
+}
+
 /**/
 .title {
   font-weight: bold;
@@ -141,33 +162,85 @@ a {
   line-height: 14px;
 }
 
-#frontpage {
-  margin-top: 0;
-  position: relative;
-}
 
 .graphic_elem {
-  width: 160%;
-  height: 160%;
-  border-radius: 50%;
+  padding: 20px 24px;
+  box-sizing: border-box;
   margin: 0 auto;
-  position: absolute;
-  top: -36%;
-  left: -33%;
-  transform: skewX(35deg);
-  background: repeating-radial-gradient(
-    circle,
-    #fff,
-    #fff 6px,
-    transparent 3px,
-    transparent 50px
-  );
-  animation: spin 8s linear infinite;
+  position: relative;
+  height: 350px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  max-width: 600px;
 }
 
-@keyframes spin {
-  0% {transform: skewX(35deg) rotateZ(0deg);}
-  100% {transform: skewX(35deg) rotateZ(360deg);}
+
+
+.topleft, .bottomleft,
+.topright, .bottomright {
+  width: 35%;
+  height: 60px;
+  background-color: #000;
+}
+
+.middle {
+  height: 60px;
+  background-color: #000;
+}
+
+.bottom, .top {
+  margin-left: 24px;
+}
+.middle {
+  margin-left: 12px;
+}
+
+.bottom, .top {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+/* .bottomleft, .topleft {
+  border-radius: 0 10px 10px 0;
+}
+
+.bottomright, .topright {
+  border-radius: 10px 0 0 10px;
+} */
+
+.bottomright, .topright, .middle, .bottomleft, .topleft {
+  border-radius: 10px;
+}
+
+@keyframes move1 {
+    from {right: 0px;}
+    to {right: 65%;}
+}
+@keyframes move2 {
+    from {left: 0px;}
+    to {left: 65%;}
+}
+@keyframes move3 {
+    0% {width: calc(100% - 24px);}
+    50% {width: 65%;}
+    100% {width: calc(100% - 24px);}
+}
+
+.topright, .bottomright {
+  position: relative;
+  animation: move1 3s infinite;
+}
+.topleft, .bottomleft {
+  position: relative;
+  animation: move2 3s infinite;
+}
+.middle {
+  position: relative;
+  animation: move3 6s infinite;
+  left:50%;
+  -webkit-transform:translate3d(-50%,0,0);
 }
 
 /*--Page: Work--*/
@@ -290,33 +363,19 @@ h1, h2, h3, h4 {
 
 /*--frontpage--*/
 
-#front_background {
-  margin-top: 48px;
-}
 
-#frontpage {
-  margin-top: 20px;
-  position: relative;
+.header1_box {
+  left: -115px;
 }
 
 .fill {
     font-size: 36px;
   }
 
-.graphic_elem {
-  width: 180%;
-  height: 180%;
-  left: -37%;
-  top: -48%;
-}
+
 
 #textbox{
   height: auto;
-}
-
-.header1_box {
-  height: 72px;
-  top: 4px;
 }
 
 .titles_box {
@@ -329,6 +388,10 @@ h1, h2, h3, h4 {
   float: left;
   font-size: 16px;
   line-height: 16px;
+}
+
+.text_box {
+  bottom: -20px;
 }
 
 /*--Page: Work--*/
@@ -366,15 +429,52 @@ h1, h2, h3, h4 {
 
 /*--frontpage--*/
 
-.header1_box {
-  height: 84px;
-  top: -10px;
+#front_background {
+  height: 84vh;
 }
 
+.graphic_elem {
+  padding: 50px 24px 190px 24px;
+  height: inherit;
+  max-width: 800px;
+}
+
+.text_box {
+  bottom: 150px;
+}
+
+.text_box p {
+}
+
+.topleft, .bottomleft,
+.topright, .bottomright {
+  width: 35%;
+  height: 100px;
+}
+
+.bottom, .top, .middle {
+  margin-left: 0;
+}
+
+.middle {
+  width: 100%;
+  height: 100px;
+}
+
+.header1_box {
+  left: -232px;
+  width: 410px;
+}
 
 .fill {
     font-size: 48px;
     line-height: 1.2em;
+  }
+
+  @keyframes move3 {
+      0% {width: 100%;}
+      50% {width: 65%;}
+      100% {width: 100%;}
   }
 
 /*--Page: Work--*/
@@ -397,8 +497,24 @@ h1, h2, h3, h4 {
 
 @media (min-width: 1500px) {
 
-  #frontpage {
-    margin-top: 48px;
+
+
+  .graphic_elem {
+    padding: 10px 24px 80px 24px;
+    max-width: 1200px;
+  }
+
+  .topleft, .bottomleft, .topright, .bottomright, .middle {
+    height: 120px;
+  }
+
+  .header1_box {
+    left: -295px;
+    width: 519px;
+  }
+
+  .text_box {
+    bottom: 75px;
   }
 
 /*--Header--*/
@@ -431,7 +547,6 @@ h1, h2, h3, h4 {
 }
 
 #front_background {
-  margin-top: 70px;
 }
 
 .title {
