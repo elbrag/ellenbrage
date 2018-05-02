@@ -3,7 +3,7 @@
 /*--semantics reset and basics--*/
 
 * {
-  font-family: 'Montserrat', 'Helvetica', sans-serif;
+  font-family: 'Hind', 'Helvetica', sans-serif;
 }
 
 input[type=submit] {
@@ -19,7 +19,7 @@ body {
 
 
 p {
-  font-size: 1.1em;
+  font-size: 1.2em;
   font-weight: 300;
 }
 
@@ -44,7 +44,7 @@ a {
 
 .lang_items a {
   text-decoration: none;
-  font-family: 'Nimbus Sans';
+  font-family: 'Nimbus Sans', sans-serif;
 }
 
 .radiobutton {
@@ -68,7 +68,7 @@ a {
 
 .lang_item {
   text-transform: uppercase;
-  font-family: 'Nimbus Sans';
+  font-family: 'Nimbus Sans', sans-serif;
 }
 
 .main-ul li a {
@@ -76,7 +76,7 @@ a {
   letter-spacing: 0.5px;
   color: #000;
   text-transform: uppercase;
-  font-family: 'Nimbus Sans';
+  font-family: 'Nimbus Sans', sans-serif;
   font-weight: normal;
 }
 
@@ -87,7 +87,7 @@ a {
 /*--Page standards--*/
 
 #submit {
-  padding: 4px 18px 2px 18px;
+  padding: 4px 18px 1px 18px;
   background-color: #000;
   border-radius: 0;
   border: none;
@@ -114,9 +114,9 @@ a {
 
 
 #cur_theme {
-  font-size: 1em;
+  font-size: 1.1em;
   letter-spacing: 0.6px;
-  line-height: 2.2em;
+  line-height: 2em;
   text-transform: uppercase;
   background-color: #fbfbfb;
 }
@@ -126,6 +126,9 @@ a {
 #frontpage {
   margin: 0 auto;
   height: 67vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 #front_background {
@@ -141,7 +144,6 @@ a {
     background-repeat: no-repeat;
     height: 150px;
     width:90vw;
-    margin: 25% auto 0 auto;
 }
 
 #textbox {
@@ -151,7 +153,6 @@ a {
 }
 
 .fill {
-  font-family: 'Montserrat';
   margin-bottom: 2px;
   font-size: 24px;
   line-height: 24px;
@@ -169,7 +170,7 @@ a {
 /*--Page: Work--*/
 
 .grid_project p, .similar_projects p {
-  font-size: 0.9em;
+  font-size: 1em;
   text-decoration: none;
   font-weight: bold;
 }
@@ -192,16 +193,18 @@ a {
 
 .categories {
   max-width: 124px;
-  font-size: 0.9em;
-  height: 19px;
+  font-size: 1.1em;
+  height: 22px;
   margin-top: 3px;
 }
 
 /*--Single: Work--*/
 
-.single_category{
-  font-size: 0.9em;
+#single h1 {
+  margin-bottom: 0;
 }
+
+
 
 .browse_all {
   text-decoration: none;
@@ -223,7 +226,7 @@ input:-webkit-autofill {
 /*form*/
 
 .wpcf7 label {
-  font-size: 0.9em;
+  font-size: 1em;
   font-weight: bold;
   text-transform: none;
   font-variant: normal;
@@ -262,11 +265,11 @@ div.wpcf7-mail-sent-ok {
   }
 
   #front_background {
-    height: 205px;
+    height: 200px;
   }
 
 .graphic_elem {
-  height: 205px;
+  height: 200px;
 }
 
 
@@ -297,8 +300,7 @@ div.wpcf7-mail-sent-ok {
 /*--front page--*/
 
 #frontpage {
-  height: 50vh;
-  margin: 10% auto;
+  height: 70vh;
 }
 
 #front_background {
@@ -317,7 +319,7 @@ div.wpcf7-mail-sent-ok {
 
 .fill {
   margin-bottom: 2px;
-  font-size: 28px;
+  font-size: 34px;
   line-height: 32px;
 }
 
@@ -367,13 +369,14 @@ div.wpcf7-mail-sent-ok {
 /*--front page--*/
 
 #frontpage {
-  margin: 7% auto;
-  height: 50vh;
+  margin: 0 auto;
+  height: 80vh;
+
 }
 
 #front_background{
-  margin-bottom: 90px;
-  height: 240px;
+  margin-bottom: 30px;
+  height: 300px;
 }
 
 .graphic_elem {
@@ -386,7 +389,6 @@ div.wpcf7-mail-sent-ok {
 
 
 .fill {
-  font-size: 30px;
   line-height: 1em;
   margin-bottom: 6px;
 }
@@ -437,10 +439,7 @@ div.wpcf7-mail-sent-ok {
 
 /*--front page--*/
 
-#frontpage {
-  margin: 7% auto;
-  height: 58vh;
-}
+
 
 #front_background {
   height: 34vh;
@@ -479,9 +478,6 @@ div.wpcf7-mail-sent-ok {
 
 @media (min-width: 2000px) {
 
-#frontpage {
-  margin: 9% auto;
-}
 
 .graphic_elem {
   height: 400px;
