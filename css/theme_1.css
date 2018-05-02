@@ -215,12 +215,18 @@ a {
 }
 
 @keyframes move1 {
-    from {right: 0px;}
-    to {right: 65%;}
+    0% {right: 0px;}
+    25% {  border-radius:  10px;}
+    40% {border-radius: 70px}
+    75% {  border-radius:  10px;}
+    100% {right: 65%;}
 }
 @keyframes move2 {
-    from {left: 0px;}
-    to {left: 65%;}
+  0% {left: 0px;}
+  25% {  border-radius:  10px;}
+  40% {border-radius: 70px}
+  75% {  border-radius:  10px;}
+  100% {left: 65%;}
 }
 @keyframes move3 {
     0% {width: calc(100% - 24px);}
