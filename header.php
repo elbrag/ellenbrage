@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="<?php bloginfo('stylesheet_url')?>">
     <link href="https://fonts.googleapis.com/css?family=Nunito:300,300i,400,400i,600,600i,800,800i" rel="stylesheet">
     <link rel="stylesheet" href="https://use.typekit.net/xfy8eum.css">
-    <link href="https://fonts.googleapis.com/css?family=Alegreya:400,400i,500,500i,700,700i,800,800i,900,900i|Roboto+Mono:300,300i,400,400i,500,500i,700,700i|Source+Serif+Pro:400,600,700|Kanit:400,700,800,900|Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i|Passion+One:400,700,900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Alegreya:400,400i,500,500i,700,700i,800,800i,900,900i|Roboto+Mono:300,300i,400,400i,500,500i,700,700i|Source+Serif+Pro:400,600,700|Kanit:400,700,800,900|Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i|Passion+One:400,700,900|Montserrat:100,300,500,700,900" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
     <?php wp_head(); ?>

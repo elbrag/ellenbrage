@@ -166,8 +166,9 @@ a {
 
 
 .categories {
-  font-size: 0.8em;
+  font-size: 0.9em;
   height: 16px;
+  margin-top: 1px;
 }
 
 .checkbox {

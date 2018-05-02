@@ -30,7 +30,7 @@ p {
   margin: 0;
   padding: 0;
   font-weight: 200;
-  font-size: 1em;
+  font-size: 1.1em;
   line-height: 1.8em;
 }
 
@@ -53,7 +53,7 @@ h3 {
 }
 
 h4 {
-  font-size: 1em;
+  font-size: 1.1em;
 }
 
 ul {
@@ -97,7 +97,7 @@ p a:active {
   font-weight: normal;
   font-family: inherit;
   padding: 3px 18px;
-  font-size: 0.8em;
+  font-size: 0.9em;
   border-radius: 3px;
   border: 1px solid #000;
 }
@@ -225,7 +225,7 @@ header {
   background-color: transparent;
   border-radius: 0;
   cursor: pointer;
-  font-size: 0.8em;
+  font-size: 0.9em;
   font-weight: 300;
 }
 
@@ -273,7 +273,7 @@ input[type=submit] {
 
 #submit {
   padding: 3px 18px;
-  font-size: 0.8em;
+  font-size: 0.9em;
   border-radius: 3px;
   border: 1px solid #000;
 }
@@ -383,7 +383,7 @@ hr {
 /*--Page: Work--*/
 
 .categories {
-  font-size: 0.8em;
+  font-size: 0.9em;
   max-width: 120px;
   height: 18px;
   display: inline-block;
@@ -466,7 +466,7 @@ hr {
 }
 
 .grid_project p, .similar_projects p {
-  font-size: 0.8em;
+  font-size: 0.9em;
   margin-left: 12px;
 }
 
@@ -510,7 +510,7 @@ hr {
 
 .single_category {
   margin: 0 auto;
-  font-size: 0.8em;
+  font-size: 0.9em;
   width: 90%;
   overflow: hidden;
 }
@@ -619,7 +619,7 @@ hr {
 
 .wpcf7 input[type=text],
 .wpcf7 input[type=email] {
-  font-size: 0.8em;
+  font-size: 0.9em;
   font-weight: 200;
   margin: 6px 0 12px 0;
   width: 98%;
@@ -631,7 +631,7 @@ input:-webkit-autofill {
 }
 
 .wpcf7 textarea {
-  font-size: 0.8em;
+  font-size: 0.9em;
   resize: none;
   margin: 6px 0 12px 0;
   width: 98%;
@@ -747,7 +747,7 @@ background-color: transparent!important;
   }
 
   .menu-item a {
-    font-size: 0.8em;
+    font-size: 0.9em;
   }
 
   .radiobutton {
@@ -1119,7 +1119,7 @@ background-color: transparent!important;
 
 .grid_project p,
 .similar_projects p {
-  font-size: 0.8em;
+  font-size: 0.9em;
 }
 
 .work_grid_image {
