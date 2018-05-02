@@ -131,7 +131,7 @@ a {
   background-image: url(../img/druk_2.png);
   background-size: 180%;
   background-repeat: no-repeat;
-  height: 83vh;
+  height: 75vh;
   width: 100%;
   margin-top: -18px;
   position: absolute;
@@ -349,6 +349,10 @@ input:-webkit-autofill {
   width: 90%;
   max-width: 1000px;
   margin: 0 auto;
+}
+
+.graphic_elem {
+  height: 83vh;
 }
 
 .graphic_elem {

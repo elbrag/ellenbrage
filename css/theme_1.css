@@ -430,17 +430,17 @@ h1, h2, h3, h4 {
 /*--frontpage--*/
 
 #front_background {
-  height: 84vh;
+  height: 80vh;
 }
 
 .graphic_elem {
-  padding: 50px 24px 190px 24px;
+  padding: 60px 24px 110px 24px;
   height: inherit;
   max-width: 800px;
 }
 
 .text_box {
-  bottom: 150px;
+  bottom: 70px;
 }
 
 .text_box p {
@@ -449,7 +449,7 @@ h1, h2, h3, h4 {
 .topleft, .bottomleft,
 .topright, .bottomright {
   width: 35%;
-  height: 100px;
+  height: 80px;
 }
 
 .bottom, .top, .middle {
@@ -458,7 +458,7 @@ h1, h2, h3, h4 {
 
 .middle {
   width: 100%;
-  height: 100px;
+  height: 80px;
 }
 
 .header1_box {
@@ -498,6 +498,9 @@ h1, h2, h3, h4 {
 @media (min-width: 1500px) {
 
 
+  #front_background {
+    height: 84vh;
+  }
 
   .graphic_elem {
     padding: 10px 24px 80px 24px;
@@ -515,6 +518,16 @@ h1, h2, h3, h4 {
 
   .text_box {
     bottom: 75px;
+  }
+
+  .topleft, .bottomleft,
+  .topright, .bottomright {
+    height: 120px;
+  }
+
+
+  .middle {
+    height: 120px;
   }
 
 /*--Header--*/
