@@ -418,6 +418,7 @@ input:-webkit-autofill {
 
   .graphic_elem {
     background-size: contain;
+    background-position-x: center;
   }
 
 }
