@@ -111,7 +111,7 @@ a {
 
 #front_background {
   background-color: #60EF66;
-  height: 70vh;
+  height: 80vh;
 }
 
 #textbox {
@@ -144,6 +144,7 @@ a {
 
 .text_box p {
   font-size: 0.8em;
+  line-height: 1.6em;
   font-weight: normal;
   float: left;
   display: inline-block;
@@ -437,7 +438,7 @@ h1, h2, h3, h4 {
 /*--frontpage--*/
 
 #front_background {
-  height: 80vh;
+  height: 83vh;
 }
 
 .graphic_elem {
@@ -447,7 +448,7 @@ h1, h2, h3, h4 {
 }
 
 .text_box {
-  bottom: 70px;
+  bottom: 75px;
 }
 
 .text_box p {
@@ -506,7 +507,7 @@ h1, h2, h3, h4 {
 
 
   #front_background {
-    height: 84vh;
+    height: 86vh;
   }
 
   .graphic_elem {
@@ -524,7 +525,7 @@ h1, h2, h3, h4 {
   }
 
   .text_box {
-    bottom: 75px;
+    bottom: 82px;
   }
 
   .topleft, .bottomleft,

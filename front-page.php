@@ -69,12 +69,29 @@ if( have_posts() ) {
 
           </div>
 
+          <?php
+          if ($_COOKIE['theme'] == "theme_3") {
+            ?>
+
+          <div id='textbox'>
+              <div class='header1_box'>
+                  <h1 class='fill'>Ellen Brage</h1>
+              </div>
+              <div class='titles_box'>
+                  <p class='title'><?php echo $title1 ." ". "&amp;" . " " . $title2?></p>
+              </div>
+          </div>
+
+          <?php
+          }
+          ?>
+
         </div>
 
 
 
         <?php
-        if ($_COOKIE['theme'] != "theme_1") {
+        if (($_COOKIE['theme'] != "theme_1") && ($_COOKIE['theme'] != "theme_3")) {
           ?>
 
         <div id='textbox'>

@@ -439,17 +439,19 @@ div.wpcf7-mail-sent-ok {
 
 /*--front page--*/
 
-
+#frontpage {
+  max-width: 1200px;
+}
 
 #front_background {
-  height: 34vh;
+  height: 42vh;
   margin-bottom: 48px;
 }
 
 .graphic_elem {
-    height: 300px;
-    width: 900px;
-
+    height: 400px;
+    width: 1100px;
+    background-size: contain;
 }
 
 
@@ -474,19 +476,10 @@ div.wpcf7-mail-sent-ok {
 
 }
 
-/*=====================================2000PX========================================*/
 
-@media (min-width: 2000px) {
+/*=====================================1900PX========================================*/
 
-
-.graphic_elem {
-  height: 400px;
-  width: 1200px;
-}
-
-/*=====================================2000PX========================================*/
-
-@media (min-width: 2000px) {
+@media (min-width: 1900px) {
 
 #frontpage {
   max-width: 1500px;
@@ -494,6 +487,7 @@ div.wpcf7-mail-sent-ok {
 
 #front_background {
   margin-top: 2%;
+  height: 37vh;
 }
 
 #textbox {

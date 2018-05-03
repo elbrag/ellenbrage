@@ -161,7 +161,7 @@ header {
   height: 100vh;
   padding: 0 0 48px 0;
   box-sizing: border-box;
-  z-index: 120;
+  z-index: 1200;
 }
 
 .main-ul {
@@ -677,6 +677,7 @@ background-color: transparent!important;
   width: 100%;
   background-color: #FFF;
   padding: 3px 0;
+  z-index: 1000;
 }
 
 /*=====================================640PX========================================*/

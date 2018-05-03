@@ -118,32 +118,36 @@ a {
 #frontpage {
   margin: 0;
   width: 100%;
-  position: relative;
-  height: 67vh;
+  height: 70vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 #front_background {
   background-color: transparent;
-  height: 87%;
   position: relative;
+  height: inherit;
 }
 
 .graphic_elem {
   background-image: url(../img/druk_2.png);
   background-size: 180%;
   background-repeat: no-repeat;
-  height: 75vh;
+  height: 100%;
   width: 100%;
   margin-top: -18px;
   position: absolute;
   right: 0;
+  z-index: 10;
 }
 
-
 #textbox{
-  width: 90%;
+  width: 100%;
   margin: 0 auto;
   max-width: 1200px;
+  position: absolute;
+  bottom: 0;
 }
 
 .title{
@@ -153,7 +157,7 @@ a {
 
 .fill{
   font-family: 'Colt';
-  font-size: 6vw;
+  font-size: 14vw;
   margin: 0;
   line-height: 1em;
   text-align: center;
@@ -348,22 +352,17 @@ input:-webkit-autofill {
 /*front page*/
 
 #frontpage {
-  width: 90%;
   max-width: 1200px;
   margin: 0 auto;
-  height: 79vh;
-}
-
-.graphic_elem {
-  height: 83vh;
-}
-
-.graphic_elem {
-  background-size: 92%;
-  margin: -12px auto 0 auto;
+  height: 75vh;
 }
 
 #front_background {
+  height: 71vh;
+}
+
+.graphic_elem {
+  background-size: 120%;
 }
 
 #textbox {
@@ -411,13 +410,19 @@ input:-webkit-autofill {
 
 /*--Footer--*/
 
+}
 
+/*=====================================800PX========================================*/
+
+@media (min-width: 800px) {
+
+  .graphic_elem {
+    background-size: contain;
+  }
 
 }
 
-@media (min-width: 660px) {
 
-}
 
 /*=====================================960PX========================================*/
 
@@ -448,19 +453,20 @@ input:-webkit-autofill {
 #frontpage {
   width: 90%;
   max-width: 1000px;
+  height: 80vh;
 }
 
-#front_background {
-  height: 83%;
+#front_background{
+  height: 80vh;
 }
 
 .graphic_elem {
-
+  background-size: contain;
 }
 
 
-
-#textbox {
+.fill {
+  font-size: 6vw;
 }
 
 /*--Page: Work--*/
@@ -497,12 +503,18 @@ input:-webkit-autofill {
 
 /*front page*/
 
+#front_background {
+  height: 80vh;
+}
+
+#frontpage {
+  height: 75vh;
+}
+
 .fill{
   font-size: 68px;
 }
 
-#textbox {
-}
 
 
 /*--Page: Work--*/
@@ -529,11 +541,12 @@ input:-webkit-autofill {
 
 
 #front_background {
-  background-size: 96%;
+  height: 81vh;
 }
 
 #frontpage {
   max-width: 1200px;
+  height: 81vh;
 }
 
 .graphic_elem {
@@ -559,12 +572,6 @@ input:-webkit-autofill {
 
 @media (min-width: 2000px) {
 
-#frontpage {
-  max-width: 1200px;
-}
-
-#front_background {
-}
 
 #textbox {
   max-width: none;
