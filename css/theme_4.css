@@ -42,6 +42,7 @@ a {
   background-color: #fbfbfb;
 }
 
+
 .lang_items a {
   text-decoration: none;
   font-family: 'Nimbus Sans', sans-serif;
@@ -114,9 +115,9 @@ a {
 
 
 #cur_theme {
-  font-size: 1.1em;
+  font-size: 18px;
   letter-spacing: 0.6px;
-  line-height: 2em;
+  line-height: 32px;
   text-transform: uppercase;
   background-color: #fbfbfb;
 }
@@ -283,6 +284,11 @@ div.wpcf7-mail-sent-ok {
 
 /*--Menu--*/
 
+.main-menu{
+  margin-top: 18px;
+}
+
+
 .menu-item {
   margin-right: 24px;
   width: auto;
@@ -290,7 +296,7 @@ div.wpcf7-mail-sent-ok {
 }
 
 .menu-item a {
-  font-size: 1em;
+  font-size: 16px;
   padding-left: 24px;
 }
 
@@ -389,7 +395,6 @@ div.wpcf7-mail-sent-ok {
 
 
 .fill {
-  line-height: 1em;
   margin-bottom: 6px;
 }
 
