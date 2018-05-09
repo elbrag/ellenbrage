@@ -568,6 +568,7 @@ h1, h2, h3, h4 {
 }
 
 #front_background {
+  height: 90vh;
 }
 
 .title {

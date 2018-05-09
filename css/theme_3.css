@@ -574,6 +574,14 @@ input:-webkit-autofill {
 @media (min-width: 2000px) {
 
 
+#front_background {
+  height: 85vh;
+}
+
+#frontpage {
+  max-width: 1500px;
+}
+
 #textbox {
   max-width: none;
 }
