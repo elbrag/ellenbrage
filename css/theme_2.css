@@ -163,7 +163,7 @@ header {
 }
 
 #cur_theme {
-  line-height: 32px;
+  line-height: 36px;
 }
 
 
@@ -334,7 +334,7 @@ input:-webkit-autofill {
 
 .main-menu {
   background-color: transparent;
-  margin-top: 15px;
+  margin-top: 17px;
 }
 
 .menu-item {
