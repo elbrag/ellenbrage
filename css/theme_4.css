@@ -286,7 +286,7 @@ div.wpcf7-mail-sent-ok {
 /*--Menu--*/
 
 .main-menu{
-  margin-top: 18px;
+  margin-top: 15px;
 }
 
 
@@ -370,6 +370,10 @@ div.wpcf7-mail-sent-ok {
 /*--Header--*/
 
 /*--Menu--*/
+
+.menu-item {
+  margin-right: 42px;
+}
 
 /*--Page standards--*/
 /*slider---*/

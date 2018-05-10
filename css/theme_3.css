@@ -326,7 +326,7 @@ input:-webkit-autofill {
 
 .main-menu {
   background-color: transparent;
-  margin-top: 18px;
+  margin-top: 19px;
   width: calc(100% - 175px);
 }
 .menu-item {
@@ -505,6 +505,18 @@ input:-webkit-autofill {
 /*--Header--*/
 
 /*--Menu--*/
+
+#logocontainer {
+  width: 230px;
+}
+
+.main-menu {
+  width: calc(100% - 230px);
+}
+
+.menu-item {
+  margin-right: 75px;
+}
 
 /*front page*/
 

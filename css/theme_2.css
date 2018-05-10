@@ -340,7 +340,7 @@ input:-webkit-autofill {
 
 .main-menu {
   background-color: transparent;
-  margin-top: 17px;
+  margin-top: 16px;
 }
 
 .menu-item {
@@ -404,6 +404,10 @@ input:-webkit-autofill {
 #logocontainer a {
   height: 55px;
   width: 135px;
+}
+
+.menu-item {
+  padding: 5px 42px;
 }
 
 /*--Page standards--*/

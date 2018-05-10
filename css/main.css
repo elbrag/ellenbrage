@@ -1101,12 +1101,16 @@ background-color: transparent!important;
 
 /*--page standards--*/
 
+#contact, #about, #cookies, #errorpage {
+    max-width: 1100px;
+  }
+
   /*--Header--*/
 
   /*--Menu--*/
 
   .main-nav {
-    max-width: calc(1000px + 48px);
+    padding: 6px 36px;
   }
 
   /*slider*/
@@ -1119,6 +1123,7 @@ background-color: transparent!important;
 
 #frontpage {
   margin: 54px auto 0 auto;
+  max-width: 1100px;
 }
 
   /*--Page: Work--*/
@@ -1128,13 +1133,14 @@ background-color: transparent!important;
 }
 
 #category_area{
-  max-width: 1000px;
+  max-width: 1452px;
   margin: 0 auto 72px auto;
 }
 
 #work_grid {
   padding: 0 24px;
 }
+
 
 .grid_project p {
   left: 21px;
@@ -1159,6 +1165,30 @@ background-color: transparent!important;
 
   #single {
     margin: 54px auto 72px auto;
+    max-width: 1100px;
+  }
+
+  #single h1 {
+    max-width: 1100px;
+  }
+  #single h2{
+    max-width: 1100px;
+  }
+
+  #slider_area {
+    max-width: 1100px;
+  }
+
+  .single_category {
+    max-width: 1100px;
+  }
+
+  .single_description {
+    max-width: 1100px;
+  }
+
+  .similar_projects {
+    max-width: 1100px;
   }
 
   /*--Page: About--*/
@@ -1173,15 +1203,7 @@ background-color: transparent!important;
 
 @media (min-width: 2000px) {
 
-.main-nav {
-  max-width: calc(1500px + 48px);
-}
-
 #single {
-  max-width: 1500px;
-}
-
-#slider_area {
   max-width: 1500px;
 }
 

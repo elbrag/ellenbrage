@@ -305,6 +305,7 @@ input:-webkit-autofill {
 .main-menu {
   background-color: transparent;
   width: calc(100% - 165px);
+  margin-top: 22px;
 }
 
 .radiobutton {
@@ -399,17 +400,17 @@ input:-webkit-autofill {
 /*--Menu--*/
 
 .menu-item {
-  margin-right: 40px;
+  margin-right: 54px;
   width: auto;
 }
 
 #logocontainer {
-  width: 200px;
+  width: 220px;
 }
 
 .main-menu {
   background-color: transparent;
-  width: calc(100% - 200px);
+  width: calc(100% - 220px);
 }
 
 /*--Page standards--*/
@@ -498,7 +499,7 @@ input:-webkit-autofill {
 /*frontpage*/
 
 #frontpage{
-  margin-top: 48px;
+  margin-top: 24px;
 }
 
 #front_background{
@@ -511,8 +512,12 @@ input:-webkit-autofill {
 
 
 .graphic_elem {
-  width: 90%;
+  width: 80%;
   height: 100%;
+}
+
+.fill {
+  font-size: 400px;
 }
 
 
@@ -543,7 +548,7 @@ input:-webkit-autofill {
 }
 
 .graphic_elem {
-  max-width: 1000px;
+  max-width: 900px;
 }
 
 .graphic_elem2{

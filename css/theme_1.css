@@ -282,6 +282,7 @@ a {
 .grid_project p, .similar_projects p {
   background-color: #fff;
   font-weight: bold;
+  color: #000;
 }
 
 /*--Single: Work--*/
@@ -296,6 +297,7 @@ a {
 
 .similar_projects p {
   padding: 6px 12px 6px 24px;
+
 }
 
 /*--Page: About--*/
@@ -342,6 +344,15 @@ div.wpcf7-mail-sent-ok {
 
 /*--Menu--*/
 
+#logocontainer {
+  width: 190px;
+}
+
+.main-menu {
+  margin-top: 24px;
+  width: calc(100% - 190px);
+}
+
 .main-menu {
   margin-top: 24px;
 }
@@ -356,6 +367,10 @@ div.wpcf7-mail-sent-ok {
 .menu-item {
   margin: 0;
   width: auto;
+}
+
+.lang_item {
+  padding: 9px 6px 12px 6px;
 }
 
 /*--Page standards--*/
@@ -424,6 +439,19 @@ h1, h2, h3, h4 {
 /*--Header--*/
 
 /*--Menu--*/
+
+#logocontainer {
+  width: 210px;
+}
+
+.main-menu {
+  margin-top: 24px;
+  width: calc(100% - 210px);
+}
+
+.main-ul {
+  width: 330px;
+}
 
 /*--Page standards--*/
 
