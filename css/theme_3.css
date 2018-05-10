@@ -570,6 +570,11 @@ input:-webkit-autofill {
   margin-top: 0;
 }
 
+.graphic_elem2 {
+  background-size: 92%;
+  height: 500px;
+}
+
 .fill {
   font-size: 76px;
 }
