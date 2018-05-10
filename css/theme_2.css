@@ -447,7 +447,7 @@ input:-webkit-autofill {
 }
 
 #front_background{
-  background-position-y: -58px;
+  background-position-y: -56px;
 }
 
 /*--Page: Work--*/
@@ -476,6 +476,10 @@ input:-webkit-autofill {
   height: calc(100vh - 72px);
 }
 
+#front_background{
+  background-position-y: -77px;
+}
+
 
 /*--Page: Work--*/
 
@@ -488,6 +492,18 @@ input:-webkit-autofill {
 /*--Footer--*/
 
 }
+
+/*=====================================1900PX========================================*/
+
+@media (min-width: 1900px) {
+
+  #front_background{
+    background-position-y: -87px;
+  }
+
+
+}
+
 
 /*=====================================2000PX========================================*/
 
