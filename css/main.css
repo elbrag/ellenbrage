@@ -460,15 +460,25 @@ hr {
 .grid_project {
   width: 100%;
   margin-bottom: 24px;
+  position: relative;
 }
 
 .grid_project p {
+  font-size: 0.9em;
   margin-top: 4px;
+  position: absolute;
+  bottom: 12px;
+  padding: 6px 24px 6px 36px;
+  background-color: rgba(255,255,255,0.9);
 }
 
-.grid_project p, .similar_projects p {
+.similar_projects p {
   font-size: 0.9em;
-  margin-left: 12px;
+  position: absolute;
+  bottom: 20px;
+  left:0;
+  padding: 3px 12px 3px 24px;
+  background-color: rgba(255,255,255,0.9);
 }
 
 .similar_projects p {
@@ -557,6 +567,7 @@ hr {
 
 .similar_thumb {
   margin: 0 auto 36px auto;
+  position: relative;
 }
 
 .similar_thumb img {
@@ -688,7 +699,7 @@ background-color: transparent!important;
   /*--Header--*/
 
   #logocontainer {
-    width: 168px;
+    width: 153px;
     float: left;
     overflow: hidden;
   }
@@ -721,7 +732,7 @@ background-color: transparent!important;
     margin-top: 21px;
     padding: 0;
     background-color: transparent;
-    width: calc(100% - 168px);
+    width: calc(100% - 153px);
     height: auto;
   }
 
@@ -793,6 +804,10 @@ background-color: transparent!important;
 
   /*--Page: Work--*/
 
+  .grid_project p {
+    left: 6px;
+  }
+
   .categories {
     width: auto;
     max-width: none;
@@ -830,7 +845,7 @@ background-color: transparent!important;
   /*--Single: Work--*/
 
   .similar_thumbs_area {
-    margin: 0 -6px;
+    margin: 0 -3px;
     width: unset;
   }
 
@@ -846,8 +861,10 @@ background-color: transparent!important;
   }
 
   .similar_projects p {
-    margin-left: 18px;
+    left:4px;
+    font-size: 0.8em;
   }
+
 
   /*--Page: About--*/
 
@@ -1119,6 +1136,10 @@ background-color: transparent!important;
   padding: 0 24px;
 }
 
+.grid_project p {
+  left: 21px;
+}
+
 .grid_project p,
 .similar_projects p {
   font-size: 0.9em;
@@ -1131,6 +1152,7 @@ background-color: transparent!important;
 
 .grid_project {
   padding: 0 24px;
+  margin-bottom: 48px;
 }
 
   /*--Single: Work--*/

@@ -31,7 +31,7 @@ a, a button {
 }
 
 #submit:active, button:active, .browse_all:active {
-  background-color: #56e25c;
+  background-color: #2adb32;
 }
 
 
@@ -70,7 +70,7 @@ a, a button {
 }
 
 .menu-item.active a {
-  color: #56e25c;
+  color: #2adb32;
 }
 
 .lang_item {
@@ -91,7 +91,7 @@ a, a button {
 /*--Page standards--*/
 
 a {
-  color: #56e25c;
+  color: #2adb32;
 }
 
 /*slider---*/
@@ -203,14 +203,6 @@ a {
   justify-content: space-between;
 }
 
-/* .bottomleft, .topleft {
-  border-radius: 0 10px 10px 0;
-}
-
-.bottomright, .topright {
-  border-radius: 10px 0 0 10px;
-} */
-
 .bottomright, .topright, .middle, .bottomleft, .topleft {
   border-radius: 10px;
 }
@@ -288,6 +280,7 @@ a {
 }
 
 .grid_project p, .similar_projects p {
+  background-color: #fff;
   font-weight: bold;
 }
 
@@ -301,11 +294,15 @@ a {
     padding: 12px 0;
 }
 
+.similar_projects p {
+  padding: 6px 12px 6px 24px;
+}
+
 /*--Page: About--*/
 /*--Page: Contact--*/
 
 #contact_arrow:before {
-  background-color: #56e25c;
+  background-color: #2adb32;
 }
 
 /*form*/

@@ -110,7 +110,7 @@ if( $query->have_posts() ) {
 
            <a href='<?php the_permalink(); ?>'>
 
-              <div class='work_grid_image' style='background-image: url("<?php echo the_post_thumbnail_url('large_thumbnail');?>");'></div>
+              <div class='work_grid_image' style='background-image: url("<?php echo the_post_thumbnail_url('large_thumbnail');?>");'>
 
               <?php
 
@@ -119,6 +119,7 @@ if( $query->have_posts() ) {
               echo "</p>";
 
               ?>
+              </div>
            </a>
 
          </div>

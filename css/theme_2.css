@@ -219,6 +219,12 @@ header {
 
 /*--Page: Work--*/
 
+.grid_project p, .similar_projects p {
+  box-shadow: 1px 1px 5px rgba(74,101,107,0.2);
+  background-color: rgba(255,255,255,0.8);
+}
+
+
 #category_area{
   padding-left: 1px;
   padding-bottom: 3px;

@@ -193,8 +193,12 @@ a {
 }
 
 .grid_project p, .similar_projects p {
-  color: #000;
+  color: #fff;
+  font-weight: bold;
+  background-color: #000;
+  padding: 3px 24px 3px 36px;
 }
+
 
 .work_grid_image {
   /* box-shadow: 2px 2px 0.5vw rgba(0,0,0,0.3); */
@@ -313,7 +317,7 @@ input:-webkit-autofill {
 
 
 #logocontainer {
-  width: 194px;
+  width: 175px;
 }
 
 .main-nav {
@@ -323,7 +327,7 @@ input:-webkit-autofill {
 .main-menu {
   background-color: transparent;
   margin-top: 18px;
-  width: calc(100% - 194px);
+  width: calc(100% - 175px);
 }
 .menu-item {
   margin-right: 42px;
