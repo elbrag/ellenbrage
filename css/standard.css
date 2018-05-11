@@ -514,7 +514,11 @@ input:-webkit-autofill {
 .graphic_elem {
   width: 80%;
   height: 100%;
+  max-width: 900px;
 }
+
+
+
 
 .fill {
   font-size: 400px;
@@ -548,7 +552,7 @@ input:-webkit-autofill {
 }
 
 .graphic_elem {
-  max-width: 900px;
+  max-width: 1000px;
 }
 
 .graphic_elem2{
