@@ -500,7 +500,12 @@ div.wpcf7-mail-sent-ok {
   height: 37vh;
 }
 
-
+.graphic_elem {
+    height: 500px;
+    width: 1400px;
+    left: calc(50% - 700px);
+    top: calc(50% - 250px);
+}
 
 
 #textbox {

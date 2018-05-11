@@ -583,8 +583,21 @@ h1, h2, h3, h4 {
   top: 34px;
 }
 
+.text_box {
+  bottom: 100px;
+}
+
+.header1_box {
+  width: 794px;
+  left: -450px;
+}
+
 #front_background {
   height: 90vh;
+}
+
+.topleft, .bottomleft, .topright, .bottomright, .middle {
+  height: 180px;
 }
 
 .title {
