@@ -501,10 +501,10 @@ div.wpcf7-mail-sent-ok {
 }
 
 .graphic_elem {
-    height: 500px;
-    width: 1400px;
-    left: calc(50% - 700px);
-    top: calc(50% - 250px);
+    height: 400px;
+    width: 1200px;
+    left: calc(50% - 600px);
+    top: calc(50% - 200px);
 }
 
 
