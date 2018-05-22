@@ -500,10 +500,11 @@ input:-webkit-autofill {
 
 #frontpage{
   margin-top: 24px;
+  max-width: 1240px;
 }
 
 #front_background{
-  height: 72vh;
+  height: 74vh;
 }
 
 .graphic_elem {
@@ -521,7 +522,7 @@ input:-webkit-autofill {
 
 
 .fill {
-  font-size: 400px;
+  font-size: 450px;
 }
 
 

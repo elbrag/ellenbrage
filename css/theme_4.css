@@ -367,6 +367,10 @@ div.wpcf7-mail-sent-ok {
 
 @media (min-width: 960px) {
 
+  #work {
+    margin-top: 64px;
+  }
+
 /*--Header--*/
 
 /*--Menu--*/

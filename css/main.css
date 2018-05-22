@@ -979,9 +979,13 @@ background-color: transparent!important;
 
   /*--Page standards--*/
 
+#contact {
+  margin-top: 54px;
+  max-width: 1000px;
+}
 
-#contact, #about, #cookies, #errorpage {
-    margin-top: 54px;
+#about, #cookies, #errorpage {
+    margin-top: 72px;
     max-width: 1000px;
   }
 
