@@ -150,7 +150,7 @@ a {
 }
 
 .graphic_elem {
-  background-image: url(../img/click_7-8.png);
+  background-image: url(../img/click_new.png);
   background-size: 100%;
   margin: 0 auto;
   width: 100%;
@@ -512,9 +512,9 @@ input:-webkit-autofill {
 
 
 .graphic_elem {
-  width: 80%;
+  width: 85%;
   height: 100%;
-  max-width: 900px;
+  max-width: 1000px;
 }
 
 
