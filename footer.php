@@ -1,5 +1,5 @@
           </main>
-          <footer class='mainfooter'<?php if (get_the_title() == 'Home' OR 'Hem') { echo 'id="solid"'; }?>>
+          <footer class='mainfooter'<?php if ( (is_page( 'Home') ) OR (is_page( 'Hem') )) { echo 'id="solid"'; }?>>
 
             <?php
 
