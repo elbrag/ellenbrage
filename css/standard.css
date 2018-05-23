@@ -500,7 +500,6 @@ input:-webkit-autofill {
 
 #frontpage{
   margin-top: 24px;
-  max-width: 1240px;
 }
 
 #front_background{
@@ -522,7 +521,7 @@ input:-webkit-autofill {
 
 
 .fill {
-  font-size: 450px;
+  font-size: 400px;
 }
 
 
@@ -537,6 +536,20 @@ input:-webkit-autofill {
 
 /*--Footer--*/
 
+
+}
+
+/*=====================================1900PX========================================*/
+
+@media (min-width: 1900px) {
+
+  #frontpage{
+    max-width: 1240px;
+  }
+
+  .fill {
+    font-size: 450px;
+  }
 
 }
 
