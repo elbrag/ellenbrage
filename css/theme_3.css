@@ -243,6 +243,11 @@ a {
   margin-top: 124px;
 }
 
+#single #textblock {
+  margin-top: 0;
+}
+
+
 /*--Page: Contact--*/
 
 /*form*/
