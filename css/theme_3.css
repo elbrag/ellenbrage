@@ -200,7 +200,7 @@ a {
 }
 
 
-.work_grid_image {
+.work_grid_image, .single_img, .similar_thumb img {
   /* box-shadow: 2px 2px 0.5vw rgba(0,0,0,0.3); */
   box-shadow: 1px 1px #a5564d;
 }

@@ -278,6 +278,10 @@ header {
   box-shadow: 1.5px 1.5px 0.4vw rgba(74,101,107,0.3);
 }
 
+.single_img {
+  box-shadow: 1.5px 1.5px 0.4vw rgba(74,101,107,0.3);
+}
+
 /*--Page: About--*/
 /*--Page: Contact--*/
 

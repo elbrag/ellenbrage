@@ -215,6 +215,10 @@ a {
   box-shadow: 1.5px 1.5px 0.4vw rgba(0,0,0,0.15);
 }
 
+.single_img {
+  box-shadow: 1.5px 1.5px 0.4vw rgba(0,0,0,0.2);
+}
+
 .browse_all {
   font-size: 1.2em;
   text-decoration: none;
@@ -544,7 +548,7 @@ input:-webkit-autofill {
 @media (min-width: 1900px) {
 
   #frontpage{
-    max-width: 1240px;
+    max-width: 1500px;
   }
 
   .fill {
