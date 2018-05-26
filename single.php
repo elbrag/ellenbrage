@@ -31,7 +31,6 @@ if( have_posts() ) {
         <div id='single'>
 
 
-
           <div id='textblock'>
           <?php
 
@@ -186,15 +185,17 @@ if( have_posts() ) {
          </div>
 
 
-         <section class='image_area'>
 
-             <?php
 
-           // $sliderid = get_field('master_slider_id');
-           // echo do_shortcode( '[masterslider id="'.$sliderid.'"]' );
+         <!-- <section class='image_area'> -->
 
-           ?>
-          </section>
+
+
+            <!-- $sliderid = get_field('master_slider_id'); -->
+            <!-- echo do_shortcode( '[masterslider id="'.$sliderid.'"]' ); -->
+
+
+          <!-- </section> -->
 
     <?php
     }
