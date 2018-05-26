@@ -454,7 +454,6 @@ hr {
   margin-top: 54px;
   margin-left: auto;
   margin-right: auto;
-  max-width: 1500px;
 }
 
 .grid_project {
@@ -499,8 +498,22 @@ hr {
   margin: 42px auto 54px auto;
 }
 
+#single #imageblock,
+#single #textblock {
+  float: right;
+}
+
+.hero_img {
+  width: 100%;
+}
+
+.single_img {
+  width: 100%;
+  margin: 6px 0;
+}
+
 .single_description {
-  margin: 0 auto 84px auto;
+  margin: 24px auto 54px auto;
   width: 90%;
 }
 
@@ -555,9 +568,14 @@ hr {
   height: 15px!important;
 }
 
+#single #imageblock {
+  margin-bottom: 72px;
+}
+
+
 .similar_projects {
   width: 90%;
-  margin: 0 auto;
+  margin: 72px auto 0 auto;
 }
 
 .similar_thumbs_area {
@@ -789,6 +807,10 @@ background-color: transparent!important;
     max-width: 1000px;
   }
 
+  #single {
+      padding: 0 24px;
+  }
+
   h1, h2, h3, h4{
     margin-bottom: 54px;
   }
@@ -843,6 +865,10 @@ background-color: transparent!important;
 
 
   /*--Single: Work--*/
+
+.hero_img {
+    margin-bottom: 24px;
+  }
 
   .similar_thumbs_area {
     margin: 0 -3px;
@@ -1011,28 +1037,23 @@ background-color: transparent!important;
 
 #single h1 {
   width: 100%;
-  max-width: 1000px;
   margin-left: 24px;
 }
 #single h2{
-  max-width: 1000px;
   width: 100%;
 }
 
 .single_category {
   width: 100%;
-  max-width: 1000px;
   margin-left: 24px;
 }
 
 .single_description {
   width: calc(100% - 48px);
-  max-width: 1000px;
 }
 
 .similar_projects {
   width: calc(100% - 48px);
-  max-width: 1000px;
 }
 
 .similar_thumb p {
@@ -1137,7 +1158,7 @@ background-color: transparent!important;
 }
 
 #category_area{
-  max-width: 1452px;
+  padding: 0 54px;
   margin: 0 auto 72px auto;
 }
 
@@ -1169,30 +1190,20 @@ background-color: transparent!important;
 
   #single {
     margin: 54px auto 72px auto;
-    max-width: 1100px;
+    max-width: 1500px;
   }
 
-  #single h1 {
-    max-width: 1100px;
-  }
-  #single h2{
-    max-width: 1100px;
-  }
 
   #slider_area {
     max-width: 1100px;
   }
 
-  .single_category {
-    max-width: 1100px;
-  }
-
-  .single_description {
-    max-width: 1100px;
-  }
-
   .similar_projects {
-    max-width: 1100px;
+    max-width: 1500px;
+  }
+
+  #single #imageblock {
+    margin-bottom: 96px;
   }
 
   /*--Page: About--*/
@@ -1219,26 +1230,8 @@ background-color: transparent!important;
     max-width: 1500px;
   }
 
-  #single h1 {
-    max-width: 1500px;
-  }
-  #single h2{
-    max-width: 1500px;
-  }
-
-  .single_category {
-    max-width: 1500px;
-  }
-
-  .single_description {
-    max-width: 1500px;
-  }
 
   .similar_projects {
-    max-width: 1500px;
-  }
-
-  #category_area{
     max-width: 1500px;
   }
 

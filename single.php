@@ -14,8 +14,25 @@ if( have_posts() ) {
 
    while ( have_posts() ) {
      the_post();
-     ?>
+
+
+     $hero_size = 'hero_img';
+
+      $heroimage = get_field('hero_image');
+
+      $hero_image = $heroimage['sizes'][ $hero_size ];
+
+      ?>
+      <img class='hero_img' src='<?php echo  $hero_image ?>' />
+
+
+
+
         <div id='single'>
+
+
+
+          <div id='textblock'>
           <?php
 
           $cats = wp_get_object_terms( $post->ID, 'project-category' );
@@ -133,21 +150,51 @@ if( have_posts() ) {
               </p>
               </div>
 
-          <section class='image_area'>
-
-              <?php
-
-            $sliderid = get_field('master_slider_id');
-            echo do_shortcode( '[masterslider id="'.$sliderid.'"]' );
-
-            ?>
-           </section>
 
            <p class='single_description'>
             <?php
              the_field('project_description');
              ?>
            </p>
+
+         </div>
+
+         <div id='imageblock'>
+           <?php
+
+
+           $images = acf_photo_gallery('single_imgs', $post->ID);
+
+           if( count($images) ) {
+             foreach($images as $image){
+               $id = $image['id']; // The attachment id of the media
+               $title = $image['title']; //The title
+               $caption= $image['caption']; //The caption
+               $full_image_url= $image['full_image_url']; //Full size image url
+               $thumbnail_image_url= $image['thumbnail_image_url']; //Get the thumbnail size image url 150px by 150px
+               $url= $image['url']; //Goto any link when clicked
+               $target= $image['target']; //Open normal or new tab
+               $alt = get_field('photo_gallery_alt', $id); //Get the alt which is a extra field (See below how to add extra fields)
+               $class = get_field('photo_gallery_class', $id); //Get the class which is a extra field (See below how to add extra fields)
+               ?>
+               <a href='<?php echo $full_image_url ?>'><img class='single_img' src='<?php echo  $full_image_url ?>' /></a>
+               <?php
+             }
+           }
+
+           ?>
+         </div>
+
+
+         <section class='image_area'>
+
+             <?php
+
+           // $sliderid = get_field('master_slider_id');
+           // echo do_shortcode( '[masterslider id="'.$sliderid.'"]' );
+
+           ?>
+          </section>
 
     <?php
     }
