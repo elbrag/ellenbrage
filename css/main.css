@@ -497,8 +497,8 @@ hr {
 .similar_projects p {
   font-size: 0.9em;
   position: absolute;
-  bottom: 20px;
-  left:0;
+  bottom: 12px;
+  left:-3px;
   padding: 3px 12px 3px 24px;
   background-color: rgba(255,255,255,0.9);
 }
@@ -608,11 +608,12 @@ hr {
 }
 
 .similar_thumb {
-  margin: 0 auto 36px auto;
+  margin: 0 -3px 36px auto;
   position: relative;
-  height: 400px;
+  height: 280px;
   width: 100%;
   display: block;
+
 }
 
 .thumb_img {
@@ -924,6 +925,7 @@ background-color: transparent!important;
     float: left;
     width: 33.33%;
     padding: 0 6px;
+    height: 360px;
     box-sizing: border-box;
   }
 
