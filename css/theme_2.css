@@ -266,7 +266,7 @@ header {
     top: 3px;
 }
 
-.work_grid_image {
+.work_grid_image, #about .image {
   box-shadow: 1.5px 1.5px 0.4vw rgba(74,101,107,0.3);
 }
 
