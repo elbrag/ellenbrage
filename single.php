@@ -15,18 +15,7 @@ if( have_posts() ) {
    while ( have_posts() ) {
      the_post();
 
-
-     // $hero_size = 'hero_img';
-     //
-     //  $heroimage = get_field('hero_image');
-     //
-     //  $hero_image = $heroimage['sizes'][ $hero_size ];
-
       ?>
-      <!-- <img class='hero_img' src='<?php echo  $hero_image ?>' /> -->
-
-
-
 
         <div id='single'>
 
@@ -176,7 +165,7 @@ if( have_posts() ) {
                $alt = get_field('photo_gallery_alt', $id); //Get the alt which is a extra field (See below how to add extra fields)
                $class = get_field('photo_gallery_class', $id); //Get the class which is a extra field (See below how to add extra fields)
                ?>
-               <a href='<?php echo $full_image_url ?>'><img class='single_img' src='<?php echo  $full_image_url ?>' /></a>
+               <a class='gall_img' href='<?php echo $full_image_url ?>'><img class='single_img' src='<?php echo  $full_image_url ?>' /></a>
                <?php
              }
            }
@@ -287,10 +276,20 @@ $count = 0;
            $count++;
          ?>
 
-         <a href='<?php the_permalink(); ?>'>
-             <div class='similar_thumb'>
+         <?php
+
+         $sim_thumbnail = 'large_thumbnail';
+
+          $thumbimage = get_field('thumb');
+
+          $thumb_resized = $thumbimage['sizes'][ $sim_thumbnail];
+
+          ?>
+
+
+         <a class='similar_thumb' href='<?php the_permalink(); ?>'>
+             <div class='thumb_img' style='background-image: url("<?php echo $thumb_resized ;?>");'>
             <?php
-                the_post_thumbnail('similar_thumbnail');
 
                 echo "<p>";
                 the_field('project_title');

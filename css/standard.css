@@ -210,7 +210,7 @@ a {
 
 /*--Single: Work--*/
 
-.similar_thumb img {
+.thumb_img {
   width: 98%;
   box-shadow: 1.5px 1.5px 0.4vw rgba(0,0,0,0.15);
 }
@@ -485,6 +485,10 @@ input:-webkit-autofill {
 /*--Single: Work--*/
 
 /*--Page: About--*/
+
+.graphic_elem2{
+  background-size: 50%;
+}
 
 /*--Page: Contact--*/
 

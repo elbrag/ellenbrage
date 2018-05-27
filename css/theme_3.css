@@ -54,7 +54,7 @@ a {
 }
 
 .menu-item.active a {
-  text-shadow: 2px 2px #000;
+  text-shadow: 1px 1px #000;
 }
 
 .menu-item.active .radiobutton {
@@ -173,7 +173,7 @@ a {
 .categories {
   font-size: 0.9em;
   height: 16px;
-  margin-top: 1px;
+  margin-top: 2px;
 }
 
 .checkbox {
@@ -200,7 +200,7 @@ a {
 }
 
 
-.work_grid_image, .single_img, .similar_thumb img {
+.work_grid_image, .single_img, .thumb_img {
   /* box-shadow: 2px 2px 0.5vw rgba(0,0,0,0.3); */
   box-shadow: 1px 1px #a5564d;
 }

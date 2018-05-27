@@ -114,13 +114,13 @@ if( $query->have_posts() ) {
 
              $large_thumbnail = 'large_thumbnail';
 
-              $heroimage = get_field('hero_image');
+              $thumbimage = get_field('thumb');
 
-              $hero_thumb = $heroimage['sizes'][ $large_thumbnail ];
+              $thumb_resized = $thumbimage['sizes'][ $large_thumbnail ];
 
               ?>
 
-              <div class='work_grid_image' style='background-image: url("<?php echo $hero_thumb ;?>");'>
+              <div class='work_grid_image' style='background-image: url("<?php echo $thumb_resized ;?>");'>
 
               <?php
 

@@ -24,6 +24,20 @@
 });
 
 
+jQuery(window).on('load', function() {
+
+  $('#singleimages').masonry({
+  // options
+  itemSelector: '.gall_img',
+  columnWidth: '.gall_img',
+  percentPosition: true,
+  horizontalOrder: true
+  });
+
+
+});
+
+
 
 //hamburger menu
 

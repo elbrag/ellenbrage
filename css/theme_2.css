@@ -273,7 +273,7 @@ header {
   border-radius: 5px;
 }
 
-.similar_thumb img {
+.thumb_img {
   width: 98%;
   box-shadow: 1.5px 1.5px 0.4vw rgba(74,101,107,0.3);
 }
