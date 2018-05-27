@@ -84,10 +84,33 @@ p a:active {
   opacity: 0.5;
 }
 
+/*top button*/
+
+#topButton {
+  border: none;
+  color: #000;
+  position:fixed;
+  display: none;
+  right: 25px;
+  bottom: 65px;
+  z-index: 40;
+  margin: 3px;
+  border-radius:50%;
+  width: 45px;
+  height: 45px;
+  transition: 0.2s;
+  cursor: pointer;
+  overflow: hidden;
+  text-align: center;
+  font-size: 1.5em;
+  line-height: 33px;
+  padding: 0 10px;
+}
+
 /*--Cookies--*/
 
 #cookie-notice {
-  bottom: 48px;
+  bottom: 46px;
 }
 
 #cn-accept-cookie, #cn-more-info {

@@ -1,3 +1,33 @@
+//go to top-button///////////////////////////////////////////////https://getflywheel.com/layout/add-sticky-back-top-button-website/
+var topButton = $("#topButton");
+
+    $(document).ready(function() {
+    var offset = 250;
+    var duration = 300;
+
+$(window).scroll(function() {
+
+    if ($(this).scrollTop() > offset) {
+      topButton.fadeIn(duration);
+    } else {
+      topButton.fadeOut(duration);
+    }
+
+});
+
+topButton.click(function(event) {
+
+  event.preventDefault();
+  $('html, body').animate({scrollTop: 0}, duration);
+
+return false;
+
+})
+
+});
+/////////////////////////////////////////////////////////////////////////
+
+
 //if window width is changed, adjust the menu
  $(document).ready(function(){
 
@@ -21,9 +51,13 @@
 
       });
 
+
+
+
 });
 
 
+//masonry gallery in single//////////////////////////////////
 jQuery(window).on('load', function() {
 
   $('#singleimages').masonry({
@@ -36,7 +70,7 @@ jQuery(window).on('load', function() {
 
 
 });
-
+////////////////////////////////////////////////////
 
 
 //hamburger menu
@@ -62,7 +96,7 @@ function openMenu(x){
 
 };
 
-/*theme slider*/
+/*theme slider*//////////////////////////////////////////////////
 
 
 var cur_theme = document.getElementById('cur_theme');
@@ -107,77 +141,79 @@ function slideprev(){
   }
 }
 
+//gallery////////////////////////////////////////
+
 /*sorting the images into place (see function below for function call)
 https://stackoverflow.com/questions/9778899/how-to-order-divs-by-id-in-javascript*/
-function sortdivs(){
-  var mylist = document.querySelector('.single_thumbs');
-  var divs = mylist.getElementsByTagName('div');
-  var listitems = [];
-  for (i = 0; i < divs.length; i++) {
-    listitems.push(divs.item(i));
-  }
-  listitems.sort(function(a,b) {
-    var compA = a.getAttribute('id').toUpperCase();
-    var compB = b.getAttribute('id').toUpperCase();
-    return (compA < compB) ? -1 : (compA > compB) ? 1 : 0;
-  })
-  for (i = 0; i < listitems.length; i++) {
-    mylist.appendChild(listitems[i]);
-  }
-}
-
-//work:single: gallery function
-var bigimage = document.querySelector('.single_image');
-bigimage.classList.remove('single_image');
-bigimage.className = 'single_big';
-
-var $bigimage = $('.single_big');
-
-$bigimage.parent().before($bigimage);
-//this is only to move bigimage into a class, so that the prev/next controls can be absolutely positioned to it
-$($bigimage).prependTo(".image_area");
-
-
-function enlarge(x){
-  var ensmall = document.querySelector('.single_big');
-  ensmall.classList.remove('single_big');
-  ensmall.className = 'single_image';
-
-  $(ensmall).prependTo(".single_thumbs");
-
-  var smallimage = document.getElementById(x);
-
-  smallimage.className = 'single_big';
-  var $bigimage = $('.single_big');
-
-  $bigimage.parent().before($bigimage);
-  //this is only to move bigimage into a class, so that the prev/next controls can be absolutely positioned to it
-  $($bigimage).prependTo(".image_area");
-
-  sortdivs();
-}
-
-function nextimage() {
-  var children = document.querySelector(".single_thumbs").children.length + 1;
-  var current = parseInt(document.querySelector('.single_big').id);
-  var nextid = (current+1);
-
-  if (nextid > children) {
-    nextid = 1;
-  }
-
-  enlarge(nextid);
-}
-
-function previmage() {
-
-  var children = document.querySelector(".single_thumbs").children.length + 1;
-  var current = parseInt(document.querySelector('.single_big').id);
-  var previd = (current-1);
-
-  if (previd == 0) {
-    previd = children;
-  }
-
-  enlarge(previd);
-}
+// function sortdivs(){
+//   var mylist = document.querySelector('.single_thumbs');
+//   var divs = mylist.getElementsByTagName('div');
+//   var listitems = [];
+//   for (i = 0; i < divs.length; i++) {
+//     listitems.push(divs.item(i));
+//   }
+//   listitems.sort(function(a,b) {
+//     var compA = a.getAttribute('id').toUpperCase();
+//     var compB = b.getAttribute('id').toUpperCase();
+//     return (compA < compB) ? -1 : (compA > compB) ? 1 : 0;
+//   })
+//   for (i = 0; i < listitems.length; i++) {
+//     mylist.appendChild(listitems[i]);
+//   }
+// }
+//
+// //work:single: gallery function
+// var bigimage = document.querySelector('.single_image');
+// bigimage.classList.remove('single_image');
+// bigimage.className = 'single_big';
+//
+// var $bigimage = $('.single_big');
+//
+// $bigimage.parent().before($bigimage);
+// //this is only to move bigimage into a class, so that the prev/next controls can be absolutely positioned to it
+// $($bigimage).prependTo(".image_area");
+//
+//
+// function enlarge(x){
+//   var ensmall = document.querySelector('.single_big');
+//   ensmall.classList.remove('single_big');
+//   ensmall.className = 'single_image';
+//
+//   $(ensmall).prependTo(".single_thumbs");
+//
+//   var smallimage = document.getElementById(x);
+//
+//   smallimage.className = 'single_big';
+//   var $bigimage = $('.single_big');
+//
+//   $bigimage.parent().before($bigimage);
+//   //this is only to move bigimage into a class, so that the prev/next controls can be absolutely positioned to it
+//   $($bigimage).prependTo(".image_area");
+//
+//   sortdivs();
+// }
+//
+// function nextimage() {
+//   var children = document.querySelector(".single_thumbs").children.length + 1;
+//   var current = parseInt(document.querySelector('.single_big').id);
+//   var nextid = (current+1);
+//
+//   if (nextid > children) {
+//     nextid = 1;
+//   }
+//
+//   enlarge(nextid);
+// }
+//
+// function previmage() {
+//
+//   var children = document.querySelector(".single_thumbs").children.length + 1;
+//   var current = parseInt(document.querySelector('.single_big').id);
+//   var previd = (current-1);
+//
+//   if (previd == 0) {
+//     previd = children;
+//   }
+//
+//   enlarge(previd);
+// }

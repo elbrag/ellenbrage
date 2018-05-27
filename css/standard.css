@@ -39,7 +39,12 @@ a {
   color: #000;
 }
 
+/*top button*/
 
+#topButton {
+  background-color: #fff;
+  box-shadow: 0 3px #000;
+}
 
 
 
@@ -377,7 +382,7 @@ input:-webkit-autofill {
 }
 
 .graphic_elem2 {
-  background-size: 82%;
+  background-size: 80%;
   margin: 0 -60px;
   height: 500px;
   width: 100%;
@@ -487,7 +492,9 @@ input:-webkit-autofill {
 /*--Page: About--*/
 
 .graphic_elem2{
-  background-size: 50%;
+  background-size: 70%;
+  height: 600px;
+  margin: 0 -90px;
 }
 
 /*--Page: Contact--*/
@@ -523,6 +530,10 @@ input:-webkit-autofill {
   width: 85%;
   height: 100%;
   max-width: 1000px;
+}
+
+.graphic_elem2 {
+  background-size: 55%;
 }
 
 

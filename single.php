@@ -17,6 +17,10 @@ if( have_posts() ) {
 
       ?>
 
+      <button id="topButton" title="Go to top">
+        &uarr;
+      </button>
+
         <div id='single'>
 
 
