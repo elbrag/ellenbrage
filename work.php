@@ -110,7 +110,17 @@ if( $query->have_posts() ) {
 
            <a href='<?php the_permalink(); ?>'>
 
-              <div class='work_grid_image' style='background-image: url("<?php echo the_post_thumbnail_url('large_thumbnail');?>");'>
+             <?php
+
+             $large_thumbnail = 'large_thumbnail';
+
+              $heroimage = get_field('hero_image');
+
+              $hero_thumb = $heroimage['sizes'][ $large_thumbnail ];
+
+              ?>
+
+              <div class='work_grid_image' style='background-image: url("<?php echo $hero_thumb ;?>");'>
 
               <?php
 

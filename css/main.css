@@ -458,7 +458,7 @@ hr {
 
 .grid_project {
   width: 100%;
-  margin-bottom: 24px;
+  margin-bottom: 12px;
   position: relative;
 }
 
@@ -851,6 +851,7 @@ background-color: transparent!important;
     float: left;
     padding: 0 12px;
     box-sizing: border-box;
+    margin-bottom: 24px;
   }
 
   .grid_project p {
@@ -1170,11 +1171,6 @@ background-color: transparent!important;
   padding: 0 24px;
 }
 
-
-.grid_project p {
-  left: 21px;
-}
-
 .grid_project p,
 .similar_projects p {
   font-size: 0.9em;
@@ -1185,10 +1181,6 @@ background-color: transparent!important;
   background-size: 121%;
 }
 
-.grid_project {
-  padding: 0 24px;
-  margin-bottom: 48px;
-}
 
   /*--Single: Work--*/
 
