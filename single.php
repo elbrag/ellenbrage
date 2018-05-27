@@ -16,14 +16,14 @@ if( have_posts() ) {
      the_post();
 
 
-     $hero_size = 'hero_img';
-
-      $heroimage = get_field('hero_image');
-
-      $hero_image = $heroimage['sizes'][ $hero_size ];
+     // $hero_size = 'hero_img';
+     //
+     //  $heroimage = get_field('hero_image');
+     //
+     //  $hero_image = $heroimage['sizes'][ $hero_size ];
 
       ?>
-      <img class='hero_img' src='<?php echo  $hero_image ?>' />
+      <!-- <img class='hero_img' src='<?php echo  $hero_image ?>' /> -->
 
 
 
@@ -31,7 +31,7 @@ if( have_posts() ) {
         <div id='single'>
 
 
-          <div id='textblock'>
+          <section id='singletext'>
           <?php
 
           $cats = wp_get_object_terms( $post->ID, 'project-category' );
@@ -156,9 +156,9 @@ if( have_posts() ) {
              ?>
            </p>
 
-         </div>
+         </section>
 
-         <div id='imageblock'>
+         <section id='singleimages'>
            <?php
 
 
@@ -182,7 +182,7 @@ if( have_posts() ) {
            }
 
            ?>
-         </div>
+         </section>
 
 
 
