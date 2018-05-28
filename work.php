@@ -66,6 +66,10 @@ if( $query->have_posts() ) {
      $query->the_post();
      ?>
 
+     <button id="topButton" title="Go to top">
+       &uarr;
+     </button>
+
        <?php
 
 // get the category that each post belongs to so we can compare it to what is checked above
