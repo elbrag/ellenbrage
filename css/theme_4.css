@@ -27,7 +27,7 @@ h1, h2, h3, h4{
 
 }
 
-a {
+a, #hideshow  {
   color: #ed1212;
   text-decoration: none;
   font-weight: bold;
@@ -209,11 +209,15 @@ a {
 
 /*--Single: Work--*/
 
-#single h1 {
-  margin-bottom: 0;
+
+#hideshow.hiding {
+  background: linear-gradient(rgba(255,0,0,0), rgba(251,251,251,1) 50%);
 }
 
 
+#single h1 {
+  margin-bottom: 0;
+}
 
 .browse_all {
   text-decoration: none;

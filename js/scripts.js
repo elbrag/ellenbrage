@@ -52,6 +52,34 @@ return false;
       });
 
 
+      if ($('.single_description').height() < 300) {
+        $('#hideshow').css("display","none");
+      }
+
+      $('#hideshow').click(function() {
+
+          if ($('.single_description').hasClass('more')) {
+
+                $('.single_description').removeClass("more");
+                $('#hideshow').text('read on');
+                $('#hideshow').addClass('hiding');
+
+                windowSize();
+
+                if (windowSize() < 640) {
+                  window.location.href = '#desc';
+                }
+
+
+          } else {
+            $('.single_description').addClass('more');
+            $('#hideshow').text('read less');
+            $('#hideshow').removeClass('hiding');
+
+          }
+
+        });
+
 
 
 });

@@ -19,7 +19,7 @@ h1, h2, h3, h4{
 
 }
 
-a {
+a, #hideshow {
   color: #fff;
   text-decoration: none;
 }
@@ -216,6 +216,9 @@ a {
 
 /*--Single: Work--*/
 
+#hideshow.hiding {
+  background: linear-gradient(rgba(255,0,0,0), rgba(255,121,107,1) 50%);
+}
 
 .browse_all {
   box-shadow: 2px 2px #000, 1px 1px #000;

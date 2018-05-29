@@ -21,8 +21,9 @@ h1, h2, h3, h4{
   margin: 0 auto;
 }
 
-a {
+a, #hideshow {
   font-weight: bold;
+  color: #2adb32;
 }
 
 a, a button {
@@ -96,9 +97,6 @@ a, a button {
 
 /*--Page standards--*/
 
-a {
-  color: #2adb32;
-}
 
 /*slider---*/
 
@@ -293,6 +291,10 @@ a {
 }
 
 /*--Single: Work--*/
+
+#hideshow.hiding {
+  background: linear-gradient(rgba(255,0,0,0), rgba(255,255,255,1) 50%);
+}
 
 .browse_all{
     border: 2px solid #000;

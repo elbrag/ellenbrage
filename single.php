@@ -143,10 +143,11 @@ if( have_posts() ) {
               </div>
 
 
-           <p class='single_description'>
+           <p class='single_description' id='desc'>
             <?php
              the_field('project_description');
              ?>
+             <div id='hideshow' class='hiding'>read on</div>
            </p>
 
          </section>

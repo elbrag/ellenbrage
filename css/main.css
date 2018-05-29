@@ -30,7 +30,7 @@ p {
   margin: 0;
   padding: 0;
   font-weight: 200;
-  font-size: 1.1em;
+  font-size: 1.2em;
   line-height: 1.8em;
 }
 
@@ -534,6 +534,7 @@ hr {
 
 #singletext {
   margin-bottom: 0;
+  position: relative;
 }
 
 .hero_img {
@@ -543,8 +544,39 @@ hr {
 
 
 .single_description {
-  margin: 24px auto 54px auto;
+  margin: 24px auto 64px auto;
   width: 90%;
+  max-height: 300px;
+  overflow: hidden;
+  will-change: max-height;
+  transition: max-height 0.3s ease-in-out;
+}
+
+.single_description.more {
+  max-height: 3000px;
+}
+
+
+#hideshow {
+  font-style: italic;
+  text-align: center;
+  z-index: 40;
+  margin: 0 auto;
+  transition: height 0.2s ease-in-out, padding 0.2s ease-in-out;;
+  cursor: pointer;
+  overflow: hidden;
+  width: 100%;
+  font-size: 1.2em;
+  position: absolute;
+  bottom: 0;
+  margin-bottom: 30px;
+  height: 30px;
+  will-change: height, padding;
+}
+
+#hideshow.hiding {
+  height: 10px;
+  padding: 48px 0;
 }
 
 #single h1{
@@ -899,14 +931,6 @@ background-color: transparent!important;
 
   /*--Single: Work--*/
 
-  #singleimages {
-
-  }
-
-  #singleimages a {
-
-  }
-
   .gall_img {
     width: 50%;
     padding: 6px;
@@ -1012,6 +1036,22 @@ background-color: transparent!important;
 
 @media (min-width: 960px) {
 
+  h1 {
+    font-size: 3.5em;
+  }
+
+  h2 {
+    font-size: 2.5em;
+  }
+
+  h3 {
+    font-size: 1.8em;
+  }
+
+  h4 {
+    font-size: 1.4em;
+  }
+
   /*--Header--*/
 
   #logocontainer {
@@ -1083,9 +1123,6 @@ background-color: transparent!important;
 
   /*--Single: Work--*/
 
-  .hero_img {
-  }
-
 
 #single h1 {
   width: 100%;
@@ -1102,6 +1139,14 @@ background-color: transparent!important;
 
 .single_description {
   width: calc(100% - 48px);
+  max-width: 900px;
+  margin-left: 0;
+}
+
+#hideshow {
+  max-width: 900px;
+  margin: 0;
+  margin-bottom: 20px;
 }
 
 .similar_projects {
@@ -1112,6 +1157,9 @@ background-color: transparent!important;
   margin-left: 0;
 }
 
+.browse_all {
+  margin: 48px auto 96px auto;
+}
 
 
   /*--Page: About--*/
