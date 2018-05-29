@@ -30,8 +30,8 @@ p {
   margin: 0;
   padding: 0;
   font-weight: 200;
-  font-size: 1.2em;
-  line-height: 1.8em;
+  font-size: 1.1em;
+  line-height: 1.6em;
 }
 
 h1, h2, h3, h4{
@@ -541,24 +541,32 @@ hr {
   width: 100%;
 }
 
-
+.project_logo {
+  width: 200px;
+  height: 200px;
+  background-repeat: no-repeat;
+  background-size: 85%;
+  margin: 0 auto;
+  background-position: center;
+}
 
 .single_description {
-  margin: 24px auto 64px auto;
+  margin: 0 auto 54px auto;
+  margin-bottom: 54px;
   width: 90%;
   max-height: 300px;
   overflow: hidden;
-  will-change: max-height;
-  transition: max-height 0.3s ease-in-out;
+  will-change: max-height, margin-bottom;
+  transition: max-height 0.3s ease-in-out, margin-bottom 0.3s ease-in-out;
 }
 
 .single_description.more {
   max-height: 3000px;
+  margin-bottom: 84px;
 }
 
 
 #hideshow {
-  font-style: italic;
   text-align: center;
   z-index: 40;
   margin: 0 auto;
@@ -566,7 +574,7 @@ hr {
   cursor: pointer;
   overflow: hidden;
   width: 100%;
-  font-size: 1.2em;
+  font-size: 1em;
   position: absolute;
   bottom: 0;
   margin-bottom: 30px;
@@ -576,12 +584,12 @@ hr {
 
 #hideshow.hiding {
   height: 10px;
-  padding: 48px 0;
+  padding: 30px 0;
 }
 
 #single h1{
   width: 90%;
-  margin: 0 auto 6px auto;
+  margin: 0 auto 2px auto;
   line-height: 1.1em;
 }
 
@@ -1052,6 +1060,11 @@ background-color: transparent!important;
     font-size: 1.4em;
   }
 
+  p {
+    font-size: 1.2em;
+    line-height: 1.8em;
+  }
+
   /*--Header--*/
 
   #logocontainer {
@@ -1126,7 +1139,7 @@ background-color: transparent!important;
 
 #single h1 {
   width: 100%;
-  margin-left: 24px;
+  margin: 0 auto 6px 24px;
 }
 #single h2{
   width: 100%;
@@ -1137,16 +1150,24 @@ background-color: transparent!important;
   margin-left: 24px;
 }
 
+.project_logo {
+  width: 300px;
+  height: 300px;
+  background-size: 75%;
+  margin: 0 auto;
+  float: right;
+}
+
 .single_description {
-  width: calc(100% - 48px);
-  max-width: 900px;
-  margin-left: 0;
+  width: calc(100% - 324px);
+  margin: 36px auto 84px 24px;
+  float: right;
 }
 
 #hideshow {
   max-width: 900px;
   margin: 0;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
 
 .similar_projects {
@@ -1207,7 +1228,13 @@ background-color: transparent!important;
     margin-left: 0;
   }
 
-  .single_description, .similar_projects {
+  .single_description {
+    width: calc(100% - 300px);
+    margin-left: 0;
+  }
+
+
+  .similar_projects {
     width: 100%;
   }
 
@@ -1288,6 +1315,17 @@ background-color: transparent!important;
   #slider_area {
     max-width: 1100px;
   }
+
+  .project_logo {
+    background-size: contain;
+    margin: 0 36px;
+  }
+
+  .single_description {
+    width: calc(100% - 372px);
+    margin: 36px 0 84px 0;
+  }
+
 
   .similar_projects {
     max-width: 1500px;

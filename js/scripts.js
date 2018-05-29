@@ -56,12 +56,14 @@ return false;
         $('#hideshow').css("display","none");
       }
 
-      $('#hideshow').click(function() {
+      $('#hideshow').click(function(e) {
+
+        e.preventDefault();
 
           if ($('.single_description').hasClass('more')) {
 
                 $('.single_description').removeClass("more");
-                $('#hideshow').text('read on');
+                $('#hideshow').text('read more');
                 $('#hideshow').addClass('hiding');
 
                 windowSize();

@@ -142,12 +142,23 @@ if( have_posts() ) {
               </p>
               </div>
 
+            <?php
+            
+               $projectlogo = get_field('project_logo');
+               $thumb2 = 'grid_thumbnail_2';
+
+               $logo_thumb = $projectlogo['sizes'][ $thumb2 ];
+
+               ?>
+
+              <div class='project_logo' style='background-image: url("<?php echo $logo_thumb ;?>");'></div>
+
 
            <p class='single_description' id='desc'>
             <?php
              the_field('project_description');
              ?>
-             <div id='hideshow' class='hiding'>read on</div>
+             <div id='hideshow' class='hiding'>read more</div>
            </p>
 
          </section>
@@ -179,17 +190,6 @@ if( have_posts() ) {
          </section>
 
 
-
-
-         <!-- <section class='image_area'> -->
-
-
-
-            <!-- $sliderid = get_field('master_slider_id'); -->
-            <!-- echo do_shortcode( '[masterslider id="'.$sliderid.'"]' ); -->
-
-
-          <!-- </section> -->
 
     <?php
     }
