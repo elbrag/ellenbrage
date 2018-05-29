@@ -60,6 +60,11 @@
 
   <section id='work_grid'>
 
+
+    <button id="topButton" title="Go to top">
+       &uarr;
+     </button>
+
 <?php
 if( $query->have_posts() ) {
    while ( $query->have_posts() ) {
