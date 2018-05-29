@@ -66,10 +66,6 @@ if( $query->have_posts() ) {
      $query->the_post();
      ?>
 
-     <button id="topButton" title="Go to top">
-       &uarr;
-     </button>
-
        <?php
 
 // get the category that each post belongs to so we can compare it to what is checked above
@@ -90,7 +86,18 @@ if( $query->have_posts() ) {
 
                 <a href='<?php the_permalink(); ?>'>
 
-                   <div class='work_grid_image' style='background-image: url("<?php echo the_post_thumbnail_url('large_thumbnail');?>");'></div>
+                  <?php
+
+                  $large_thumbnail = 'large_thumbnail';
+
+                   $thumbimage = get_field('thumb');
+
+                   $thumb_resized = $thumbimage['sizes'][ $large_thumbnail ];
+
+                   ?>
+
+                   <div class='work_grid_image' style='background-image: url("<?php echo $thumb_resized ;?>");'></div>
+
 
                    <?php
                    echo "<p>";
