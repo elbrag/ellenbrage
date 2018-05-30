@@ -546,7 +546,7 @@ hr {
   height: 200px;
   background-repeat: no-repeat;
   background-size: 85%;
-  margin: 0 auto;
+  margin: -24px auto;
   background-position: center;
 }
 
