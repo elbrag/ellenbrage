@@ -554,7 +554,7 @@ hr {
   margin: 0 auto 54px auto;
   margin-bottom: 54px;
   width: 90%;
-  max-height: 300px;
+  max-height: 280px;
   overflow: hidden;
   will-change: max-height, margin-bottom;
   transition: max-height 0.3s ease-in-out, margin-bottom 0.3s ease-in-out;
@@ -584,7 +584,7 @@ hr {
 
 #hideshow.hiding {
   height: 10px;
-  padding: 30px 0;
+  padding: 50px 0;
 }
 
 #single h1{
@@ -1165,7 +1165,7 @@ background-color: transparent!important;
 }
 
 #hideshow {
-  max-width: 900px;
+  width: calc(100% - 300px);
   margin: 0;
   margin-bottom: 30px;
 }
@@ -1324,6 +1324,10 @@ background-color: transparent!important;
   .single_description {
     width: calc(100% - 372px);
     margin: 36px 0 84px 0;
+  }
+
+  #hideshow {
+    width: calc(100% - 372px);
   }
 
 

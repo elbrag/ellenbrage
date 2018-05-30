@@ -7,7 +7,7 @@
 }
 
 body {
-  background-color: #ff796b;
+  background-color: #e8988f;
 }
 
 
@@ -42,11 +42,11 @@ a, #hideshow {
 /*--Menu--*/
 
 .main-nav {
-  background-color: #ff796b;
+  background-color: #e8988f;
 }
 
 .main-menu {
-  background-color: #ff796b;
+  background-color: #e8988f;
 }
 
 .radiobutton {
@@ -217,7 +217,7 @@ a, #hideshow {
 /*--Single: Work--*/
 
 #hideshow.hiding {
-  background: linear-gradient(rgba(255,0,0,0), rgba(255,121,107,1) 50%);
+  background: linear-gradient(rgba(255,0,0,0), rgba(232,152,143,1) 50%);
 }
 
 .browse_all {
@@ -298,7 +298,7 @@ div.wpcf7-mail-sent-ok {
 }
 
 input:-webkit-autofill {
-    -webkit-box-shadow: 0 0 0 30px #ff796b inset;
+    -webkit-box-shadow: 0 0 0 30px #e8988f inset;
 }
 
 /**/
@@ -306,7 +306,7 @@ input:-webkit-autofill {
 /*--Footer--*/
 
 .mainfooter {
-  background-color: #ff796b;
+  background-color: #e8988f;
   padding: 7px 0;
 }
 

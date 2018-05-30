@@ -52,7 +52,7 @@ return false;
       });
 
 
-      if ($('.single_description').height() < 300) {
+      if ($('.single_description').height() < 280) {
         $('#hideshow').css("display","none");
       }
 

@@ -296,6 +296,10 @@ div.wpcf7-mail-sent-ok {
 
 /*--Menu--*/
 
+.lang_item {
+  padding: 18px 6px;
+}
+
 .main-menu{
   margin-top: 15px;
 }
