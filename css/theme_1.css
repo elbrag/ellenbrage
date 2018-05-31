@@ -3,17 +3,11 @@
 /*--semantics reset and basics--*/
 
 * {
-  font-family: 'Helvetica neue', 'Helvetica', 'Arial', sans-serif;
+  font-family: 'Acumin Pro', 'Helvetica', 'Arial', sans-serif;
 }
 
 body {
   background-color: #fff;
-}
-
-
-p {
-  /* font-weight: bold; */
-  letter-spacing: 0.02em;
 }
 
 h1, h2, h3, h4{
@@ -24,9 +18,11 @@ h1, h2, h3, h4{
 a, #hideshow {
   font-weight: bold;
   color: #2adb32;
+  text-decoration: none;
+
 }
 
-a, a button {
+a button {
   color: #000;
   text-decoration: none;
 }
