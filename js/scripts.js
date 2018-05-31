@@ -95,7 +95,8 @@ jQuery(window).on('load', function() {
   itemSelector: '.gall_img',
   columnWidth: '.gall_img',
   percentPosition: true,
-  horizontalOrder: true
+  horizontalOrder: true,
+  isAnimated: false
   });
 
 
