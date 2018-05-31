@@ -3,7 +3,15 @@
 /*--semantics reset and basics--*/
 
 * {
-  font-family: 'Acumin Pro', 'Helvetica', 'Arial', sans-serif;
+  font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+}
+
+p {
+  font-family: 'Acumin-Pro', 'Helvetica', 'Arial', sans-serif;
+}
+
+p.single_category {
+  font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
 }
 
 body {
@@ -13,6 +21,10 @@ body {
 h1, h2, h3, h4{
   text-align: left;
   margin: 0 auto;
+}
+
+p a {
+  font-family: 'Acumin-Pro', 'Helvetica', 'Arial', sans-serif;
 }
 
 a, #hideshow {
@@ -98,6 +110,7 @@ a button {
 
 #cur_theme{
   font-weight: bold;
+  font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
 }
 
 /*--front page--*/

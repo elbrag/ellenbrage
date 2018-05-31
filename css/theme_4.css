@@ -161,6 +161,7 @@ a, #hideshow  {
 }
 
 .fill {
+  font-family: 'Halogen', 'Hind', 'Helvetica', sans-serif;
   margin-bottom: 2px;
   font-size: 24px;
   line-height: 24px;
@@ -170,7 +171,7 @@ a, #hideshow  {
 
 
 .titles_box p {
-  font-size: 0.8em;
+  font-size: 1em;
 }
 
 
@@ -341,7 +342,7 @@ div.wpcf7-mail-sent-ok {
 
 .fill {
   margin-bottom: 2px;
-  font-size: 34px;
+  font-size: 32px;
   line-height: 32px;
 }
 
@@ -473,7 +474,7 @@ div.wpcf7-mail-sent-ok {
 }
 
 #front_background {
-  height: 42vh;
+  height: 46vh;
   margin-bottom: 48px;
 }
 
@@ -483,10 +484,6 @@ div.wpcf7-mail-sent-ok {
     background-size: contain;
 }
 
-
-.fill {
-  font-size: 36px;
-}
 
 .title {
   font-size: 1em;
@@ -515,8 +512,8 @@ div.wpcf7-mail-sent-ok {
 }
 
 #front_background {
-  margin-top: 2%;
-  height: 37vh;
+  margin-top: 1%;
+  height: 42vh;
 }
 
 .graphic_elem {

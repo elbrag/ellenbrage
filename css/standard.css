@@ -566,12 +566,16 @@ input:-webkit-autofill {
 
 @media (min-width: 1900px) {
 
+  #front_background {
+    height: 78vh;
+  }
+
   #frontpage{
-    max-width: 1500px;
+    max-width: 1380px;
   }
 
   .fill {
-    font-size: 450px;
+    font-size: 500px;
   }
 
 }
