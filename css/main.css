@@ -874,6 +874,10 @@ background-color: transparent!important;
     width: 90%;
   }
 
+  #contact {
+    margin-bottom: 96px;
+  }
+
   #frontpage {
     width: 90%;
     max-width: 1000px;
@@ -1045,7 +1049,7 @@ background-color: transparent!important;
 @media (min-width: 960px) {
 
   h1 {
-    font-size: 3.5em;
+    font-size: 3.6em;
   }
 
   h2 {

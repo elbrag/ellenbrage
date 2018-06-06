@@ -3,7 +3,7 @@
 /*--semantics reset and basics--*/
 
 * {
-  font-family: 'Hind', 'Helvetica', sans-serif;
+  font-family: 'Museo-Sans', 'Helvetica', sans-serif;
 }
 
 input[type=submit] {
@@ -95,7 +95,7 @@ a, #hideshow  {
 /*--Page standards--*/
 
 #submit {
-  padding: 4px 18px 1px 18px;
+  padding: 4px 18px;
   background-color: #000;
   border-radius: 0;
   border: none;
@@ -124,7 +124,6 @@ a, #hideshow  {
 #cur_theme {
   font-size: 18px;
   letter-spacing: 0.6px;
-  line-height: 36px;
   text-transform: uppercase;
   background-color: #fbfbfb;
 }
@@ -161,9 +160,9 @@ a, #hideshow  {
 }
 
 .fill {
-  font-family: 'Halogen', 'Hind', 'Helvetica', sans-serif;
+  font-family: 'Halogen', 'Museo-Sans', 'Helvetica', sans-serif;
   margin-bottom: 2px;
-  font-size: 24px;
+  font-size: 27px;
   line-height: 24px;
   font-weight: 900;
   text-transform: uppercase;
@@ -210,6 +209,10 @@ a, #hideshow  {
 
 /*--Single: Work--*/
 
+.single_category {
+  margin-bottom: -3px;
+}
+
 
 #hideshow.hiding {
   background: linear-gradient(rgba(255,0,0,0), rgba(251,251,251,1) 50%);
@@ -240,7 +243,7 @@ input:-webkit-autofill {
 /*form*/
 
 .wpcf7 label {
-  font-size: 1em;
+  font-size: 0.8em;
   font-weight: bold;
   text-transform: none;
   font-variant: normal;
@@ -347,7 +350,7 @@ div.wpcf7-mail-sent-ok {
 }
 
 .titles_box p {
-  font-size: 1.3em;
+  font-size: 1.2em;
 }
 
 
