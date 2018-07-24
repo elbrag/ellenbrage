@@ -143,7 +143,7 @@ if( have_posts() ) {
               </div>
 
             <?php
-            
+
                $projectlogo = get_field('project_logo');
                $thumb2 = 'grid_thumbnail_2';
 
@@ -162,6 +162,7 @@ if( have_posts() ) {
            </p>
 
          </section>
+         </div><!--end of page specific tag-->
 
          <section id='singleimages'>
            <?php
@@ -194,7 +195,9 @@ if( have_posts() ) {
     <?php
     }
    }
-
+   ?>
+   <div id='single'>
+     <?php
 //get ID for this project
 $projectid = get_the_ID();
 
