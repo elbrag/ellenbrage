@@ -51,47 +51,40 @@ return false;
 
       });
 
+
+      if ($('.single_description').height() < 280) {
+        $('#hideshow').css("display","none");
+      }
+
+      $('#hideshow').click(function(e) {
+
+        e.preventDefault();
+
+          if ($('.single_description').hasClass('more')) {
+
+                $('.single_description').removeClass("more");
+                $('#hideshow').text('read more');
+                $('#hideshow').addClass('hiding');
+
+                windowSize();
+
+                if (windowSize() < 640) {
+                  window.location.href = '#desc';
+                }
+
+
+          } else {
+            $('.single_description').addClass('more');
+            $('#hideshow').text('read less');
+            $('#hideshow').removeClass('hiding');
+
+          }
+
+        });
+
+
+
 });
-
-////word limit on single////
-
-// https://zingersystems.com/news-title-here/
-
-var texttag = document.querySelector('.single_description');
-var textToLimit = texttag.innerHTML;
-var wordLimit = 80;
-
-function limitWords(texttag, textToLimit, wordLimit) {
-
-var finalText = "";
-var text2 = textToLimit.replace(/\s+/g, ' ');
-var text3 = text2.split(' ');
-var numberOfWords = text3.length;
-
-if(numberOfWords > wordLimit) {
-  for ( var i= 0; i < wordLimit; i++ ) {
-    finalText = finalText+" "+ text3[i] + " ";
-    texttag.innerHTML = finalText+"…";
-  }
-} else {
-    texttag.innerHTML = textToLimit;
-    $('#readmore').hide();
-  }
-
-  $('#readmore').click(function(e) {
-    if (texttag.innerHTML == textToLimit) {
-      texttag.innerHTML = finalText+"…";
-      $('#readmore').html('Read more');
-    } else {
-      texttag.innerHTML = textToLimit;
-      $('#readmore').html('Read less');
-    }
-  });
-
-}
-
-limitWords(texttag, textToLimit, wordLimit);
-
 
 
 //masonry gallery in single//////////////////////////////////
