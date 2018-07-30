@@ -52,39 +52,52 @@ return false;
       });
 
 
-      if ($('.single_description').height() < 280) {
-        $('#hideshow').css("display","none");
+      var texttag = document.querySelector('.single_description');
+      var textToLimit = texttag.innerHTML;
+      var buttonposition = $('#readmore').position();
+
+      if (windowSize() < 640) {
+        var wordLimit = 40;
+      } else {
+        var wordLimit = 80;
       }
 
-      $('#hideshow').click(function(e) {
+      windowSize();
 
-        e.preventDefault();
+      function limitWords(texttag, textToLimit, wordLimit) {
+        var finalText = "";
+        var text2 = textToLimit.replace(/\s+/g, ' ');
+        var text3 = text2.split(' ');
+        var numberOfWords = text3.length;
 
-          if ($('.single_description').hasClass('more')) {
-
-                $('.single_description').removeClass("more");
-                $('#hideshow').text('read more');
-                $('#hideshow').addClass('hiding');
-
-                windowSize();
-
-                if (windowSize() < 640) {
-                  window.location.href = '#desc';
-                }
-
-
-          } else {
-            $('.single_description').addClass('more');
-            $('#hideshow').text('read less');
-            $('#hideshow').removeClass('hiding');
-
+        if(numberOfWords > wordLimit) {
+          for ( var i= 0; i < wordLimit; i++ ) {
+            finalText = finalText+" "+ text3[i] + " ";
+            texttag.innerHTML = finalText+"…";
           }
+        } else {
+            texttag.innerHTML = textToLimit;
+            $('#readmore').hide();
+          }
+
+          $('#readmore').click(function(e) {
+            if (texttag.innerHTML == textToLimit) {
+              texttag.innerHTML = finalText+"…";
+              $('#readmore').html('Read more');
+              $('body, html').animate({scrollTop: $('.single_description').offset().top}, 300);
+            } else {
+              texttag.innerHTML = textToLimit;
+              $('#readmore').html('Read less');
+            }
+          });
+      }
+
+      limitWords(texttag, textToLimit, wordLimit);
+
+
 
         });
 
-
-
-});
 
 
 //masonry gallery in single//////////////////////////////////
