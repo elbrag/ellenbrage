@@ -84,7 +84,17 @@ return false;
             if (texttag.innerHTML == textToLimit) {
               texttag.innerHTML = finalText+"…";
               $('#readmore').html('Read more');
-              $('body, html').animate({scrollTop: $('.single_description').offset().top}, 300);
+
+              /*I include a width check here because in big widths, a short text would cause the scroll-back to actually scroll down, not up. Therefore, you have to have scrolled past 100 to get the scroll-back*/
+              if ((windowSize() > 640)) {
+                if (document.body.scrollTop > 100) {
+                  $('body, html').animate({scrollTop: $('.single_description').offset().top}, 300);
+                }
+              } else {
+                $('body, html').animate({scrollTop: $('.single_description').offset().top}, 300);
+              }
+
+
             } else {
               texttag.innerHTML = textToLimit;
               $('#readmore').html('Read less');
@@ -93,7 +103,6 @@ return false;
       }
 
       limitWords(texttag, textToLimit, wordLimit);
-
 
 
         });
