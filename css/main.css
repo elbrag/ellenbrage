@@ -1138,12 +1138,12 @@ background-color: transparent!important;
 
 .single_top {
   float: right;
-  width: calc(40% - 7px);
+  width: calc(50% - 7px);
   margin-right: 7px;
 }
 
 .singletext {
-  width: calc(60% - 48px);
+  width: calc(50% - 48px);
   margin: 36px 24px 24px 24px;
   float: right;
 }
@@ -1207,7 +1207,7 @@ background-color: transparent!important;
   }
 
   .singletext {
-    width: calc(60% - 36px);
+    width: calc(50% - 36px);
     margin-left: 0;
     margin-right: 36px;
   }
