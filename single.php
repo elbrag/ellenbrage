@@ -142,16 +142,14 @@ if( have_posts() ) {
               </p>
               </div>
 
-            <?php
+              <?php
 
-               $projectlogo = get_field('project_logo');
-               $thumb2 = 'grid_thumbnail_2';
-
-               $logo_thumb = $projectlogo['sizes'][ $thumb2 ];
-
+              $large_thumbnail = 'large_thumbnail';
+               $thumbimage = get_field('thumb');
+               $thumb_resized = $thumbimage['sizes'][ $large_thumbnail ];
                ?>
 
-              <div class='project_logo' style='background-image: url("<?php echo $logo_thumb ;?>");'></div>
+               <div class='single_top' style='background-image: url("<?php echo $thumb_resized ;?>");'></div>
 
 
               <div class='singletext'>

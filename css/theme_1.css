@@ -27,7 +27,7 @@ p a {
   font-family: 'Acumin-Pro', 'Helvetica', 'Arial', sans-serif;
 }
 
-a, #hideshow {
+a {
   font-weight: bold;
   color: #2adb32;
   text-decoration: none;

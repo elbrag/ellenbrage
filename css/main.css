@@ -537,17 +537,13 @@ hr {
   position: relative;
 }
 
-.hero_img {
+.single_top {
   width: 100%;
-}
-
-.project_logo {
-  width: 200px;
   height: 200px;
   background-repeat: no-repeat;
-  background-size: 85%;
-  margin: -24px auto;
+  background-size: cover;
   background-position: center;
+  margin: 32px 0;
 }
 
 .singletext {
@@ -564,6 +560,7 @@ hr {
   display: block;
   margin-top: 12px;
   font-weight: bold;
+  cursor: pointer;
 }
 
 #single h1{
@@ -619,7 +616,7 @@ hr {
 
 .similar_projects {
   width: 90%;
-  margin: 72px auto 0 auto;
+  margin: 0 auto 72px auto;
 }
 
 .similar_thumbs_area {
@@ -651,7 +648,7 @@ hr {
   background-color: #000;
   font-weight: bold;
   padding: 6px 0;
-  margin: 24px auto 84px auto;
+  margin: 24px auto 64px auto;
   width: 100%;
 }
 
@@ -922,6 +919,12 @@ background-color: transparent!important;
 
   /*--Single: Work--*/
 
+  .single_top {
+    height: 400px;
+    width: calc(100% - 7px);
+    margin-right: 7px;
+  }
+
   .gall_img {
     width: calc(50% - 12px);
     padding: 6px;
@@ -1133,24 +1136,16 @@ background-color: transparent!important;
   margin-left: 24px;
 }
 
-.project_logo {
-  width: 300px;
-  height: 300px;
-  background-size: 75%;
-  margin: 0 auto;
+.single_top {
   float: right;
+  width: calc(40% - 7px);
+  margin-right: 7px;
 }
 
 .singletext {
-  width: calc(100% - 324px);
-  margin: 36px auto 24px 24px;
+  width: calc(60% - 48px);
+  margin: 36px 24px 24px 24px;
   float: right;
-}
-
-#hideshow {
-  width: calc(100% - 300px);
-  margin: 0;
-  margin-bottom: 30px;
 }
 
 .similar_projects {
@@ -1162,7 +1157,7 @@ background-color: transparent!important;
 }
 
 .browse_all {
-  margin: 48px auto 96px auto;
+  margin: 48px auto 84px auto;
 }
 
 
@@ -1212,8 +1207,9 @@ background-color: transparent!important;
   }
 
   .singletext {
-    width: calc(100% - 300px);
+    width: calc(60% - 36px);
     margin-left: 0;
+    margin-right: 36px;
   }
 
 
@@ -1290,7 +1286,7 @@ background-color: transparent!important;
   /*--Single: Work--*/
 
   #single {
-    margin: 54px auto 72px auto;
+    margin: 54px auto 48px auto;
     max-width: 1200px;
   }
 
@@ -1309,16 +1305,6 @@ background-color: transparent!important;
     background-size: contain;
     margin: 0 36px;
   }
-
-  .singletext {
-    width: calc(100% - 372px);
-    margin: 36px 0 0 0;
-  }
-
-  #hideshow {
-    width: calc(100% - 372px);
-  }
-
 
   .similar_projects {
     max-width: 1500px;

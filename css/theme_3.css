@@ -19,7 +19,7 @@ h1, h2, h3, h4{
 
 }
 
-a, #hideshow {
+a {
   color: #fff;
   text-decoration: none;
 }
@@ -208,7 +208,7 @@ a, #hideshow {
 }
 
 
-.work_grid_image, .single_img, .thumb_img, #about .image {
+.work_grid_image, .single_img, .thumb_img, #about .image, .single_top {
   /* box-shadow: 2px 2px 0.5vw rgba(0,0,0,0.3); */
   box-shadow: 1px 1px #a5564d;
 }
@@ -218,10 +218,6 @@ a, #hideshow {
 
 #single h1 {
   margin-bottom: 0;
-}
-
-#hideshow.hiding {
-  background: linear-gradient(rgba(255,0,0,0), rgba(232,152,143,1) 50%);
 }
 
 .browse_all {
