@@ -279,7 +279,7 @@ header {
 
 #single {
   max-width: 1000px;
-  margin: 31px auto 72px auto;
+  margin: 31px auto 48px auto;
   overflow: hidden;
 }
 
@@ -532,7 +532,7 @@ hr {
 
 }
 
-#singletext {
+#singleinfo {
   margin-bottom: 0;
   position: relative;
 }
@@ -550,14 +550,9 @@ hr {
   background-position: center;
 }
 
-.single_description {
-  margin: 0 auto 54px auto;
-  margin-bottom: 54px;
+.singletext {
   width: 90%;
-  max-height: 280px;
-  overflow: hidden;
-  will-change: max-height, margin-bottom;
-  transition: max-height 0.3s ease-in-out, margin-bottom 0.3s ease-in-out;
+  margin: 0 auto;
 }
 
 .single_description.more {
@@ -565,26 +560,10 @@ hr {
   margin-bottom: 84px;
 }
 
-
-#hideshow {
-  text-align: center;
-  z-index: 40;
-  margin: 0 auto;
-  transition: height 0.2s ease-in-out, padding 0.2s ease-in-out;;
-  cursor: pointer;
-  overflow: hidden;
-  width: 100%;
-  font-size: 1em;
-  position: absolute;
-  bottom: 0;
-  margin-bottom: 30px;
-  height: 30px;
-  will-change: height, padding;
-}
-
-#hideshow.hiding {
-  height: 10px;
-  padding: 50px 0;
+#readmore {
+  display: block;
+  margin-top: 12px;
+  font-weight: bold;
 }
 
 #single h1{
@@ -1162,9 +1141,9 @@ background-color: transparent!important;
   float: right;
 }
 
-.single_description {
+.singletext {
   width: calc(100% - 324px);
-  margin: 36px auto 84px 24px;
+  margin: 36px auto 24px 24px;
   float: right;
 }
 
@@ -1232,7 +1211,7 @@ background-color: transparent!important;
     margin-left: 0;
   }
 
-  .single_description {
+  .singletext {
     width: calc(100% - 300px);
     margin-left: 0;
   }
@@ -1331,9 +1310,9 @@ background-color: transparent!important;
     margin: 0 36px;
   }
 
-  .single_description {
+  .singletext {
     width: calc(100% - 372px);
-    margin: 36px 0 84px 0;
+    margin: 36px 0 0 0;
   }
 
   #hideshow {

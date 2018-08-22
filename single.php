@@ -24,7 +24,7 @@ if( have_posts() ) {
         <div id='single'>
 
 
-          <section id='singletext'>
+          <section id='singleinfo'>
           <?php
 
           $cats = wp_get_object_terms( $post->ID, 'project-category' );
@@ -154,12 +154,15 @@ if( have_posts() ) {
               <div class='project_logo' style='background-image: url("<?php echo $logo_thumb ;?>");'></div>
 
 
-           <p class='single_description' id='desc'>
-            <?php
-             the_field('project_description');
-             ?>
-             <div id='hideshow' class='hiding'>read more</div>
-           </p>
+              <div class='singletext'>
+                <p class='single_description' id='desc'>
+                 <?php
+                  the_field('project_description');
+                  ?>
+                </p>
+                <span id='readmore'>Read more</span>
+              </div>
+
 
          </section>
          </div><!--end of page specific tag-->
