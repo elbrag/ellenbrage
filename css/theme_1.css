@@ -123,7 +123,7 @@ a button {
 }
 
 #front_background {
-  background-color: #60EF66;
+  background-color: #fff;
   height: 80vh;
 }
 
@@ -195,12 +195,12 @@ a button {
 .topright, .bottomright {
   width: 35%;
   height: 60px;
-  background-color: #000;
+  background-color: #60EF66;
 }
 
 .middle {
   height: 60px;
-  background-color: #000;
+  background-color: #60EF66;
 }
 
 .bottom, .top {
