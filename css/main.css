@@ -588,7 +588,7 @@ hr {
 /*video stuff*/
 
 .mejs-container {
-  margin: 0 auto;
+  margin: 45px auto 45px auto;
 }
 
 .wp-video {
