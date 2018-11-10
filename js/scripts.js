@@ -58,6 +58,8 @@ return false;
 
       if (windowSize() < 640) {
         var wordLimit = 40;
+      } else if (windowSize() > 1200) {
+        var wordLimit = 115;
       } else {
         var wordLimit = 100;
       }
