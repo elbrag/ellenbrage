@@ -594,6 +594,15 @@ hr {
 .wp-video {
   width: 1000px!important;
 }
+
+.mejs-controls {
+  bottom: -40px!important;
+}
+
+.mejs-container-fullscreen .mejs-controls {
+  bottom: 0!important;
+}
+
 /**/
 
 
