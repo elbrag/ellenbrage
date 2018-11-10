@@ -59,7 +59,7 @@ return false;
       if (windowSize() < 640) {
         var wordLimit = 40;
       } else {
-        var wordLimit = 80;
+        var wordLimit = 100;
       }
 
       windowSize();
