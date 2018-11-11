@@ -550,6 +550,9 @@ hr {
   width: 90%;
   margin: 0 auto;
 }
+.singletext#vid {
+  margin-top: 32px;
+}
 
 .single_description.more {
   max-height: 3000px;
@@ -1165,6 +1168,10 @@ background-color: transparent!important;
   width: calc(60% - 48px);
   margin: 36px 24px 24px 24px;
   float: right;
+}
+.singletext#vid {
+  float: none;
+  width: 100%;
 }
 
 /*video stuff*/

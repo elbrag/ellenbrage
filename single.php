@@ -144,15 +144,24 @@ if( have_posts() ) {
 
               <?php
 
-              $large_thumbnail = 'large_thumbnail';
-               $thumbimage = get_field('thumb');
-               $thumb_resized = $thumbimage['sizes'][ $large_thumbnail ];
-               ?>
+              $video_mp4 =  get_field('mp4_video'); // MP4 Field Name
+              $video_webm  = get_field('webm_video'); // WEBM Field Name
+              $video_flv =  get_field('flv_video'); // FLV Field Name
+              $video_poster  = get_field('poster_image'); // Poster Image Field
 
-               <div class='single_top' style='background-image: url("<?php echo $thumb_resized ;?>");'></div>
+              if (!$video_mp4 && !$video_webm && !$video_flv) {
+                $large_thumbnail = 'large_thumbnail';
+                 $thumbimage = get_field('thumb');
+                 $thumb_resized = $thumbimage['sizes'][ $large_thumbnail ];
+                 ?>
+
+                 <div class='single_top' style='background-image: url("<?php echo $thumb_resized ;?>");'></div>
+                 <?php
+              }
+              ?>
 
 
-              <div class='singletext'>
+              <div class='singletext' <?php if ($video_mp4 || $video_webm || $video_flv) { echo "id='vid'"; }  ?>>
                 <p class='single_description' id='desc'>
                  <?php
                   the_field('project_description');
@@ -223,7 +232,7 @@ if( have_posts() ) {
 
             <?php
           } ?>
-         
+
     <?php
     }
    }
