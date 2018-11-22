@@ -1,5 +1,5 @@
 //masonry gallery in single//////////////////////////////////
-$(document).ready(function() {
+jQuery(window).on('load', function() {
     $('#singleimages').masonry({
     // options
     itemSelector: '.gall_img',
