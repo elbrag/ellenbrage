@@ -79,11 +79,14 @@
 
           </footer>
 
+
           <?php
           $scripts = get_template_directory_uri() . "/js/scripts.js";
+          $masonry = get_template_directory_uri() . "/js/masonry.pkgd.min.js";
           ?>
 
           <script type="text/javascript" src="<?php echo $scripts;?>"></script>
+          <script type="text/javascript" src="<?php echo $masonry;?>"></script>
 
           <?php wp_footer() ?>
       </body>

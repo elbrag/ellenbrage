@@ -113,16 +113,18 @@ return false;
 
 
 //masonry gallery in single//////////////////////////////////
-jQuery(window).on('load', function() {
-
-  $('#singleimages').masonry({
-  // options
-  itemSelector: '.gall_img',
-  columnWidth: '.gall_img',
-  percentPosition: true,
-  horizontalOrder: true,
-  isAnimated: false
+$(document).ready(function() {
+  if ( $('#singleimages').length ) {
+    $('#singleimages').masonry({
+    // options
+    itemSelector: '.gall_img',
+    columnWidth: '.gall_img',
+    percentPosition: true,
+    horizontalOrder: true,
+    isAnimated: false
   });
+};
+
 
 
 });

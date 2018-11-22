@@ -1,10 +1,22 @@
 <?php get_header(); ?>
 
-<script>
 
-document.getElementById('menu-item-36').className += ' active';
+<?php
+if (get_locale() == 'sv_SE') {?>
+  <script>
+  document.getElementById('menu-item-37').className += ' active';
+  </script>
+<?php
+}//end of swe language check
+if (get_locale() == 'en_GB') {
+  ?>
+  <script>
+  document.getElementById('menu-item-36').className += ' active';
+  </script>
+  <?php
+ }//end of eng language check
+?>
 
-</script>
 
 <?php
 
@@ -192,7 +204,9 @@ if( have_posts() ) {
 
          if ($video_mp4 || $video_webm || $video_flv) {
            // Display the Shortcode
+           ?><div id='videocontainer'><?php
            echo wp_video_shortcode(  $attr );
+           ?></div><?php
          }
 
           ?>

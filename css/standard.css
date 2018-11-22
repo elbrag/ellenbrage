@@ -173,7 +173,7 @@ a {
 /*--Page: Work--*/
 
 .grid_project p, .similar_projects p {
-  background-color: rgba(0,0,0,0.9);
+  background-color: #000;
   color: #fff;
 }
 
