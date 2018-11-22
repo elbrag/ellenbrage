@@ -85,9 +85,9 @@
           $masonry = get_template_directory_uri() . "/js/masonry.pkgd.min.js";
           ?>
 
+          <!-- <script type="text/javascript" src="<?php echo $masonry;?>"></script> -->
+          <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
           <script type="text/javascript" src="<?php echo $scripts;?>"></script>
-          <script type="text/javascript" src="<?php echo $masonry;?>"></script>
-
           <?php wp_footer() ?>
       </body>
 

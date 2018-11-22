@@ -1,3 +1,17 @@
+//masonry gallery in single//////////////////////////////////
+$(document).ready(function() {
+    $('#singleimages').masonry({
+    // options
+    itemSelector: '.gall_img',
+    columnWidth: '.gall_img',
+    percentPosition: true,
+    horizontalOrder: true,
+    isAnimated: false
+});
+
+});
+////////////////////////////////////////////////////
+
 //go to top-button///////////////////////////////////////////////https://getflywheel.com/layout/add-sticky-back-top-button-website/
 var topButton = $("#topButton");
 
@@ -112,23 +126,7 @@ return false;
 
 
 
-//masonry gallery in single//////////////////////////////////
-$(document).ready(function() {
-  if ( $('#singleimages').length ) {
-    $('#singleimages').masonry({
-    // options
-    itemSelector: '.gall_img',
-    columnWidth: '.gall_img',
-    percentPosition: true,
-    horizontalOrder: true,
-    isAnimated: false
-  });
-};
 
-
-
-});
-////////////////////////////////////////////////////
 
 
 //hamburger menu
