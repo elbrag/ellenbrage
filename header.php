@@ -37,4 +37,12 @@
   <!-- <body id='<?php //echo $theme ?>'> -->
   <body>
 
+    <div id='loading'>
+      <div id='wheel'>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+    </div>
+
     <?php require("partials/sitehead.php"); ?>

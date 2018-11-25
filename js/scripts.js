@@ -158,9 +158,12 @@ function openMenu(x){
 var cur_theme = document.getElementById('cur_theme');
 var prev_theme = document.getElementById('prev_theme');
 var next_theme = document.getElementById('next_theme');
+var loader = document.getElementById('loading');
 
 
 function slidenext(){
+  loader.style.display = 'flex';
+
   var pos = 0;
   var pos2 = -700;
   var id = setInterval(frame, 0);
@@ -179,6 +182,9 @@ function slidenext(){
   }
 }
 function slideprev(){
+
+  loader.style.display = 'flex';
+
   var pos = 0;
   var pos2 = -700;
   var id = setInterval(frame, 0);

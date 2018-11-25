@@ -14,6 +14,14 @@ input[type=submit] {
   border: none;
 }
 
+#loading {
+  background-color: rgba(199, 230, 237, 0.8);
+}
+
+#wheel div {
+  background-color: #fff;
+}
+
 
 p {
 }

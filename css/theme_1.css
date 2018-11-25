@@ -43,6 +43,13 @@ a button {
   background-color: #2adb32;
 }
 
+#loading {
+  background-color: rgba(255, 255, 255, 0.7);
+}
+#wheel div {
+  background-color: #2adb32;
+}
+
 /*top button*/
 
 #topButton {

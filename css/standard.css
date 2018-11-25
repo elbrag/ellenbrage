@@ -30,7 +30,11 @@ body {
       #fffa72
     );  */
 
-    background-color: #fff844;
+    background-color: #fff951;
+}
+
+#loading {
+  background-color: rgba(255, 249, 81, 0.7);
 }
 
 a {
@@ -53,11 +57,11 @@ a {
 /*--Menu--*/
 
 .main-nav {
-  background-color: #fff844;
+  background-color: #fff951;
 }
 
 .main-menu {
-  background-color: #fff844;
+  background-color: #fff951;
 }
 
 .menu-item {
@@ -123,7 +127,7 @@ a {
 }
 
 .fill {
-  color: #fff844;
+  color: #fff951;
   /* -webkit-text-stroke: 2px #000; */
   opacity: 0.4;
   text-shadow: 2px 2px 0.7vw rgba(0,0,0,0.6);
@@ -282,7 +286,7 @@ div.wpcf7-mail-sent-ok {
 }
 
 input:-webkit-autofill {
-    -webkit-box-shadow: 0 0 0 30px #fff844 inset;
+    -webkit-box-shadow: 0 0 0 30px #fff951 inset;
 }
 
 .wpcf7 input[type=text], .wpcf7 input[type=email] {
@@ -294,7 +298,7 @@ input:-webkit-autofill {
 /*--Footer--*/
 
 .mainfooter {
-  background-color: #fff844;
+  background-color: #fff951;
   padding: 7px 0;
 }
 

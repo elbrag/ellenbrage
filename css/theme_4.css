@@ -17,6 +17,12 @@ body {
   background-color: #fbfbfb;
 }
 
+#loading {
+  background-color: rgba(251, 251, 251, 0.7);
+}
+#wheel div {
+  background-color: #ed1212;
+}
 
 p {
   font-size: 1.2em;

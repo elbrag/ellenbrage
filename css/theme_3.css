@@ -7,7 +7,11 @@
 }
 
 body {
-  background-color: #e8988f;
+  background-color: #fcaaa1;
+}
+
+#loading {
+  background-color: rgba(252, 170, 161, 0.8);
 }
 
 
@@ -42,11 +46,11 @@ a {
 /*--Menu--*/
 
 .main-nav {
-  background-color: #e8988f;
+  background-color: #fcaaa1;
 }
 
 .main-menu {
-  background-color: #e8988f;
+  background-color: #fcaaa1;
 }
 
 .radiobutton {
@@ -298,7 +302,7 @@ div.wpcf7-mail-sent-ok {
 }
 
 input:-webkit-autofill {
-    -webkit-box-shadow: 0 0 0 30px #e8988f inset;
+    -webkit-box-shadow: 0 0 0 30px #fcaaa1 inset;
 }
 
 /**/
@@ -306,7 +310,7 @@ input:-webkit-autofill {
 /*--Footer--*/
 
 .mainfooter {
-  background-color: #e8988f;
+  background-color: #fcaaa1;
   padding: 7px 0;
 }
 
