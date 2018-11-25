@@ -165,6 +165,13 @@ a {
   width: 100%;
   height: 100%;
 }
+#preload-01 {
+  background: url(../img/clicked.png) no-repeat -9999px -9999px;
+}
+.graphic_elem.clicked {
+  background-image: url(../img/clicked.png);
+  margin-top: 20px;
+}
 
 .graphic_elem,
 .graphic_elem2 {
@@ -360,6 +367,7 @@ input:-webkit-autofill {
   width: 90%;
   height: 100%;
 }
+
 
 .titles_box{
   margin-left: 4px;

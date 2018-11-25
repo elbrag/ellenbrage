@@ -14,9 +14,13 @@ if ($_COOKIE['theme'] == '') {
   ?>
   <script>
   console.log('hi');
-  // $(document).click(function(){
-  //     $('.graphic_elem').css("background-image", "url(img/dragonflower.png)");
-  // });
+  $(document).click(function(){
+      $('.graphic_elem').addClass('clicked');
+
+      setTimeout(function(){
+        $('.graphic_elem').removeClass('clicked');
+      }, 200);
+  });
   </script>
 <?php }
  ?>
