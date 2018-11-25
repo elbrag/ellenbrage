@@ -24,7 +24,7 @@ if ($_COOKIE['theme'] == '') {
   </script>
 <?php }
  ?>
-
+<div id='preload'></div>
 <?php
 if( have_posts() ) {
    while ( have_posts() ) {

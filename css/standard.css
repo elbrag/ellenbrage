@@ -167,7 +167,7 @@ a {
   height: 67%;
   align-self: flex-start;
 }
-#preload-01 {
+#preload {
   background: url(../img/clicked.png) no-repeat -9999px -9999px;
 }
 .graphic_elem.clicked {
