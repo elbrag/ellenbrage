@@ -452,6 +452,9 @@ input:-webkit-autofill {
   width: 80%;
   height: 100%;
 }
+.graphic_elem.clicked {
+  margin-top: 30px;
+}
 
 .titles_box{
   margin-left: 7px;
@@ -507,6 +510,9 @@ input:-webkit-autofill {
   background-size: 70%;
   height: 600px;
   margin: 0 -90px;
+}
+.graphic_elem.clicked {
+  margin-top: 35px;
 }
 
 /*--Page: Contact--*/
