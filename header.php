@@ -21,6 +21,22 @@
     <script src="<?php echo $src ?>"></script>
 
     <?php wp_head(); ?>
+
+    <meta name="theme-color" content="
+    <?php
+    if ($_COOKIE['theme'] == 'theme_1') {
+      echo "#fff";
+    } elseif ($_COOKIE['theme'] == 'theme_2') {
+      echo "#d0ecf2";
+    } elseif ($_COOKIE['theme'] == 'theme_3') {
+      echo "#fcaaa1";
+    } elseif ($_COOKIE['theme'] == 'theme_4') {
+      echo "#fbfbfb";
+    } else {
+      echo "#fff951";
+    }
+    ?>
+    " />
   </head>
 
   <?php

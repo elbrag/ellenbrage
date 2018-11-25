@@ -6,8 +6,20 @@
 get_header(); ?>
 <script>
 document.querySelector('body').className = 'body_home';
+
 </script>
 
+<?php
+if ($_COOKIE['theme'] == '') {
+  ?>
+  <script>
+  console.log('hi');
+  // $(document).click(function(){
+  //     $('.graphic_elem').css("background-image", "url(img/dragonflower.png)");
+  // });
+  </script>
+<?php }
+ ?>
 
 <?php
 if( have_posts() ) {
