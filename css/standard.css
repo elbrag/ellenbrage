@@ -122,8 +122,8 @@ a {
 
 #front_background {
   background-color: transparent;
-  height: 56vh;
-  margin-top: 20px;
+  height: 58vh;
+  display: flex;
 }
 
 .fill {
@@ -161,16 +161,17 @@ a {
 .graphic_elem {
   background-image: url(../img/click_new.png);
   background-size: 100%;
+  background-position-y: bottom;
   margin: 0 auto;
   width: 100%;
-  height: 100%;
+  height: 67%;
+  align-self: flex-start;
 }
 #preload-01 {
   background: url(../img/clicked.png) no-repeat -9999px -9999px;
 }
 .graphic_elem.clicked {
   background-image: url(../img/clicked.png);
-  margin-top: 20px;
 }
 
 .graphic_elem,
@@ -311,6 +312,16 @@ input:-webkit-autofill {
 
 /*=====================================640PX========================================*/
 
+@media (min-width: 500px) {
+
+  .graphic_elem {
+    height:80%;
+  }
+
+}
+
+/*=====================================640PX========================================*/
+
 @media (min-width: 640px) {
 
 /*--Header--*/
@@ -350,8 +361,8 @@ input:-webkit-autofill {
 
 #front_background {
   background-color: transparent;
-  height: 67vh;
   margin-top: 0;
+  height: 67vh;
 }
 
 .fill{
@@ -365,7 +376,7 @@ input:-webkit-autofill {
 
 .graphic_elem {
   width: 90%;
-  height: 100%;
+  height: 92%;
 }
 
 
@@ -449,12 +460,9 @@ input:-webkit-autofill {
 
 
 .graphic_elem {
-  width: 80%;
-  height: 100%;
+  height: 80%;
 }
-.graphic_elem.clicked {
-  margin-top: 30px;
-}
+
 
 .titles_box{
   margin-left: 7px;
@@ -511,9 +519,7 @@ input:-webkit-autofill {
   height: 600px;
   margin: 0 -90px;
 }
-.graphic_elem.clicked {
-  margin-top: 35px;
-}
+
 
 /*--Page: Contact--*/
 
@@ -546,7 +552,7 @@ input:-webkit-autofill {
 
 .graphic_elem {
   width: 85%;
-  height: 100%;
+  /* height: 55vh; */
   max-width: 1000px;
 }
 
@@ -608,6 +614,7 @@ input:-webkit-autofill {
 
 .graphic_elem {
   max-width: 1000px;
+  /* height: 40vh; */
 }
 
 .graphic_elem2{
