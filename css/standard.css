@@ -160,7 +160,7 @@ a {
 
 .graphic_elem {
   background-image: url(../img/click_new.png);
-  background-size: 100%;
+  background-size: contain;
   background-position-y: bottom;
   margin: 0 auto;
   width: 100%;
@@ -172,6 +172,7 @@ a {
 }
 .graphic_elem.clicked {
   background-image: url(../img/clicked.png);
+  background-size: contain;
 }
 
 .graphic_elem,
@@ -369,10 +370,6 @@ input:-webkit-autofill {
   bottom: 20px;
 }
 
-.graphic_elem {
-  background-size: 90%;
-}
-
 
 .graphic_elem {
   width: 90%;
@@ -452,10 +449,6 @@ input:-webkit-autofill {
 
 #front_background{
   height: 77vh;
-}
-
-.graphic_elem {
-  background-size: 80%;
 }
 
 
@@ -545,12 +538,7 @@ input:-webkit-autofill {
   height: 74vh;
 }
 
-.graphic_elem {
-  background-size: 75%;
-}
-
-
-.graphic_elem {
+.{
   width: 85%;
   /* height: 55vh; */
   max-width: 1000px;
