@@ -308,9 +308,6 @@ a button {
 
 /*--Single: Work--*/
 
-#single h1 {
-  margin-bottom: 0;
-}
 
 #hideshow.hiding {
   background: linear-gradient(rgba(255,0,0,0), rgba(255,255,255,1) 50%);

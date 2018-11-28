@@ -624,8 +624,8 @@ hr {
 
 #single h1{
   width: 90%;
-  margin: 0 auto 2px auto;
-  line-height: 1.1em;
+  margin: 0 auto 10px auto;
+  line-height: 1em;
 }
 
 .project_brief {
@@ -638,7 +638,7 @@ hr {
 }
 
 .single_category {
-  margin: 0 auto;
+  margin: 0 auto 8px auto;
   font-size: 0.9em;
   width: 90%;
   overflow: hidden;
@@ -1203,7 +1203,7 @@ background-color: transparent!important;
 
 #single h1 {
   width: 100%;
-  margin: 0 auto 6px 24px;
+  margin: 0 auto 0 24px;
 }
 #single h2{
   width: 100%;
@@ -1212,6 +1212,7 @@ background-color: transparent!important;
 .single_category {
   width: 100%;
   margin-left: 24px;
+  margin-bottom: -2px;
 }
 
 .single_top {
