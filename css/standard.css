@@ -535,7 +535,7 @@ input:-webkit-autofill {
 }
 
 #front_background{
-  height: 74vh;
+  height: 75vh;
 }
 
 .{
@@ -548,11 +548,8 @@ input:-webkit-autofill {
   background-size: 55%;
 }
 
-
-
-
 .fill {
-  font-size: 400px;
+  font-size: 370px;
 }
 
 
